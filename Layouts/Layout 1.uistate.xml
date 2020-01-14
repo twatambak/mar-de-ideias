@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>320</position-x>
-        <position-y>557.097</position-y>
-        <position-z>146.41</position-z>
+        <position-y>615.184</position-y>
+        <position-z>161.051</position-z>
         <lookat-x>320</lookat-x>
-        <lookat-y>557.097</lookat-y>
+        <lookat-y>615.184</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,15 +23,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="BackgroundPergunta" />
+    <active-layer name="Detalhes" />
     <layers>
-        <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Mar" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Detalhes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Personagem" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundPergunta" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Pergunta" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BordasPergunta" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TextoPergunta" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundRespostas" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Respostas" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BordasResposta" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TextoResposta" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="HUD" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
