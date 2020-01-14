@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Base</name>
+    <events>
+        <event-block sid="706926344378072">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="853415529372643" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="497502731187693" type="Pergunta_Texto">
+                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="601249429088276" type="Resposta_Texto">
+                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="803390285246385">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="521402868480607" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="297100384035187" type="SpawnerPeixe1">
+                    <param id="0" name="Object">Peixes</param>
+                    <param id="1" name="Layer">&quot;Detalhes&quot;</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="432802638049653" type="Peixes">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+                <action id="-2" name="Set Y" sid="796003288410596" type="Peixes">
+                    <param id="0" name="Y">random(32, 1100)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="699822154850765">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="537848323541250" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="209671902330649" type="Peixes">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Mar de Ideias</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="scanlines">Scan lines</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>1152</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Objetos para Pergunta">
+            <object-type name="Pergunta_Background" sid="261369006307672">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="Pergunta_BordaDireitaInferior" sid="215559273120718">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="545541383414486" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(4).png">
+                            <collision-poly>
+                                <point x="0.5" y="0.78125" />
+                                <point x="1" y="0" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.8125" y="0.8125" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.71875" y="0.5" />
+                                <point x="0.65625" y="0.65625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pergunta_BordaDireitaSuperior" sid="234898327742033">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="165347789960410" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(4).png">
+                            <collision-poly>
+                                <point x="0.78125" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.03125" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pergunta_BordaEsquerdaInferior" sid="602742197497232">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="976645372860148" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(3).png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.78125" />
+                                <point x="0.34375" y="0.65625" />
+                                <point x="0.28125" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.1875" y="0.8125" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pergunta_BordaEsquerdaSuperior" sid="535919263989212">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="722607121472289" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(2).png">
+                            <collision-poly>
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0.015625" />
+                                <point x="1" y="0" />
+                                <point x="0.0625" y="0.5" />
+                                <point x="0.21875" y="0.21875" />
+                                <point x="0.5" y="0.078125" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pergunta_BordaHorizontal" sid="188403345220960">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Borda Esquerda(5).png" />
+            </object-type>
+            <object-type name="Pergunta_BordaVertical" sid="987960186028174">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Borda Esquerda(5).png" />
+            </object-type>
+            <object-type name="Pergunta_Texto" sid="504076723751843">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Objetos para Resposta">
+            <object-type name="Resposta_Background" sid="472729257087486">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="Resposta_BordaDireitaInferior" sid="439625293869741">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984278532020045" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(4).png">
+                            <collision-poly>
+                                <point x="0.5" y="0.78125" />
+                                <point x="1" y="0" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.8125" y="0.8125" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.71875" y="0.5" />
+                                <point x="0.65625" y="0.65625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Resposta_BordaDireitaSuperior" sid="153695594752749">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636217942610808" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(4).png">
+                            <collision-poly>
+                                <point x="0.78125" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.03125" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Resposta_BordaEsquerdaInferior" sid="629144379999786">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636062725658360" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(3).png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.78125" />
+                                <point x="0.34375" y="0.65625" />
+                                <point x="0.28125" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.1875" y="0.8125" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Resposta_BordaEsquerdaSuperior" sid="543901779722764">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="832317021947731" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(2).png">
+                            <collision-poly>
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0.015625" />
+                                <point x="1" y="0" />
+                                <point x="0.0625" y="0.5" />
+                                <point x="0.21875" y="0.21875" />
+                                <point x="0.5" y="0.078125" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Resposta_BordaHorizontal" sid="132204930100799">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Borda Esquerda(5).png" />
+            </object-type>
+            <object-type name="Resposta_BordaVertical" sid="315353659425380">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Borda Esquerda(5).png" />
+            </object-type>
+            <object-type name="Resposta_Texto" sid="617535852015810">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="159773418320896" type="number" />
+                </instance-variables>
+            </object-type>
+        </object-folder>
+        <object-type name="Mar" sid="163520844153085">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="943330799695033">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="ScanLines">
+                    <effect id="scanlines" />
+                </effect-type>
+            </effects>
+            <texture />
+        </object-type>
+        <object-type name="Detalhes1" sid="978016206040330">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="215251031374827">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="591708709350852">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\twata\Downloads\New Piskel(11).png" />
+        </object-type>
+        <object-type name="Detalhes2" sid="518603735762886">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="978612852228993">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="496158646380579">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\twata\Downloads\New Piskel(12).png" />
+        </object-type>
+        <object-type name="Detalhes3" sid="664172607530434">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="765717684239918">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="563153947612030">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\twata\Downloads\New Piskel(13).png" />
+        </object-type>
+        <object-type name="Peixes" sid="369714910389211">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="734969641399448">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="138546460027073">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341065920796513" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpawnerPeixe1" sid="775261168318761">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346969869506328" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Base.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Eventos Base.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file-folder name="Fontes">
+            <file name="stylesheet.css" />
+            <file name="vcr_osd_mono_1.001-webfont.woff" />
+            <file name="vcr_osd_mono_1.001-webfont.woff2" />
+        </file-folder>
+    </files-folder>
+</c2project>

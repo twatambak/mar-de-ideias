@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>Base</name>
     <sid>8873350371196689</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Eventos Base</event-sheet>
     <size>
         <width>640</width>
         <height>1152</height>
@@ -2124,15 +2124,50 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Vertical</movement>
+                                <wave>Sine</wave>
+                                <period>2</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>5</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-32</x>
-                        <y>512</y>
+                        <x>-224</x>
+                        <y>544</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpawnerPeixe1" uid="92">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-115</x>
+                        <y>573</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>1216</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2511,7 +2546,7 @@
             <instances>
                 <instance type="Pergunta_Texto" uid="12">
                     <properties>
-                        <text>Qual a capital da casa do caralho seu corno?</text>
+                        <text>Em que país foi inventado o cachorro-quente?</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-36,400,0</font>
                         <color>255,255,255</color>
@@ -3213,9 +3248,9 @@
             <instances>
                 <instance type="Resposta_Texto" uid="47">
                     <properties>
-                        <text>Vai se foder</text>
+                        <text>Alemanha</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-24,400,0</font>
+                        <font>Arial,-29.6,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -3243,9 +3278,9 @@
                 </instance>
                 <instance type="Resposta_Texto" uid="48">
                     <properties>
-                        <text>Me mama seu merda</text>
+                        <text>Austrália</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-24,400,0</font>
+                        <font>Arial,-29.6,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -3273,7 +3308,7 @@
                 </instance>
                 <instance type="Resposta_Texto" uid="46">
                     <properties>
-                        <text>O teu cú</text>
+                        <text>Estados Unidos</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-29.6,400,0</font>
                         <color>255,255,255</color>
