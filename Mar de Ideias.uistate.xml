@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Objetos para Pergunta/" />
-        <folder expanded="1" path="object-folder/Objetos para Resposta/" />
+        <folder expanded="0" path="object-folder/Objetos para Resposta/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -41,5 +41,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Resposta_BordaEsquerdaSuperior/" />
         <folder expanded="1" path="animation-folder/Peixes/" />
         <folder expanded="1" path="animation-folder/SpawnerPeixe1/" />
+        <folder expanded="1" path="animation-folder/Painel/" />
     </folders-expanded>
 </c2uistate>

@@ -31,10 +31,10 @@
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="5" name="Set frame" sid="432802638049653" type="Peixes">
-                    <param id="0" name="Frame number">4</param>
+                    <param id="0" name="Frame number">int(random(0, 5))</param>
                 </action>
                 <action id="-2" name="Set Y" sid="796003288410596" type="Peixes">
-                    <param id="0" name="Y">random(32, 1100)</param>
+                    <param id="0" name="Y">random(0, 1152)</param>
                 </action>
             </actions>
         </event-block>
@@ -43,10 +43,7 @@
                 <condition id="-2" name="On start of layout" sid="537848323541250" type="System" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="209671902330649" type="Peixes">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
+                <action id="2" name="Stop" sid="981627734018907" type="Peixes" />
             </actions>
         </event-block>
     </events>
