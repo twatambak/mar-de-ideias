@@ -439,231 +439,243 @@
                 </behaviors>
             </object-type>
         </object-folder>
-        <object-type name="Mar" sid="163520844153085">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Sine" sid="943330799695033">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <effects>
-                <effect-type name="ScanLines">
-                    <effect id="scanlines" />
-                </effect-type>
-            </effects>
-            <texture />
-        </object-type>
-        <object-type name="Detalhes1" sid="978016206040330">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Sine" sid="215251031374827">
-                    <behavior id="Sin" />
-                </behavior-type>
-                <behavior-type name="Sine2" sid="591708709350852">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\twata\Downloads\New Piskel(11).png" />
-        </object-type>
-        <object-type name="Detalhes2" sid="518603735762886">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Sine" sid="978612852228993">
-                    <behavior id="Sin" />
-                </behavior-type>
-                <behavior-type name="Sine2" sid="496158646380579">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\twata\Downloads\New Piskel(12).png" />
-        </object-type>
-        <object-type name="Detalhes3" sid="664172607530434">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Sine" sid="765717684239918">
-                    <behavior id="Sin" />
-                </behavior-type>
-                <behavior-type name="Sine2" sid="563153947612030">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\twata\Downloads\New Piskel(13).png" />
-        </object-type>
-        <object-type name="Peixes" sid="369714910389211">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="734969641399448">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="Sine" sid="138546460027073">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341065920796513" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="SpawnerPeixe1" sid="775261168318761">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346969869506328" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="BackgroundPainel" sid="539372319796831">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="Painel" sid="991546448164464">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="215716363664558" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(22).png">
-                        <collision-poly>
-                            <point x="0.125" y="0.5" />
-                            <point x="0.5" y="0.625" />
-                            <point x="0.875" y="0.5" />
-                            <point x="1" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Touch" sid="385934913944853">
-            <plugin id="Touch" />
-        </object-type>
-        <object-type name="BotaoPausa" sid="342887258447126">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="552911690454225">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852133390889981" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(30).png">
-                        <collision-poly>
-                            <point x="0.171875" y="0.171875" />
-                            <point x="0.5" y="0.03125" />
-                            <point x="0.828125" y="0.171875" />
-                            <point x="0.96875" y="0.5" />
-                            <point x="0.828125" y="0.828125" />
-                            <point x="0.5" y="0.953125" />
-                            <point x="0.171875" y="0.828125" />
-                            <point x="0.03125" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Barra" sid="604211158446856">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="72" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="859811746565912" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="BackgroundProfundidade" sid="158978664755042">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="468937815860932" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.515625" original-source="C:\Users\twata\Downloads\New Piskel(5).png">
-                        <collision-poly>
-                            <point x="0.3125" y="0.9375" />
-                            <point x="0.6875" y="0.9375" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Profundidade" sid="368386234101138">
-            <plugin id="Text" />
-        </object-type>
+        <object-folder name="Objetos do HUD">
+            <object-folder name="Detalhes">
+                <object-type name="BackgroundPainel" sid="539372319796831">
+                    <plugin id="TiledBg" />
+                    <texture />
+                </object-type>
+                <object-type name="BackgroundProfundidade" sid="158978664755042">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="468937815860932" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.515625" original-source="C:\Users\twata\Downloads\New Piskel(5).png">
+                                <collision-poly>
+                                    <point x="0.3125" y="0.9375" />
+                                    <point x="0.6875" y="0.9375" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="BordasPainel" sid="991546448164464">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="215716363664558" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(22).png">
+                                <collision-poly>
+                                    <point x="0.125" y="0.5" />
+                                    <point x="0.5" y="0.625" />
+                                    <point x="0.875" y="0.5" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Botões">
+                <object-type name="BotaoPausa" sid="342887258447126">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Sine" sid="552911690454225">
+                            <behavior id="Sin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852133390889981" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(30).png">
+                                <collision-poly>
+                                    <point x="0.171875" y="0.171875" />
+                                    <point x="0.5" y="0.03125" />
+                                    <point x="0.828125" y="0.171875" />
+                                    <point x="0.96875" y="0.5" />
+                                    <point x="0.828125" y="0.828125" />
+                                    <point x="0.5" y="0.953125" />
+                                    <point x="0.171875" y="0.828125" />
+                                    <point x="0.03125" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Objetos de Exibição">
+                <object-type name="BarraTempo" sid="604211158446856">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="72" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="859811746565912" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TextoProfundidade" sid="368386234101138">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="Objetos do Mar">
+            <object-type name="DetalhesMar1" sid="978016206040330">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="215251031374827">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="591708709350852">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\New Piskel(11).png" />
+            </object-type>
+            <object-type name="DetalhesMar2" sid="518603735762886">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="978612852228993">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="496158646380579">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\New Piskel(12).png" />
+            </object-type>
+            <object-type name="DetalhesMar3" sid="664172607530434">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="765717684239918">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="563153947612030">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\New Piskel(13).png" />
+            </object-type>
+            <object-type name="Mar" sid="163520844153085">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="943330799695033">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="ScanLines">
+                        <effect id="scanlines" />
+                    </effect-type>
+                </effects>
+                <texture />
+            </object-type>
+            <object-type name="Peixes" sid="369714910389211">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="734969641399448">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="138546460027073">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341065920796513" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SpawnerPeixe1" sid="775261168318761">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346969869506328" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Objetos Controladores">
+            <object-type name="Touch" sid="385934913944853">
+                <plugin id="Touch" />
+            </object-type>
+        </object-folder>
     </object-folder>
     <families />
     <layout-folder>

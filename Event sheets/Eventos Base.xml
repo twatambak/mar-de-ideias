@@ -8,6 +8,7 @@
         <variable constant="0" name="Tempo" sid="671440709629317" static="0" type="number">72</variable>
         <event-group description="Grupo responsável por realizar as definições iniciais do jogo." sid="153366938438702" title="Configurações Iniciais">
             <sub-events>
+                <comment>Define as webfontes para os textos.</comment>
                 <event-block sid="706926344378072">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="853415529372643" type="System" />
@@ -21,12 +22,13 @@
                             <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                         </action>
-                        <action id="5" name="Set web font" sid="403123847202730" type="Profundidade">
+                        <action id="5" name="Set web font" sid="403123847202730" type="TextoProfundidade">
                             <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                         </action>
                     </actions>
                 </event-block>
+                <comment>Para a animação dos peixes impedindo a alteração de frames.</comment>
                 <event-block sid="699822154850765">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="537848323541250" type="System" />
@@ -35,6 +37,7 @@
                         <action id="2" name="Stop" sid="981627734018907" type="Peixes" />
                     </actions>
                 </event-block>
+                <comment>Para a animação das bordas das respostas impedindo a alteração de frames.</comment>
                 <event-block sid="567271965831656">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="339149901694003" type="System" />
@@ -50,6 +53,7 @@
         </event-group>
         <event-group description="Grupo responsável por realizar as definições de funcionamento do jogo." sid="295051042907226" title="Configurações de Funcionamento do Jogo">
             <sub-events>
+                <comment>A cada 1 segundo cria um novo peixe no objeto definido como o spawner.</comment>
                 <event-block sid="803390285246385">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="521402868480607" type="System">
@@ -70,6 +74,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Ao tocar no texto da resposta é verificado se a resposta foi a certa ou não e o jogo prossegue baseado nessa informação.</comment>
                 <event-block sid="102340033171397">
                     <conditions>
                         <condition id="3" name="On touched object" sid="717939556501120" type="Touch">
@@ -78,6 +83,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
+                        <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID um.</comment>
                         <event-block sid="122387391208035">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="447653444903629" type="Resposta_Texto">
@@ -93,6 +99,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="543810181050010">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="680237972259826" type="Resposta_BordaDireitaInferior">
@@ -107,6 +114,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="630088219389699">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="455378005193894" type="Resposta_BordaDireitaSuperior">
@@ -121,6 +129,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="986667595956094">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="856971515560520" type="Resposta_BordaEsquerdaInferior">
@@ -135,6 +144,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="809134414969874">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="107065524952392" type="Resposta_BordaEsquerdaSuperior">
@@ -149,6 +159,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou.</comment>
                                 <event-block sid="110398144895594">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="190186653266803" type="Resposta_Background">
@@ -177,6 +188,9 @@
                                             <param id="0" name="Mode">1</param>
                                             <param id="1" name="Effect">&quot;SetColor&quot;</param>
                                         </action>
+                                        <action id="-16" name="Wait" sid="360154620322527" type="System">
+                                            <param id="0" name="Seconds">0.4</param>
+                                        </action>
                                         <action id="-12" name="Set group active" sid="648477589845920" type="System">
                                             <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
                                             <param id="1" name="State">1</param>
@@ -189,6 +203,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID dois.</comment>
                         <event-block sid="959647284965122">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="981365932124629" type="Resposta_Texto">
@@ -204,6 +219,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="702656135747252">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="239427709472550" type="Resposta_BordaDireitaInferior">
@@ -218,6 +234,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="282518642892666">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="647472014015924" type="Resposta_BordaDireitaSuperior">
@@ -232,6 +249,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="683263751336313">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="821186830808170" type="Resposta_BordaEsquerdaInferior">
@@ -246,6 +264,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="821557776053439">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="281551023588651" type="Resposta_BordaEsquerdaSuperior">
@@ -260,6 +279,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou.</comment>
                                 <event-block sid="806671906226063">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="406170800288748" type="Resposta_Background">
@@ -303,6 +323,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID três.</comment>
                         <event-block sid="722051685143146">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="418607706573253" type="Resposta_Texto">
@@ -318,6 +339,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="725891599199513">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="494595656974810" type="Resposta_BordaDireitaInferior">
@@ -332,6 +354,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="387639894763402">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="550052261285507" type="Resposta_BordaDireitaSuperior">
@@ -346,6 +369,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="688573285021004">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="923663936605454" type="Resposta_BordaEsquerdaInferior">
@@ -360,6 +384,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="478040198929429">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="679137113533968" type="Resposta_BordaEsquerdaSuperior">
@@ -374,6 +399,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou.</comment>
                                 <event-block sid="459217037456243">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="194446435741059" type="Resposta_Background">
@@ -402,6 +428,9 @@
                                             <param id="0" name="Mode">1</param>
                                             <param id="1" name="Effect">&quot;SetColor&quot;</param>
                                         </action>
+                                        <action id="-16" name="Wait" sid="983013547452402" type="System">
+                                            <param id="0" name="Seconds">0.4</param>
+                                        </action>
                                         <action id="-12" name="Set group active" sid="426355902276864" type="System">
                                             <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
                                             <param id="1" name="State">1</param>
@@ -416,16 +445,18 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>Garante que a barra referente ao tempo exiba a animação em paralelo com a variável de tempo.</comment>
                 <event-block sid="859489550218633">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="246578565015066" type="System" />
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="652962370236069" type="Barra">
+                        <action id="5" name="Set frame" sid="652962370236069" type="BarraTempo">
                             <param id="0" name="Frame number">72 - Tempo</param>
                         </action>
                     </actions>
                 </event-block>
+                <comment>A cada 0.5 segundos subtrai 1 do tempo.</comment>
                 <event-block sid="329034496521259">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="129801212027113" type="System">
@@ -439,12 +470,13 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Garante que o texto que exibe a profundidade sempre exibe a mesma.</comment>
                 <event-block sid="551938726267136">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="356191052634283" type="System" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="890465767846184" type="Profundidade">
+                        <action id="0" name="Set text" sid="890465767846184" type="TextoProfundidade">
                             <param id="0" name="Text">Profundidade &amp;  &quot;m&quot;</param>
                         </action>
                     </actions>
@@ -453,6 +485,7 @@
         </event-group>
         <event-group description="Grupo responsável por gerir o encerramento da fase." inactive="1" sid="240293749142907" title="Configurações de Finalização de Fase">
             <sub-events>
+                <comment>Quando o grupo é ativado inicia o fade de todos os elementos relacionados.</comment>
                 <event-block sid="392404140038507">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="424643370763461" type="System">
