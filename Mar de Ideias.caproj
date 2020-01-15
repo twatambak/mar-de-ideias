@@ -13,13 +13,16 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="scanlines">Scan lines</effect>
+        <effect author="Scirra" id="setcolor">Set color</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -48,6 +51,11 @@
         <object-folder name="Objetos para Pergunta">
             <object-type name="Pergunta_Background" sid="261369006307672">
                 <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="962130906086664">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
                 <texture />
             </object-type>
             <object-type name="Pergunta_BordaDireitaInferior" sid="215559273120718">
@@ -136,18 +144,68 @@
             </object-type>
             <object-type name="Pergunta_Texto" sid="504076723751843">
                 <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="488255398959404">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
             </object-type>
         </object-folder>
         <object-folder name="Objetos para Resposta">
             <object-type name="Resposta_Background" sid="472729257087486">
                 <plugin id="TiledBg" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="449334640665835" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="217250059783193">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="SetColor">
+                        <effect id="setcolor" />
+                    </effect-type>
+                </effects>
                 <texture />
             </object-type>
             <object-type name="Resposta_BordaDireitaInferior" sid="439625293869741">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="279027149898730" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="222533645104656">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984278532020045" speed="5">
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984278532020045" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(4).png">
+                            <collision-poly>
+                                <point x="0.5" y="0.78125" />
+                                <point x="1" y="0" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.8125" y="0.8125" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.71875" y="0.5" />
+                                <point x="0.65625" y="0.65625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.5" y="0.78125" />
+                                <point x="1" y="0" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.8125" y="0.8125" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.71875" y="0.5" />
+                                <point x="0.65625" y="0.65625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0.5" y="0.78125" />
                                 <point x="1" y="0" />
@@ -164,9 +222,41 @@
             </object-type>
             <object-type name="Resposta_BordaDireitaSuperior" sid="153695594752749">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="807810244826751" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="983439512522649">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636217942610808" speed="5">
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636217942610808" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(4).png">
+                            <collision-poly>
+                                <point x="0.78125" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.03125" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.78125" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.03125" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0.78125" y="0.5" />
                                 <point x="0" y="0" />
@@ -183,9 +273,41 @@
             </object-type>
             <object-type name="Resposta_BordaEsquerdaInferior" sid="629144379999786">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="273567404166285" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="583723574307627">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636062725658360" speed="5">
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636062725658360" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(3).png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.78125" />
+                                <point x="0.34375" y="0.65625" />
+                                <point x="0.28125" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.1875" y="0.8125" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.78125" />
+                                <point x="0.34375" y="0.65625" />
+                                <point x="0.28125" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.1875" y="0.8125" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0" y="0" />
                                 <point x="0.5" y="0.78125" />
@@ -202,9 +324,41 @@
             </object-type>
             <object-type name="Resposta_BordaEsquerdaSuperior" sid="543901779722764">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="656190428233890" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="784526379746507">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="832317021947731" speed="5">
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="832317021947731" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(2).png">
+                            <collision-poly>
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0.015625" />
+                                <point x="1" y="0" />
+                                <point x="0.0625" y="0.5" />
+                                <point x="0.21875" y="0.21875" />
+                                <point x="0.5" y="0.078125" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0.015625" />
+                                <point x="1" y="0" />
+                                <point x="0.0625" y="0.5" />
+                                <point x="0.21875" y="0.21875" />
+                                <point x="0.5" y="0.078125" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
                                 <point x="0.171875" y="0.171875" />
                                 <point x="0.5" y="0.015625" />
@@ -221,10 +375,26 @@
             </object-type>
             <object-type name="Resposta_BordaHorizontal" sid="132204930100799">
                 <plugin id="TiledBg" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="302696150171055" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="358314497800867">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
                 <texture original-source="C:\Users\twata\Downloads\Borda Esquerda(5).png" />
             </object-type>
             <object-type name="Resposta_BordaVertical" sid="315353659425380">
                 <plugin id="TiledBg" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="321931655047538" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="601745532318049">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
                 <texture original-source="C:\Users\twata\Downloads\Borda Esquerda(5).png" />
             </object-type>
             <object-type name="Resposta_Texto" sid="617535852015810">
@@ -232,6 +402,11 @@
                 <instance-variables>
                     <instance-variable name="ID" sid="159773418320896" type="number" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="434146003005328">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
             </object-type>
         </object-folder>
         <object-type name="Mar" sid="163520844153085">
@@ -335,6 +510,112 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Touch" sid="385934913944853">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="BotaoPausa" sid="342887258447126">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="552911690454225">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852133390889981" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(30).png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.828125" y="0.171875" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.828125" y="0.828125" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.171875" y="0.828125" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Barra" sid="604211158446856">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="72" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="859811746565912" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -343,7 +624,13 @@
     <event-folder>
         <event-sheet>Eventos Base.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Touch" uid="96">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
