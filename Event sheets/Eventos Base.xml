@@ -3,378 +3,460 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base</name>
     <events>
+        <variable constant="0" name="Game" sid="659070134241461" static="0" type="number">1</variable>
+        <variable constant="0" name="Profundidade" sid="716770459161878" static="0" type="number">100000</variable>
         <variable constant="0" name="Tempo" sid="671440709629317" static="0" type="number">72</variable>
-        <event-block sid="567271965831656">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="339149901694003" type="System" />
-            </conditions>
-            <actions>
-                <action id="2" name="Stop" sid="212447386860358" type="Resposta_BordaDireitaInferior" />
-                <action id="2" name="Stop" sid="815796207945278" type="Resposta_BordaDireitaSuperior" />
-                <action id="2" name="Stop" sid="885714980214866" type="Resposta_BordaEsquerdaInferior" />
-                <action id="2" name="Stop" sid="964612720951738" type="Resposta_BordaEsquerdaSuperior" />
-            </actions>
-        </event-block>
-        <event-block sid="706926344378072">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="853415529372643" type="System" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set web font" sid="497502731187693" type="Pergunta_Texto">
-                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                </action>
-                <action id="5" name="Set web font" sid="601249429088276" type="Resposta_Texto">
-                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="803390285246385">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="521402868480607" type="System">
-                    <param id="0" name="Interval (seconds)">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Spawn another object" sid="297100384035187" type="SpawnerPeixe1">
-                    <param id="0" name="Object">Peixes</param>
-                    <param id="1" name="Layer">&quot;Detalhes&quot;</param>
-                    <param id="2" name="Image point">0</param>
-                </action>
-                <action id="5" name="Set frame" sid="432802638049653" type="Peixes">
-                    <param id="0" name="Frame number">int(random(0, 5))</param>
-                </action>
-                <action id="-2" name="Set Y" sid="796003288410596" type="Peixes">
-                    <param id="0" name="Y">random(0, 1152)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="699822154850765">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="537848323541250" type="System" />
-            </conditions>
-            <actions>
-                <action id="2" name="Stop" sid="981627734018907" type="Peixes" />
-            </actions>
-        </event-block>
-        <event-block sid="102340033171397">
-            <conditions>
-                <condition id="3" name="On touched object" sid="717939556501120" type="Touch">
-                    <param id="0" name="Object">Resposta_Texto</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="Grupo responsável por realizar as definições iniciais do jogo." sid="153366938438702" title="Configurações Iniciais">
             <sub-events>
-                <event-block sid="122387391208035">
+                <event-block sid="706926344378072">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="447653444903629" type="Resposta_Texto">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="853415529372643" type="System" />
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="543810181050010">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="680237972259826" type="Resposta_BordaDireitaInferior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="282433049679233" type="Resposta_BordaDireitaInferior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="630088219389699">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="455378005193894" type="Resposta_BordaDireitaSuperior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="500782822748773" type="Resposta_BordaDireitaSuperior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="986667595956094">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="856971515560520" type="Resposta_BordaEsquerdaInferior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="610050338683106" type="Resposta_BordaEsquerdaInferior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="809134414969874">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="107065524952392" type="Resposta_BordaEsquerdaSuperior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="144578382404445" type="Resposta_BordaEsquerdaSuperior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="110398144895594">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="190186653266803" type="Resposta_Background">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-28" name="Set effect parameter" sid="622947801940484" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">0</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="206906747896027" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="890133544400524" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-27" name="Set effect enabled" sid="422832698078710" type="Resposta_Background">
-                                    <param id="0" name="Mode">1</param>
-                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="5" name="Set web font" sid="497502731187693" type="Pergunta_Texto">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="601249429088276" type="Resposta_Texto">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="403123847202730" type="Profundidade">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
-                <event-block sid="959647284965122">
+                <event-block sid="699822154850765">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="981365932124629" type="Resposta_Texto">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="537848323541250" type="System" />
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="702656135747252">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="239427709472550" type="Resposta_BordaDireitaInferior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="952051230115490" type="Resposta_BordaDireitaInferior">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="282518642892666">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="647472014015924" type="Resposta_BordaDireitaSuperior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="349539487868195" type="Resposta_BordaDireitaSuperior">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="683263751336313">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="821186830808170" type="Resposta_BordaEsquerdaInferior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="648250019308264" type="Resposta_BordaEsquerdaInferior">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="821557776053439">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="281551023588651" type="Resposta_BordaEsquerdaSuperior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="738241150811661" type="Resposta_BordaEsquerdaSuperior">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="806671906226063">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="406170800288748" type="Resposta_Background">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-28" name="Set effect parameter" sid="715045688720003" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="350483643779553" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="538389325649586" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-27" name="Set effect enabled" sid="950515742204917" type="Resposta_Background">
-                                    <param id="0" name="Mode">1</param>
-                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="166162990310734" type="System">
-                                    <param id="0" name="Seconds">0.4</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="780288534677865" type="System">
-                                    <param id="0" name="Group name">&quot;Fade&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="2" name="Stop" sid="981627734018907" type="Peixes" />
+                    </actions>
                 </event-block>
-                <event-block sid="722051685143146">
+                <event-block sid="567271965831656">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="418607706573253" type="Resposta_Texto">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
-                        </condition>
+                        <condition id="-2" name="On start of layout" sid="339149901694003" type="System" />
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="725891599199513">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="494595656974810" type="Resposta_BordaDireitaInferior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="480906959494702" type="Resposta_BordaDireitaInferior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="387639894763402">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="550052261285507" type="Resposta_BordaDireitaSuperior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="624261344377534" type="Resposta_BordaDireitaSuperior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="688573285021004">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="923663936605454" type="Resposta_BordaEsquerdaInferior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="495993602739946" type="Resposta_BordaEsquerdaInferior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="478040198929429">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="679137113533968" type="Resposta_BordaEsquerdaSuperior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="568267373338259" type="Resposta_BordaEsquerdaSuperior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="459217037456243">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="194446435741059" type="Resposta_Background">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-28" name="Set effect parameter" sid="834253216394386" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">0</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="303161802608792" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="800019908485727" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-27" name="Set effect enabled" sid="619223726361133" type="Resposta_Background">
-                                    <param id="0" name="Mode">1</param>
-                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="2" name="Stop" sid="212447386860358" type="Resposta_BordaDireitaInferior" />
+                        <action id="2" name="Stop" sid="815796207945278" type="Resposta_BordaDireitaSuperior" />
+                        <action id="2" name="Stop" sid="885714980214866" type="Resposta_BordaEsquerdaInferior" />
+                        <action id="2" name="Stop" sid="964612720951738" type="Resposta_BordaEsquerdaSuperior" />
+                    </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-group description="" inactive="1" sid="240293749142907" title="Fade">
+        </event-group>
+        <event-group description="Grupo responsável por realizar as definições de funcionamento do jogo." sid="295051042907226" title="Configurações de Funcionamento do Jogo">
+            <sub-events>
+                <event-block sid="803390285246385">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="521402868480607" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="297100384035187" type="SpawnerPeixe1">
+                            <param id="0" name="Object">Peixes</param>
+                            <param id="1" name="Layer">&quot;Detalhes&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="432802638049653" type="Peixes">
+                            <param id="0" name="Frame number">int(random(0, 5))</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="796003288410596" type="Peixes">
+                            <param id="0" name="Y">random(0, 1152)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="102340033171397">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="717939556501120" type="Touch">
+                            <param id="0" name="Object">Resposta_Texto</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="122387391208035">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="447653444903629" type="Resposta_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="545617553385994" type="System">
+                                    <param id="0" name="Variable">Game</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="543810181050010">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="680237972259826" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="282433049679233" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="630088219389699">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="455378005193894" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="500782822748773" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="986667595956094">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="856971515560520" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="610050338683106" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="809134414969874">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="107065524952392" type="Resposta_BordaEsquerdaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="144578382404445" type="Resposta_BordaEsquerdaSuperior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="110398144895594">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="190186653266803" type="Resposta_Background">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="622947801940484" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="206906747896027" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="890133544400524" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="422832698078710" type="Resposta_Background">
+                                            <param id="0" name="Mode">1</param>
+                                            <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="648477589845920" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="806128889123190" type="System">
+                                            <param id="0" name="Variable">Game</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="959647284965122">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="981365932124629" type="Resposta_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="943231291371795" type="System">
+                                    <param id="0" name="Variable">Game</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="702656135747252">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="239427709472550" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="952051230115490" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="282518642892666">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="647472014015924" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="349539487868195" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="683263751336313">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="821186830808170" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="648250019308264" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="821557776053439">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="281551023588651" type="Resposta_BordaEsquerdaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="738241150811661" type="Resposta_BordaEsquerdaSuperior">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="806671906226063">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="406170800288748" type="Resposta_Background">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="715045688720003" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="350483643779553" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="538389325649586" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="950515742204917" type="Resposta_Background">
+                                            <param id="0" name="Mode">1</param>
+                                            <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="166162990310734" type="System">
+                                            <param id="0" name="Seconds">0.4</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="780288534677865" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="939112985532308" type="System">
+                                            <param id="0" name="Variable">Game</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="722051685143146">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="418607706573253" type="Resposta_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="279322699459240" type="System">
+                                    <param id="0" name="Variable">Game</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="725891599199513">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="494595656974810" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="480906959494702" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="387639894763402">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="550052261285507" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="624261344377534" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="688573285021004">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="923663936605454" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="495993602739946" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="478040198929429">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="679137113533968" type="Resposta_BordaEsquerdaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="568267373338259" type="Resposta_BordaEsquerdaSuperior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="459217037456243">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="194446435741059" type="Resposta_Background">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-28" name="Set effect parameter" sid="834253216394386" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="303161802608792" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="800019908485727" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="619223726361133" type="Resposta_Background">
+                                            <param id="0" name="Mode">1</param>
+                                            <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="426355902276864" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="369949600843731" type="System">
+                                            <param id="0" name="Variable">Game</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="859489550218633">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="246578565015066" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="652962370236069" type="Barra">
+                            <param id="0" name="Frame number">72 - Tempo</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="329034496521259">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="129801212027113" type="System">
+                            <param id="0" name="Interval (seconds)">0.5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="109301008816063" type="System">
+                            <param id="0" name="Variable">Tempo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="551938726267136">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="356191052634283" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="890465767846184" type="Profundidade">
+                            <param id="0" name="Text">Profundidade &amp;  &quot;m&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por gerir o encerramento da fase." inactive="1" sid="240293749142907" title="Configurações de Finalização de Fase">
             <sub-events>
                 <event-block sid="392404140038507">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="424643370763461" type="System">
-                            <param id="0" name="Group name">&quot;Fade&quot;</param>
+                            <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -386,32 +468,17 @@
                         <action behavior="Fade" id="1" name="Start fade" sid="183362133880576" type="Resposta_BordaHorizontal" />
                         <action behavior="Fade" id="1" name="Start fade" sid="986743413636969" type="Resposta_BordaVertical" />
                         <action behavior="Fade" id="1" name="Start fade" sid="605822489964479" type="Resposta_Texto" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="591599158967509" type="Pergunta_Background" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="578488200668694" type="Pergunta_BordaEsquerdaSuperior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="565043103644671" type="Pergunta_BordaEsquerdaInferior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="486070128511251" type="Pergunta_BordaDireitaSuperior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="486316591313214" type="Pergunta_BordaDireitaInferior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="287564097659827" type="Pergunta_BordaHorizontal" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="705889743798281" type="Pergunta_BordaVertical" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="753735507713333" type="Pergunta_Texto" />
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="859489550218633">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="246578565015066" type="System" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="652962370236069" type="Barra">
-                    <param id="0" name="Frame number">72 - Tempo</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="329034496521259">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="129801212027113" type="System">
-                    <param id="0" name="Interval (seconds)">0.5</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="109301008816063" type="System">
-                    <param id="0" name="Variable">Tempo</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
