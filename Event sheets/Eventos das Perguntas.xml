@@ -128,6 +128,43 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+                <event-group description="Definição da pergunta. (Resposta da pergunta: 1822" sid="698174218636732" title="Pergunta 4: Em que ano foi declarada a independência do Brasil?">
+                    <sub-events>
+                        <event-block sid="964961138093045">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="605367404081785" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="200266460394154" type="ArrayPerguntas">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;Em que ano foi declarada a independência do Brasil?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="264585605545613">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="268052699884379" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Insert" sid="108130080738043" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;1826&quot;</param>
+                                    <param id="1" name="Index">4</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="550475519368271" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;1830&quot;</param>
+                                    <param id="1" name="Index">4</param>
+                                    <param id="2" name="Axis">1</param>
+                                </action>
+                                <action id="10" name="Insert" sid="645722401219536" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;1822&quot;</param>
+                                    <param id="1" name="Index">4</param>
+                                    <param id="2" name="Axis">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
     </events>
