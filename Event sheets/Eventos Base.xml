@@ -3,9 +3,74 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base</name>
     <events>
+        <variable constant="0" name="Escolha" sid="986418115884972" static="0" type="number">1</variable>
         <include>Eventos das Perguntas</include>
         <event-group description="Grupo responsável por realizar as definições iniciais do jogo." sid="153366938438702" title="Configurações Iniciais">
             <sub-events>
+                <event-block sid="567061480708534">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="315369687278890" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="594735424893231" type="System">
+                            <param id="0" name="Variable">PerguntaAtual</param>
+                            <param id="1" name="Value">int(random(1 , TotalPerguntas))</param>
+                        </action>
+                        <action id="0" name="Set text" sid="718721159855695" type="Pergunta_Texto">
+                            <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="610810872192629">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="457873802062748" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="621005599853459">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="941398922007757" type="Resposta_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="689589704927600" type="Resposta_Texto">
+                                    <param id="0" name="Text">ArrayRespostas.At(PerguntaAtual, 0, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="841399466426735">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="276196724852555" type="Resposta_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="118450275179806" type="Resposta_Texto">
+                                    <param id="0" name="Text">ArrayRespostas.At(0, PerguntaAtual, 0)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="156202445889609">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="794288333406524" type="Resposta_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="384308363789017" type="Resposta_Texto">
+                                    <param id="0" name="Text">ArrayRespostas.At(0, 0, PerguntaAtual)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <comment>Define as webfontes para os textos.</comment>
                 <event-block sid="706926344378072">
                     <conditions>
@@ -98,68 +163,28 @@
                             <actions />
                             <sub-events>
                                 <comment>Garante a troca de frames para o sprite adequado.</comment>
-                                <event-block sid="543810181050010">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="680237972259826" type="Resposta_BordaDireitaInferior">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="282433049679233" type="Resposta_BordaDireitaInferior">
-                                            <param id="0" name="Frame number">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Garante a troca de frames para o sprite adequado.</comment>
-                                <event-block sid="630088219389699">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="455378005193894" type="Resposta_BordaDireitaSuperior">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="500782822748773" type="Resposta_BordaDireitaSuperior">
-                                            <param id="0" name="Frame number">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="986667595956094">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="856971515560520" type="Resposta_BordaEsquerdaInferior">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="610050338683106" type="Resposta_BordaEsquerdaInferior">
-                                            <param id="0" name="Frame number">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Garante a troca de frames para o sprite adequado.</comment>
-                                <event-block sid="809134414969874">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="107065524952392" type="Resposta_BordaEsquerdaSuperior">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="144578382404445" type="Resposta_BordaEsquerdaSuperior">
-                                            <param id="0" name="Frame number">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou.</comment>
-                                <event-block sid="110398144895594">
-                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="856971515560520" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="455378005193894" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="680237972259826" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
                                         <condition id="-7" name="Compare instance variable" sid="190186653266803" type="Resposta_Background">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
@@ -167,35 +192,13 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-28" name="Set effect parameter" sid="622947801940484" type="Resposta_Background">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">0</param>
-                                            <param id="2" name="Value">70</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="206906747896027" type="Resposta_Background">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">1</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="890133544400524" type="Resposta_Background">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">2</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                        <action id="-27" name="Set effect enabled" sid="422832698078710" type="Resposta_Background">
-                                            <param id="0" name="Mode">1</param>
-                                            <param id="1" name="Effect">&quot;SetColor&quot;</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="360154620322527" type="System">
-                                            <param id="0" name="Seconds">0.4</param>
-                                        </action>
-                                        <action id="-12" name="Set group active" sid="648477589845920" type="System">
-                                            <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                        <action id="-12" name="Set group active" sid="619200029065023" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
                                             <param id="1" name="State">1</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="806128889123190" type="System">
-                                            <param id="0" name="Variable">Game</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-9" name="Set value" sid="563341533125311" type="System">
+                                            <param id="0" name="Variable">Escolha</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -220,66 +223,26 @@
                                 <comment>Garante a troca de frames para o sprite adequado.</comment>
                                 <event-block sid="702656135747252">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="239427709472550" type="Resposta_BordaDireitaInferior">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">2</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="952051230115490" type="Resposta_BordaDireitaInferior">
-                                            <param id="0" name="Frame number">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Garante a troca de frames para o sprite adequado.</comment>
-                                <event-block sid="282518642892666">
-                                    <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="647472014015924" type="Resposta_BordaDireitaSuperior">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="349539487868195" type="Resposta_BordaDireitaSuperior">
-                                            <param id="0" name="Frame number">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Garante a troca de frames para o sprite adequado.</comment>
-                                <event-block sid="683263751336313">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="821186830808170" type="Resposta_BordaEsquerdaInferior">
+                                        <condition id="-7" name="Compare instance variable" sid="239427709472550" type="Resposta_BordaDireitaInferior">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="648250019308264" type="Resposta_BordaEsquerdaInferior">
-                                            <param id="0" name="Frame number">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Garante a troca de frames para o sprite adequado.</comment>
-                                <event-block sid="821557776053439">
-                                    <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="281551023588651" type="Resposta_BordaEsquerdaSuperior">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="5" name="Set frame" sid="738241150811661" type="Resposta_BordaEsquerdaSuperior">
-                                            <param id="0" name="Frame number">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou.</comment>
-                                <event-block sid="806671906226063">
-                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="821186830808170" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
                                         <condition id="-7" name="Compare instance variable" sid="406170800288748" type="Resposta_Background">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
@@ -287,35 +250,13 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-28" name="Set effect parameter" sid="715045688720003" type="Resposta_Background">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">0</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="350483643779553" type="Resposta_Background">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">1</param>
-                                            <param id="2" name="Value">70</param>
-                                        </action>
-                                        <action id="-28" name="Set effect parameter" sid="538389325649586" type="Resposta_Background">
-                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                            <param id="1" name="Parameter index">2</param>
-                                            <param id="2" name="Value">0</param>
-                                        </action>
-                                        <action id="-27" name="Set effect enabled" sid="950515742204917" type="Resposta_Background">
-                                            <param id="0" name="Mode">1</param>
-                                            <param id="1" name="Effect">&quot;SetColor&quot;</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="166162990310734" type="System">
-                                            <param id="0" name="Seconds">0.4</param>
-                                        </action>
-                                        <action id="-12" name="Set group active" sid="780288534677865" type="System">
-                                            <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                        <action id="-12" name="Set group active" sid="740152050748233" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
                                             <param id="1" name="State">1</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="939112985532308" type="System">
-                                            <param id="0" name="Variable">Game</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-9" name="Set value" sid="983954285010084" type="System">
+                                            <param id="0" name="Variable">Escolha</param>
+                                            <param id="1" name="Value">2</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -511,69 +452,223 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="567061480708534">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="315369687278890" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="594735424893231" type="System">
-                    <param id="0" name="Variable">PerguntaAtual</param>
-                    <param id="1" name="Value">int(random(1 , TotalPerguntas))</param>
-                </action>
-                <action id="0" name="Set text" sid="718721159855695" type="Pergunta_Texto">
-                    <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="610810872192629">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="457873802062748" type="System" />
-            </conditions>
-            <actions />
+        <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é errada." inactive="1" sid="606436072616008" title="Configurações de Erro da Pergunta">
             <sub-events>
-                <event-block sid="621005599853459">
+                <event-block sid="538070916601017">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="941398922007757" type="Resposta_Texto">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                        <condition id="-15" name="Is group active" sid="469314801444808" type="System">
+                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="689589704927600" type="Resposta_Texto">
-                            <param id="0" name="Text">ArrayRespostas.At(PerguntaAtual, 0, 0)</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="565695385892117">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="513413537341622" type="Resposta_BordaEsquerdaSuperior">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="317767332334402" type="Resposta_BordaEsquerdaInferior">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="285198826360668" type="Resposta_BordaDireitaSuperior">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="899791131233227" type="Resposta_BordaDireitaInferior">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="763645355703182" type="Resposta_Background">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="476287247388491" type="Resposta_BordaDireitaInferior">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="558522404547978" type="Resposta_BordaDireitaSuperior">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="481436148657466" type="Resposta_BordaEsquerdaInferior">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="362911747382342" type="Resposta_BordaEsquerdaSuperior">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
-                <event-block sid="841399466426735">
+                <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou.</comment>
+                <event-block sid="329498087310846">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="276196724852555" type="Resposta_Texto">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
+                        <condition id="-15" name="Is group active" sid="782565729815354" type="System">
+                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="118450275179806" type="Resposta_Texto">
-                            <param id="0" name="Text">ArrayRespostas.At(0, PerguntaAtual, 0)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="156202445889609">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="794288333406524" type="Resposta_Texto">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="384308363789017" type="Resposta_Texto">
-                            <param id="0" name="Text">ArrayRespostas.At(0, 0, PerguntaAtual)</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="418627239775540">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="449131598858348" type="Resposta_Background">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-28" name="Set effect parameter" sid="988251954104526" type="Resposta_Background">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">70</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="220563526420309" type="Resposta_Background">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="815039554233503" type="Resposta_Background">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="166614552211735" type="Resposta_Background">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="338829587461695" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="541218296800959" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="962875470768118" type="System">
+                                    <param id="0" name="Variable">Game</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
+        </event-group>
+        <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é acertada." inactive="1" sid="400109918349410" title="Configurações de Acerto da Pergunta">
+            <sub-events>
+                <event-block sid="878509293529869">
+                    <conditions>
+                        <condition id="-15" name="Is group active" sid="845982711181454" type="System">
+                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="751613329070371">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="105495102787906" type="Resposta_BordaEsquerdaSuperior">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="241795383862421" type="Resposta_BordaEsquerdaInferior">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="290720761168172" type="Resposta_BordaDireitaSuperior">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="875763229371716" type="Resposta_BordaDireitaInferior">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="926614308558613" type="Resposta_Background">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="474423301020810" type="Resposta_BordaDireitaInferior">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="649545310552463" type="Resposta_BordaDireitaSuperior">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="315341067550055" type="Resposta_BordaEsquerdaInferior">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="362822266237135" type="Resposta_BordaEsquerdaSuperior">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou.</comment>
+                <event-block sid="723184210615569">
+                    <conditions>
+                        <condition id="-15" name="Is group active" sid="859856855854196" type="System">
+                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="600363592366589">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="109741599762749" type="Resposta_Background">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Escolha</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-28" name="Set effect parameter" sid="477968868828699" type="Resposta_Background">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="294450662890649" type="Resposta_Background">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">70</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="120653713064411" type="Resposta_Background">
+                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-27" name="Set effect enabled" sid="905131377461434" type="Resposta_Background">
+                                    <param id="0" name="Mode">1</param>
+                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="120349474728300" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="500233910492407" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="350478243521876" type="System">
+                                    <param id="0" name="Variable">Game</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

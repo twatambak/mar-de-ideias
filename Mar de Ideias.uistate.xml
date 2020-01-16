@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Base</layout>
-        <event-sheet order="1">Eventos Base</event-sheet>
-        <event-sheet active="1" order="2">Eventos das Perguntas</event-sheet>
+        <event-sheet active="1" order="1">Eventos Base</event-sheet>
+        <event-sheet order="2">Eventos das Perguntas</event-sheet>
         <event-sheet order="3">Configuracoes</event-sheet>
     </open-tabs>
     <properties>
