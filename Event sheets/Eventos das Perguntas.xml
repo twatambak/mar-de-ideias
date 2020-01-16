@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos das Perguntas</name>
+    <events>
+        <event-group description="Insere em um array as perguntas usadas no jogo." sid="960394396194523" title="Criação das Perguntas">
+            <sub-events>
+                <event-group description="" sid="833821214137313" title="Pergunta 1">
+                    <sub-events>
+                        <comment>PERGUNTA 1: Qual a capital do Amazonas?</comment>
+                        <comment>R: Manaus</comment>
+                        <event-block sid="140254028662606">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="598451746350549" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Insert" sid="442270852904775" type="ArrayPerguntas">
+                                    <param id="0" name="Value">&quot;Qual a capital do Amazonas?&quot;</param>
+                                    <param id="1" name="Index">0</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="916798940202058">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="337206231449403" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set at XYZ" sid="887969551030611" type="ArrayRespostas">
+                                    <param id="0" name="X">1.01</param>
+                                    <param id="1" name="Y">0</param>
+                                    <param id="2" name="Z">0</param>
+                                    <param id="3" name="Value">&quot;Manaus&quot;</param>
+                                </action>
+                                <action id="4" name="Set at XYZ" sid="243761391130823" type="ArrayRespostas">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Y">1.02</param>
+                                    <param id="2" name="Z">0</param>
+                                    <param id="3" name="Value">&quot;Coari&quot;</param>
+                                </action>
+                                <action id="4" name="Set at XYZ" sid="742344211717078" type="ArrayRespostas">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Y">0</param>
+                                    <param id="2" name="Z">1.03</param>
+                                    <param id="3" name="Value">&quot;Porto Velho&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <comment>PERGUNTA 2: Em que cidade foi inventada a Maria-Mole?</comment>
+        <event-block sid="386960240972369">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="518249973634519" type="System" />
+            </conditions>
+            <actions>
+                <action id="10" name="Insert" sid="164948552724906" type="ArrayPerguntas">
+                    <param id="0" name="Value">&quot;Em que cidade foi inventada a Maria-Mole?&quot;</param>
+                    <param id="1" name="Index">1</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="827798825654451">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="856973339226014" type="System" />
+            </conditions>
+            <actions>
+                <action id="10" name="Insert" sid="536563582755505" type="ArrayRespostas">
+                    <param id="0" name="Value">&quot;São Paulo&quot;</param>
+                    <param id="1" name="Index">1</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+                <action id="10" name="Insert" sid="856834618402488" type="ArrayRespostas">
+                    <param id="0" name="Value">&quot;Joinville&quot;</param>
+                    <param id="1" name="Index">1</param>
+                    <param id="2" name="Axis">1</param>
+                </action>
+                <action id="10" name="Insert" sid="806895678723683" type="ArrayRespostas">
+                    <param id="0" name="Value">&quot;Rio de Janeiro&quot;</param>
+                    <param id="1" name="Index">1</param>
+                    <param id="2" name="Axis">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="430982329210678">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="242639188254911" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Set size" sid="524573224554009" type="ArrayRespostas">
+                    <param id="0" name="Width">100</param>
+                    <param id="1" name="Height">100</param>
+                    <param id="2" name="Depth">100</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -10,6 +10,7 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -676,6 +677,12 @@
                 <plugin id="Touch" />
             </object-type>
         </object-folder>
+        <object-type global="1" name="ArrayPerguntas" sid="454131325779381">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="ArrayRespostas" sid="450885803684707">
+            <plugin id="Arr" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -683,6 +690,7 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Base.xml</event-sheet>
+        <event-sheet>Eventos das Perguntas.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">
