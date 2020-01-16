@@ -14,10 +14,9 @@
                                 <condition id="-2" name="On start of layout" sid="598451746350549" type="System" />
                             </conditions>
                             <actions>
-                                <action id="10" name="Insert" sid="442270852904775" type="ArrayPerguntas">
-                                    <param id="0" name="Value">&quot;Qual a capital do Amazonas?&quot;</param>
-                                    <param id="1" name="Index">0</param>
-                                    <param id="2" name="Axis">0</param>
+                                <action id="2" name="Set at X" sid="442270852904775" type="ArrayPerguntas">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;Qual a capital do Amazonas?&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -26,23 +25,20 @@
                                 <condition id="-2" name="On start of layout" sid="337206231449403" type="System" />
                             </conditions>
                             <actions>
-                                <action id="4" name="Set at XYZ" sid="887969551030611" type="ArrayRespostas">
-                                    <param id="0" name="X">1.01</param>
-                                    <param id="1" name="Y">0</param>
-                                    <param id="2" name="Z">0</param>
-                                    <param id="3" name="Value">&quot;Manaus&quot;</param>
+                                <action id="10" name="Insert" sid="366894905596009" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Manaus&quot;</param>
+                                    <param id="1" name="Index">1</param>
+                                    <param id="2" name="Axis">0</param>
                                 </action>
-                                <action id="4" name="Set at XYZ" sid="243761391130823" type="ArrayRespostas">
-                                    <param id="0" name="X">0</param>
-                                    <param id="1" name="Y">1.02</param>
-                                    <param id="2" name="Z">0</param>
-                                    <param id="3" name="Value">&quot;Coari&quot;</param>
+                                <action id="10" name="Insert" sid="646661805201314" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Coari&quot;</param>
+                                    <param id="1" name="Index">1</param>
+                                    <param id="2" name="Axis">1</param>
                                 </action>
-                                <action id="4" name="Set at XYZ" sid="742344211717078" type="ArrayRespostas">
-                                    <param id="0" name="X">0</param>
-                                    <param id="1" name="Y">0</param>
-                                    <param id="2" name="Z">1.03</param>
-                                    <param id="3" name="Value">&quot;Porto Velho&quot;</param>
+                                <action id="10" name="Insert" sid="934132738058923" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Porto Velho&quot;</param>
+                                    <param id="1" name="Index">1</param>
+                                    <param id="2" name="Axis">2</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -56,10 +52,9 @@
                 <condition id="-2" name="On start of layout" sid="518249973634519" type="System" />
             </conditions>
             <actions>
-                <action id="10" name="Insert" sid="164948552724906" type="ArrayPerguntas">
-                    <param id="0" name="Value">&quot;Em que cidade foi inventada a Maria-Mole?&quot;</param>
-                    <param id="1" name="Index">1</param>
-                    <param id="2" name="Axis">0</param>
+                <action id="2" name="Set at X" sid="164948552724906" type="ArrayPerguntas">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">&quot;Em que cidade foi inventada a Maria-Mole?&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -68,19 +63,19 @@
                 <condition id="-2" name="On start of layout" sid="856973339226014" type="System" />
             </conditions>
             <actions>
-                <action id="10" name="Insert" sid="536563582755505" type="ArrayRespostas">
-                    <param id="0" name="Value">&quot;São Paulo&quot;</param>
-                    <param id="1" name="Index">1</param>
+                <action id="10" name="Insert" sid="172068785902723" type="ArrayRespostas">
+                    <param id="0" name="Value">&quot;Rio de Janeiro&quot;</param>
+                    <param id="1" name="Index">2</param>
                     <param id="2" name="Axis">0</param>
                 </action>
-                <action id="10" name="Insert" sid="856834618402488" type="ArrayRespostas">
-                    <param id="0" name="Value">&quot;Joinville&quot;</param>
-                    <param id="1" name="Index">1</param>
+                <action id="10" name="Insert" sid="516669408446566" type="ArrayRespostas">
+                    <param id="0" name="Value">&quot;São Paulo&quot;</param>
+                    <param id="1" name="Index">2</param>
                     <param id="2" name="Axis">1</param>
                 </action>
-                <action id="10" name="Insert" sid="806895678723683" type="ArrayRespostas">
-                    <param id="0" name="Value">&quot;Rio de Janeiro&quot;</param>
-                    <param id="1" name="Index">1</param>
+                <action id="10" name="Insert" sid="164998549017358" type="ArrayRespostas">
+                    <param id="0" name="Value">&quot;Joinville&quot;</param>
+                    <param id="1" name="Index">2</param>
                     <param id="2" name="Axis">2</param>
                 </action>
             </actions>
