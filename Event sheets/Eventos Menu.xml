@@ -9,8 +9,8 @@
             </conditions>
             <actions>
                 <action id="5" name="Set web font" sid="358803160111895" type="Titulo">
-                    <param id="0" name="Family name">&quot;perfect_dos_vga_437regular&quot;</param>
-                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                    <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
                 </action>
             </actions>
         </event-block>

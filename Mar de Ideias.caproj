@@ -36,6 +36,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Base</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -757,6 +758,28 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
+        <object-type name="BordaTitulo" sid="115878414687455">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387262533428270" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(17).png">
+                        <collision-poly>
+                            <point x="0.05" y="0.5" />
+                            <point x="0.5" y="0" />
+                            <point x="0.95" y="0.5" />
+                            <point x="0.9625" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BordaLateralTitulo" sid="619121364711234">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\twata\Downloads\New Piskel(18).png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -794,6 +817,9 @@
             <file name="perfect_dos_vga_437-webfont.woff" />
             <file name="perfect_dos_vga_437-webfont.woff2" />
             <file name="stylesheet2.css" />
+            <file name="edunline-webfont.woff" />
+            <file name="edunline-webfont.woff2" />
+            <file name="stylesheet3.css" />
         </file-folder>
     </files-folder>
 </c2project>

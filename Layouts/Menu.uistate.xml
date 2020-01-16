@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>320</position-x>
-        <position-y>658.377</position-y>
-        <position-z>132</position-z>
-        <lookat-x>320</lookat-x>
-        <lookat-y>658.377</lookat-y>
+        <position-x>318.52</position-x>
+        <position-y>582.104</position-y>
+        <position-z>145.2</position-z>
+        <lookat-x>318.52</lookat-x>
+        <lookat-y>582.104</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="Titulo" />
+    <active-layer name="DetalhesMar" />
     <layers>
         <layer locked="0" name="Mar" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="DetalhesMar" parallax-in-editor="0" visible="1" />
@@ -31,6 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="0" name="Ceu" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="DetalhesCeu" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundTItulo" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Titulo" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BordasTitulo" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Titulo" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
