@@ -128,7 +128,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="Definição da pergunta. (Resposta da pergunta: 1822" sid="698174218636732" title="Pergunta 4: Em que ano foi declarada a independência do Brasil?">
+                <event-group description="Definição da pergunta. (Resposta da pergunta: 1822)" sid="698174218636732" title="Pergunta 4: Em que ano foi declarada a independência do Brasil?">
                     <sub-events>
                         <event-block sid="964961138093045">
                             <conditions>
@@ -159,6 +159,43 @@
                                 <action id="10" name="Insert" sid="645722401219536" type="ArrayRespostas">
                                     <param id="0" name="Value">&quot;1822&quot;</param>
                                     <param id="1" name="Index">4</param>
+                                    <param id="2" name="Axis">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Definição da pergunta. (Resposta da pergunta: Glóbulos Vermelhos)" sid="349972514569356" title="Pergunta 5: Qual a célula que transporta oxigênio pelo sangue?">
+                    <sub-events>
+                        <event-block sid="868897190614722">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="338200884452150" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="208093217345754" type="ArrayPerguntas">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;Qual a célula que transporta oxigénio pelo sangue?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="434873631582232">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="909683981876212" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Insert" sid="854300976606645" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Glóbulos Vermelhos&quot;</param>
+                                    <param id="1" name="Index">5</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="550487155763252" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Glóbulos Brancos&quot;</param>
+                                    <param id="1" name="Index">5</param>
+                                    <param id="2" name="Axis">1</param>
+                                </action>
+                                <action id="10" name="Insert" sid="441186457806276" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Macrófagos&quot;</param>
+                                    <param id="1" name="Index">5</param>
                                     <param id="2" name="Axis">2</param>
                                 </action>
                             </actions>
