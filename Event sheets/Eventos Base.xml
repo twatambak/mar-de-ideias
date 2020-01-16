@@ -160,16 +160,44 @@
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-12" name="Set group active" sid="619200029065023" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="563341533125311" type="System">
-                                    <param id="0" name="Variable">Escolha</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="118391208743656">
+                                    <conditions>
+                                        <condition id="1" name="Compare at XY" sid="157396754433357" type="ArrayPerguntas">
+                                            <param id="0" name="X">PerguntaAtual</param>
+                                            <param id="1" name="Y">PerguntaAtual</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="321115368199519" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="739561659399530" type="System">
+                                            <param id="0" name="Variable">Escolha</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="225257395187419">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="207407179055186" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="538783758121476" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="235774750252093" type="System">
+                                            <param id="0" name="Variable">Escolha</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID dois.</comment>
                         <event-block sid="959647284965122">
@@ -185,16 +213,44 @@
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-12" name="Set group active" sid="740152050748233" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="983954285010084" type="System">
-                                    <param id="0" name="Variable">Escolha</param>
-                                    <param id="1" name="Value">2</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="251533128994723">
+                                    <conditions>
+                                        <condition id="1" name="Compare at XY" sid="259945625759419" type="ArrayPerguntas">
+                                            <param id="0" name="X">PerguntaAtual</param>
+                                            <param id="1" name="Y">PerguntaAtual</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="288357272649880" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="591876108691782" type="System">
+                                            <param id="0" name="Variable">Escolha</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="951350219172673">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="619716003132269" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="497217881828190" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="655735824553295" type="System">
+                                            <param id="0" name="Variable">Escolha</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID três.</comment>
                         <event-block sid="722051685143146">
@@ -210,16 +266,44 @@
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-12" name="Set group active" sid="632958848074788" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="717923859413625" type="System">
-                                    <param id="0" name="Variable">Escolha</param>
-                                    <param id="1" name="Value">3</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="177934687016569">
+                                    <conditions>
+                                        <condition id="1" name="Compare at XY" sid="104911659304012" type="ArrayPerguntas">
+                                            <param id="0" name="X">PerguntaAtual</param>
+                                            <param id="1" name="Y">PerguntaAtual</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="864878563715032" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="622201602532078" type="System">
+                                            <param id="0" name="Variable">Escolha</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="135007751180524">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="782135590048846" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="210965028945347" type="System">
+                                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="953231866405131" type="System">
+                                            <param id="0" name="Variable">Escolha</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -402,6 +486,19 @@
         </event-group>
         <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é acertada." inactive="1" sid="400109918349410" title="Configurações de Acerto da Pergunta">
             <sub-events>
+                <event-block sid="544396988998234">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="197915486132066" type="System">
+                            <param id="0" name="Count">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="920495116373017" type="System">
+                            <param id="0" name="Variable">Profundidade</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="878509293529869">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="845982711181454" type="System">
@@ -473,6 +570,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-12" name="Set group active" sid="391524305688095" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                                 <action id="-28" name="Set effect parameter" sid="477968868828699" type="Resposta_Background">
                                     <param id="0" name="Effect">&quot;SetColor&quot;</param>
                                     <param id="1" name="Parameter index">0</param>

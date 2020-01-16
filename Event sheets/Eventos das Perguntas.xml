@@ -13,6 +13,11 @@
                     <param id="1" name="Height">100</param>
                     <param id="2" name="Depth">100</param>
                 </action>
+                <action id="1" name="Set size" sid="166628210875047" type="ArrayPerguntas">
+                    <param id="0" name="Width">100</param>
+                    <param id="1" name="Height">100</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="Insere em um array as perguntas usadas no jogo." sid="960394396194523" title="Criação das Perguntas">
@@ -27,6 +32,11 @@
                                 <action id="2" name="Set at X" sid="442270852904775" type="ArrayPerguntas">
                                     <param id="0" name="X">1</param>
                                     <param id="1" name="Value">&quot;Qual a capital do Amazonas?&quot;</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="963272727693093" type="ArrayPerguntas">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Y">1</param>
+                                    <param id="2" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -65,6 +75,11 @@
                                     <param id="0" name="X">2</param>
                                     <param id="1" name="Value">&quot;Em que cidade foi inventada a Maria-Mole?&quot;</param>
                                 </action>
+                                <action id="3" name="Set at XY" sid="382143427787300" type="ArrayPerguntas">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Y">2</param>
+                                    <param id="2" name="Value">2</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="827798825654451">
@@ -101,6 +116,11 @@
                                 <action id="2" name="Set at X" sid="835616944436164" type="ArrayPerguntas">
                                     <param id="0" name="X">3</param>
                                     <param id="1" name="Value">&quot;Em que país foi inventado o cachorro-quente?&quot;</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="863263813339006" type="ArrayPerguntas">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Y">3</param>
+                                    <param id="2" name="Value">2</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -139,6 +159,11 @@
                                     <param id="0" name="X">4</param>
                                     <param id="1" name="Value">&quot;Em que ano foi declarada a independência do Brasil?&quot;</param>
                                 </action>
+                                <action id="3" name="Set at XY" sid="204622658631288" type="ArrayPerguntas">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Y">4</param>
+                                    <param id="2" name="Value">3</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="264585605545613">
@@ -176,6 +201,11 @@
                                     <param id="0" name="X">5</param>
                                     <param id="1" name="Value">&quot;Qual a célula que transporta oxigénio pelo sangue?&quot;</param>
                                 </action>
+                                <action id="3" name="Set at XY" sid="839841873102869" type="ArrayPerguntas">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Y">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="434873631582232">
@@ -204,5 +234,8 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <comment>Nós temos dois eventos relacionados com a inserção de perguntas e resposta, cada um ligado à uma. O primeiro evento sempre é relacionado com a adição das perguntas enquanto o segundo é ligado às respostas. Esse fato é reforçado pelos comentários presentes antes de cada um dos eventos.</comment>
+        <comment>No evento responsável pela adição da pergunta, na primeira ocorrência, é definido que o valor presente na posição passada refere ao número da pergunta. Ou seja, caso o valor referente esteja marcado como quatro ela é a quarta questão dentro do array (no jogo a ordem das questões é aleatória), além disso, toda a sua referência é dada por esse valor, portanto, além de indicar a posição dentro do array, contando que como o array no Construct se trata de um cubo de posições, está localizado na posição do valor presente apenas no eixo X.</comment>
+        <comment>Na segunda ocorrência do evento responsável pela adição da pergunta é definido o ID da resposta da pergunta. Essa resposta é armazenada em um vetor de posição, sendo referente aos eixos X e Y conforme citado anteriormente, onde ambos os valores são a posição da pergunta no array, ou seja, o número da pergunta. O ID que representa a resposta da pergunta está relacionado com os dados armazenados no array de respostas. Como dito anteriormente, um array (pelo menos no Construct) se trata de um grande cubo possuindo três dimensões, X, Y e Z. As respostas para cada pergunta estão armazenadas nessas três dimensões, porém, com os eixos de cada uma zeradas exceto naquela que está ligada com a representação da resposta em seu respectivo eixo. Portanto, caso o valor contido dentro do campo de resposta no array de pergunta (categorizado como o valor da pergunta na posição de seu respectivo índice no array) seja 1 a resposta correta se encontra no eixo X do array de respostas no índice do número da pergunta. Caso o valor seja 2 a resposta se encontra no eixo Y também no índice do número da pergunta. E caso o valor seja 3 a resposta se encontra no eixo Z no índice do número da pergunta. Lembrando que os demais eixos das respostas são 0.</comment>
     </events>
 </c2eventsheet>
