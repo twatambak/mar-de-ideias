@@ -6,6 +6,7 @@
         <include>Eventos das Perguntas</include>
         <event-group description="Grupo responsável por realizar as definições iniciais do jogo." sid="153366938438702" title="Configurações Iniciais">
             <sub-events>
+                <comment>Define uma pergunta aleatória e exibe exibe o texto da pergunta.</comment>
                 <event-block sid="567061480708534">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="315369687278890" type="System" />
@@ -20,12 +21,14 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Define a exibição das possíveis respostas para a pergunta selecionada.</comment>
                 <event-block sid="610810872192629">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="457873802062748" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
+                        <comment>Define o texto da primeira alternativa.</comment>
                         <event-block sid="621005599853459">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="941398922007757" type="Resposta_Texto">
@@ -40,6 +43,7 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>Define o texto da segunda alternativa.</comment>
                         <event-block sid="841399466426735">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="276196724852555" type="Resposta_Texto">
@@ -54,6 +58,7 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <comment>Define o texto da terceira alternativa.</comment>
                         <event-block sid="156202445889609">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="794288333406524" type="Resposta_Texto">
@@ -111,6 +116,7 @@
                         <action id="2" name="Stop" sid="964612720951738" type="Resposta_BordaEsquerdaSuperior" />
                     </actions>
                 </event-block>
+                <comment>Garante que os grupos e variáveis estejam nas condições adequadas para o funcionamento do jogo.</comment>
                 <event-block sid="464801764954676">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="178132196116743" type="System" />
@@ -407,6 +413,7 @@
         </event-group>
         <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é errada." inactive="1" sid="606436072616008" title="Configurações de Erro da Pergunta">
             <sub-events>
+                <comment>Garante a troca de sprites das bordas para se adequarem ao fundo.</comment>
                 <event-block sid="538070916601017">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="469314801444808" type="System">
@@ -516,19 +523,7 @@
         </event-group>
         <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é acertada." inactive="1" sid="400109918349410" title="Configurações de Acerto da Pergunta">
             <sub-events>
-                <event-block sid="544396988998234">
-                    <conditions>
-                        <condition id="-12" name="Repeat" sid="197915486132066" type="System">
-                            <param id="0" name="Count">100</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="920495116373017" type="System">
-                            <param id="0" name="Variable">Profundidade</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
+                <comment>Garante a troca de sprites das bordas para se adequarem ao fundo.</comment>
                 <event-block sid="878509293529869">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="845982711181454" type="System">
@@ -582,7 +577,7 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou.</comment>
+                <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou. Também adiciona 100 à profundidade.</comment>
                 <event-block sid="723184210615569">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="859856855854196" type="System">
@@ -600,6 +595,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-10" name="Add to" sid="555048392278938" type="System">
+                                    <param id="0" name="Variable">Profundidade</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
                                 <action id="-12" name="Set group active" sid="391524305688095" type="System">
                                     <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
                                     <param id="1" name="State">0</param>
