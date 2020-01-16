@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Menu</name>
+    <events>
+        <event-block sid="488952270983901">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="152067852860523" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="358803160111895" type="Titulo">
+                    <param id="0" name="Family name">&quot;perfect_dos_vga_437regular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet2.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

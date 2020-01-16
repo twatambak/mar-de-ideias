@@ -293,8 +293,8 @@
                             </conditions>
                             <actions>
                                 <action id="2" name="Set at X" sid="124469345966582" type="ArrayPerguntas">
-                                    <param id="0" name="X">6</param>
-                                    <param id="1" name="Value">&quot;Quantos ossos possuí o corpo humano adulto?&quot;</param>
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Value">&quot;Qual o principal ingrediente da paçoca?&quot;</param>
                                 </action>
                                 <action id="3" name="Set at XY" sid="475576904608351" type="ArrayPerguntas">
                                     <param id="0" name="X">7</param>
@@ -321,6 +321,132 @@
                                 <action id="10" name="Insert" sid="348828561438945" type="ArrayRespostas">
                                     <param id="0" name="Value">&quot;Castanha do Pará&quot;</param>
                                     <param id="1" name="Index">7</param>
+                                    <param id="2" name="Axis">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Definição da pergunta. (Resposta da pergunta: Pretas com listras brancas)" sid="162421416448229" title="Pergunta 8: As zebras são...">
+                    <sub-events>
+                        <event-block sid="601187873551840">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="584016332060807" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="699615393878149" type="ArrayPerguntas">
+                                    <param id="0" name="X">8</param>
+                                    <param id="1" name="Value">&quot;As zebras são...&quot;</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="699042304582472" type="ArrayPerguntas">
+                                    <param id="0" name="X">8</param>
+                                    <param id="1" name="Y">8</param>
+                                    <param id="2" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="621097821598427">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="849976220193957" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Insert" sid="556469629566708" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Brancas com listras pretas&quot;</param>
+                                    <param id="1" name="Index">8</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="939004806567065" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Pretas com listras brancas&quot;</param>
+                                    <param id="1" name="Index">8</param>
+                                    <param id="2" name="Axis">1</param>
+                                </action>
+                                <action id="10" name="Insert" sid="627221733691914" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Ilusões de ótica&quot;</param>
+                                    <param id="1" name="Index">8</param>
+                                    <param id="2" name="Axis">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Definição da pergunta. (Resposta da pergunta: -40)" sid="183620488773990" title="Pergunta 9: Em que temperatura os termômetros nas escalas Celsius e Fahrenheit coincidem?">
+                    <sub-events>
+                        <event-block sid="521698165901772">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="998851094053858" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="391369605441260" type="ArrayPerguntas">
+                                    <param id="0" name="X">9</param>
+                                    <param id="1" name="Value">&quot;Em que temperatura os termômetros nas escalas Celsius e Fahrenheit coincidem?&quot;</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="597639952628294" type="ArrayPerguntas">
+                                    <param id="0" name="X">9</param>
+                                    <param id="1" name="Y">9</param>
+                                    <param id="2" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="936923872943306">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="390385323684989" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Insert" sid="273619340083553" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;0&quot;</param>
+                                    <param id="1" name="Index">9</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="627641056915141" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;-100&quot;</param>
+                                    <param id="1" name="Index">9</param>
+                                    <param id="2" name="Axis">1</param>
+                                </action>
+                                <action id="10" name="Insert" sid="478943904512825" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;-40&quot;</param>
+                                    <param id="1" name="Index">9</param>
+                                    <param id="2" name="Axis">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Definição da pergunta. (Resposta da pergunta: Fico)" sid="803066323770113" title="Pergunta 10: Se for pelo bem da nação eu...">
+                    <sub-events>
+                        <event-block sid="835330526845956">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="506085163495393" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="849560558310546" type="ArrayPerguntas">
+                                    <param id="0" name="X">10</param>
+                                    <param id="1" name="Value">&quot;Se for pelo bem da nação eu...&quot;</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="957453993177480" type="ArrayPerguntas">
+                                    <param id="0" name="X">10</param>
+                                    <param id="1" name="Y">10</param>
+                                    <param id="2" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="129716478666616">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="538507206437512" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Insert" sid="982739754606463" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Irei&quot;</param>
+                                    <param id="1" name="Index">10</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="275125189723955" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Fico&quot;</param>
+                                    <param id="1" name="Index">10</param>
+                                    <param id="2" name="Axis">1</param>
+                                </action>
+                                <action id="10" name="Insert" sid="162901577163488" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Morrerei&quot;</param>
+                                    <param id="1" name="Index">10</param>
                                     <param id="2" name="Axis">2</param>
                                 </action>
                             </actions>
