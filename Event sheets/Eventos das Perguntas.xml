@@ -3,12 +3,22 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos das Perguntas</name>
     <events>
+        <event-block sid="430982329210678">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="242639188254911" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Set size" sid="524573224554009" type="ArrayRespostas">
+                    <param id="0" name="Width">100</param>
+                    <param id="1" name="Height">100</param>
+                    <param id="2" name="Depth">100</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="Insere em um array as perguntas usadas no jogo." sid="960394396194523" title="Criação das Perguntas">
             <sub-events>
-                <event-group description="" sid="833821214137313" title="Pergunta 1">
+                <event-group description="Definição da pergunta. (Resposta da pergunta: Manaus)" sid="833821214137313" title="Pergunta 1: Qual a capital do Amazonas?">
                     <sub-events>
-                        <comment>PERGUNTA 1: Qual a capital do Amazonas?</comment>
-                        <comment>R: Manaus</comment>
                         <event-block sid="140254028662606">
                             <conditions>
                                 <condition id="-2" name="On start of layout" sid="598451746350549" type="System" />
@@ -44,53 +54,81 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+                <event-group description="Definição da pergunta. (Resposta da pergunta: São Paulo)" sid="311432675042952" title="Pergunta 2: Em que cidade foi inventada a Maria-Mole?">
+                    <sub-events>
+                        <event-block sid="386960240972369">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="518249973634519" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="164948552724906" type="ArrayPerguntas">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;Em que cidade foi inventada a Maria-Mole?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="827798825654451">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="856973339226014" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Insert" sid="172068785902723" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Rio de Janeiro&quot;</param>
+                                    <param id="1" name="Index">2</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="516669408446566" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;São Paulo&quot;</param>
+                                    <param id="1" name="Index">2</param>
+                                    <param id="2" name="Axis">1</param>
+                                </action>
+                                <action id="10" name="Insert" sid="164998549017358" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Joinville&quot;</param>
+                                    <param id="1" name="Index">2</param>
+                                    <param id="2" name="Axis">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Definição da pergunta. (Resposta da pergunta: Alemanha)" sid="262679913506854" title="Pergunta 3: Em que país foi inventado o cachorro-quente?">
+                    <sub-events>
+                        <event-block sid="342598553383844">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="519640879915852" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="835616944436164" type="ArrayPerguntas">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;Em que país foi inventado o cachorro-quente?&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="128023977291908">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="190259820033663" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Insert" sid="173015074883578" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Estados Unidos&quot;</param>
+                                    <param id="1" name="Index">3</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="697829230592128" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Alemanha&quot;</param>
+                                    <param id="1" name="Index">3</param>
+                                    <param id="2" name="Axis">1</param>
+                                </action>
+                                <action id="10" name="Insert" sid="633314127197886" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Austrália&quot;</param>
+                                    <param id="1" name="Index">3</param>
+                                    <param id="2" name="Axis">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
-        <comment>PERGUNTA 2: Em que cidade foi inventada a Maria-Mole?</comment>
-        <event-block sid="386960240972369">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="518249973634519" type="System" />
-            </conditions>
-            <actions>
-                <action id="2" name="Set at X" sid="164948552724906" type="ArrayPerguntas">
-                    <param id="0" name="X">2</param>
-                    <param id="1" name="Value">&quot;Em que cidade foi inventada a Maria-Mole?&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="827798825654451">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="856973339226014" type="System" />
-            </conditions>
-            <actions>
-                <action id="10" name="Insert" sid="172068785902723" type="ArrayRespostas">
-                    <param id="0" name="Value">&quot;Rio de Janeiro&quot;</param>
-                    <param id="1" name="Index">2</param>
-                    <param id="2" name="Axis">0</param>
-                </action>
-                <action id="10" name="Insert" sid="516669408446566" type="ArrayRespostas">
-                    <param id="0" name="Value">&quot;São Paulo&quot;</param>
-                    <param id="1" name="Index">2</param>
-                    <param id="2" name="Axis">1</param>
-                </action>
-                <action id="10" name="Insert" sid="164998549017358" type="ArrayRespostas">
-                    <param id="0" name="Value">&quot;Joinville&quot;</param>
-                    <param id="1" name="Index">2</param>
-                    <param id="2" name="Axis">2</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="430982329210678">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="242639188254911" type="System" />
-            </conditions>
-            <actions>
-                <action id="1" name="Set size" sid="524573224554009" type="ArrayRespostas">
-                    <param id="0" name="Width">100</param>
-                    <param id="1" name="Height">100</param>
-                    <param id="2" name="Depth">100</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>

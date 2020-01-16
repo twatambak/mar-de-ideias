@@ -4,14 +4,6 @@
     <name>Eventos Base</name>
     <events>
         <include>Eventos das Perguntas</include>
-        <variable constant="0" name="Opcao1" sid="847204932076216" static="0" type="number">0</variable>
-        <variable constant="0" name="Opcao2" sid="202066930621074" static="0" type="number">0</variable>
-        <variable constant="0" name="Opcao3" sid="109166521031822" static="0" type="number">0</variable>
-        <variable constant="0" name="TotalPerguntas" sid="559719390987621" static="0" type="number">2</variable>
-        <variable constant="0" name="PerguntaAtual" sid="904824332862592" static="0" type="number">2</variable>
-        <variable constant="0" name="Game" sid="659070134241461" static="0" type="number">1</variable>
-        <variable constant="0" name="Profundidade" sid="716770459161878" static="0" type="number">100000</variable>
-        <variable constant="0" name="Tempo" sid="671440709629317" static="0" type="number">72</variable>
         <event-group description="Grupo responsável por realizar as definições iniciais do jogo." sid="153366938438702" title="Configurações Iniciais">
             <sub-events>
                 <comment>Define as webfontes para os textos.</comment>
@@ -524,19 +516,12 @@
                 <condition id="-2" name="On start of layout" sid="315369687278890" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="718721159855695" type="Pergunta_Texto">
-                    <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="235635902554890">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="271094608245918" type="System" />
-            </conditions>
-            <actions>
                 <action id="-9" name="Set value" sid="594735424893231" type="System">
                     <param id="0" name="Variable">PerguntaAtual</param>
                     <param id="1" name="Value">int(random(1 , TotalPerguntas))</param>
+                </action>
+                <action id="0" name="Set text" sid="718721159855695" type="Pergunta_Texto">
+                    <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
                 </action>
             </actions>
         </event-block>
