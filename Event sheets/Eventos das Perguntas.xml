@@ -3,24 +3,35 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos das Perguntas</name>
     <events>
-        <event-block sid="430982329210678">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="242639188254911" type="System" />
-            </conditions>
-            <actions>
-                <action id="1" name="Set size" sid="524573224554009" type="ArrayRespostas">
-                    <param id="0" name="Width">100</param>
-                    <param id="1" name="Height">100</param>
-                    <param id="2" name="Depth">100</param>
-                </action>
-                <action id="1" name="Set size" sid="166628210875047" type="ArrayPerguntas">
-                    <param id="0" name="Width">100</param>
-                    <param id="1" name="Height">100</param>
-                    <param id="2" name="Depth">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-group description="Insere em um array as perguntas usadas no jogo." sid="960394396194523" title="Criação das Perguntas">
+        <event-group description="Armazena explicações referentes aos eventos presentes." sid="480631775707796" title="Explicações">
+            <sub-events>
+                <comment>Nós temos dois eventos relacionados com a inserção de perguntas e resposta, cada um ligado à uma. O primeiro evento sempre é relacionado com a adição das perguntas enquanto o segundo é ligado às respostas. Esse fato é reforçado pelos comentários presentes antes de cada um dos eventos.</comment>
+                <comment>No evento responsável pela adição da pergunta, na primeira ocorrência, é definido que o valor presente na posição passada refere ao número da pergunta. Ou seja, caso o valor referente esteja marcado como quatro ela é a quarta questão dentro do array (no jogo a ordem das questões é aleatória), além disso, toda a sua referência é dada por esse valor, portanto, além de indicar a posição dentro do array, contando que como o array no Construct se trata de um cubo de posições, está localizado na posição do valor presente apenas no eixo X.</comment>
+                <comment>Na segunda ocorrência do evento responsável pela adição da pergunta é definido o ID da resposta da pergunta. Essa resposta é armazenada em um vetor de posição, sendo referente aos eixos X e Y conforme citado anteriormente, onde ambos os valores são a posição da pergunta no array, ou seja, o número da pergunta. O ID que representa a resposta da pergunta está relacionado com os dados armazenados no array de respostas. Como dito anteriormente, um array (pelo menos no Construct) se trata de um grande cubo possuindo três dimensões, X, Y e Z. As respostas para cada pergunta estão armazenadas nessas três dimensões, porém, com os eixos de cada uma zeradas exceto naquela que está ligada com a representação da resposta em seu respectivo eixo. Portanto, caso o valor contido dentro do campo de resposta no array de pergunta (categorizado como o valor da pergunta na posição de seu respectivo índice no array) seja 1 a resposta correta se encontra no eixo X do array de respostas no índice do número da pergunta. Caso o valor seja 2 a resposta se encontra no eixo Y também no índice do número da pergunta. E caso o valor seja 3 a resposta se encontra no eixo Z no índice do número da pergunta. Lembrando que os demais eixos das respostas são 0.</comment>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por realizar as configurações iniciais dos arrays." sid="930422104068272" title="Configurações Iniciais dos Arrays de Pergunta e Resposta">
+            <sub-events>
+                <event-block sid="430982329210678">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="242639188254911" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set size" sid="524573224554009" type="ArrayRespostas">
+                            <param id="0" name="Width">100</param>
+                            <param id="1" name="Height">100</param>
+                            <param id="2" name="Depth">100</param>
+                        </action>
+                        <action id="1" name="Set size" sid="166628210875047" type="ArrayPerguntas">
+                            <param id="0" name="Width">100</param>
+                            <param id="1" name="Height">100</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por inserir em um array as perguntas e respostas usadas no jogo." sid="960394396194523" title="Criação das Perguntas">
             <sub-events>
                 <event-group description="Definição da pergunta. (Resposta da pergunta: Manaus)" sid="833821214137313" title="Pergunta 1: Qual a capital do Amazonas?">
                     <sub-events>
@@ -232,10 +243,91 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+                <event-group description="Definição da pergunta. (Resposta da pergunta: 206)" sid="832453869224529" title="Pergunta 6: Quantos ossos possuí o corpo humano adulto?">
+                    <sub-events>
+                        <event-block sid="197952325318985">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="817495787046795" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="105975698003398" type="ArrayPerguntas">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;Quantos ossos possuí o corpo humano adulto?&quot;</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="663969177524927" type="ArrayPerguntas">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Y">6</param>
+                                    <param id="2" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="240013987801882">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="165711324281420" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Insert" sid="871847208357557" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;270&quot;</param>
+                                    <param id="1" name="Index">6</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="636596373771752" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;236&quot;</param>
+                                    <param id="1" name="Index">6</param>
+                                    <param id="2" name="Axis">1</param>
+                                </action>
+                                <action id="10" name="Insert" sid="938567244431055" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;206&quot;</param>
+                                    <param id="1" name="Index">6</param>
+                                    <param id="2" name="Axis">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Definição da pergunta. (Resposta da pergunta: Amendoim)" sid="234507063690114" title="Pergunta 7: Qual o principal ingrediente da paçoca?">
+                    <sub-events>
+                        <event-block sid="434313033144404">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="221954518416447" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set at X" sid="124469345966582" type="ArrayPerguntas">
+                                    <param id="0" name="X">6</param>
+                                    <param id="1" name="Value">&quot;Quantos ossos possuí o corpo humano adulto?&quot;</param>
+                                </action>
+                                <action id="3" name="Set at XY" sid="475576904608351" type="ArrayPerguntas">
+                                    <param id="0" name="X">7</param>
+                                    <param id="1" name="Y">7</param>
+                                    <param id="2" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="532123745352428">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="520935644833121" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="10" name="Insert" sid="630420520972110" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Amendoim&quot;</param>
+                                    <param id="1" name="Index">7</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                                <action id="10" name="Insert" sid="767517873111730" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Nozes&quot;</param>
+                                    <param id="1" name="Index">7</param>
+                                    <param id="2" name="Axis">1</param>
+                                </action>
+                                <action id="10" name="Insert" sid="348828561438945" type="ArrayRespostas">
+                                    <param id="0" name="Value">&quot;Castanha do Pará&quot;</param>
+                                    <param id="1" name="Index">7</param>
+                                    <param id="2" name="Axis">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
-        <comment>Nós temos dois eventos relacionados com a inserção de perguntas e resposta, cada um ligado à uma. O primeiro evento sempre é relacionado com a adição das perguntas enquanto o segundo é ligado às respostas. Esse fato é reforçado pelos comentários presentes antes de cada um dos eventos.</comment>
-        <comment>No evento responsável pela adição da pergunta, na primeira ocorrência, é definido que o valor presente na posição passada refere ao número da pergunta. Ou seja, caso o valor referente esteja marcado como quatro ela é a quarta questão dentro do array (no jogo a ordem das questões é aleatória), além disso, toda a sua referência é dada por esse valor, portanto, além de indicar a posição dentro do array, contando que como o array no Construct se trata de um cubo de posições, está localizado na posição do valor presente apenas no eixo X.</comment>
-        <comment>Na segunda ocorrência do evento responsável pela adição da pergunta é definido o ID da resposta da pergunta. Essa resposta é armazenada em um vetor de posição, sendo referente aos eixos X e Y conforme citado anteriormente, onde ambos os valores são a posição da pergunta no array, ou seja, o número da pergunta. O ID que representa a resposta da pergunta está relacionado com os dados armazenados no array de respostas. Como dito anteriormente, um array (pelo menos no Construct) se trata de um grande cubo possuindo três dimensões, X, Y e Z. As respostas para cada pergunta estão armazenadas nessas três dimensões, porém, com os eixos de cada uma zeradas exceto naquela que está ligada com a representação da resposta em seu respectivo eixo. Portanto, caso o valor contido dentro do campo de resposta no array de pergunta (categorizado como o valor da pergunta na posição de seu respectivo índice no array) seja 1 a resposta correta se encontra no eixo X do array de respostas no índice do número da pergunta. Caso o valor seja 2 a resposta se encontra no eixo Y também no índice do número da pergunta. E caso o valor seja 3 a resposta se encontra no eixo Z no índice do número da pergunta. Lembrando que os demais eixos das respostas são 0.</comment>
     </events>
 </c2eventsheet>

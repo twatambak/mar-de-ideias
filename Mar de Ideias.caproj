@@ -691,7 +691,7 @@
     <event-folder>
         <event-sheet>Eventos Base.xml</event-sheet>
         <event-sheet>Eventos das Perguntas.xml</event-sheet>
-        <event-sheet>Configuracoes.xml</event-sheet>
+        <event-sheet>Variaveis.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">
