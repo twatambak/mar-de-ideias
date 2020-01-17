@@ -666,5 +666,13 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="917391261989050">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="670885693725391" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="0" name="Restart fade" sid="857295822853155" type="GameOver_Background" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -852,6 +852,22 @@
                     </instance-variables>
                 </object-type>
             </object-folder>
+            <object-folder name="Objetos do Highscore">
+                <object-type name="Background_Highscore" sid="492073122573102">
+                    <plugin id="TiledBg" />
+                    <texture />
+                </object-type>
+                <object-type name="Texto_Highscore" sid="623600951591592">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+            <object-type name="BackgroundExtra" sid="487181117650562">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="TextoExtra" sid="567083612332458">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-type global="1" name="ArrayPerguntas" sid="454131325779381">
             <plugin id="Arr" />
@@ -871,19 +887,14 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TextoExtra" sid="567083612332458">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="BackgroundExtra" sid="487181117650562">
+        <object-type name="GameOver_Background" sid="188872732063886">
             <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Fade" sid="844965090540594">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <texture />
-        </object-type>
-        <object-type name="Background_Highscore" sid="492073122573102">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="Texto_Highscore" sid="623600951591592">
-            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Base</layout>
-        <layout active="1" order="4">Menu</layout>
-        <event-sheet order="1">Eventos Base</event-sheet>
+        <layout order="4">Menu</layout>
+        <event-sheet active="1" order="1">Eventos Base</event-sheet>
         <event-sheet order="2">Eventos das Perguntas</event-sheet>
         <event-sheet order="3">Variaveis</event-sheet>
         <event-sheet order="5">Eventos Menu</event-sheet>
@@ -35,9 +35,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos do Mar/" />
         <folder expanded="0" path="object-folder/Objetos Controladores/" />
         <folder expanded="1" path="object-folder/Objetos do Menu/" />
-        <folder expanded="1" path="object-folder/Objetos do Menu/Objetos do Título/" />
-        <folder expanded="1" path="object-folder/Objetos do Menu/Objetos do Cenário/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu/Objetos do Título/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu/Objetos do Cenário/" />
         <folder expanded="0" path="object-folder/Objetos do Menu/Objetos das Opções/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu/Objetos do Highscore/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
