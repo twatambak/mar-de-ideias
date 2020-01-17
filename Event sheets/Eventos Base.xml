@@ -485,6 +485,14 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-10" name="Add to" sid="308779345557474" type="System">
+                                    <param id="0" name="Variable">Erros</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="872345549698439" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                                 <action id="-28" name="Set effect parameter" sid="988251954104526" type="Resposta_Background">
                                     <param id="0" name="Effect">&quot;SetColor&quot;</param>
                                     <param id="1" name="Parameter index">0</param>
@@ -639,5 +647,23 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="777215455013978">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="707988414159018" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="990138028236988" type="MarcaErros">
+                    <param id="0" name="Frame number">Erros</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="561829430963716">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="676981635360111" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="576283543966531" type="MarcaErros" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
