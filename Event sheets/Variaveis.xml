@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Variaveis</name>
     <events>
+        <variable constant="0" name="Highscore" sid="736197832878318" static="0" type="number">1000</variable>
         <variable constant="0" name="Escolha" sid="986418115884972" static="0" type="number">1</variable>
         <variable constant="0" name="Erros" sid="735623868357091" static="0" type="number">0</variable>
         <variable constant="0" name="TotalPerguntas" sid="559719390987621" static="0" type="number">10</variable>

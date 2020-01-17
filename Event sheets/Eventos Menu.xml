@@ -16,6 +16,14 @@
                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="875821722345768" type="TextoExtra">
+                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="328773361387126" type="Texto_Highscore">
+                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block any="1" sid="416781779167772">
@@ -45,6 +53,16 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="618482169834202">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="625607388814945" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="282356605600674" type="Texto_Highscore">
+                    <param id="0" name="Text">Highscore &amp; &quot;m&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

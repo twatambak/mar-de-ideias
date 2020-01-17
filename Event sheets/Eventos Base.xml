@@ -144,10 +144,29 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Exibe a quantia de erros do jogador.</comment>
+                <event-block sid="777215455013978">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="707988414159018" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="990138028236988" type="MarcaErros">
+                            <param id="0" name="Frame number">Erros</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="Grupo responsável por realizar as definições de funcionamento do jogo." sid="295051042907226" title="Configurações de Funcionamento do Jogo">
             <sub-events>
+                <event-block sid="561829430963716">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="676981635360111" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="576283543966531" type="MarcaErros" />
+                    </actions>
+                </event-block>
                 <comment>A cada 1 segundo cria um novo peixe no objeto definido como o spawner.</comment>
                 <event-block sid="803390285246385">
                     <conditions>
@@ -647,23 +666,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="777215455013978">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="707988414159018" type="System" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="990138028236988" type="MarcaErros">
-                    <param id="0" name="Frame number">Erros</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="561829430963716">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="676981635360111" type="System" />
-            </conditions>
-            <actions>
-                <action id="2" name="Stop" sid="576283543966531" type="MarcaErros" />
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
