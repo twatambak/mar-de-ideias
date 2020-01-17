@@ -8,9 +8,13 @@
                 <condition id="-2" name="On start of layout" sid="152067852860523" type="System" />
             </conditions>
             <actions>
-                <action id="5" name="Set web font" sid="358803160111895" type="Titulo">
+                <action id="5" name="Set web font" sid="358803160111895" type="Titulo_Texto">
                     <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="916782247811394" type="TextoJogar">
+                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
             </actions>
         </event-block>

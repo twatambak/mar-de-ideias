@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Mar de Ideias</name>
-    <description></description>
+    <description>Jogo de perguntas</description>
     <version>1.0.0.0</version>
     <author>HitKill Studios</author>
     <author-email>hitkillstudios@gmail.com</author-email>
     <author-website>http://www.hitkillstudios.com.br</author-website>
-    <app-id>com.mycompany.myapp</app-id>
+    <app-id>com.hitkillstudios.mardeideias</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
@@ -680,6 +680,92 @@
                 <plugin id="Touch" />
             </object-type>
         </object-folder>
+        <object-folder name="Objetos do Menu">
+            <object-type name="Titulo_Background" sid="922428340670931">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="588143556286510">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+            <object-type name="Titulo_Borda" sid="115878414687455">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="831592487765189">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387262533428270" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(21).png">
+                            <collision-poly>
+                                <point x="0.05" y="0.5" />
+                                <point x="0.5" y="0" />
+                                <point x="0.95" y="0.5" />
+                                <point x="0.9625" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.0375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Lua" sid="921624820527680">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="638064846152361">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="GlowVertical">
+                        <effect id="glowvertical" />
+                    </effect-type>
+                    <effect-type name="GlowHorizontal">
+                        <effect id="glowhorizontal" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802673938719894" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(14).png">
+                            <collision-poly>
+                                <point x="0.25" y="0.25" />
+                                <point x="0.5" y="0.125" />
+                                <point x="0.359375" y="0.640625" />
+                                <point x="0.34375" y="0.5" />
+                                <point x="0.359375" y="0.359375" />
+                                <point x="0.5" y="0.875" />
+                                <point x="0.25" y="0.75" />
+                                <point x="0.1875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DetalhesSuperficieMar" sid="452843389793133">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="320720587308489">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="212136139187088">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\New Piskel(12).png" />
+            </object-type>
+            <object-type name="Titulo_Texto" sid="535981320515369">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="603661332207465">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+        </object-folder>
         <object-type global="1" name="ArrayPerguntas" sid="454131325779381">
             <plugin id="Arr" />
         </object-type>
@@ -689,50 +775,6 @@
         <object-type name="Ceu" sid="886065260872457">
             <plugin id="TiledBg" />
             <texture />
-        </object-type>
-        <object-type name="DetalhesSuperficieMar" sid="452843389793133">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Sine" sid="320720587308489">
-                    <behavior id="Sin" />
-                </behavior-type>
-                <behavior-type name="Sine2" sid="212136139187088">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\twata\Downloads\New Piskel(12).png" />
-        </object-type>
-        <object-type name="Lua" sid="921624820527680">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="638064846152361">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <effects>
-                <effect-type name="GlowVertical">
-                    <effect id="glowvertical" />
-                </effect-type>
-                <effect-type name="GlowHorizontal">
-                    <effect id="glowhorizontal" />
-                </effect-type>
-            </effects>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802673938719894" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(14).png">
-                        <collision-poly>
-                            <point x="0.25" y="0.25" />
-                            <point x="0.5" y="0.125" />
-                            <point x="0.359375" y="0.640625" />
-                            <point x="0.34375" y="0.5" />
-                            <point x="0.359375" y="0.359375" />
-                            <point x="0.5" y="0.875" />
-                            <point x="0.25" y="0.75" />
-                            <point x="0.1875" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="Estrelas" sid="773468578949952">
             <plugin id="TiledBg" />
@@ -751,34 +793,65 @@
             </effects>
             <texture original-source="C:\Users\twata\Downloads\New Piskel(15).png" />
         </object-type>
-        <object-type name="Titulo" sid="535981320515369">
+        <object-type name="TextoJogar" sid="948392590314597">
             <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="ID" sid="487285845100712" type="number" />
+            </instance-variables>
         </object-type>
-        <object-type name="BackgroundTitulo" sid="922428340670931">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="BordaTitulo" sid="115878414687455">
+        <object-type name="Montanhas" sid="153101566859269">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387262533428270" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(17).png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="670762896004248" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\novo.png">
                         <collision-poly>
-                            <point x="0.05" y="0.5" />
-                            <point x="0.5" y="0" />
-                            <point x="0.95" y="0.5" />
-                            <point x="0.9625" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.0375" y="0.5" />
+                            <point x="0.4" y="0.5" />
+                            <point x="0.5" y="0.523438" />
+                            <point x="0.55" y="0.5625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.825" y="0.78125" />
+                            <point x="0.5" y="0.789063" />
+                            <point x="0.2" y="0.75" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="BordaLateralTitulo" sid="619121364711234">
+        <object-type name="Opcoes_Background" sid="257703037600471">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\twata\Downloads\New Piskel(18).png" />
+            <instance-variables>
+                <instance-variable name="ID" sid="561862963361326" type="number" />
+            </instance-variables>
+            <texture />
+        </object-type>
+        <object-type name="Opcoes_Bordas" sid="256402223181779">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ID" sid="893709451469331" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="497928652240010" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(23).png">
+                        <collision-poly>
+                            <point x="0.125" y="0.4375" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.875" y="0.4375" />
+                            <point x="0.910714" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0892857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Opcoes_BordaHorizontal" sid="338360202349878">
+            <plugin id="TiledBg" />
+            <instance-variables>
+                <instance-variable name="ID" sid="222422576343260" type="number" />
+            </instance-variables>
+            <texture original-source="C:\Users\twata\Downloads\New Piskel(25).png" />
         </object-type>
     </object-folder>
     <families />

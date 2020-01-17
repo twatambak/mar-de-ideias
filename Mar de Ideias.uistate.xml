@@ -32,8 +32,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos do HUD/Detalhes/" />
         <folder expanded="0" path="object-folder/Objetos do HUD/Botões/" />
         <folder expanded="0" path="object-folder/Objetos do HUD/Objetos de Exibição/" />
-        <folder expanded="1" path="object-folder/Objetos do Mar/" />
+        <folder expanded="0" path="object-folder/Objetos do Mar/" />
         <folder expanded="0" path="object-folder/Objetos Controladores/" />
+        <folder expanded="1" path="object-folder/Objetos do Menu/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -55,7 +56,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/BarraTempo/" />
         <folder expanded="1" path="animation-folder/Peixes/" />
         <folder expanded="1" path="animation-folder/SpawnerPeixe1/" />
+        <folder expanded="1" path="animation-folder/Titulo_Borda/" />
         <folder expanded="1" path="animation-folder/Lua/" />
-        <folder expanded="1" path="animation-folder/BordaTitulo/" />
+        <folder expanded="1" path="animation-folder/Montanhas/" />
+        <folder expanded="1" path="animation-folder/Opcoes_Bordas/" />
     </folders-expanded>
 </c2uistate>
