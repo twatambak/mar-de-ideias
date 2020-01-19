@@ -4299,7 +4299,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="BackgroundGameOver" sid="146795409437223">
+        <layer name="Transicao" sid="146795409437223">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -4315,7 +4315,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="GameOver_Background" uid="133">
+                <instance type="Transicao" uid="133">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -4326,7 +4326,7 @@
                                 <active-at-start>Yes</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
+                                <fade-out-time>1.5</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
@@ -4343,7 +4343,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

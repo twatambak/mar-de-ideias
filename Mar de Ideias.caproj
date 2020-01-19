@@ -887,7 +887,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="GameOver_Background" sid="188872732063886">
+        <object-type name="Transicao" sid="188872732063886">
             <plugin id="TiledBg" />
             <behaviors>
                 <behavior-type name="Fade" sid="844965090540594">

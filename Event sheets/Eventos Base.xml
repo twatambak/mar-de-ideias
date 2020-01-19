@@ -671,7 +671,31 @@
                 <condition id="-2" name="On start of layout" sid="670885693725391" type="System" />
             </conditions>
             <actions>
-                <action behavior="Fade" id="0" name="Restart fade" sid="857295822853155" type="GameOver_Background" />
+                <action behavior="Fade" id="1" name="Start fade" sid="857295822853155" type="Transicao" />
+                <action id="-16" name="Set opacity" sid="382073993021294" type="Transicao">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="543594123132065">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="484131793004633" type="System">
+                    <param id="0" name="Interval (seconds)">0.2</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="215769586136631">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="908539985487999" type="Transicao">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="522836521387431" type="Transicao">
+                    <param id="0" name="Opacity">Transicao.Opacity + 1</param>
+                </action>
             </actions>
         </event-block>
     </events>

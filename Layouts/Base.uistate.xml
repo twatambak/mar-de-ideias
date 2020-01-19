@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="Personagem" />
+    <active-layer name="Transicao" />
     <layers>
         <layer locked="1" name="Mar" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Detalhes" parallax-in-editor="0" visible="1" />
@@ -36,7 +36,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="1" name="TextoResposta" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Painel" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="HUD" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="BackgroundGameOver" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Transicao" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoGameOver" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
