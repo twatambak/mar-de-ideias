@@ -917,7 +917,10 @@
         <object-folder name="Objetos de Fim de Jogo">
             <object-type name="GameOver_Background" sid="409918627415951">
                 <plugin id="TiledBg" />
-                <texture />
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (2).png" />
+            </object-type>
+            <object-type name="GameOver_Texto" sid="601450505447673">
+                <plugin id="Text" />
             </object-type>
         </object-folder>
         <object-type global="1" name="ArrayPerguntas" sid="454131325779381">

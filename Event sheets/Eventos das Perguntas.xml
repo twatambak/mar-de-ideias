@@ -1445,17 +1445,17 @@
                             </conditions>
                             <actions>
                                 <action id="10" name="Insert" sid="209091593781374" type="ArrayRespostas">
-                                    <param id="0" name="Value">&quot;Sputnik 1&quot;</param>
+                                    <param id="0" name="Value">&quot;1960&quot;</param>
                                     <param id="1" name="Index">24</param>
                                     <param id="2" name="Axis">0</param>
                                 </action>
                                 <action id="10" name="Insert" sid="420184004659031" type="ArrayRespostas">
-                                    <param id="0" name="Value">&quot;Antares 1&quot;</param>
+                                    <param id="0" name="Value">&quot;1967&quot;</param>
                                     <param id="1" name="Index">24</param>
                                     <param id="2" name="Axis">1</param>
                                 </action>
                                 <action id="10" name="Insert" sid="121155871569430" type="ArrayRespostas">
-                                    <param id="0" name="Value">&quot;Komrad 1&quot;</param>
+                                    <param id="0" name="Value">&quot;1957&quot;</param>
                                     <param id="1" name="Index">24</param>
                                     <param id="2" name="Axis">2</param>
                                 </action>
