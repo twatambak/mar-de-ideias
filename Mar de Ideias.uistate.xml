@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Base</layout>
         <layout order="4">Menu</layout>
-        <event-sheet order="1">Eventos Base</event-sheet>
-        <event-sheet active="1" order="2">Eventos das Perguntas</event-sheet>
+        <event-sheet active="1" order="1">Eventos Base</event-sheet>
+        <event-sheet order="2">Eventos das Perguntas</event-sheet>
         <event-sheet order="3">Variaveis</event-sheet>
         <event-sheet order="5">Eventos Menu</event-sheet>
     </open-tabs>
@@ -66,5 +66,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Lua/" />
         <folder expanded="1" path="animation-folder/Montanhas/" />
         <folder expanded="1" path="animation-folder/Opcoes_Bordas/" />
+        <folder expanded="1" path="animation-folder/GameOver_BordaDireitaInferior/" />
+        <folder expanded="1" path="animation-folder/GameOver_BordaDireitaSuperior/" />
+        <folder expanded="1" path="animation-folder/GameOver_BordaEsquerdaInferior/" />
+        <folder expanded="1" path="animation-folder/GameOver_BordaEsquerdaSuperior/" />
     </folders-expanded>
 </c2uistate>

@@ -921,6 +921,114 @@
             </object-type>
             <object-type name="GameOver_Texto" sid="601450505447673">
                 <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="433780277998561" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type name="GameOver_BordaDireitaInferior" sid="113738156547461">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="574541187092409">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="119970460382105" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(4).png">
+                            <collision-poly>
+                                <point x="0.5" y="0.78125" />
+                                <point x="1" y="0" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.8125" y="0.8125" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.71875" y="0.5" />
+                                <point x="0.65625" y="0.65625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GameOver_BordaDireitaSuperior" sid="439622934095542">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="604426183611253">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403457787629334" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(4).png">
+                            <collision-poly>
+                                <point x="0.78125" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.03125" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GameOver_BordaEsquerdaInferior" sid="315487880687059">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="191936234089506">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="844817930806640" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(3).png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.78125" />
+                                <point x="0.34375" y="0.65625" />
+                                <point x="0.28125" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.1875" y="0.8125" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GameOver_BordaEsquerdaSuperior" sid="636693887817009">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="525294069045920">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="705508276390567" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(2).png">
+                            <collision-poly>
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0.015625" />
+                                <point x="1" y="0" />
+                                <point x="0.0625" y="0.5" />
+                                <point x="0.21875" y="0.21875" />
+                                <point x="0.5" y="0.078125" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GameOver_BordaHorizontal" sid="912515017094665">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="473716781480540">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\Borda Esquerda(5).png" />
             </object-type>
         </object-folder>
         <object-type global="1" name="ArrayPerguntas" sid="454131325779381">

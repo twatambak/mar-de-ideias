@@ -50,6 +50,10 @@
                             <param id="0" name="Variable">Erros</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="587941311233842" type="System">
+                            <param id="0" name="Variable">Profundidade</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

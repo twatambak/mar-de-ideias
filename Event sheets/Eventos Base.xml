@@ -6,6 +6,17 @@
         <include>Eventos das Perguntas</include>
         <event-group description="Grupo responsável por realizar as definições iniciais do jogo." sid="153366938438702" title="Configurações Iniciais">
             <sub-events>
+                <event-block sid="917391261989050">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="670885693725391" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="857295822853155" type="Transicao" />
+                        <action id="-16" name="Set opacity" sid="382073993021294" type="Transicao">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>Define uma pergunta aleatória e exibe exibe o texto da pergunta.</comment>
                 <event-block sid="567061480708534">
                     <conditions>
@@ -214,6 +225,14 @@
                             <param id="0" name="Layer">&quot;TextoGameOver&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
+                        <action id="-4" name="Set layer visible" sid="317226067250048" type="System">
+                            <param id="0" name="Layer">&quot;BordasOpcaoGameOver&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="796127677934288" type="System">
+                            <param id="0" name="Layer">&quot;TextoOpcaoGameOver&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>Exibe a quantia de erros do jogador.</comment>
@@ -231,6 +250,21 @@
         </event-group>
         <event-group description="Grupo responsável por realizar as definições de funcionamento do jogo." sid="295051042907226" title="Configurações de Funcionamento do Jogo">
             <sub-events>
+                <event-block sid="400516828946588">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="589931669651428" type="System">
+                            <param id="0" name="Variable">Tempo</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="567689973145857" type="System">
+                            <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <comment>Para a animação do contador de erros.</comment>
                 <event-block sid="561829430963716">
                     <conditions>
@@ -496,7 +530,7 @@
                         <action behavior="Fade" id="1" name="Start fade" sid="705889743798281" type="Pergunta_BordaVertical" />
                         <action behavior="Fade" id="1" name="Start fade" sid="753735507713333" type="Pergunta_Texto" />
                         <action id="-16" name="Wait" sid="350326173220076" type="System">
-                            <param id="0" name="Seconds">1</param>
+                            <param id="0" name="Seconds">1.5</param>
                         </action>
                         <action id="-26" name="Restart layout" sid="474456974422812" type="System" />
                     </actions>
@@ -767,32 +801,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="917391261989050">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="670885693725391" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="Fade" id="1" name="Start fade" sid="857295822853155" type="Transicao" />
-                <action id="-16" name="Set opacity" sid="382073993021294" type="Transicao">
-                    <param id="0" name="Opacity">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="400516828946588">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="589931669651428" type="System">
-                    <param id="0" name="Variable">Tempo</param>
-                    <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Set group active" sid="567689973145857" type="System">
-                    <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
-                    <param id="1" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-group description="Grupo responsável por gerenciar os eventos de fim de jogo." inactive="1" sid="304003016682155" title="Configurações de Fim de Jogo">
             <sub-events>
                 <event-block sid="478372602329477">
@@ -880,9 +888,69 @@
                             <param id="0" name="Layer">&quot;TextoGameOver&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
+                        <action id="-4" name="Set layer visible" sid="749361141754514" type="System">
+                            <param id="0" name="Layer">&quot;BordasOpcaoGameOver&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="205302502917033" type="System">
+                            <param id="0" name="Layer">&quot;TextoOpcaoGameOver&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="970704056472941">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="326208988293886" type="System">
+                            <param id="0" name="Variable">Profundidade</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Highscore</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="422427862975105" type="System">
+                            <param id="0" name="Variable">Highscore</param>
+                            <param id="1" name="Value">Profundidade</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="637660065896214">
+            <conditions>
+                <condition id="3" name="On touched object" sid="938954267000262" type="Touch">
+                    <param id="0" name="Object">GameOver_Texto</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="108527962418305" type="System">
+                    <param id="0" name="Layer">&quot;BordasOpcaoGameOver&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="751447252655815">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="176007543822109" type="GameOver_Texto">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="858799658480116">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="858584841330419" type="GameOver_Texto">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="254390480942051" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
