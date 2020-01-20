@@ -3,13 +3,21 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Variaveis</name>
     <events>
+        <comment>Maior quantia de pontos já feita.</comment>
         <variable constant="0" name="Highscore" sid="736197832878318" static="0" type="number">1000</variable>
+        <comment>O ID de qual escolha foi feita nas perguntas.</comment>
         <variable constant="0" name="Escolha" sid="986418115884972" static="0" type="number">1</variable>
+        <comment>A quantidade de erros.</comment>
         <variable constant="0" name="Erros" sid="735623868357091" static="0" type="number">0</variable>
-        <variable constant="0" name="TotalPerguntas" sid="559719390987621" static="0" type="number">10</variable>
+        <comment>O total de perguntas.</comment>
+        <variable constant="0" name="TotalPerguntas" sid="559719390987621" static="0" type="number">62</variable>
+        <comment>O número da pergunta atual.</comment>
         <variable constant="0" name="PerguntaAtual" sid="904824332862592" static="0" type="number">3</variable>
+        <comment>Valor de condição do funcionamento do jogo.</comment>
         <variable constant="0" name="Game" sid="659070134241461" static="0" type="number">1</variable>
+        <comment>A profundidade do mar no jogo (também serve como pontuação).</comment>
         <variable constant="0" name="Profundidade" sid="716770459161878" static="0" type="number">100</variable>
+        <comment>Tempo para responder as perguntas.</comment>
         <variable constant="0" name="Tempo" sid="671440709629317" static="0" type="number">72</variable>
     </events>
 </c2eventsheet>

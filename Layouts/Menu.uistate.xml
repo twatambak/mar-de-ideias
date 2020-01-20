@@ -27,7 +27,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <layers>
         <layer locked="1" name="Mar" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="DetalhesMar" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Praia" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Ceu" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="DetalhesCeu" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Montanhas" parallax-in-editor="0" visible="1" />
@@ -37,7 +36,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="0" name="BackgroundOpcoes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BordasOpcoes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoOpcoes" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="TextoVersao" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundExtra" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoExtra" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundHighScore" parallax-in-editor="0" visible="1" />

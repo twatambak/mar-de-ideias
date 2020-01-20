@@ -12,11 +12,11 @@
                         <condition id="-2" name="On start of layout" sid="315369687278890" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="594735424893231" type="System">
+                        <action id="-9" name="Set value" sid="601933504551907" type="System">
                             <param id="0" name="Variable">PerguntaAtual</param>
                             <param id="1" name="Value">int(random(1, TotalPerguntas + 1))</param>
                         </action>
-                        <action id="0" name="Set text" sid="718721159855695" type="Pergunta_Texto">
+                        <action id="0" name="Set text" sid="641844149946800" type="Pergunta_Texto">
                             <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
                         </action>
                     </actions>
@@ -159,6 +159,7 @@
         </event-group>
         <event-group description="Grupo responsável por realizar as definições de funcionamento do jogo." sid="295051042907226" title="Configurações de Funcionamento do Jogo">
             <sub-events>
+                <comment>Para a animação do contador de erros.</comment>
                 <event-block sid="561829430963716">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="676981635360111" type="System" />
@@ -660,6 +661,12 @@
                                     <param id="0" name="Variable">Game</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
+                                <action id="4" name="Set at XYZ" sid="547082529239415" type="ArrayPerguntas">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Y">0</param>
+                                    <param id="2" name="Z">PerguntaAtual</param>
+                                    <param id="3" name="Value">&quot;Respondida&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -677,26 +684,57 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="543594123132065">
+        <event-block sid="400516828946588">
             <conditions>
-                <condition id="-6" name="Every X seconds" sid="484131793004633" type="System">
-                    <param id="0" name="Interval (seconds)">0.2</param>
+                <condition id="-14" name="Compare variable" sid="589931669651428" type="System">
+                    <param id="0" name="Variable">Tempo</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions />
         </event-block>
-        <event-block sid="215769586136631">
-            <conditions>
-                <condition id="-10" name="Compare opacity" sid="908539985487999" type="Transicao">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Opacity">100</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-16" name="Set opacity" sid="522836521387431" type="Transicao">
-                    <param id="0" name="Opacity">Transicao.Opacity + 1</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="Grupo responsável por gerenciar os eventos de fim de jogo." sid="304003016682155" title="Configurações de Fim de Jogo">
+            <sub-events>
+                <event-block sid="467162553875837">
+                    <conditions>
+                        <condition id="-15" name="Is group active" sid="343777452779162" type="System">
+                            <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="994249827697405" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundGameOver&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="975924056422167" type="System">
+                            <param id="0" name="Layer">&quot;TextoGameOver&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="478372602329477">
+                    <conditions>
+                        <condition id="-15" name="Is group active" sid="296789444510255" type="System">
+                            <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="463769558134170" type="System">
+                            <param id="0" name="Layer">&quot;HUD&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="347582272656647" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundRespostas&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="965776875993562" type="System">
+                            <param id="0" name="Layer">&quot;BordasResposta&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

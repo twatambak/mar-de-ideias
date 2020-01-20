@@ -592,6 +592,18 @@
                 <object-type name="TextoProfundidade" sid="368386234101138">
                     <plugin id="Text" />
                 </object-type>
+                <object-type name="MarcaErros" sid="395202815025872">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929571784862605" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
         </object-folder>
         <object-folder name="Objetos do Mar">
@@ -869,23 +881,17 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
+        <object-folder name="Objetos de Fim de Jogo">
+            <object-type name="GameOver_Background" sid="409918627415951">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+        </object-folder>
         <object-type global="1" name="ArrayPerguntas" sid="454131325779381">
             <plugin id="Arr" />
         </object-type>
         <object-type global="1" name="ArrayRespostas" sid="450885803684707">
             <plugin id="Arr" />
-        </object-type>
-        <object-type name="MarcaErros" sid="395202815025872">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929571784862605" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="Transicao" sid="188872732063886">
             <plugin id="TiledBg" />
