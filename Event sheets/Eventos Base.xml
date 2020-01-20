@@ -142,6 +142,74 @@
                             <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
+                        <action id="-12" name="Set group active" sid="938763454003037" type="System">
+                            <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Define a visibilidade dos layers.</comment>
+                <event-block sid="698416862529794">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="177709545861391" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="820831909595063" type="System">
+                            <param id="0" name="Layer">&quot;Mar&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="285797184026903" type="System">
+                            <param id="0" name="Layer">&quot;Detalhes&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="392139193075230" type="System">
+                            <param id="0" name="Layer">&quot;Personagem&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="946173247823502" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundPergunta&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="142479565492950" type="System">
+                            <param id="0" name="Layer">&quot;BordasPergunta&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="713698698102476" type="System">
+                            <param id="0" name="Layer">&quot;TextoPergunta&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="803078031672872" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundRespostas&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="758024643176500" type="System">
+                            <param id="0" name="Layer">&quot;BordasResposta&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="330392326927102" type="System">
+                            <param id="0" name="Layer">&quot;TextoResposta&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="913975824717198" type="System">
+                            <param id="0" name="Layer">&quot;Painel&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="524860168020598" type="System">
+                            <param id="0" name="Layer">&quot;HUD&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="287775734159623" type="System">
+                            <param id="0" name="Layer">&quot;Transicao&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="303519152188134" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundGameOver&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="380326249918640" type="System">
+                            <param id="0" name="Layer">&quot;TextoGameOver&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>Exibe a quantia de erros do jogador.</comment>
@@ -692,9 +760,14 @@
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-12" name="Set group active" sid="567689973145857" type="System">
+                    <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
         </event-block>
-        <event-group description="Grupo responsável por gerenciar os eventos de fim de jogo." sid="304003016682155" title="Configurações de Fim de Jogo">
+        <event-group description="Grupo responsável por gerenciar os eventos de fim de jogo." inactive="1" sid="304003016682155" title="Configurações de Fim de Jogo">
             <sub-events>
                 <event-block sid="467162553875837">
                     <conditions>
@@ -720,16 +793,59 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-4" name="Set layer visible" sid="463769558134170" type="System">
+                        <action behavior="Fade" id="1" name="Start fade" sid="463015705435436" type="Pergunta_Background" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="965631606180952" type="Pergunta_BordaHorizontal" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="692396479272955" type="Pergunta_BordaVertical" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="725273567965265" type="Resposta_Background" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="299289734965297" type="Resposta_BordaHorizontal" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="249825421686647" type="Resposta_BordaVertical" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="457794983587918" type="Pergunta_BordaEsquerdaSuperior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="983698241522838" type="Pergunta_BordaEsquerdaInferior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="808322816472955" type="Pergunta_BordaDireitaSuperior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="704261619224841" type="Pergunta_BordaDireitaInferior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="199575910776002" type="Resposta_BordaEsquerdaSuperior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="492427849831432" type="Resposta_BordaEsquerdaInferior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="740733934916794" type="Resposta_BordaDireitaSuperior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="254755217056769" type="Resposta_BordaDireitaInferior" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="437392488005971" type="BackgroundPainel" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="786382758377151" type="BotaoPausa" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="429057547085752" type="BackgroundProfundidade" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="484889004159446" type="BordasPainel" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="516398770113254" type="BarraTempo" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="296984659867255" type="MarcaErros" />
+                        <action id="-16" name="Wait" sid="319804745837792" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="603045019383243" type="System">
                             <param id="0" name="Layer">&quot;HUD&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="347582272656647" type="System">
+                        <action id="-4" name="Set layer visible" sid="233671138080060" type="System">
+                            <param id="0" name="Layer">&quot;Painel&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="344236231249906" type="System">
+                            <param id="0" name="Layer">&quot;TextoResposta&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="980433068213788" type="System">
+                            <param id="0" name="Layer">&quot;BordasResposta&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="918118543799711" type="System">
                             <param id="0" name="Layer">&quot;BackgroundRespostas&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="965776875993562" type="System">
-                            <param id="0" name="Layer">&quot;BordasResposta&quot;</param>
+                        <action id="-4" name="Set layer visible" sid="480385752613360" type="System">
+                            <param id="0" name="Layer">&quot;TextoPergunta&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="533451636561972" type="System">
+                            <param id="0" name="Layer">&quot;BordasPergunta&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="697372767076280" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundPergunta&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
                     </actions>

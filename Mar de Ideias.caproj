@@ -447,10 +447,20 @@
             <object-folder name="Detalhes">
                 <object-type name="BackgroundPainel" sid="539372319796831">
                     <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="708712309519986">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
                     <texture />
                 </object-type>
                 <object-type name="BackgroundProfundidade" sid="158978664755042">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="830970684232014">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="468937815860932" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.515625" original-source="C:\Users\twata\Downloads\New Piskel(5).png">
@@ -466,6 +476,11 @@
                 </object-type>
                 <object-type name="BordasPainel" sid="991546448164464">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="478136582674172">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="215716363664558" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(22).png">
@@ -490,6 +505,9 @@
                         <behavior-type name="Sine" sid="552911690454225">
                             <behavior id="Sin" />
                         </behavior-type>
+                        <behavior-type name="Fade" sid="803262595417721">
+                            <behavior id="Fade" />
+                        </behavior-type>
                     </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852133390889981" speed="5">
@@ -512,6 +530,11 @@
             <object-folder name="Objetos de Exibição">
                 <object-type name="BarraTempo" sid="604211158446856">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="666538130575255">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="72" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="859811746565912" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -591,9 +614,19 @@
                 </object-type>
                 <object-type name="TextoProfundidade" sid="368386234101138">
                     <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="918994576096843">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
                 </object-type>
                 <object-type name="MarcaErros" sid="395202815025872">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="380456265671788">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929571784862605" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
