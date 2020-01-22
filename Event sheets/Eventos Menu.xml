@@ -24,12 +24,19 @@
                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="798274064115993" type="TextoSenha">
+                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
             </actions>
         </event-block>
-        <event-block any="1" sid="416781779167772">
+        <event-block sid="416781779167772">
             <conditions>
                 <condition id="3" name="On touched object" sid="520656117885894" type="Touch">
                     <param id="0" name="Object">Opcoes_Texto</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="132523697705613" type="System">
+                    <param id="0" name="Layer">&quot;TextoOpcoes&quot;</param>
                 </condition>
             </conditions>
             <actions />
@@ -78,19 +85,168 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="6" name="Speak text" sid="258894884401832" type="UserMedia">
-                    <param id="0" name="Text">&quot;Dois, quatro, seis, sete&quot;</param>
-                    <param id="1" name="Language">&quot;pt-Br&quot;</param>
-                    <param id="2" name="Voice URI">&quot;Microsoft Maria Desktop&quot;</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="4" name="Rate">1</param>
-                    <param id="5" name="Pitch">1</param>
+                <action id="-12" name="Set group active" sid="733622009253845" type="System">
+                    <param id="0" name="Group name">&quot;Configuração da Senha Secreta&quot;</param>
+                    <param id="1" name="State">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="510428785947663" type="System">
-                    <param id="0" name="Seconds">1.0</param>
-                </action>
-                <action id="-9" name="Destroy" sid="699071051869354" type="Secret" />
             </actions>
+        </event-block>
+        <event-block sid="204200229421232">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="149207842630628" type="System" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="330470014121483" type="System">
+                    <param id="0" name="Group name">&quot;Configuração da Senha Secreta&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="300776254999411">
+            <conditions>
+                <condition id="-15" inverted="1" name="Is group active" sid="809804372107246" type="System">
+                    <param id="0" name="Group name">&quot;Configuração da Senha Secreta&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="371472819186557" type="System">
+                    <param id="0" name="Layer">&quot;BackgroundSenha&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="475065399419299" type="System">
+                    <param id="0" name="Layer">&quot;TextoSenha&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="979438553741734" type="System">
+                    <param id="0" name="Layer">&quot;BackgroundTItulo&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="694699793479999" type="System">
+                    <param id="0" name="Layer">&quot;BordasTitulo&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="290161659953000" type="System">
+                    <param id="0" name="Layer">&quot;TextoTitulo&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="665939611199255" type="System">
+                    <param id="0" name="Layer">&quot;BackgroundOpcoes&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="267878993596188" type="System">
+                    <param id="0" name="Layer">&quot;BordasOpcoes&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="628757927353915" type="System">
+                    <param id="0" name="Layer">&quot;TextoOpcoes&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="835101897624295" type="System">
+                    <param id="0" name="Layer">&quot;BackgroundExtra&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="219548902716087" type="System">
+                    <param id="0" name="Layer">&quot;TextoExtra&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="377537603849535" type="System">
+                    <param id="0" name="Layer">&quot;BackgroundHighScore&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="501910297292960" type="System">
+                    <param id="0" name="Layer">&quot;TextoHighScore&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="Grupo responsável pela administração dos eventos referentes a senha para os enigmas." inactive="1" sid="397047316526258" title="Configuração da Senha Secreta">
+            <sub-events>
+                <event-block sid="636750086476114">
+                    <conditions>
+                        <condition id="-15" name="Is group active" sid="637635183518970" type="System">
+                            <param id="0" name="Group name">&quot;Configuração da Senha Secreta&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="320122977866397" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundSenha&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="596488254543248" type="System">
+                            <param id="0" name="Layer">&quot;TextoSenha&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="977196267728737" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundTItulo&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="640459837319658" type="System">
+                            <param id="0" name="Layer">&quot;BordasTitulo&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="974144478106047" type="System">
+                            <param id="0" name="Layer">&quot;TextoTitulo&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="314286659121120" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundOpcoes&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="776750689271536" type="System">
+                            <param id="0" name="Layer">&quot;BordasOpcoes&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="754992838345597" type="System">
+                            <param id="0" name="Layer">&quot;TextoOpcoes&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="288771188261112" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundExtra&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="334970290547361" type="System">
+                            <param id="0" name="Layer">&quot;TextoExtra&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="903613182108331" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundHighScore&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="840768739273415" type="System">
+                            <param id="0" name="Layer">&quot;TextoHighScore&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="707967651910781">
+            <conditions>
+                <condition id="3" name="On touched object" sid="770288668988084" type="Touch">
+                    <param id="0" name="Object">TextoSenha</param>
+                </condition>
+                <condition id="-15" name="Is group active" sid="321744568819183" type="System">
+                    <param id="0" name="Group name">&quot;Configuração da Senha Secreta&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="390647731041170">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="398861617536978" type="TextoSenha">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="266605385833536" type="System">
+                            <param id="0" name="Group name">&quot;Configuração da Senha Secreta&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

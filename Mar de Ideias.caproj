@@ -897,6 +897,14 @@
                     <instance-variables>
                         <instance-variable name="ID" sid="487285845100712" type="number" />
                     </instance-variables>
+                    <effects>
+                        <effect-type name="GlowVertical">
+                            <effect id="glowvertical" />
+                        </effect-type>
+                        <effect-type name="GlowHorizontal">
+                            <effect id="glowhorizontal" />
+                        </effect-type>
+                    </effects>
                 </object-type>
                 <object-type name="MenuJogar_BordasInferior" sid="949978498436567">
                     <plugin id="Sprite" />
@@ -1343,6 +1351,24 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TexoInfo" sid="353859110265167">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BackgroundSenha" sid="739199934862736">
+            <plugin id="TiledBg" />
+            <effects>
+                <effect-type name="Noise">
+                    <effect id="noise" />
+                </effect-type>
+            </effects>
+            <texture />
+        </object-type>
+        <object-type name="TextoSenha" sid="808861339051596">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="ID" sid="436014092306464" type="number" />
+            </instance-variables>
         </object-type>
     </object-folder>
     <families />

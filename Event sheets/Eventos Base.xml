@@ -952,5 +952,37 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="995660642859731">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="654944431273265" type="System">
+                    <param id="0" name="Interval (seconds)">random(1, 10)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="693277974064496" type="TexoInfo">
+                    <param id="0" name="Text">choose(&quot;Não deixe seu tempo acabar.&quot;, &quot;Ele está sempre observando&quot;, &quot;Ele sabe.&quot;, &quot;Obrigado por jogar.&quot;, &quot;Às vezes a resposta é mais fácil do que parece.&quot;, &quot;Cuidado para não errar demais.&quot;, &quot;Não tenha medo de errar, mas cuidado.&quot;, &quot;B64 U2VuaGEgMTcyODI=&quot;, &quot;Parece que tem algo errado com a lua&quot;)</param>
+                </action>
+                <action id="-15" name="Set visible" sid="906743380904969" type="TexoInfo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="579408442965034" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-15" name="Set visible" sid="454897896267111" type="TexoInfo">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="722551923780550">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="685065802038995" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="591735729894033" type="TexoInfo">
+                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>442.828</position-x>
-        <position-y>555.516</position-y>
-        <position-z>163.636</position-z>
-        <lookat-x>442.828</lookat-x>
-        <lookat-y>555.516</lookat-y>
+        <position-x>320</position-x>
+        <position-y>640.564</position-y>
+        <position-z>150</position-z>
+        <lookat-x>320</lookat-x>
+        <lookat-y>640.564</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,18 +23,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="BordasOpcoes" />
+    <active-layer name="TextoSenha" />
     <layers>
         <layer locked="1" name="Mar" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="DetalhesMar" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Ceu" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="DetalhesCeuEstrelas" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Segredo" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="DetalhesCeuLua" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="DetalhesCeuLua" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Montanhas" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="BackgroundTItulo" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="BordasTitulo" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="TextoTitulo" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BordasTitulo" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TextoTitulo" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundOpcoes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BordasOpcoes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoOpcoes" parallax-in-editor="0" visible="1" />
@@ -42,5 +42,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="1" name="TextoExtra" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="BackgroundHighScore" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoHighScore" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Layer 0" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BackgroundSenha" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TextoSenha" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
