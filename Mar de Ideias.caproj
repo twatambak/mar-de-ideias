@@ -1031,6 +1031,123 @@
                 <texture original-source="C:\Users\twata\Downloads\Borda Esquerda(5).png" />
             </object-type>
         </object-folder>
+        <object-folder name="Objetos do Menu de Pausa">
+            <object-type name="Pausa_Background" sid="246051943660738">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (2).png" />
+            </object-type>
+            <object-type name="Pausa_BordaDireitaInferior" sid="749797770017269">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="413944452323247">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="622940829702860" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(4).png">
+                            <collision-poly>
+                                <point x="0.5" y="0.78125" />
+                                <point x="1" y="0" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.8125" y="0.8125" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.71875" y="0.5" />
+                                <point x="0.65625" y="0.65625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pausa_BordaDireitaSuperior" sid="200535112924041">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="677632415262383">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="699246859356237" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(4).png">
+                            <collision-poly>
+                                <point x="0.78125" y="0.5" />
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.03125" />
+                                <point x="0.8125" y="0.1875" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pausa_BordaEsquerdaInferior" sid="269361594197775">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="954557209550996">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791355511957910" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(3).png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0.78125" />
+                                <point x="0.34375" y="0.65625" />
+                                <point x="0.28125" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="1" />
+                                <point x="0.1875" y="0.8125" />
+                                <point x="0.03125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pausa_BordaEsquerdaSuperior" sid="998000232799508">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="808397884279076">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="996814153529137" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\Borda Esquerda(2).png">
+                            <collision-poly>
+                                <point x="0.171875" y="0.171875" />
+                                <point x="0.5" y="0.015625" />
+                                <point x="1" y="0" />
+                                <point x="0.0625" y="0.5" />
+                                <point x="0.21875" y="0.21875" />
+                                <point x="0.5" y="0.078125" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Pausa_BordaHorizontal" sid="110720662756292">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="646579752452954">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Downloads\Borda Esquerda(5).png" />
+            </object-type>
+            <object-type name="Pausa_Texto" sid="911857264200127">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="741623560429786" type="number" />
+                </instance-variables>
+            </object-type>
+        </object-folder>
         <object-type global="1" name="ArrayPerguntas" sid="454131325779381">
             <plugin id="Arr" />
         </object-type>
