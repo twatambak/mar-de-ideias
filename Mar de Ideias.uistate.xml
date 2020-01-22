@@ -10,12 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Base</layout>
-        <layout order="4">Menu</layout>
-        <event-sheet order="1">Eventos Base</event-sheet>
-        <event-sheet order="2">Eventos das Perguntas</event-sheet>
-        <event-sheet order="3">Variaveis</event-sheet>
-        <event-sheet order="5">Eventos Menu</event-sheet>
+        <layout order="2">Base</layout>
+        <layout active="1" order="1">Menu</layout>
+        <event-sheet order="4">Eventos Base</event-sheet>
+        <event-sheet order="3">Eventos das Perguntas</event-sheet>
+        <event-sheet order="0">Variaveis</event-sheet>
+        <event-sheet order="0">Eventos Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -34,13 +34,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos do HUD/Objetos de Exibição/" />
         <folder expanded="0" path="object-folder/Objetos do Mar/" />
         <folder expanded="0" path="object-folder/Objetos Controladores/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu/" />
+        <folder expanded="1" path="object-folder/Objetos do Menu/" />
         <folder expanded="0" path="object-folder/Objetos do Menu/Objetos do Título/" />
         <folder expanded="0" path="object-folder/Objetos do Menu/Objetos do Cenário/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu/Objetos das Opções/" />
+        <folder expanded="1" path="object-folder/Objetos do Menu/Objetos das Opções/" />
         <folder expanded="0" path="object-folder/Objetos do Menu/Objetos do Highscore/" />
-        <folder expanded="1" path="object-folder/Objetos de Fim de Jogo/" />
-        <folder expanded="1" path="object-folder/Objetos do Menu de Pausa/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu de Pausa/" />
+        <folder expanded="1" path="object-folder/Objetos do Segredo (All)/" />
+        <folder expanded="0" path="object-folder/Objetos de Fim de Jogo/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -66,14 +67,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Titulo_Borda/" />
         <folder expanded="1" path="animation-folder/Lua/" />
         <folder expanded="1" path="animation-folder/Montanhas/" />
-        <folder expanded="1" path="animation-folder/Opcoes_Bordas/" />
-        <folder expanded="1" path="animation-folder/GameOver_BordaDireitaInferior/" />
-        <folder expanded="1" path="animation-folder/GameOver_BordaDireitaSuperior/" />
-        <folder expanded="1" path="animation-folder/GameOver_BordaEsquerdaInferior/" />
-        <folder expanded="1" path="animation-folder/GameOver_BordaEsquerdaSuperior/" />
+        <folder expanded="1" path="animation-folder/MenuJogar_BordasSuperior/" />
+        <folder expanded="1" path="animation-folder/MenuJogar_BordasInferior/" />
+        <folder expanded="1" path="animation-folder/MenuOpcoes_BordasSuperior/" />
+        <folder expanded="1" path="animation-folder/MenuOpcoes_BordasInferior/" />
+        <folder expanded="1" path="animation-folder/MenuCreditos_BordasInferior/" />
+        <folder expanded="1" path="animation-folder/MenuCreditos_BordasSuperior/" />
         <folder expanded="1" path="animation-folder/Pausa_BordaDireitaInferior/" />
         <folder expanded="1" path="animation-folder/Pausa_BordaDireitaSuperior/" />
         <folder expanded="1" path="animation-folder/Pausa_BordaEsquerdaInferior/" />
         <folder expanded="1" path="animation-folder/Pausa_BordaEsquerdaSuperior/" />
+        <folder expanded="1" path="animation-folder/All/" />
+        <folder expanded="1" path="animation-folder/GameOver_BordaDireitaInferior/" />
+        <folder expanded="1" path="animation-folder/GameOver_BordaDireitaSuperior/" />
+        <folder expanded="1" path="animation-folder/GameOver_BordaEsquerdaInferior/" />
+        <folder expanded="1" path="animation-folder/GameOver_BordaEsquerdaSuperior/" />
+        <folder expanded="1" path="animation-folder/Secret/" />
     </folders-expanded>
 </c2uistate>

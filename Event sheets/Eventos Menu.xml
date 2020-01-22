@@ -68,5 +68,29 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="987969262757325">
+            <conditions>
+                <condition id="3" name="On touched object" sid="738106405526100" type="Touch">
+                    <param id="0" name="Object">Secret</param>
+                </condition>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="171469280866599" type="Lua">
+                    <param id="0" name="Object">Secret</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Speak text" sid="258894884401832" type="UserMedia">
+                    <param id="0" name="Text">&quot;Dois, quatro, seis, sete&quot;</param>
+                    <param id="1" name="Language">&quot;pt-Br&quot;</param>
+                    <param id="2" name="Voice URI">&quot;Microsoft Maria Desktop&quot;</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="4" name="Rate">1</param>
+                    <param id="5" name="Pitch">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="510428785947663" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="699071051869354" type="Secret" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
