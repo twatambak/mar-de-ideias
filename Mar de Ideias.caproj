@@ -26,13 +26,9 @@
     <used-effects>
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
-        <effect author="Evan Wallace" id="hexpixellate">Hexagonal pixellate</effect>
         <effect author="Scirra" id="noise">Noise</effect>
-        <effect author="Scirra" id="pixellate">Pixellate</effect>
-        <effect author="Brad Larson" id="radialpixellate">Radial pixellate</effect>
         <effect author="Scirra" id="scanlines">Scan lines</effect>
         <effect author="Scirra" id="setcolor">Set color</effect>
-        <effect author="Scirra" id="warpradial">Warp Radial</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -1146,62 +1142,6 @@
                 </instance-variables>
             </object-type>
         </object-folder>
-        <object-folder name="Objetos do Segredo (All)">
-            <object-type name="All" sid="309787377272958">
-                <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="WarpRadial">
-                        <effect id="warpradial" />
-                    </effect-type>
-                    <effect-type name="Pixellate">
-                        <effect id="pixellate" />
-                    </effect-type>
-                    <effect-type name="GlowHorizontal">
-                        <effect id="glowhorizontal" />
-                    </effect-type>
-                    <effect-type name="GlowVertical">
-                        <effect id="glowvertical" />
-                    </effect-type>
-                    <effect-type name="Noise">
-                        <effect id="noise" />
-                    </effect-type>
-                    <effect-type name="HexagonalPixellate">
-                        <effect id="hexpixellate" />
-                    </effect-type>
-                </effects>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="418182194476934" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (5).png">
-                            <collision-poly>
-                                <point x="0.25" y="0.25" />
-                                <point x="0.5" y="0.015625" />
-                                <point x="0.75" y="0.25" />
-                                <point x="0.765625" y="0.5" />
-                                <point x="0.75" y="0.75" />
-                                <point x="0.5" y="0.984375" />
-                                <point x="0.25" y="0.75" />
-                                <point x="0.234375" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="BackgroundAll" sid="557526505902429">
-                <plugin id="TiledBg" />
-                <effects>
-                    <effect-type name="ScanLines">
-                        <effect id="scanlines" />
-                    </effect-type>
-                    <effect-type name="RadialPixellate">
-                        <effect id="radialpixellate" />
-                    </effect-type>
-                    <effect-type name="Noise">
-                        <effect id="noise" />
-                    </effect-type>
-                </effects>
-                <texture />
-            </object-type>
-        </object-folder>
         <object-folder name="Objetos de Fim de Jogo">
             <object-type name="GameOver_Background" sid="409918627415951">
                 <plugin id="TiledBg" />
@@ -1375,14 +1315,12 @@
     <layout-folder>
         <layout>Base.xml</layout>
         <layout>Menu.xml</layout>
-        <layout>Encontro All.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Base.xml</event-sheet>
         <event-sheet>Eventos das Perguntas.xml</event-sheet>
         <event-sheet>Variaveis.xml</event-sheet>
         <event-sheet>Eventos Menu.xml</event-sheet>
-        <event-sheet>Eventos Encontro All.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">
