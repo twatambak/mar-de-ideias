@@ -27,6 +27,7 @@
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
         <effect author="Scirra" id="noise">Noise</effect>
+        <effect author="Scirra" id="pixellate">Pixellate</effect>
         <effect author="Scirra" id="scanlines">Scan lines</effect>
         <effect author="Scirra" id="setcolor">Set color</effect>
     </used-effects>
@@ -647,6 +648,9 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
+            <object-type name="TexoInfo" sid="353859110265167">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder name="Objetos do Mar">
             <object-type name="DetalhesMar1" sid="978016206040330">
@@ -1259,6 +1263,87 @@
                 <texture original-source="C:\Users\twata\Downloads\Borda Esquerda(5).png" />
             </object-type>
         </object-folder>
+        <object-folder name="Objetos da Senha">
+            <object-type name="BackgroundSenha" sid="739199934862736">
+                <plugin id="TiledBg" />
+                <effects>
+                    <effect-type name="Noise">
+                        <effect id="noise" />
+                    </effect-type>
+                </effects>
+                <texture />
+            </object-type>
+            <object-type name="Secret" sid="359549061676339">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="677431447749264">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <effects>
+                    <effect-type name="Noise">
+                        <effect id="noise" />
+                    </effect-type>
+                    <effect-type name="Pixellate">
+                        <effect id="pixellate" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="913725169314879" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (3).png">
+                            <collision-poly>
+                                <point x="0.09375" y="0.09375" />
+                                <point x="0.5" y="0" />
+                                <point x="0.90625" y="0.09375" />
+                                <point x="1" y="0.5" />
+                                <point x="0.90625" y="0.90625" />
+                                <point x="0.5" y="1" />
+                                <point x="0.09375" y="0.90625" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TextoSenha" sid="808861339051596">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="436014092306464" type="number" />
+                </instance-variables>
+                <effects>
+                    <effect-type name="GlowHorizontal">
+                        <effect id="glowhorizontal" />
+                    </effect-type>
+                </effects>
+            </object-type>
+            <object-type name="TextoAtivacaoSenha" sid="319340639637549">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="342010952620189" type="number" />
+                    <instance-variable name="Valor" sid="652046253160468" type="number" />
+                </instance-variables>
+                <effects>
+                    <effect-type name="GlowHorizontal">
+                        <effect id="glowhorizontal" />
+                    </effect-type>
+                    <effect-type name="GlowVertical">
+                        <effect id="glowvertical" />
+                    </effect-type>
+                    <effect-type name="Noise">
+                        <effect id="noise" />
+                    </effect-type>
+                </effects>
+            </object-type>
+            <object-type name="BackgroundSenha2" sid="856864916188767">
+                <plugin id="TiledBg" />
+                <effects>
+                    <effect-type name="Noise">
+                        <effect id="noise" />
+                    </effect-type>
+                </effects>
+                <texture />
+            </object-type>
+        </object-folder>
         <object-type name="Transicao" sid="188872732063886">
             <plugin id="TiledBg" />
             <behaviors>
@@ -1267,48 +1352,6 @@
                 </behavior-type>
             </behaviors>
             <texture />
-        </object-type>
-        <object-type name="Secret" sid="359549061676339">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="677431447749264">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="913725169314879" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (3).png">
-                        <collision-poly>
-                            <point x="0.09375" y="0.09375" />
-                            <point x="0.5" y="0" />
-                            <point x="0.90625" y="0.09375" />
-                            <point x="1" y="0.5" />
-                            <point x="0.90625" y="0.90625" />
-                            <point x="0.5" y="1" />
-                            <point x="0.09375" y="0.90625" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TexoInfo" sid="353859110265167">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="BackgroundSenha" sid="739199934862736">
-            <plugin id="TiledBg" />
-            <effects>
-                <effect-type name="Noise">
-                    <effect id="noise" />
-                </effect-type>
-            </effects>
-            <texture />
-        </object-type>
-        <object-type name="TextoSenha" sid="808861339051596">
-            <plugin id="Text" />
-            <instance-variables>
-                <instance-variable name="ID" sid="436014092306464" type="number" />
-            </instance-variables>
         </object-type>
     </object-folder>
     <families />
