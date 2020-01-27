@@ -3,9 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base</name>
     <events>
-        <include>Eventos das Perguntas</include>
         <event-group description="Grupo responsável por realizar as definições iniciais do jogo." sid="153366938438702" title="Configurações Iniciais">
             <sub-events>
+                <comment>Inicia o fade do objeto de transição no início da fase.</comment>
                 <event-block sid="917391261989050">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="670885693725391" type="System" />

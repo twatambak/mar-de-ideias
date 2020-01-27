@@ -3903,7 +3903,24 @@
                     </world>
                 </instance>
             </instances>
-            <effects />
+            <effects>
+                <effect-type name="GlowHorizontal">
+                    <effect id="glowhorizontal" />
+                    <effect-instance type="GlowHorizontal">
+                        <parameters>
+                            <intensity>0.1</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
+                    <effect-instance type="GlowVertical">
+                        <parameters>
+                            <intensity>0.1</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
         </layer>
         <layer name="TextoResposta" sid="701972889516738">
             <initially-visible>1</initially-visible>
@@ -4076,7 +4093,24 @@
                     </world>
                 </instance>
             </instances>
-            <effects />
+            <effects>
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
+                    <effect-instance type="GlowVertical">
+                        <parameters>
+                            <intensity>0.1</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+                <effect-type name="GlowHorizontal">
+                    <effect id="glowhorizontal" />
+                    <effect-instance type="GlowHorizontal">
+                        <parameters>
+                            <intensity>0.1</intensity>
+                        </parameters>
+                    </effect-instance>
+                </effect-type>
+            </effects>
         </layer>
         <layer name="Painel" sid="195349995904063">
             <initially-visible>1</initially-visible>
@@ -4345,6 +4379,13 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="GlowHorizontal">
+                            <parameters>
+                                <intensity>0.2</intensity>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -4405,6 +4446,13 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="GlowVertical">
+                            <parameters>
+                                <intensity>0.4</intensity>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

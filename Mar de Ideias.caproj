@@ -629,6 +629,11 @@
                             <behavior id="Fade" />
                         </behavior-type>
                     </behaviors>
+                    <effects>
+                        <effect-type name="GlowHorizontal">
+                            <effect id="glowhorizontal" />
+                        </effect-type>
+                    </effects>
                 </object-type>
                 <object-type name="MarcaErros" sid="395202815025872">
                     <plugin id="Sprite" />
@@ -650,6 +655,11 @@
             </object-folder>
             <object-type name="TexoInfo" sid="353859110265167">
                 <plugin id="Text" />
+                <effects>
+                    <effect-type name="GlowVertical">
+                        <effect id="glowvertical" />
+                    </effect-type>
+                </effects>
             </object-type>
         </object-folder>
         <object-folder name="Objetos do Mar">
@@ -759,6 +769,14 @@
                             <behavior id="Sin" />
                         </behavior-type>
                     </behaviors>
+                    <effects>
+                        <effect-type name="GlowVertical">
+                            <effect id="glowvertical" />
+                        </effect-type>
+                        <effect-type name="GlowHorizontal">
+                            <effect id="glowhorizontal" />
+                        </effect-type>
+                    </effects>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387262533428270" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(21).png">
@@ -782,6 +800,14 @@
                             <behavior id="Sin" />
                         </behavior-type>
                     </behaviors>
+                    <effects>
+                        <effect-type name="GlowHorizontal">
+                            <effect id="glowhorizontal" />
+                        </effect-type>
+                        <effect-type name="GlowVertical">
+                            <effect id="glowvertical" />
+                        </effect-type>
+                    </effects>
                 </object-type>
             </object-folder>
             <object-folder name="Objetos do Cenário">
@@ -1351,6 +1377,15 @@
                     <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="DetalheNoise" sid="171686009089816">
+            <plugin id="TiledBg" />
+            <effects>
+                <effect-type name="Noise">
+                    <effect id="noise" />
+                </effect-type>
+            </effects>
             <texture />
         </object-type>
     </object-folder>

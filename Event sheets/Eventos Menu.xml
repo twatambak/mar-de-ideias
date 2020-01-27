@@ -3,13 +3,19 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Menu</name>
     <events>
+        <include>Eventos das Perguntas</include>
+        <comment>Armazena o status de acerto do primeiro elemento da senha. O valor é 0 caso o primeiro elemento da senha esteja incorreto e 1 caso esteja correto.</comment>
         <variable constant="0" name="PainelSenha1" sid="336393282794325" static="0" type="number">0</variable>
+        <comment>Armazena o status de acerto do segundo elemento da senha. O valor é 0 caso o segundo elemento da senha esteja incorreto e 1 caso esteja correto.</comment>
         <variable constant="0" name="PainelSenha2" sid="967937911494022" static="0" type="number">0</variable>
+        <comment>Armazena o status de acerto do terceiro elemento da senha. O valor é 0 caso o terceiro elemento da senha esteja incorreto e 1 caso esteja correto.</comment>
         <variable constant="0" name="PainelSenha3" sid="735860103746297" static="0" type="number">0</variable>
+        <comment>Armazena o status de acerto do quarto elemento da senha. O valor é 0 caso o quarto elemento da senha esteja incorreto e 1 caso esteja correto.</comment>
         <variable constant="0" name="PainelSenha4" sid="527130386479842" static="0" type="number">0</variable>
+        <comment>Armazena o status de acerto do quinto elemento da senha. O valor é 0 caso o quinto elemento da senha esteja incorreto e 1 caso esteja correto.</comment>
         <variable constant="0" name="PainelSenha5" sid="398998045551966" static="0" type="number">0</variable>
-        <variable constant="0" name="Senha" sid="640391906634195" static="0" type="number">0</variable>
-        <variable constant="0" name="IDSenha" sid="577420068959262" static="0" type="number">0</variable>
+        <comment>ID do elemento a ser preenchido na senha do painel.</comment>
+        <variable comment="A" constant="0" name="IDSenha" sid="577420068959262" static="0" type="number">0</variable>
         <event-block sid="488952270983901">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="152067852860523" type="System" />
@@ -120,6 +126,10 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-4" name="Set layer visible" sid="383183088105841" type="System">
+                    <param id="0" name="Layer">&quot;DetalheNoise&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
                 <action id="-4" name="Set layer visible" sid="371472819186557" type="System">
                     <param id="0" name="Layer">&quot;BackgroundSenha&quot;</param>
                     <param id="1" name="Visibility">0</param>
@@ -227,12 +237,336 @@
                             <param id="0" name="Layer">&quot;TextoHighScore&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
+                        <action id="-4" name="Set layer visible" sid="351461580987463" type="System">
+                            <param id="0" name="Layer">&quot;DetalheNoise&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
         <event-group description="Grupo responsável por definir o funcionamento do painel para inserção da senha." sid="783293839338825" title="Configuração do Painel da Senha">
             <sub-events>
+                <event-block sid="707967651910781">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="770288668988084" type="Touch">
+                            <param id="0" name="Object">TextoSenha</param>
+                        </condition>
+                        <condition id="-15" name="Is group active" sid="321744568819183" type="System">
+                            <param id="0" name="Group name">&quot;Visibilidade do Painel da Senha Secreta&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="390647731041170">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="398861617536978" type="TextoSenha">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="266605385833536" type="System">
+                                    <param id="0" name="Group name">&quot;Visibilidade do Painel da Senha Secreta&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="260226472617095" type="Lua">
+                                    <param id="0" name="X">96</param>
+                                    <param id="1" name="Y">96</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="659278391669295">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="489401562453286" type="Touch">
+                            <param id="0" name="Object">TextoSenha</param>
+                        </condition>
+                        <condition id="-15" name="Is group active" sid="939503220216453" type="System">
+                            <param id="0" name="Group name">&quot;Visibilidade do Painel da Senha Secreta&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="505044700398882" type="System">
+                            <param id="0" name="Variable">IDSenha</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="947856018270117">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="616247548255941" type="TextoSenha">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="290201243189577">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="689830609197827" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">IDSenha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="393052283881260" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Text">&quot;1&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="662890878515746" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">Valor</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="581698354569931">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="535976306334031" type="TextoSenha">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="380616935135121">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="443759330600299" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">IDSenha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="713186388940960" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Text">&quot;2&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="735393971790008" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">Valor</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="802680388895604">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="581719420547512" type="TextoSenha">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="880860443501954">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="986081402430730" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">IDSenha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="354928393516899" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Text">&quot;3&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="588328905937208" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">Valor</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="858494483399760">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="501704086117570" type="TextoSenha">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="770997694317267">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="162761758760387" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">IDSenha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="552796678575826" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Text">&quot;4&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="499542463495166" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">Valor</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="526525213635147">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="576531529669439" type="TextoSenha">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="191131175270231">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="456056784996284" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">IDSenha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="797250017159866" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Text">&quot;5&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="432554991356168" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">Valor</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="573457393655561">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="942436528159390" type="TextoSenha">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="966821748984239">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="719950775590239" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">IDSenha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="213826162162678" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Text">&quot;6&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="634715738626355" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">Valor</param>
+                                            <param id="1" name="Value">6</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="324886520734048">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="815840573860288" type="TextoSenha">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="536809897832927">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="361875046977629" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">IDSenha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="509769221102782" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Text">&quot;7&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="192252235064914" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">Valor</param>
+                                            <param id="1" name="Value">7</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="312152074795022">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="857108594173529" type="TextoSenha">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="854398112532922">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="559856440379527" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">IDSenha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="998469389862838" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Text">&quot;8&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="491510011752760" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">Valor</param>
+                                            <param id="1" name="Value">8</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="955806624680602">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="334457024689619" type="TextoSenha">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">9</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="390129530841516">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="479637561240579" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">IDSenha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="590878619038938" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Text">&quot;9&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="960183589977153" type="TextoAtivacaoSenha">
+                                            <param id="0" name="Instance variable">Valor</param>
+                                            <param id="1" name="Value">9</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="280710656768310">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="348609280109374" type="System">
@@ -582,327 +916,14 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="707967651910781">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="770288668988084" type="Touch">
-                            <param id="0" name="Object">TextoSenha</param>
-                        </condition>
-                        <condition id="-15" name="Is group active" sid="321744568819183" type="System">
-                            <param id="0" name="Group name">&quot;Visibilidade do Painel da Senha Secreta&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="390647731041170">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="398861617536978" type="TextoSenha">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">10</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-12" name="Set group active" sid="266605385833536" type="System">
-                                    <param id="0" name="Group name">&quot;Visibilidade do Painel da Senha Secreta&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="260226472617095" type="Lua">
-                                    <param id="0" name="X">96</param>
-                                    <param id="1" name="Y">96</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="659278391669295">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="489401562453286" type="Touch">
-                            <param id="0" name="Object">TextoSenha</param>
-                        </condition>
-                        <condition id="-15" name="Is group active" sid="939503220216453" type="System">
-                            <param id="0" name="Group name">&quot;Visibilidade do Painel da Senha Secreta&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Add to" sid="505044700398882" type="System">
-                            <param id="0" name="Variable">IDSenha</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                    <sub-events>
-                        <event-block sid="947856018270117">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="616247548255941" type="TextoSenha">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="290201243189577">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="689830609197827" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">IDSenha</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="393052283881260" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Text">&quot;1&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="662890878515746" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">Valor</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="581698354569931">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="535976306334031" type="TextoSenha">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="380616935135121">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="443759330600299" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">IDSenha</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="713186388940960" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Text">&quot;2&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="735393971790008" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">Valor</param>
-                                            <param id="1" name="Value">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="802680388895604">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="581719420547512" type="TextoSenha">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="880860443501954">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="986081402430730" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">IDSenha</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="354928393516899" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Text">&quot;3&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="588328905937208" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">Valor</param>
-                                            <param id="1" name="Value">3</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="858494483399760">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="501704086117570" type="TextoSenha">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">4</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="770997694317267">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="162761758760387" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">IDSenha</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="552796678575826" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Text">&quot;4&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="499542463495166" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">Valor</param>
-                                            <param id="1" name="Value">4</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="526525213635147">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="576531529669439" type="TextoSenha">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">5</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="191131175270231">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="456056784996284" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">IDSenha</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="797250017159866" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Text">&quot;5&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="432554991356168" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">Valor</param>
-                                            <param id="1" name="Value">5</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="573457393655561">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="942436528159390" type="TextoSenha">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">6</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="966821748984239">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="719950775590239" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">IDSenha</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="213826162162678" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Text">&quot;6&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="634715738626355" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">Valor</param>
-                                            <param id="1" name="Value">6</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="324886520734048">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="815840573860288" type="TextoSenha">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">7</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="536809897832927">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="361875046977629" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">IDSenha</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="509769221102782" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Text">&quot;7&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="192252235064914" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">Valor</param>
-                                            <param id="1" name="Value">7</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="312152074795022">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="857108594173529" type="TextoSenha">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">8</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="854398112532922">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="559856440379527" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">IDSenha</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="998469389862838" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Text">&quot;8&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="491510011752760" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">Valor</param>
-                                            <param id="1" name="Value">8</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="955806624680602">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="334457024689619" type="TextoSenha">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">9</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="390129530841516">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="479637561240579" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">IDSenha</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="590878619038938" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Text">&quot;9&quot;</param>
-                                        </action>
-                                        <action id="-10" name="Set value" sid="960183589977153" type="TextoAtivacaoSenha">
-                                            <param id="0" name="Instance variable">Valor</param>
-                                            <param id="1" name="Value">9</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
-                </event-block>
             </sub-events>
         </event-group>
+        <event-group description="Grupo responsável por definir o funcionamento do jogo quando a senha é acertada. Aciona os enigmas." sid="151588756389195" title="Configurações de Acerto da Senha" />
+        <event-block sid="992635648415381">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="554215953742591" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>
