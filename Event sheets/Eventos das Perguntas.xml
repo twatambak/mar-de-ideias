@@ -2389,7 +2389,7 @@
                             </conditions>
                             <actions>
                                 <action id="10" name="Insert" sid="320329016766024" type="ArrayRespostas">
-                                    <param id="0" name="Value">&quot;Vi´tória&quot;</param>
+                                    <param id="0" name="Value">&quot;Vitória&quot;</param>
                                     <param id="1" name="Index">40</param>
                                     <param id="2" name="Axis">0</param>
                                 </action>

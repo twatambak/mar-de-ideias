@@ -757,7 +757,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.300000012</opacity>
                     </world>
                 </instance>
                 <instance type="MenuOpcoes_BordasInferior" uid="122">
@@ -782,7 +782,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.300000012</opacity>
                     </world>
                 </instance>
                 <instance type="MenuCreditos_BordasInferior" uid="112">
@@ -807,7 +807,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.300000012</opacity>
                     </world>
                 </instance>
                 <instance type="MenuCreditos_BordasSuperior" uid="116">
@@ -832,7 +832,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.300000012</opacity>
                     </world>
                 </instance>
                 <instance type="MenuJogar_BordasSuperior" uid="117">
@@ -977,7 +977,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.300000012</opacity>
                     </world>
                 </instance>
                 <instance type="Opcoes_Texto" uid="118">
@@ -1019,7 +1019,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.300000012</opacity>
                     </world>
                 </instance>
             </instances>
@@ -1788,12 +1788,12 @@
                     <effect-instances>
                         <effect-instance type="GlowHorizontal">
                             <parameters>
-                                <intensity>0.2</intensity>
+                                <intensity>0.4</intensity>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="GlowVertical">
                             <parameters>
-                                <intensity>0.2</intensity>
+                                <intensity>0.4</intensity>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="Noise">
@@ -1837,12 +1837,12 @@
                     <effect-instances>
                         <effect-instance type="GlowHorizontal">
                             <parameters>
-                                <intensity>0.2</intensity>
+                                <intensity>0.4</intensity>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="GlowVertical">
                             <parameters>
-                                <intensity>0.2</intensity>
+                                <intensity>0.4</intensity>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="Noise">
@@ -1886,12 +1886,12 @@
                     <effect-instances>
                         <effect-instance type="GlowHorizontal">
                             <parameters>
-                                <intensity>0.2</intensity>
+                                <intensity>0.4</intensity>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="GlowVertical">
                             <parameters>
-                                <intensity>0.2</intensity>
+                                <intensity>0.4</intensity>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="Noise">
@@ -1935,12 +1935,12 @@
                     <effect-instances>
                         <effect-instance type="GlowHorizontal">
                             <parameters>
-                                <intensity>0.2</intensity>
+                                <intensity>0.4</intensity>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="GlowVertical">
                             <parameters>
-                                <intensity>0.2</intensity>
+                                <intensity>0.4</intensity>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="Noise">
@@ -1984,12 +1984,12 @@
                     <effect-instances>
                         <effect-instance type="GlowHorizontal">
                             <parameters>
-                                <intensity>0.2</intensity>
+                                <intensity>0.4</intensity>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="GlowVertical">
                             <parameters>
-                                <intensity>0.2</intensity>
+                                <intensity>0.4</intensity>
                             </parameters>
                         </effect-instance>
                         <effect-instance type="Noise">

@@ -4449,7 +4449,7 @@
                     <effect-instances>
                         <effect-instance type="GlowVertical">
                             <parameters>
-                                <intensity>0.4</intensity>
+                                <intensity>0.05</intensity>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
@@ -4576,12 +4576,12 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="GameOver_Texto" uid="135">
+                <instance type="GameOver_Texto2" uid="135">
                     <properties>
-                        <text>Fim de Jogo!</text>
+                        <text>Fim de Jogo</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-96,400,0</font>
-                        <color>255,0,0</color>
+                        <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -4595,10 +4595,100 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>96</x>
-                        <y>256</y>
+                        <y>224</y>
                         <z>0</z>
                         <width>448</width>
                         <height>256</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="GameOver_Texto" uid="136">
+                    <properties>
+                        <text>Não se preocupe, na próxima tenho certeza que você irá melhor.</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-29,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <ID>0</ID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>96</x>
+                        <y>480</y>
+                        <z>0</z>
+                        <width>448</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="GameOver_Texto3" uid="137">
+                    <properties>
+                        <text>0000</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-37,400,0</font>
+                        <color>255,153,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <ID>0</ID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>320</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>96</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="GameOver_Texto" uid="138">
+                    <properties>
+                        <text>Seus pontos:</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-37,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <ID>0</ID>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>96</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>224</width>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -4625,39 +4715,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="GameOver_BordaDireitaInferior" uid="136">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>480</x>
-                        <y>672</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="GameOver_BordaDireitaInferior" uid="141">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -4679,41 +4736,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>448</x>
-                        <y>864</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="GameOver_BordaDireitaSuperior" uid="138">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
                         <x>480</x>
-                        <y>608</y>
+                        <y>864</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -4745,41 +4769,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>448</x>
+                        <x>480</x>
                         <y>800</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="GameOver_BordaEsquerdaInferior" uid="137">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>672</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -4811,41 +4802,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>192</x>
-                        <y>864</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="GameOver_BordaEsquerdaSuperior" uid="139">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
                         <x>160</x>
-                        <y>608</y>
+                        <y>864</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -4877,7 +4835,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>192</x>
+                        <x>160</x>
                         <y>800</y>
                         <z>0</z>
                         <width>64</width>
@@ -4885,37 +4843,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="GameOver_BordaHorizontal" uid="148">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>192</x>
-                        <y>576</y>
-                        <z>0</z>
-                        <width>256</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -4939,46 +4866,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>224</x>
+                        <x>192</x>
                         <y>768</y>
-                        <z>0</z>
-                        <width>192</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="GameOver_BordaHorizontal" uid="150">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>No</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>448</x>
-                        <y>704</y>
                         <z>0</z>
                         <width>256</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
-                        <angle>3.141592741</angle>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -5001,10 +4897,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>416</x>
+                        <x>448</x>
                         <y>896</y>
                         <z>0</z>
-                        <width>192</width>
+                        <width>256</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -5034,7 +4930,7 @@
             <instances>
                 <instance type="GameOver_Texto" uid="152">
                     <properties>
-                        <text>Menu</text>
+                        <text>Voltar ao menu</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-35,400,0</font>
                         <color>255,255,255</color>
@@ -5050,10 +4946,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>192</x>
+                        <x>160</x>
                         <y>800</y>
                         <z>0</z>
-                        <width>256</width>
+                        <width>320</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -5062,11 +4958,447 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="GameOver_Texto" uid="153">
+            </instances>
+            <effects />
+        </layer>
+        <layer name="BackgroundMenuPausa" sid="700121729348149">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Pausa_Background" uid="173">
                     <properties>
-                        <text>Anúncio</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-35,400,0</font>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>128</y>
+                        <z>0</z>
+                        <width>576</width>
+                        <height>832</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="TextoMenuPausa" sid="195398631645918">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Pausa_Texto" uid="174">
+                    <properties>
+                        <text>Jogo pausado</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-96,400,0</font>
+                        <color>102,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <ID>0</ID>
+                    </instance-variables>
+                    <effect-instances>
+                        <effect-instance type="GlowHorizontal">
+                            <parameters>
+                                <intensity>0.2</intensity>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="GlowVertical">
+                            <parameters>
+                                <intensity>0.2</intensity>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>64</x>
+                        <y>192</y>
+                        <z>0</z>
+                        <width>512</width>
+                        <height>256</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_Texto2" uid="175">
+                    <properties>
+                        <text>Tome seu tempo. Não tenha pressa.</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-24,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <ID>0</ID>
+                    </instance-variables>
+                    <effect-instances>
+                        <effect-instance type="GlowHorizontal">
+                            <parameters>
+                                <intensity>0.2</intensity>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="GlowVertical">
+                            <parameters>
+                                <intensity>0.2</intensity>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>96</x>
+                        <y>448</y>
+                        <z>0</z>
+                        <width>448</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_BordaDireitaSuperior" uid="177">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>480</x>
+                        <y>576</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_BordaEsquerdaInferior" uid="178">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_BordaEsquerdaSuperior" uid="179">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>576</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_BordaHorizontal" uid="180">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>192</x>
+                        <y>544</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_BordaHorizontal" uid="181">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>448</x>
+                        <y>672</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>3.141592741</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="BordasOpcoesMenuPausa" sid="281750904824922">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Pausa_BordaDireitaInferior" uid="176">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>480</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="TextoOpcoesMenuPausa" sid="649619198581063">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Pausa_BordaDireitaSuperior" uid="182">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>480</x>
+                        <y>768</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_BordaEsquerdaInferior" uid="183">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>832</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_BordaEsquerdaSuperior" uid="184">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>768</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_BordaHorizontal" uid="185">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>192</x>
+                        <y>736</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_BordaHorizontal" uid="186">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>448</x>
+                        <y>864</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>3.141592741</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_BordaDireitaInferior" uid="187">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>480</x>
+                        <y>832</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_Texto2" uid="188">
+                    <properties>
+                        <text>Retornar</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -5077,11 +5409,65 @@
                     <instance-variables>
                         <ID>1</ID>
                     </instance-variables>
+                    <effect-instances>
+                        <effect-instance type="GlowHorizontal">
+                            <parameters>
+                                <intensity>0.1</intensity>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="GlowVertical">
+                            <parameters>
+                                <intensity>0.1</intensity>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>160</x>
-                        <y>608</y>
+                        <y>576</y>
+                        <z>0</z>
+                        <width>320</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Pausa_Texto2" uid="189">
+                    <properties>
+                        <text>Voltar ao menu</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <instance-variables>
+                        <ID>2</ID>
+                    </instance-variables>
+                    <effect-instances>
+                        <effect-instance type="GlowHorizontal">
+                            <parameters>
+                                <intensity>0.1</intensity>
+                            </parameters>
+                        </effect-instance>
+                        <effect-instance type="GlowVertical">
+                            <parameters>
+                                <intensity>0.1</intensity>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>768</y>
                         <z>0</z>
                         <width>320</width>
                         <height>64</height>
