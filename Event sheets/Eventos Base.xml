@@ -324,7 +324,7 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="Comporta os eventos referentes a todo funcionamento do jogo.&#x0D;&#x0A;&#x0D;&#x0A;- Spawn dos peixes;&#x0D;&#x0A;- Exibição das informações do jogo;&#x0D;&#x0A;- Controle do tempo;&#x0D;&#x0A;- Controle das perguntas;&#x0D;&#x0A;- Definições caso o jogo não esteja pausado;&#x0D;&#x0A;- Exibição do texto de ajuda;&#x0D;&#x0A;- Ativação do menu de pausa." sid="295051042907226" title="Configurações de Funcionamento do Jogo">
+        <event-group description="Comporta os eventos referentes a todo funcionamento do jogo.&#x0D;&#x0A;&#x0D;&#x0A;- Spawn dos peixes;&#x0D;&#x0A;- Exibição das informações do jogo;&#x0D;&#x0A;- Controle do tempo;&#x0D;&#x0A;- Controle das perguntas;&#x0D;&#x0A;- Definições caso o jogo não esteja pausado;&#x0D;&#x0A;- Exibição do texto de ajuda;&#x0D;&#x0A;- Ativação do menu de pausa." sid="295051042907226" title="Eventos do Funcionamento do Jogo">
             <sub-events>
                 <event-group description="" sid="350938217171601" title="Spawn dos peixes">
                     <sub-events>
@@ -386,7 +386,7 @@
                             </conditions>
                             <actions>
                                 <action id="-12" name="Set group active" sid="567689973145857" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                                    <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                             </actions>
@@ -476,7 +476,7 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-12" name="Set group active" sid="537668373592135" type="System">
-                                                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                                            <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="374064533652074" type="System">
@@ -491,7 +491,7 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-12" name="Set group active" sid="241660512434094" type="System">
-                                                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                                            <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="969895039817284" type="System">
@@ -534,7 +534,7 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-12" name="Set group active" sid="517413859141028" type="System">
-                                                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                                            <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="597557697394104" type="System">
@@ -549,7 +549,7 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-12" name="Set group active" sid="125553208754705" type="System">
-                                                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                                            <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="316347309080716" type="System">
@@ -592,7 +592,7 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-12" name="Set group active" sid="729322776769527" type="System">
-                                                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                                            <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="725113305374279" type="System">
@@ -607,7 +607,7 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-12" name="Set group active" sid="321614409763890" type="System">
-                                                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                                            <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="760388973339202" type="System">
@@ -689,30 +689,57 @@
                 </event-group>
                 <event-group description="" sid="678096537307125" title="Ativação do menu de pausa">
                     <sub-events>
-                        <event-block sid="733912988803946">
+                        <event-block sid="396593802790519">
                             <conditions>
-                                <condition id="3" name="On touched object" sid="892192238165742" type="Touch">
+                                <condition id="3" name="On touched object" sid="984709853107807" type="Touch">
                                     <param id="0" name="Object">BotaoPausa</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-12" name="Set group active" sid="707075234977493" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Menu de Pausa&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="521057102156105">
+                                    <conditions>
+                                        <condition id="-15" name="Is group active" sid="740705522000196" type="System">
+                                            <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="840810153950304" type="System">
+                                            <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="923906081658894">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="928898875871731" type="System" />
+                                        <condition id="-15" inverted="1" name="Is group active" sid="774838120766148" type="System">
+                                            <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
+                                        </condition>
+                                        <condition id="-15" inverted="1" name="Is group active" sid="608583006227385" type="System">
+                                            <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Set group active" sid="103917268505146" type="System">
+                                            <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por gerir o encerramento da fase." inactive="1" sid="240293749142907" title="Configurações de Finalização de Fase">
+        <event-group description="Grupo responsável por gerir o encerramento da fase." inactive="1" sid="240293749142907" title="Eventos de fim de fase">
             <sub-events>
                 <comment>Quando o grupo é ativado inicia o fade de todos os elementos relacionados.</comment>
                 <event-block sid="392404140038507">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="424643370763461" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                            <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -740,12 +767,12 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é errada." inactive="1" sid="606436072616008" title="Configurações de Erro da Pergunta">
+        <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é errada." inactive="1" sid="606436072616008" title="Eventos para respostas erradas">
             <sub-events>
                 <event-block sid="192569304886573">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="125421649659406" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                            <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -798,7 +825,7 @@
                 <event-block sid="329498087310846">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="782565729815354" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                            <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -817,7 +844,7 @@
                                     <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="872345549698439" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                    <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="988251954104526" type="Resposta_Background">
@@ -858,7 +885,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-12" name="Set group active" sid="771366307839006" type="System">
-                                            <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                                            <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
                                             <param id="1" name="State">1</param>
                                         </action>
                                     </actions>
@@ -869,7 +896,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-12" name="Set group active" sid="177630425890881" type="System">
-                                            <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                            <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
                                             <param id="1" name="State">1</param>
                                         </action>
                                     </actions>
@@ -880,13 +907,13 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é acertada." inactive="1" sid="400109918349410" title="Configurações de Acerto da Pergunta">
+        <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é acertada." inactive="1" sid="400109918349410" title="Eventos para respostas corretas">
             <sub-events>
                 <comment>Garante a troca de sprites das bordas para se adequarem ao fundo.</comment>
                 <event-block sid="878509293529869">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="845982711181454" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                            <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -940,7 +967,7 @@
                 <event-block sid="723184210615569">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="859856855854196" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                            <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -959,7 +986,7 @@
                                     <param id="1" name="Value">100</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="391524305688095" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                    <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-28" name="Set effect parameter" sid="477968868828699" type="Resposta_Background">
@@ -985,7 +1012,7 @@
                                     <param id="0" name="Seconds">0.4</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="500233910492407" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                    <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                                 <action id="4" name="Set at XYZ" sid="547082529239415" type="ArrayPerguntas">
@@ -1004,12 +1031,12 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por gerenciar os eventos de fim de jogo." inactive="1" sid="304003016682155" title="Configurações de Fim de Jogo">
+        <event-group description="Grupo responsável por gerenciar os eventos de fim de jogo." inactive="1" sid="304003016682155" title="Eventos de fim de jogo">
             <sub-events>
                 <event-block sid="478372602329477">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="296789444510255" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                            <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -1121,7 +1148,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por definir o funcionamento do menu de GameOver." sid="530677074459664" title="Configurações do Menu de GameOver">
+        <event-group description="Grupo responsável por definir o funcionamento do menu de GameOver." sid="530677074459664" title="Eventos para o menu de GameOver">
             <sub-events>
                 <event-block sid="637660065896214">
                     <conditions>
@@ -1162,12 +1189,12 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por definir o funcionamento do menu de pausa." inactive="1" sid="407316344348834" title="Configurações de Menu de Pausa">
+        <event-group description="Grupo responsável por definir o funcionamento do menu de pausa." inactive="1" sid="407316344348834" title="Eventos para o menu de pausa">
             <sub-events>
                 <event-block sid="214626874616620">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="972544232229120" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Menu de Pausa&quot;</param>
+                            <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -1190,7 +1217,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="-12" name="Set group active" sid="361918359422666" type="System">
-                                            <param id="0" name="Group name">&quot;Configurações de Menu de Pausa&quot;</param>
+                                            <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
                                             <param id="1" name="State">0</param>
                                         </action>
                                     </actions>
@@ -1216,7 +1243,7 @@
                 <event-block sid="781211597900700">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="979657554164749" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Menu de Pausa&quot;</param>
+                            <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
