@@ -2409,7 +2409,7 @@
                         <y>192</y>
                         <z>0</z>
                         <width>32</width>
-                        <height>96</height>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -2437,10 +2437,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>608</x>
-                        <y>288</y>
+                        <y>256</y>
                         <z>0</z>
                         <width>32</width>
-                        <height>96</height>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
