@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>320</position-x>
-        <position-y>621.913</position-y>
-        <position-z>112.697</position-z>
+        <position-y>467.966</position-y>
+        <position-z>150</position-z>
         <lookat-x>320</lookat-x>
-        <lookat-y>621.913</lookat-y>
+        <lookat-y>467.966</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,17 +23,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="DetalheNoise" />
+    <active-layer name="BackgroundTItulo" />
     <layers>
         <layer locked="1" name="Mar" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="DetalhesMar" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Ceu" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="DetalhesCeuEstrelas" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="DetalhesCeuEstrelas" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Segredo" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="DetalhesCeuLua" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Montanhas" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="BackgroundTItulo" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="BordasTitulo" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BackgroundTItulo" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BordasTitulo" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoTitulo" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundOpcoes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BordasOpcoes" parallax-in-editor="0" visible="1" />

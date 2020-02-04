@@ -11,10 +11,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="1">Menu</layout>
-        <layout order="2">Base</layout>
+        <layout active="1" order="2">Base</layout>
         <event-sheet order="0">Variaveis</event-sheet>
-        <event-sheet active="1" order="3">Eventos Menu</event-sheet>
-        <event-sheet order="4">Eventos Base</event-sheet>
+        <event-sheet order="4">Eventos Menu</event-sheet>
+        <event-sheet order="3">Eventos Base</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Objetos para Pergunta/" />
-        <folder expanded="0" path="object-folder/Objetos para Resposta/" />
+        <folder expanded="1" path="object-folder/Objetos para Resposta/" />
         <folder expanded="0" path="object-folder/Objetos do HUD/" />
         <folder expanded="0" path="object-folder/Objetos do HUD/Detalhes/" />
         <folder expanded="0" path="object-folder/Objetos do HUD/Botões/" />
@@ -52,10 +52,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Pergunta_BordaDireitaSuperior/" />
         <folder expanded="1" path="animation-folder/Pergunta_BordaEsquerdaInferior/" />
         <folder expanded="1" path="animation-folder/Pergunta_BordaEsquerdaSuperior/" />
-        <folder expanded="1" path="animation-folder/Resposta_BordaDireitaInferior/" />
-        <folder expanded="1" path="animation-folder/Resposta_BordaDireitaSuperior/" />
-        <folder expanded="1" path="animation-folder/Resposta_BordaEsquerdaInferior/" />
-        <folder expanded="1" path="animation-folder/Resposta_BordaEsquerdaSuperior/" />
         <folder expanded="1" path="animation-folder/BackgroundProfundidade/" />
         <folder expanded="1" path="animation-folder/BordasPainel/" />
         <folder expanded="1" path="animation-folder/BotaoPausa/" />
@@ -81,5 +77,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/GameOver_BordaEsquerdaInferior/" />
         <folder expanded="1" path="animation-folder/GameOver_BordaEsquerdaSuperior/" />
         <folder expanded="1" path="animation-folder/Secret/" />
+        <folder expanded="1" path="animation-folder/OpcaoResposta/" />
     </folders-expanded>
 </c2uistate>
