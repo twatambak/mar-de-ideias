@@ -655,11 +655,6 @@
             </object-folder>
             <object-type name="TexoInfo" sid="353859110265167">
                 <plugin id="Text" />
-                <effects>
-                    <effect-type name="GlowVertical">
-                        <effect id="glowvertical" />
-                    </effect-type>
-                </effects>
             </object-type>
         </object-folder>
         <object-folder name="Objetos do Mar">

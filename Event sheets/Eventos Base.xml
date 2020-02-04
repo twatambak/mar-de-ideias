@@ -124,6 +124,10 @@
                             <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
                         </action>
+                        <action id="5" name="Set web font" sid="637168924579493" type="GameOver_Texto3">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>Para a animação dos peixes impedindo a alteração de frames.</comment>
@@ -787,6 +791,9 @@
                         <action id="-4" name="Set layer visible" sid="205302502917033" type="System">
                             <param id="0" name="Layer">&quot;TextoOpcaoGameOver&quot;</param>
                             <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="178124704749227" type="GameOver_Texto3">
+                            <param id="0" name="Text">Profundidade &amp; &quot;m&quot;</param>
                         </action>
                     </actions>
                 </event-block>
