@@ -233,24 +233,28 @@
                             </conditions>
                             <actions>
                                 <action id="-12" name="Set group active" sid="274295138107579" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                    <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="716344944599821" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                    <param id="0" name="Group name">&quot;Eventos para respostas incorretas&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="972563876439425" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                    <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="938763454003037" type="System">
-                                    <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                                    <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="899140967177046" type="System">
                                     <param id="0" name="Group name">&quot;Controle do Tempo&quot;</param>
                                     <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="509184128453443" type="System">
+                                    <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
+                                    <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -324,7 +328,7 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="Comporta os eventos referentes a todo funcionamento do jogo.&#x0D;&#x0A;&#x0D;&#x0A;- Spawn dos peixes;&#x0D;&#x0A;- Exibição das informações do jogo;&#x0D;&#x0A;- Controle do tempo;&#x0D;&#x0A;- Controle das perguntas;&#x0D;&#x0A;- Definições caso o jogo não esteja pausado;&#x0D;&#x0A;- Exibição do texto de ajuda;&#x0D;&#x0A;- Ativação do menu de pausa." sid="295051042907226" title="Eventos do Funcionamento do Jogo">
+        <event-group description="Comporta os eventos referentes a todo funcionamento do jogo.&#x0D;&#x0A;&#x0D;&#x0A;- Spawn dos peixes;&#x0D;&#x0A;- Exibição das informações do jogo;&#x0D;&#x0A;- Controle do tempo;&#x0D;&#x0A;- Controle das perguntas;&#x0D;&#x0A;- Definições caso o jogo não esteja pausado;&#x0D;&#x0A;- Exibição do texto de ajuda;&#x0D;&#x0A;- Ativação do menu de pausa." sid="295051042907226" title="Funcionamento do Jogo">
             <sub-events>
                 <event-group description="" sid="350938217171601" title="Spawn dos peixes">
                     <sub-events>
@@ -491,7 +495,7 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-12" name="Set group active" sid="241660512434094" type="System">
-                                                            <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
+                                                            <param id="0" name="Group name">&quot;Eventos para respostas incorretas&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="969895039817284" type="System">
@@ -549,7 +553,7 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-12" name="Set group active" sid="125553208754705" type="System">
-                                                            <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
+                                                            <param id="0" name="Group name">&quot;Eventos para respostas incorretas&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="316347309080716" type="System">
@@ -607,7 +611,7 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="-12" name="Set group active" sid="321614409763890" type="System">
-                                                            <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
+                                                            <param id="0" name="Group name">&quot;Eventos para respostas incorretas&quot;</param>
                                                             <param id="1" name="State">1</param>
                                                         </action>
                                                         <action id="-9" name="Set value" sid="760388973339202" type="System">
@@ -733,505 +737,395 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por gerir o encerramento da fase." inactive="1" sid="240293749142907" title="Eventos de fim de fase">
+        <event-group description="Comporta os eventos relacionados às escolhas das respostas.&#x0D;&#x0A;&#x0D;&#x0A;- Eventos para respostas corretas;&#x0D;&#x0A;- Eventos para respostas incorretas." sid="858359164549522" title="Escolha da resposta">
             <sub-events>
-                <comment>Quando o grupo é ativado inicia o fade de todos os elementos relacionados.</comment>
-                <event-block sid="392404140038507">
-                    <conditions>
-                        <condition id="-15" name="Is group active" sid="424643370763461" type="System">
-                            <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Fade" id="1" name="Start fade" sid="987753977885947" type="Resposta_Background" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="381322066113417" type="Resposta_BordaEsquerdaSuperior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="113926193419003" type="Resposta_BordaEsquerdaInferior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="826707850280302" type="Resposta_BordaDireitaSuperior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="276852240290954" type="Resposta_BordaDireitaInferior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="183362133880576" type="Resposta_BordaHorizontal" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="986743413636969" type="Resposta_BordaVertical" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="605822489964479" type="Resposta_Texto" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="591599158967509" type="Pergunta_Background" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="578488200668694" type="Pergunta_BordaEsquerdaSuperior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="565043103644671" type="Pergunta_BordaEsquerdaInferior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="486070128511251" type="Pergunta_BordaDireitaSuperior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="486316591313214" type="Pergunta_BordaDireitaInferior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="287564097659827" type="Pergunta_BordaHorizontal" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="705889743798281" type="Pergunta_BordaVertical" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="753735507713333" type="Pergunta_Texto" />
-                        <action id="-16" name="Wait" sid="350326173220076" type="System">
-                            <param id="0" name="Seconds">1.5</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="474456974422812" type="System" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é errada." inactive="1" sid="606436072616008" title="Eventos para respostas erradas">
-            <sub-events>
-                <event-block sid="192569304886573">
-                    <conditions>
-                        <condition id="-15" name="Is group active" sid="125421649659406" type="System">
-                            <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
+                <event-group description="" inactive="1" sid="400109918349410" title="Eventos para respostas corretas">
                     <sub-events>
-                        <event-block sid="639616657377848">
+                        <comment>Garante a troca de sprites das bordas para se adequarem ao fundo.</comment>
+                        <event-block sid="878509293529869">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="863670314544296" type="Resposta_BordaEsquerdaSuperior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="625965379846585" type="Resposta_BordaEsquerdaInferior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="858919428719122" type="Resposta_BordaDireitaSuperior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="352017135491089" type="Resposta_BordaDireitaInferior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="942873784372138" type="Resposta_Background">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
+                                <condition id="-15" name="Is group active" sid="845982711181454" type="System">
+                                    <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="471814023128075" type="Resposta_BordaDireitaInferior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="737776386625343" type="Resposta_BordaDireitaSuperior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="227504562661418" type="Resposta_BordaEsquerdaInferior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="838890819107700" type="Resposta_BordaEsquerdaSuperior">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="329498087310846">
-                    <conditions>
-                        <condition id="-15" name="Is group active" sid="782565729815354" type="System">
-                            <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="418627239775540">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="449131598858348" type="Resposta_Background">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Add to" sid="308779345557474" type="System">
-                                    <param id="0" name="Variable">Erros</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="872345549698439" type="System">
-                                    <param id="0" name="Group name">&quot;Eventos para respostas erradas&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="988251954104526" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">0</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="220563526420309" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="815039554233503" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-27" name="Set effect enabled" sid="166614552211735" type="Resposta_Background">
-                                    <param id="0" name="Mode">1</param>
-                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="338829587461695" type="System">
-                                    <param id="0" name="Seconds">0.4</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="962875470768118" type="System">
-                                    <param id="0" name="Variable">Game</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
-                                <event-block sid="845356365487289">
+                                <event-block sid="751613329070371">
                                     <conditions>
-                                        <condition id="-14" name="Compare variable" sid="665212123522026" type="System">
-                                            <param id="0" name="Variable">Erros</param>
-                                            <param id="1" name="Comparison">5</param>
-                                            <param id="2" name="Value">4</param>
+                                        <condition id="-7" name="Compare instance variable" sid="105495102787906" type="Resposta_BordaEsquerdaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="241795383862421" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="290720761168172" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="875763229371716" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="926614308558613" type="Resposta_Background">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-12" name="Set group active" sid="771366307839006" type="System">
-                                            <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
-                                            <param id="1" name="State">1</param>
+                                        <action id="5" name="Set frame" sid="474423301020810" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="649545310552463" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="315341067550055" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="362822266237135" type="Resposta_BordaEsquerdaSuperior">
+                                            <param id="0" name="Frame number">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="279414976716758">
+                            </sub-events>
+                        </event-block>
+                        <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou. Também adiciona 100 à profundidade.</comment>
+                        <event-block sid="723184210615569">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="859856855854196" type="System">
+                                    <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="600363592366589">
                                     <conditions>
-                                        <condition id="-22" name="Else" sid="201353347806286" type="System" />
+                                        <condition id="-7" name="Compare instance variable" sid="109741599762749" type="Resposta_Background">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-12" name="Set group active" sid="177630425890881" type="System">
+                                        <action id="-10" name="Add to" sid="555048392278938" type="System">
+                                            <param id="0" name="Variable">Profundidade</param>
+                                            <param id="1" name="Value">100</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="391524305688095" type="System">
+                                            <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="477968868828699" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="294450662890649" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="120653713064411" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="905131377461434" type="Resposta_Background">
+                                            <param id="0" name="Mode">1</param>
+                                            <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="120349474728300" type="System">
+                                            <param id="0" name="Seconds">0.4</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="500233910492407" type="System">
                                             <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
                                             <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="4" name="Set at XYZ" sid="547082529239415" type="ArrayPerguntas">
+                                            <param id="0" name="X">0</param>
+                                            <param id="1" name="Y">0</param>
+                                            <param id="2" name="Z">PerguntaAtual</param>
+                                            <param id="3" name="Value">&quot;Respondida&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="445441707738734" type="System">
+                                            <param id="0" name="Variable">Game</param>
+                                            <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="Grupo responsável por gerenciar os eventos quando uma questão é acertada." inactive="1" sid="400109918349410" title="Eventos para respostas corretas">
-            <sub-events>
-                <comment>Garante a troca de sprites das bordas para se adequarem ao fundo.</comment>
-                <event-block sid="878509293529869">
-                    <conditions>
-                        <condition id="-15" name="Is group active" sid="845982711181454" type="System">
-                            <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
+                </event-group>
+                <event-group description="" inactive="1" sid="606436072616008" title="Eventos para respostas incorretas">
                     <sub-events>
-                        <event-block sid="751613329070371">
+                        <event-block sid="192569304886573">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="105495102787906" type="Resposta_BordaEsquerdaSuperior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="241795383862421" type="Resposta_BordaEsquerdaInferior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="290720761168172" type="Resposta_BordaDireitaSuperior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="875763229371716" type="Resposta_BordaDireitaInferior">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="926614308558613" type="Resposta_Background">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="474423301020810" type="Resposta_BordaDireitaInferior">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="649545310552463" type="Resposta_BordaDireitaSuperior">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="315341067550055" type="Resposta_BordaEsquerdaInferior">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="362822266237135" type="Resposta_BordaEsquerdaSuperior">
-                                    <param id="0" name="Frame number">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <comment>Define a cor do background, espera 0.4 segundos, coloca o grupo de finalização da fase como ativo e então aplica à variável de funcionamento do jogo o valor 0 indicando que o jogo terminou. Também adiciona 100 à profundidade.</comment>
-                <event-block sid="723184210615569">
-                    <conditions>
-                        <condition id="-15" name="Is group active" sid="859856855854196" type="System">
-                            <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="600363592366589">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="109741599762749" type="Resposta_Background">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Escolha</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Add to" sid="555048392278938" type="System">
-                                    <param id="0" name="Variable">Profundidade</param>
-                                    <param id="1" name="Value">100</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="391524305688095" type="System">
-                                    <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="477968868828699" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="294450662890649" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">1</param>
-                                    <param id="2" name="Value">70</param>
-                                </action>
-                                <action id="-28" name="Set effect parameter" sid="120653713064411" type="Resposta_Background">
-                                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
-                                    <param id="1" name="Parameter index">2</param>
-                                    <param id="2" name="Value">0</param>
-                                </action>
-                                <action id="-27" name="Set effect enabled" sid="905131377461434" type="Resposta_Background">
-                                    <param id="0" name="Mode">1</param>
-                                    <param id="1" name="Effect">&quot;SetColor&quot;</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="120349474728300" type="System">
-                                    <param id="0" name="Seconds">0.4</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="500233910492407" type="System">
-                                    <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                                <action id="4" name="Set at XYZ" sid="547082529239415" type="ArrayPerguntas">
-                                    <param id="0" name="X">0</param>
-                                    <param id="1" name="Y">0</param>
-                                    <param id="2" name="Z">PerguntaAtual</param>
-                                    <param id="3" name="Value">&quot;Respondida&quot;</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="445441707738734" type="System">
-                                    <param id="0" name="Variable">Game</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="Grupo responsável por gerenciar os eventos de fim de jogo." inactive="1" sid="304003016682155" title="Eventos de fim de jogo">
-            <sub-events>
-                <event-block sid="478372602329477">
-                    <conditions>
-                        <condition id="-15" name="Is group active" sid="296789444510255" type="System">
-                            <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Fade" id="1" name="Start fade" sid="232440909396225" type="TextoProfundidade" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="319981137878480" type="Pergunta_Texto" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="283164381484670" type="Resposta_Texto" />
-                        <action id="-16" name="Wait" sid="319804745837792" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action behavior="Fade" id="1" name="Start fade" sid="457794983587918" type="Pergunta_BordaEsquerdaSuperior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="983698241522838" type="Pergunta_BordaEsquerdaInferior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="808322816472955" type="Pergunta_BordaDireitaSuperior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="704261619224841" type="Pergunta_BordaDireitaInferior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="199575910776002" type="Resposta_BordaEsquerdaSuperior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="492427849831432" type="Resposta_BordaEsquerdaInferior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="740733934916794" type="Resposta_BordaDireitaSuperior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="254755217056769" type="Resposta_BordaDireitaInferior" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="965631606180952" type="Pergunta_BordaHorizontal" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="692396479272955" type="Pergunta_BordaVertical" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="299289734965297" type="Resposta_BordaHorizontal" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="249825421686647" type="Resposta_BordaVertical" />
-                        <action id="-16" name="Wait" sid="620122647871003" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action behavior="Fade" id="1" name="Start fade" sid="463015705435436" type="Pergunta_Background" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="725273567965265" type="Resposta_Background" />
-                        <action id="-16" name="Wait" sid="894497079299976" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action behavior="Fade" id="1" name="Start fade" sid="437392488005971" type="BackgroundPainel" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="786382758377151" type="BotaoPausa" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="429057547085752" type="BackgroundProfundidade" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="484889004159446" type="BordasPainel" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="516398770113254" type="BarraTempo" />
-                        <action behavior="Fade" id="1" name="Start fade" sid="296984659867255" type="MarcaErros" />
-                        <action id="-16" name="Wait" sid="430826616319718" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="603045019383243" type="System">
-                            <param id="0" name="Layer">&quot;HUD&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="233671138080060" type="System">
-                            <param id="0" name="Layer">&quot;Painel&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="344236231249906" type="System">
-                            <param id="0" name="Layer">&quot;TextoResposta&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="980433068213788" type="System">
-                            <param id="0" name="Layer">&quot;BordasResposta&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="918118543799711" type="System">
-                            <param id="0" name="Layer">&quot;BackgroundRespostas&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="480385752613360" type="System">
-                            <param id="0" name="Layer">&quot;TextoPergunta&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="533451636561972" type="System">
-                            <param id="0" name="Layer">&quot;BordasPergunta&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="697372767076280" type="System">
-                            <param id="0" name="Layer">&quot;BackgroundPergunta&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="988203730428423" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="502559604875011" type="System">
-                            <param id="0" name="Layer">&quot;BackgroundGameOver&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="148228635655717" type="System">
-                            <param id="0" name="Layer">&quot;TextoGameOver&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="749361141754514" type="System">
-                            <param id="0" name="Layer">&quot;BordasOpcaoGameOver&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="205302502917033" type="System">
-                            <param id="0" name="Layer">&quot;TextoOpcaoGameOver&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="178124704749227" type="GameOver_Texto3">
-                            <param id="0" name="Text">Profundidade &amp; &quot;m&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="970704056472941">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="326208988293886" type="System">
-                            <param id="0" name="Variable">Profundidade</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">Highscore</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="422427862975105" type="System">
-                            <param id="0" name="Variable">Highscore</param>
-                            <param id="1" name="Value">Profundidade</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="Grupo responsável por definir o funcionamento do menu de GameOver." sid="530677074459664" title="Eventos para o menu de GameOver">
-            <sub-events>
-                <event-block sid="637660065896214">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="938954267000262" type="Touch">
-                            <param id="0" name="Object">GameOver_Texto</param>
-                        </condition>
-                        <condition id="-9" name="Layer is visible" sid="108527962418305" type="System">
-                            <param id="0" name="Layer">&quot;BordasOpcaoGameOver&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="751447252655815">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="176007543822109" type="GameOver_Texto">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                        </event-block>
-                        <event-block sid="858799658480116">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="858584841330419" type="GameOver_Texto">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="254390480942051" type="System">
-                                    <param id="0" name="Layout">Menu</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="Grupo responsável por definir o funcionamento do menu de pausa." inactive="1" sid="407316344348834" title="Eventos para o menu de pausa">
-            <sub-events>
-                <event-block sid="214626874616620">
-                    <conditions>
-                        <condition id="-15" name="Is group active" sid="972544232229120" type="System">
-                            <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="737082969227081">
-                            <conditions>
-                                <condition id="3" name="On touched object" sid="142400991139425" type="Touch">
-                                    <param id="0" name="Object">Pausa_Texto2</param>
+                                <condition id="-15" name="Is group active" sid="125421649659406" type="System">
+                                    <param id="0" name="Group name">&quot;Eventos para respostas incorretas&quot;</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="109647240887352">
+                                <event-block sid="639616657377848">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="719858283046424" type="Pausa_Texto2">
+                                        <condition id="-7" name="Compare instance variable" sid="863670314544296" type="Resposta_BordaEsquerdaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="625965379846585" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="858919428719122" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="352017135491089" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="942873784372138" type="Resposta_Background">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="471814023128075" type="Resposta_BordaDireitaInferior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="737776386625343" type="Resposta_BordaDireitaSuperior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="227504562661418" type="Resposta_BordaEsquerdaInferior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="838890819107700" type="Resposta_BordaEsquerdaSuperior">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="329498087310846">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="782565729815354" type="System">
+                                    <param id="0" name="Group name">&quot;Eventos para respostas incorretas&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="418627239775540">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="449131598858348" type="Resposta_Background">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Escolha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="308779345557474" type="System">
+                                            <param id="0" name="Variable">Erros</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="872345549698439" type="System">
+                                            <param id="0" name="Group name">&quot;Eventos para respostas incorretas&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="988251954104526" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">0</param>
+                                            <param id="2" name="Value">70</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="220563526420309" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">1</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-28" name="Set effect parameter" sid="815039554233503" type="Resposta_Background">
+                                            <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                                            <param id="1" name="Parameter index">2</param>
+                                            <param id="2" name="Value">0</param>
+                                        </action>
+                                        <action id="-27" name="Set effect enabled" sid="166614552211735" type="Resposta_Background">
+                                            <param id="0" name="Mode">1</param>
+                                            <param id="1" name="Effect">&quot;SetColor&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="338829587461695" type="System">
+                                            <param id="0" name="Seconds">0.4</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="962875470768118" type="System">
+                                            <param id="0" name="Variable">Game</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="845356365487289">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="665212123522026" type="System">
+                                                    <param id="0" name="Variable">Erros</param>
+                                                    <param id="1" name="Comparison">5</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Set group active" sid="771366307839006" type="System">
+                                                    <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="279414976716758">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="201353347806286" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Set group active" sid="177630425890881" type="System">
+                                                    <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="Comporta os eventos que definem as funcionalidades dos menus in-game.&#x0D;&#x0A;&#x0D;&#x0A;- Eventos para o menu de pausa;&#x0D;&#x0A;- Eventos para o menu de GameOver." sid="337649808342605" title="Menus in-game">
+            <sub-events>
+                <event-group description="" inactive="1" sid="407316344348834" title="Eventos para o menu de pausa">
+                    <sub-events>
+                        <event-block sid="214626874616620">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="972544232229120" type="System">
+                                    <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="737082969227081">
+                                    <conditions>
+                                        <condition id="3" name="On touched object" sid="142400991139425" type="Touch">
+                                            <param id="0" name="Object">Pausa_Texto2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="109647240887352">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="719858283046424" type="Pausa_Texto2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-12" name="Set group active" sid="361918359422666" type="System">
+                                                    <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="116309110845118">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="665184701089735" type="Pausa_Texto2">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Go to layout" sid="116540721880121" type="System">
+                                                    <param id="0" name="Layout">Menu</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="781211597900700">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="979657554164749" type="System">
+                                    <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="582244681297320" type="System">
+                                    <param id="0" name="Layer">&quot;BackgroundMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="785850214395452" type="System">
+                                    <param id="0" name="Layer">&quot;TextoMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="374288305522364" type="System">
+                                    <param id="0" name="Layer">&quot;BordasOpcoesMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="919769120822620" type="System">
+                                    <param id="0" name="Layer">&quot;TextoOpcoesMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="377109032282670" type="System">
+                                    <param id="0" name="Group name">&quot;Controle do Tempo&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="710802687468456" type="System">
+                                    <param id="0" name="Group name">&quot;Controle das Perguntas&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="530677074459664" title="Eventos para o menu de GameOver">
+                    <sub-events>
+                        <event-block sid="637660065896214">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="938954267000262" type="Touch">
+                                    <param id="0" name="Object">GameOver_Texto</param>
+                                </condition>
+                                <condition id="-9" name="Layer is visible" sid="108527962418305" type="System">
+                                    <param id="0" name="Layer">&quot;BordasOpcaoGameOver&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="751447252655815">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="176007543822109" type="GameOver_Texto">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-12" name="Set group active" sid="361918359422666" type="System">
-                                            <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
-                                            <param id="1" name="State">0</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
                                 </event-block>
-                                <event-block sid="116309110845118">
+                                <event-block sid="858799658480116">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="665184701089735" type="Pausa_Texto2">
+                                        <condition id="-7" name="Compare instance variable" sid="858584841330419" type="GameOver_Texto">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-2" name="Go to layout" sid="116540721880121" type="System">
+                                        <action id="-2" name="Go to layout" sid="254390480942051" type="System">
                                             <param id="0" name="Layout">Menu</param>
                                         </action>
                                     </actions>
@@ -1239,40 +1133,162 @@
                             </sub-events>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="781211597900700">
-                    <conditions>
-                        <condition id="-15" name="Is group active" sid="979657554164749" type="System">
-                            <param id="0" name="Group name">&quot;Eventos para o menu de pausa&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set layer visible" sid="582244681297320" type="System">
-                            <param id="0" name="Layer">&quot;BackgroundMenuPausa&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="785850214395452" type="System">
-                            <param id="0" name="Layer">&quot;TextoMenuPausa&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="374288305522364" type="System">
-                            <param id="0" name="Layer">&quot;BordasOpcoesMenuPausa&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="919769120822620" type="System">
-                            <param id="0" name="Layer">&quot;TextoOpcoesMenuPausa&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="377109032282670" type="System">
-                            <param id="0" name="Group name">&quot;Controle do Tempo&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="710802687468456" type="System">
-                            <param id="0" name="Group name">&quot;Controle das Perguntas&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="Comporta os eventos que gerem a finalização da fase e/ou do jogo.&#x0D;&#x0A;&#x0D;&#x0A;- Eventos de fim de fase;&#x0D;&#x0A;- Eventos de fim de jogo." sid="976929862406070" title="Pós-resposta">
+            <sub-events>
+                <event-group description="" inactive="1" sid="240293749142907" title="Eventos de fim de fase">
+                    <sub-events>
+                        <comment>Quando o grupo é ativado inicia o fade de todos os elementos relacionados.</comment>
+                        <event-block sid="392404140038507">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="424643370763461" type="System">
+                                    <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Fade" id="1" name="Start fade" sid="987753977885947" type="Resposta_Background" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="381322066113417" type="Resposta_BordaEsquerdaSuperior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="113926193419003" type="Resposta_BordaEsquerdaInferior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="826707850280302" type="Resposta_BordaDireitaSuperior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="276852240290954" type="Resposta_BordaDireitaInferior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="183362133880576" type="Resposta_BordaHorizontal" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="986743413636969" type="Resposta_BordaVertical" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="605822489964479" type="Resposta_Texto" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="591599158967509" type="Pergunta_Background" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="578488200668694" type="Pergunta_BordaEsquerdaSuperior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="565043103644671" type="Pergunta_BordaEsquerdaInferior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="486070128511251" type="Pergunta_BordaDireitaSuperior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="486316591313214" type="Pergunta_BordaDireitaInferior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="287564097659827" type="Pergunta_BordaHorizontal" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="705889743798281" type="Pergunta_BordaVertical" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="753735507713333" type="Pergunta_Texto" />
+                                <action id="-16" name="Wait" sid="350326173220076" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="474456974422812" type="System" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" inactive="1" sid="304003016682155" title="Eventos de fim de jogo">
+                    <sub-events>
+                        <event-block sid="478372602329477">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="296789444510255" type="System">
+                                    <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Fade" id="1" name="Start fade" sid="232440909396225" type="TextoProfundidade" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="319981137878480" type="Pergunta_Texto" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="283164381484670" type="Resposta_Texto" />
+                                <action id="-16" name="Wait" sid="319804745837792" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="457794983587918" type="Pergunta_BordaEsquerdaSuperior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="983698241522838" type="Pergunta_BordaEsquerdaInferior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="808322816472955" type="Pergunta_BordaDireitaSuperior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="704261619224841" type="Pergunta_BordaDireitaInferior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="199575910776002" type="Resposta_BordaEsquerdaSuperior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="492427849831432" type="Resposta_BordaEsquerdaInferior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="740733934916794" type="Resposta_BordaDireitaSuperior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="254755217056769" type="Resposta_BordaDireitaInferior" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="965631606180952" type="Pergunta_BordaHorizontal" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="692396479272955" type="Pergunta_BordaVertical" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="299289734965297" type="Resposta_BordaHorizontal" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="249825421686647" type="Resposta_BordaVertical" />
+                                <action id="-16" name="Wait" sid="620122647871003" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="463015705435436" type="Pergunta_Background" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="725273567965265" type="Resposta_Background" />
+                                <action id="-16" name="Wait" sid="894497079299976" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="437392488005971" type="BackgroundPainel" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="786382758377151" type="BotaoPausa" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="429057547085752" type="BackgroundProfundidade" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="484889004159446" type="BordasPainel" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="516398770113254" type="BarraTempo" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="296984659867255" type="MarcaErros" />
+                                <action id="-16" name="Wait" sid="430826616319718" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="603045019383243" type="System">
+                                    <param id="0" name="Layer">&quot;HUD&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="233671138080060" type="System">
+                                    <param id="0" name="Layer">&quot;Painel&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="344236231249906" type="System">
+                                    <param id="0" name="Layer">&quot;TextoResposta&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="980433068213788" type="System">
+                                    <param id="0" name="Layer">&quot;BordasResposta&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="918118543799711" type="System">
+                                    <param id="0" name="Layer">&quot;BackgroundRespostas&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="480385752613360" type="System">
+                                    <param id="0" name="Layer">&quot;TextoPergunta&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="533451636561972" type="System">
+                                    <param id="0" name="Layer">&quot;BordasPergunta&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="697372767076280" type="System">
+                                    <param id="0" name="Layer">&quot;BackgroundPergunta&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="988203730428423" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="502559604875011" type="System">
+                                    <param id="0" name="Layer">&quot;BackgroundGameOver&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="148228635655717" type="System">
+                                    <param id="0" name="Layer">&quot;TextoGameOver&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="749361141754514" type="System">
+                                    <param id="0" name="Layer">&quot;BordasOpcaoGameOver&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="205302502917033" type="System">
+                                    <param id="0" name="Layer">&quot;TextoOpcaoGameOver&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="178124704749227" type="GameOver_Texto3">
+                                    <param id="0" name="Text">Profundidade &amp; &quot;m&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="970704056472941">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="326208988293886" type="System">
+                                    <param id="0" name="Variable">Profundidade</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">Highscore</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="422427862975105" type="System">
+                                    <param id="0" name="Variable">Highscore</param>
+                                    <param id="1" name="Value">Profundidade</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
     </events>
