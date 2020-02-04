@@ -78,7 +78,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="832667481758741" title="Definição das Webfonts">
+                <event-group description="" sid="832667481758741" title="Definição das Webfonts (Base)">
                     <sub-events>
                         <comment>No início do layout define as webfonts de todos os textos presentes no layout.</comment>
                         <event-block sid="706926344378072">
