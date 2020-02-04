@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Menu</layout>
-        <layout active="1" order="2">Base</layout>
+        <layout active="1" order="1">Menu</layout>
+        <layout order="2">Base</layout>
         <event-sheet order="0">Variaveis</event-sheet>
         <event-sheet order="4">Eventos Menu</event-sheet>
         <event-sheet order="3">Eventos Base</event-sheet>
@@ -33,11 +33,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Objetos do HUD/Objetos de Exibição/" />
         <folder expanded="0" path="object-folder/Objetos do Mar/" />
         <folder expanded="0" path="object-folder/Objetos Controladores/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu/Objetos do Título/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu/Objetos do Cenário/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu/Objetos das Opções/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu/Objetos do Highscore/" />
+        <folder expanded="1" path="object-folder/Objetos do Menu Inicial/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Título/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos das Opções/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Highscore/" />
         <folder expanded="0" path="object-folder/Objetos do Menu de Pausa/" />
         <folder expanded="0" path="object-folder/Objetos de Fim de Jogo/" />
         <folder expanded="0" path="object-folder/Objetos da Senha/" />
@@ -68,6 +68,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MenuOpcoes_BordasInferior/" />
         <folder expanded="1" path="animation-folder/MenuCreditos_BordasInferior/" />
         <folder expanded="1" path="animation-folder/MenuCreditos_BordasSuperior/" />
+        <folder expanded="1" path="animation-folder/BackgroundHighScore/" />
         <folder expanded="1" path="animation-folder/Pausa_BordaDireitaInferior/" />
         <folder expanded="1" path="animation-folder/Pausa_BordaDireitaSuperior/" />
         <folder expanded="1" path="animation-folder/Pausa_BordaEsquerdaInferior/" />

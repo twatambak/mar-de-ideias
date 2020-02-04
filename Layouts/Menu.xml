@@ -243,21 +243,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="UserMedia" uid="155">
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>-320</y>
-                        <z>0</z>
-                        <width>320</width>
-                        <height>240</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
             </instances>
             <effects />
         </layer>
@@ -1208,22 +1193,24 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundExtra" uid="131">
+                <instance type="BackgroundHighScore" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>416</x>
-                        <y>576</y>
+                        <x>529.227172852</x>
+                        <y>559.923706055</y>
                         <z>0</z>
                         <width>224</width>
-                        <height>32</height>
+                        <height>96</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1247,26 +1234,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Background_Highscore" uid="129">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>416</x>
-                        <y>512</y>
-                        <z>0</z>
-                        <width>224</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Texto_Highscore" uid="130">
                     <properties>
                         <text>Text</text>
@@ -1285,7 +1252,7 @@
                         <x>416</x>
                         <y>512</y>
                         <z>0</z>
-                        <width>224</width>
+                        <width>224.434692383</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -1309,10 +1276,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>448</x>
+                        <x>416</x>
                         <y>544</y>
                         <z>0</z>
-                        <width>160</width>
+                        <width>224</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

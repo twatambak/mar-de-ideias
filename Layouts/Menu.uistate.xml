@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>320</position-x>
-        <position-y>467.966</position-y>
-        <position-z>150</position-z>
+        <position-y>579.536</position-y>
+        <position-z>148.76</position-z>
         <lookat-x>320</lookat-x>
-        <lookat-y>467.966</lookat-y>
+        <lookat-y>579.536</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="BackgroundTItulo" />
+    <active-layer name="Mar" />
     <layers>
         <layer locked="1" name="Mar" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="DetalhesMar" parallax-in-editor="0" visible="1" />
@@ -40,7 +40,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="0" name="TextoOpcoes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundExtra" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoExtra" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="BackgroundHighScore" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BackgroundHighScore" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoHighScore" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="DetalheNoise" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="BackgroundSenha" parallax-in-editor="0" visible="0" />

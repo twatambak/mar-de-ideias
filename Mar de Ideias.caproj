@@ -500,7 +500,7 @@
                 <plugin id="UserMedia" />
             </object-type>
         </object-folder>
-        <object-folder name="Objetos do Menu">
+        <object-folder name="Objetos do Menu Inicial">
             <object-folder name="Objetos do Título">
                 <object-type name="Titulo_Background" sid="922428340670931">
                     <plugin id="TiledBg" />
@@ -802,6 +802,24 @@
             </object-type>
             <object-type name="TextoExtra" sid="567083612332458">
                 <plugin id="Text" />
+            </object-type>
+            <object-type name="BackgroundHighScore" sid="284354094264503">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703850814190129" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(2).png">
+                            <collision-poly>
+                                <point x="0.0535714" y="0.125" />
+                                <point x="0.5" y="0.0104167" />
+                                <point x="0.991071" y="0.0208333" />
+                                <point x="0.991071" y="0.979167" />
+                                <point x="0.5" y="0.989583" />
+                                <point x="0.0535714" y="0.875" />
+                                <point x="0.00446429" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="Objetos do Menu de Pausa">
@@ -1151,6 +1169,11 @@
             <instance-variables>
                 <instance-variable name="ID" sid="431085015440520" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Fade" sid="585809240936406">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="711997023840466" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />

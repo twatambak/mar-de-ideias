@@ -1006,6 +1006,7 @@
                             </conditions>
                             <actions>
                                 <action behavior="Fade" id="1" name="Start fade" sid="605822489964479" type="Resposta_Texto" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="379244807345995" type="OpcaoResposta" />
                                 <action behavior="Fade" id="1" name="Start fade" sid="591599158967509" type="Pergunta_Background" />
                                 <action behavior="Fade" id="1" name="Start fade" sid="578488200668694" type="Pergunta_BordaEsquerdaSuperior" />
                                 <action behavior="Fade" id="1" name="Start fade" sid="565043103644671" type="Pergunta_BordaEsquerdaInferior" />
@@ -1037,6 +1038,7 @@
                                 <action id="-16" name="Wait" sid="319804745837792" type="System">
                                     <param id="0" name="Seconds">1</param>
                                 </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="180542761397856" type="OpcaoResposta" />
                                 <action behavior="Fade" id="1" name="Start fade" sid="457794983587918" type="Pergunta_BordaEsquerdaSuperior" />
                                 <action behavior="Fade" id="1" name="Start fade" sid="983698241522838" type="Pergunta_BordaEsquerdaInferior" />
                                 <action behavior="Fade" id="1" name="Start fade" sid="808322816472955" type="Pergunta_BordaDireitaSuperior" />
