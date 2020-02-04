@@ -3,400 +3,707 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base</name>
     <events>
-        <event-group description="Grupo responsável por realizar as definições iniciais do jogo." sid="153366938438702" title="Configurações Iniciais">
+        <event-group description="Realiza todas as configurações do início do layout garantindo que os componentes do jogo estejam com as definições corretas.&#x0D;&#x0A;&#x0D;&#x0A;- Definição dos textos das perguntas e respostas;&#x0D;&#x0A;- Definição das webfonts;&#x0D;&#x0A;- Definição inicial de visibilidade das layers;&#x0D;&#x0A;- Definição inicial da condição dos grupos;&#x0D;&#x0A;- Definição inicial das variáveis;&#x0D;&#x0A;- Definição inicial dos sprites;&#x0D;&#x0A;- Efeitos de transição no início da fase." sid="153366938438702" title="Configurações Iniciais">
             <sub-events>
-                <comment>Inicia o fade do objeto de transição no início da fase.</comment>
-                <event-block sid="917391261989050">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="670885693725391" type="System" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Fade" id="1" name="Start fade" sid="857295822853155" type="Transicao" />
-                        <action id="-16" name="Set opacity" sid="382073993021294" type="Transicao">
-                            <param id="0" name="Opacity">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>Define uma pergunta aleatória e exibe exibe o texto da pergunta.</comment>
-                <event-block sid="567061480708534">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="315369687278890" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="601933504551907" type="System">
-                            <param id="0" name="Variable">PerguntaAtual</param>
-                            <param id="1" name="Value">int(random(1, TotalPerguntas + 1))</param>
-                        </action>
-                        <action id="0" name="Set text" sid="641844149946800" type="Pergunta_Texto">
-                            <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>Define a exibição das possíveis respostas para a pergunta selecionada.</comment>
-                <event-block sid="610810872192629">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="457873802062748" type="System" />
-                    </conditions>
-                    <actions />
+                <event-group description="" sid="480743114363865" title="Definição dos textos das perguntas e respostas">
                     <sub-events>
-                        <comment>Define o texto da primeira alternativa.</comment>
-                        <event-block sid="621005599853459">
+                        <comment>No início do layout define uma pergunta aleatória, acessa a posição do array que contém o enunciado da pergunta e define este no campo da pergunta.</comment>
+                        <event-block sid="956003952909097">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="941398922007757" type="Resposta_Texto">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
+                                <condition id="-2" name="On start of layout" sid="923538905994345" type="System" />
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="689589704927600" type="Resposta_Texto">
-                                    <param id="0" name="Text">ArrayRespostas.At(PerguntaAtual, 0, 0)</param>
+                                <action id="-9" name="Set value" sid="616771492815042" type="System">
+                                    <param id="0" name="Variable">PerguntaAtual</param>
+                                    <param id="1" name="Value">int(random(1, TotalPerguntas + 1))</param>
+                                </action>
+                                <action id="0" name="Set text" sid="604505831023795" type="Pergunta_Texto">
+                                    <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <comment>Define o texto da segunda alternativa.</comment>
-                        <event-block sid="841399466426735">
+                        <comment>No início do layout acessa os campos das possíveis respostas para a pergunta gerada aleatoriamente e retorna as respostas para as áreas correspondentes.</comment>
+                        <event-block sid="897100739525719">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="276196724852555" type="Resposta_Texto">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
+                                <condition id="-2" name="On start of layout" sid="745734527294351" type="System" />
                             </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="118450275179806" type="Resposta_Texto">
-                                    <param id="0" name="Text">ArrayRespostas.At(0, PerguntaAtual, 0)</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <comment>Define o texto da primeira alternativa.</comment>
+                                <event-block sid="153559206545251">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="994779679388458" type="Resposta_Texto">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="131448811629410" type="Resposta_Texto">
+                                            <param id="0" name="Text">ArrayRespostas.At(PerguntaAtual, 0, 0)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>Define o texto da segunda alternativa.</comment>
+                                <event-block sid="220272640705042">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="106788136639468" type="Resposta_Texto">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="277483525627156" type="Resposta_Texto">
+                                            <param id="0" name="Text">ArrayRespostas.At(0, PerguntaAtual, 0)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>Define o texto da terceira alternativa.</comment>
+                                <event-block sid="902559706302587">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="478399239156274" type="Resposta_Texto">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="600647971708300" type="Resposta_Texto">
+                                            <param id="0" name="Text">ArrayRespostas.At(0, 0, PerguntaAtual)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                        <comment>Define o texto da terceira alternativa.</comment>
-                        <event-block sid="156202445889609">
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="832667481758741" title="Definição das Webfonts">
+                    <sub-events>
+                        <comment>No início do layout define as webfonts de todos os textos presentes no layout.</comment>
+                        <event-block sid="706926344378072">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="794288333406524" type="Resposta_Texto">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
+                                <condition id="-2" name="On start of layout" sid="853415529372643" type="System" />
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="384308363789017" type="Resposta_Texto">
-                                    <param id="0" name="Text">ArrayRespostas.At(0, 0, PerguntaAtual)</param>
+                                <action id="5" name="Set web font" sid="497502731187693" type="Pergunta_Texto">
+                                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="601249429088276" type="Resposta_Texto">
+                                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="403123847202730" type="TextoProfundidade">
+                                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="807998964604945" type="GameOver_Texto">
+                                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="286423497009390" type="Pausa_Texto">
+                                    <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="585378681942150" type="Pausa_Texto2">
+                                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="110227834899941" type="GameOver_Texto2">
+                                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="119854767637336" type="GameOver_Texto2">
+                                    <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="637168924579493" type="GameOver_Texto3">
+                                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="591735729894033" type="TexoInfo">
+                                    <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <comment>Define as webfontes para os textos.</comment>
-                <event-block sid="706926344378072">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="853415529372643" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set web font" sid="497502731187693" type="Pergunta_Texto">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="601249429088276" type="Resposta_Texto">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="403123847202730" type="TextoProfundidade">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="807998964604945" type="GameOver_Texto">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="286423497009390" type="Pausa_Texto">
-                            <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="585378681942150" type="Pausa_Texto2">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="110227834899941" type="GameOver_Texto2">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="119854767637336" type="GameOver_Texto2">
-                            <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="637168924579493" type="GameOver_Texto3">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>Para a animação dos peixes impedindo a alteração de frames.</comment>
-                <event-block sid="699822154850765">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="537848323541250" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Stop" sid="981627734018907" type="Peixes" />
-                    </actions>
-                </event-block>
-                <comment>Para a animação das bordas das respostas impedindo a alteração de frames.</comment>
-                <event-block sid="567271965831656">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="339149901694003" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Stop" sid="212447386860358" type="Resposta_BordaDireitaInferior" />
-                        <action id="2" name="Stop" sid="815796207945278" type="Resposta_BordaDireitaSuperior" />
-                        <action id="2" name="Stop" sid="885714980214866" type="Resposta_BordaEsquerdaInferior" />
-                        <action id="2" name="Stop" sid="964612720951738" type="Resposta_BordaEsquerdaSuperior" />
-                    </actions>
-                </event-block>
-                <comment>Garante que os grupos e variáveis estejam nas condições adequadas para o funcionamento do jogo.</comment>
-                <event-block sid="464801764954676">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="178132196116743" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="535769581121984" type="System">
-                            <param id="0" name="Variable">Tempo</param>
-                            <param id="1" name="Value">72</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="207366698278512" type="System">
-                            <param id="0" name="Variable">Game</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="274295138107579" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="716344944599821" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="972563876439425" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="938763454003037" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="899140967177046" type="System">
-                            <param id="0" name="Group name">&quot;Controle do Tempo&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>Define a visibilidade dos layers.</comment>
-                <event-block sid="698416862529794">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="177709545861391" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set layer visible" sid="820831909595063" type="System">
-                            <param id="0" name="Layer">&quot;Mar&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="285797184026903" type="System">
-                            <param id="0" name="Layer">&quot;Detalhes&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="392139193075230" type="System">
-                            <param id="0" name="Layer">&quot;Personagem&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="946173247823502" type="System">
-                            <param id="0" name="Layer">&quot;BackgroundPergunta&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="142479565492950" type="System">
-                            <param id="0" name="Layer">&quot;BordasPergunta&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="713698698102476" type="System">
-                            <param id="0" name="Layer">&quot;TextoPergunta&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="803078031672872" type="System">
-                            <param id="0" name="Layer">&quot;BackgroundRespostas&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="758024643176500" type="System">
-                            <param id="0" name="Layer">&quot;BordasResposta&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="330392326927102" type="System">
-                            <param id="0" name="Layer">&quot;TextoResposta&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="913975824717198" type="System">
-                            <param id="0" name="Layer">&quot;Painel&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="524860168020598" type="System">
-                            <param id="0" name="Layer">&quot;HUD&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="287775734159623" type="System">
-                            <param id="0" name="Layer">&quot;Transicao&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="303519152188134" type="System">
-                            <param id="0" name="Layer">&quot;BackgroundGameOver&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="380326249918640" type="System">
-                            <param id="0" name="Layer">&quot;TextoGameOver&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="317226067250048" type="System">
-                            <param id="0" name="Layer">&quot;BordasOpcaoGameOver&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="796127677934288" type="System">
-                            <param id="0" name="Layer">&quot;TextoOpcaoGameOver&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="558784817942187" type="System">
-                            <param id="0" name="Layer">&quot;BackgroundMenuPausa&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="218798148598450" type="System">
-                            <param id="0" name="Layer">&quot;TextoMenuPausa&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="961338377979409" type="System">
-                            <param id="0" name="Layer">&quot;BordasOpcoesMenuPausa&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="844674990639134" type="System">
-                            <param id="0" name="Layer">&quot;TextoOpcoesMenuPausa&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="561974768576893" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Menu de Pausa&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>Exibe a quantia de erros do jogador.</comment>
-                <event-block sid="777215455013978">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="707988414159018" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set frame" sid="990138028236988" type="MarcaErros">
-                            <param id="0" name="Frame number">Erros</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="722551923780550">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="685065802038995" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set web font" sid="591735729894033" type="TexoInfo">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
+                </event-group>
+                <event-group description="" sid="963029265647058" title="Definição inicial de visibilidade das layers">
+                    <sub-events>
+                        <event-block sid="698416862529794">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="177709545861391" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="820831909595063" type="System">
+                                    <param id="0" name="Layer">&quot;Mar&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="285797184026903" type="System">
+                                    <param id="0" name="Layer">&quot;Detalhes&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="392139193075230" type="System">
+                                    <param id="0" name="Layer">&quot;Personagem&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="946173247823502" type="System">
+                                    <param id="0" name="Layer">&quot;BackgroundPergunta&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="142479565492950" type="System">
+                                    <param id="0" name="Layer">&quot;BordasPergunta&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="713698698102476" type="System">
+                                    <param id="0" name="Layer">&quot;TextoPergunta&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="803078031672872" type="System">
+                                    <param id="0" name="Layer">&quot;BackgroundRespostas&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="758024643176500" type="System">
+                                    <param id="0" name="Layer">&quot;BordasResposta&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="330392326927102" type="System">
+                                    <param id="0" name="Layer">&quot;TextoResposta&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="913975824717198" type="System">
+                                    <param id="0" name="Layer">&quot;Painel&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="524860168020598" type="System">
+                                    <param id="0" name="Layer">&quot;HUD&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="287775734159623" type="System">
+                                    <param id="0" name="Layer">&quot;Transicao&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="303519152188134" type="System">
+                                    <param id="0" name="Layer">&quot;BackgroundGameOver&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="380326249918640" type="System">
+                                    <param id="0" name="Layer">&quot;TextoGameOver&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="317226067250048" type="System">
+                                    <param id="0" name="Layer">&quot;BordasOpcaoGameOver&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="796127677934288" type="System">
+                                    <param id="0" name="Layer">&quot;TextoOpcaoGameOver&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="558784817942187" type="System">
+                                    <param id="0" name="Layer">&quot;BackgroundMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="218798148598450" type="System">
+                                    <param id="0" name="Layer">&quot;TextoMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="961338377979409" type="System">
+                                    <param id="0" name="Layer">&quot;BordasOpcoesMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="844674990639134" type="System">
+                                    <param id="0" name="Layer">&quot;TextoOpcoesMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="561974768576893" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Menu de Pausa&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="179391026277812" title="Definição inicial da condição dos grupos">
+                    <sub-events>
+                        <event-block sid="464801764954676">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="178132196116743" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="274295138107579" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="716344944599821" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="972563876439425" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Finalização de Fase&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="938763454003037" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="899140967177046" type="System">
+                                    <param id="0" name="Group name">&quot;Controle do Tempo&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="311188196441360" title="Definição inicial da variáveis">
+                    <sub-events>
+                        <event-block sid="168351860808521">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="533115038858049" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="108530919843968" type="System">
+                                    <param id="0" name="Variable">Tempo</param>
+                                    <param id="1" name="Value">72</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="220086481425987" type="System">
+                                    <param id="0" name="Variable">Game</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="212455272096826" title="Definição inicial dos sprites">
+                    <sub-events>
+                        <event-block sid="561829430963716">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="676981635360111" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="576283543966531" type="MarcaErros" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="567271965831656">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="339149901694003" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="212447386860358" type="Resposta_BordaDireitaInferior" />
+                                <action id="2" name="Stop" sid="815796207945278" type="Resposta_BordaDireitaSuperior" />
+                                <action id="2" name="Stop" sid="885714980214866" type="Resposta_BordaEsquerdaInferior" />
+                                <action id="2" name="Stop" sid="964612720951738" type="Resposta_BordaEsquerdaSuperior" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="699822154850765">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="537848323541250" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="981627734018907" type="Peixes" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="815653393977298" title="Efeitos de transição no início da fase">
+                    <sub-events>
+                        <comment>No início do layout inicia o fade da transição e define a opacidade do objeto como 0.</comment>
+                        <event-block sid="917391261989050">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="670885693725391" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Fade" id="1" name="Start fade" sid="857295822853155" type="Transicao" />
+                                <action id="-16" name="Set opacity" sid="382073993021294" type="Transicao">
+                                    <param id="0" name="Opacity">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por realizar as definições de funcionamento do jogo." sid="295051042907226" title="Configurações de Funcionamento do Jogo">
+        <event-group description="Comporta os eventos referentes a todo funcionamento do jogo.&#x0D;&#x0A;&#x0D;&#x0A;- Spawn dos peixes;&#x0D;&#x0A;- Exibição das informações do jogo;&#x0D;&#x0A;- Controle do tempo;&#x0D;&#x0A;- Controle das perguntas;&#x0D;&#x0A;- Definições caso o jogo não esteja pausado;&#x0D;&#x0A;- Exibição do texto de ajuda;&#x0D;&#x0A;- Ativação do menu de pausa." sid="295051042907226" title="Configurações de Funcionamento do Jogo">
             <sub-events>
-                <event-block sid="995660642859731">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="654944431273265" type="System">
-                            <param id="0" name="Interval (seconds)">random(1, 10)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="693277974064496" type="TexoInfo">
-                            <param id="0" name="Text">choose(&quot;Não deixe seu tempo acabar.&quot;, &quot;Ele está sempre observando&quot;, &quot;Ele sabe.&quot;, &quot;Obrigado por jogar.&quot;, &quot;Às vezes a resposta é mais fácil do que parece.&quot;, &quot;Cuidado para não errar demais.&quot;, &quot;Não tenha medo de errar, mas cuidado.&quot;, &quot;B64 U2VuaGEgMTcyODI=&quot;, &quot;Parece que tem algo errado com a lua&quot;)</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="906743380904969" type="TexoInfo">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="579408442965034" type="System">
-                            <param id="0" name="Seconds">6</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="454897896267111" type="TexoInfo">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="400516828946588">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="589931669651428" type="System">
-                            <param id="0" name="Variable">Tempo</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-12" name="Set group active" sid="567689973145857" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>Para a animação do contador de erros.</comment>
-                <event-block sid="561829430963716">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="676981635360111" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Stop" sid="576283543966531" type="MarcaErros" />
-                    </actions>
-                </event-block>
-                <comment>A cada 1 segundo cria um novo peixe no objeto definido como o spawner.</comment>
-                <event-block sid="803390285246385">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="521402868480607" type="System">
-                            <param id="0" name="Interval (seconds)">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="297100384035187" type="SpawnerPeixe1">
-                            <param id="0" name="Object">Peixes</param>
-                            <param id="1" name="Layer">&quot;Detalhes&quot;</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="432802638049653" type="Peixes">
-                            <param id="0" name="Frame number">int(random(0, 5))</param>
-                        </action>
-                        <action id="-2" name="Set Y" sid="796003288410596" type="Peixes">
-                            <param id="0" name="Y">random(0, 1152)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>Ao tocar no texto da resposta é verificado se a resposta foi a certa ou não e o jogo prossegue baseado nessa informação.</comment>
-                <comment>A cada 0.5 segundos subtrai 1 do tempo.</comment>
-                <comment>Garante que o texto que exibe a profundidade sempre exibe a mesma.</comment>
-                <event-block sid="551938726267136">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="356191052634283" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="890465767846184" type="TextoProfundidade">
-                            <param id="0" name="Text">Profundidade &amp;  &quot;m&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="733912988803946">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="892192238165742" type="Touch">
-                            <param id="0" name="Object">BotaoPausa</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-12" name="Set group active" sid="707075234977493" type="System">
-                            <param id="0" name="Group name">&quot;Configurações de Menu de Pausa&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
+                <event-group description="" sid="350938217171601" title="Spawn dos peixes">
+                    <sub-events>
+                        <event-block sid="803390285246385">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="521402868480607" type="System">
+                                    <param id="0" name="Interval (seconds)">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="297100384035187" type="SpawnerPeixe1">
+                                    <param id="0" name="Object">Peixes</param>
+                                    <param id="1" name="Layer">&quot;Detalhes&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="432802638049653" type="Peixes">
+                                    <param id="0" name="Frame number">int(random(0, 5))</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="796003288410596" type="Peixes">
+                                    <param id="0" name="Y">random(0, 1152)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="866671926490954" title="Exibição das informações do jogo">
+                    <sub-events>
+                        <event-block sid="777215455013978">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="707988414159018" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="990138028236988" type="MarcaErros">
+                                    <param id="0" name="Frame number">Erros</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="551938726267136">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="356191052634283" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="890465767846184" type="TextoProfundidade">
+                                    <param id="0" name="Text">Profundidade &amp;  &quot;m&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="705363034588819" title="Controle do Tempo">
+                    <sub-events>
+                        <event-block sid="400516828946588">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="589931669651428" type="System">
+                                    <param id="0" name="Variable">Tempo</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="567689973145857" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Fim de Jogo&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="368622965273854">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="944180318096237" type="System">
+                                    <param id="0" name="Group name">&quot;Controle do Tempo&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="742285171827795">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="813577207673974" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="242513723387449" type="BarraTempo">
+                                            <param id="0" name="Frame number">72 - Tempo</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="455235936938493">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="980830192296932" type="System">
+                                            <param id="0" name="Interval (seconds)">0.5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Subtract from" sid="204222854677877" type="System">
+                                            <param id="0" name="Variable">Tempo</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="224528174952820" title="Controle das Perguntas">
+                    <sub-events>
+                        <event-block sid="538066759166584">
+                            <conditions>
+                                <condition id="-15" name="Is group active" sid="443565405013643" type="System">
+                                    <param id="0" name="Group name">&quot;Controle das Perguntas&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="223455059841028">
+                                    <conditions>
+                                        <condition id="3" name="On touched object" sid="507636718911472" type="Touch">
+                                            <param id="0" name="Object">Resposta_Texto</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID um.</comment>
+                                        <event-block sid="544191042739592">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="729056476827596" type="Resposta_Texto">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="458825998742358" type="System">
+                                                    <param id="0" name="Variable">Game</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="585494787889130" type="System">
+                                                    <param id="0" name="Variable">Game</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="824393808088758">
+                                                    <conditions>
+                                                        <condition id="1" name="Compare at XY" sid="436021397375064" type="ArrayPerguntas">
+                                                            <param id="0" name="X">PerguntaAtual</param>
+                                                            <param id="1" name="Y">PerguntaAtual</param>
+                                                            <param id="2" name="Comparison">0</param>
+                                                            <param id="3" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Set group active" sid="537668373592135" type="System">
+                                                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="374064533652074" type="System">
+                                                            <param id="0" name="Variable">Escolha</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="882706911202567">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="650174995768719" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Set group active" sid="241660512434094" type="System">
+                                                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="969895039817284" type="System">
+                                                            <param id="0" name="Variable">Escolha</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID dois.</comment>
+                                        <event-block sid="842141382379114">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="294206226785022" type="Resposta_Texto">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="499447627524629" type="System">
+                                                    <param id="0" name="Variable">Game</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="863405588881801" type="System">
+                                                    <param id="0" name="Variable">Game</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="639137480470758">
+                                                    <conditions>
+                                                        <condition id="1" name="Compare at XY" sid="164460676198092" type="ArrayPerguntas">
+                                                            <param id="0" name="X">PerguntaAtual</param>
+                                                            <param id="1" name="Y">PerguntaAtual</param>
+                                                            <param id="2" name="Comparison">0</param>
+                                                            <param id="3" name="Value">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Set group active" sid="517413859141028" type="System">
+                                                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="597557697394104" type="System">
+                                                            <param id="0" name="Variable">Escolha</param>
+                                                            <param id="1" name="Value">2</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="105611823216268">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="890262813245475" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Set group active" sid="125553208754705" type="System">
+                                                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="316347309080716" type="System">
+                                                            <param id="0" name="Variable">Escolha</param>
+                                                            <param id="1" name="Value">2</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID três.</comment>
+                                        <event-block sid="276622894751972">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="957340287320472" type="Resposta_Texto">
+                                                    <param id="0" name="Instance variable">ID</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="290409323046541" type="System">
+                                                    <param id="0" name="Variable">Game</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="900864861032726" type="System">
+                                                    <param id="0" name="Variable">Game</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="338119240976751">
+                                                    <conditions>
+                                                        <condition id="1" name="Compare at XY" sid="829449476681856" type="ArrayPerguntas">
+                                                            <param id="0" name="X">PerguntaAtual</param>
+                                                            <param id="1" name="Y">PerguntaAtual</param>
+                                                            <param id="2" name="Comparison">0</param>
+                                                            <param id="3" name="Value">3</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Set group active" sid="729322776769527" type="System">
+                                                            <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="725113305374279" type="System">
+                                                            <param id="0" name="Variable">Escolha</param>
+                                                            <param id="1" name="Value">3</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="310161604601311">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="635373846562656" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-12" name="Set group active" sid="321614409763890" type="System">
+                                                            <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="760388973339202" type="System">
+                                                            <param id="0" name="Variable">Escolha</param>
+                                                            <param id="1" name="Value">3</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="792437708569612" title="Definições caso o jogo não esteja pausado">
+                    <sub-events>
+                        <event-block sid="917331551484458">
+                            <conditions>
+                                <condition id="-15" inverted="1" name="Is group active" sid="106701565755433" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Menu de Pausa&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="184492836553621" type="System">
+                                    <param id="0" name="Layer">&quot;BackgroundMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="549308043353998" type="System">
+                                    <param id="0" name="Layer">&quot;TextoMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="481925188305485" type="System">
+                                    <param id="0" name="Layer">&quot;BordasOpcoesMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="506928480386934" type="System">
+                                    <param id="0" name="Layer">&quot;TextoOpcoesMenuPausa&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="836134365068987" type="System">
+                                    <param id="0" name="Group name">&quot;Controle do Tempo&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="485520043936967" type="System">
+                                    <param id="0" name="Group name">&quot;Controle das Perguntas&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="2" name="Stop" sid="754445584809113" type="BarraTempo" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="890189355858175" title="Exibição do texto de ajuda">
+                    <sub-events>
+                        <event-block sid="995660642859731">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="654944431273265" type="System">
+                                    <param id="0" name="Interval (seconds)">random(1, 10)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="693277974064496" type="TexoInfo">
+                                    <param id="0" name="Text">choose(&quot;Não deixe seu tempo acabar.&quot;, &quot;Ele está sempre observando&quot;, &quot;Ele sabe.&quot;, &quot;Obrigado por jogar.&quot;, &quot;Às vezes a resposta é mais fácil do que parece.&quot;, &quot;Cuidado para não errar demais.&quot;, &quot;Não tenha medo de errar, mas cuidado.&quot;, &quot;B64 U2VuaGEgMTcyODI=&quot;, &quot;Parece que tem algo errado com a lua&quot;)</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="906743380904969" type="TexoInfo">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="579408442965034" type="System">
+                                    <param id="0" name="Seconds">6</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="454897896267111" type="TexoInfo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="678096537307125" title="Ativação do menu de pausa">
+                    <sub-events>
+                        <event-block sid="733912988803946">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="892192238165742" type="Touch">
+                                    <param id="0" name="Object">BotaoPausa</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="707075234977493" type="System">
+                                    <param id="0" name="Group name">&quot;Configurações de Menu de Pausa&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
         <event-group description="Grupo responsável por gerir o encerramento da fase." inactive="1" sid="240293749142907" title="Configurações de Finalização de Fase">
@@ -938,275 +1245,6 @@
                             <param id="1" name="State">0</param>
                         </action>
                     </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="Realiza o controle do tempo." sid="705363034588819" title="Controle do Tempo">
-            <sub-events>
-                <event-block sid="368622965273854">
-                    <conditions>
-                        <condition id="-15" name="Is group active" sid="944180318096237" type="System">
-                            <param id="0" name="Group name">&quot;Controle do Tempo&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="742285171827795">
-                            <conditions>
-                                <condition id="-1" name="Every tick" sid="813577207673974" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="5" name="Set frame" sid="242513723387449" type="BarraTempo">
-                                    <param id="0" name="Frame number">72 - Tempo</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="455235936938493">
-                            <conditions>
-                                <condition id="-6" name="Every X seconds" sid="980830192296932" type="System">
-                                    <param id="0" name="Interval (seconds)">0.5</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-11" name="Subtract from" sid="204222854677877" type="System">
-                                    <param id="0" name="Variable">Tempo</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-block sid="917331551484458">
-            <conditions>
-                <condition id="-15" inverted="1" name="Is group active" sid="106701565755433" type="System">
-                    <param id="0" name="Group name">&quot;Configurações de Menu de Pausa&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-4" name="Set layer visible" sid="184492836553621" type="System">
-                    <param id="0" name="Layer">&quot;BackgroundMenuPausa&quot;</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="549308043353998" type="System">
-                    <param id="0" name="Layer">&quot;TextoMenuPausa&quot;</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="481925188305485" type="System">
-                    <param id="0" name="Layer">&quot;BordasOpcoesMenuPausa&quot;</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="506928480386934" type="System">
-                    <param id="0" name="Layer">&quot;TextoOpcoesMenuPausa&quot;</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-                <action id="-12" name="Set group active" sid="836134365068987" type="System">
-                    <param id="0" name="Group name">&quot;Controle do Tempo&quot;</param>
-                    <param id="1" name="State">1</param>
-                </action>
-                <action id="-12" name="Set group active" sid="485520043936967" type="System">
-                    <param id="0" name="Group name">&quot;Controle das Perguntas&quot;</param>
-                    <param id="1" name="State">1</param>
-                </action>
-                <action id="2" name="Stop" sid="754445584809113" type="BarraTempo" />
-            </actions>
-        </event-block>
-        <event-group description="Realiza o controle de disponibilidade de seleção das respostas das perguntas." sid="224528174952820" title="Controle das Perguntas">
-            <sub-events>
-                <event-block sid="538066759166584">
-                    <conditions>
-                        <condition id="-15" name="Is group active" sid="443565405013643" type="System">
-                            <param id="0" name="Group name">&quot;Controle das Perguntas&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="223455059841028">
-                            <conditions>
-                                <condition id="3" name="On touched object" sid="507636718911472" type="Touch">
-                                    <param id="0" name="Object">Resposta_Texto</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID um.</comment>
-                                <event-block sid="544191042739592">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="729056476827596" type="Resposta_Texto">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="458825998742358" type="System">
-                                            <param id="0" name="Variable">Game</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="585494787889130" type="System">
-                                            <param id="0" name="Variable">Game</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <event-block sid="824393808088758">
-                                            <conditions>
-                                                <condition id="1" name="Compare at XY" sid="436021397375064" type="ArrayPerguntas">
-                                                    <param id="0" name="X">PerguntaAtual</param>
-                                                    <param id="1" name="Y">PerguntaAtual</param>
-                                                    <param id="2" name="Comparison">0</param>
-                                                    <param id="3" name="Value">1</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-12" name="Set group active" sid="537668373592135" type="System">
-                                                    <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="374064533652074" type="System">
-                                                    <param id="0" name="Variable">Escolha</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="882706911202567">
-                                            <conditions>
-                                                <condition id="-22" name="Else" sid="650174995768719" type="System" />
-                                            </conditions>
-                                            <actions>
-                                                <action id="-12" name="Set group active" sid="241660512434094" type="System">
-                                                    <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="969895039817284" type="System">
-                                                    <param id="0" name="Variable">Escolha</param>
-                                                    <param id="1" name="Value">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID dois.</comment>
-                                <event-block sid="842141382379114">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="294206226785022" type="Resposta_Texto">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">2</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="499447627524629" type="System">
-                                            <param id="0" name="Variable">Game</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="863405588881801" type="System">
-                                            <param id="0" name="Variable">Game</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <event-block sid="639137480470758">
-                                            <conditions>
-                                                <condition id="1" name="Compare at XY" sid="164460676198092" type="ArrayPerguntas">
-                                                    <param id="0" name="X">PerguntaAtual</param>
-                                                    <param id="1" name="Y">PerguntaAtual</param>
-                                                    <param id="2" name="Comparison">0</param>
-                                                    <param id="3" name="Value">2</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-12" name="Set group active" sid="517413859141028" type="System">
-                                                    <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="597557697394104" type="System">
-                                                    <param id="0" name="Variable">Escolha</param>
-                                                    <param id="1" name="Value">2</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="105611823216268">
-                                            <conditions>
-                                                <condition id="-22" name="Else" sid="890262813245475" type="System" />
-                                            </conditions>
-                                            <actions>
-                                                <action id="-12" name="Set group active" sid="125553208754705" type="System">
-                                                    <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="316347309080716" type="System">
-                                                    <param id="0" name="Variable">Escolha</param>
-                                                    <param id="1" name="Value">2</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                                <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID três.</comment>
-                                <event-block sid="276622894751972">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="957340287320472" type="Resposta_Texto">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">3</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="290409323046541" type="System">
-                                            <param id="0" name="Variable">Game</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Set value" sid="900864861032726" type="System">
-                                            <param id="0" name="Variable">Game</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
-                                    </actions>
-                                    <sub-events>
-                                        <event-block sid="338119240976751">
-                                            <conditions>
-                                                <condition id="1" name="Compare at XY" sid="829449476681856" type="ArrayPerguntas">
-                                                    <param id="0" name="X">PerguntaAtual</param>
-                                                    <param id="1" name="Y">PerguntaAtual</param>
-                                                    <param id="2" name="Comparison">0</param>
-                                                    <param id="3" name="Value">3</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-12" name="Set group active" sid="729322776769527" type="System">
-                                                    <param id="0" name="Group name">&quot;Configurações de Acerto da Pergunta&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="725113305374279" type="System">
-                                                    <param id="0" name="Variable">Escolha</param>
-                                                    <param id="1" name="Value">3</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="310161604601311">
-                                            <conditions>
-                                                <condition id="-22" name="Else" sid="635373846562656" type="System" />
-                                            </conditions>
-                                            <actions>
-                                                <action id="-12" name="Set group active" sid="321614409763890" type="System">
-                                                    <param id="0" name="Group name">&quot;Configurações de Erro da Pergunta&quot;</param>
-                                                    <param id="1" name="State">1</param>
-                                                </action>
-                                                <action id="-9" name="Set value" sid="760388973339202" type="System">
-                                                    <param id="0" name="Variable">Escolha</param>
-                                                    <param id="1" name="Value">3</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
