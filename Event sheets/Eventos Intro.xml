@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Intro</name>
+    <events>
+        <include>Eventos das Perguntas</include>
+        <event-block sid="866972848990317">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="384845800382036" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="347531601413961" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="986551934188970" type="LogoHK" />
+                <action id="-16" name="Wait" sid="397612723143571" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="286267994061833" type="System">
+                    <param id="0" name="Variable">PerguntasCarregadas</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="704548855757705" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="211963416672389">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="609503156298423" type="Touch" />
+                <condition id="-14" name="Compare variable" sid="393260599407432" type="System">
+                    <param id="0" name="Variable">PerguntasCarregadas</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="969136158018504" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

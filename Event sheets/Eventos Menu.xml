@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Menu</name>
     <events>
-        <include>Eventos das Perguntas</include>
         <comment>Armazena o status de acerto do primeiro elemento da senha. O valor é 0 caso o primeiro elemento da senha esteja incorreto e 1 caso esteja correto.</comment>
         <variable constant="0" name="PainelSenha1" sid="336393282794325" static="0" type="number">0</variable>
         <comment>Armazena o status de acerto do segundo elemento da senha. O valor é 0 caso o segundo elemento da senha esteja incorreto e 1 caso esteja correto.</comment>

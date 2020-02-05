@@ -39,7 +39,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Menu</first-layout>
+    <first-layout>Intro</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -1182,17 +1182,46 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="LogoHK" sid="167356094288659">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="311137408357088">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="894627913189417">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334931337590591" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\HK.png">
+                        <collision-poly>
+                            <point x="0.128571" y="0.140625" />
+                            <point x="0.5" y="0.71875" />
+                            <point x="0.857143" y="0.15625" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="0.571429" y="0.53125" />
+                            <point x="0.5" y="0.828125" />
+                            <point x="0.4" y="0.5625" />
+                            <point x="0.157143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Base.xml</layout>
         <layout>Menu.xml</layout>
+        <layout>Intro.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Base.xml</event-sheet>
         <event-sheet>Eventos das Perguntas.xml</event-sheet>
         <event-sheet>Variaveis.xml</event-sheet>
         <event-sheet>Eventos Menu.xml</event-sheet>
+        <event-sheet>Eventos Intro.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">

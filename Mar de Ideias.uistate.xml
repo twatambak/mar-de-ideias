@@ -10,11 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Menu</layout>
-        <layout active="1" order="2">Base</layout>
+        <layout order="3">Menu</layout>
+        <layout order="1">Base</layout>
+        <layout order="5">Intro</layout>
         <event-sheet order="0">Variaveis</event-sheet>
+        <event-sheet order="2">Eventos Base</event-sheet>
         <event-sheet order="4">Eventos Menu</event-sheet>
-        <event-sheet order="3">Eventos Base</event-sheet>
+        <event-sheet active="1" order="6">Eventos Intro</event-sheet>
+        <event-sheet order="7">Eventos das Perguntas</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -35,7 +38,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos Controladores/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Título/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />
+        <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos das Opções/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Highscore/" />
         <folder expanded="0" path="object-folder/Objetos do Menu de Pausa/" />
@@ -79,5 +82,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/GameOver_BordaEsquerdaSuperior/" />
         <folder expanded="1" path="animation-folder/Secret/" />
         <folder expanded="1" path="animation-folder/OpcaoResposta/" />
+        <folder expanded="1" path="animation-folder/LogoHK/" />
     </folders-expanded>
 </c2uistate>
