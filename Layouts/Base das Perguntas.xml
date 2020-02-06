@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Base</name>
+    <name>Base das Perguntas</name>
     <sid>8873350371196689</sid>
-    <event-sheet>Eventos Base</event-sheet>
+    <event-sheet>Eventos Base-Perguntas</event-sheet>
     <size>
         <width>640</width>
         <height>1152</height>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Base-Plataforma</name>
+    <events>
+        <event-block sid="332348284226791">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="287078915881821" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="338788904132380" type="JogadorPlataforma" />
+            </actions>
+        </event-block>
+        <event-block sid="236251195298046">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="652638276834737" type="JogadorPlataforma" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="924809323165471" type="JogadorPlataforma">
+                    <param id="0" name="Animation">&quot;Andando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="6" name="Set speed" sid="162227578692097" type="JogadorPlataforma">
+                    <param id="0" name="Speed">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="285313658040912">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="178735580998945" type="JogadorPlataforma" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="667096485940339" type="JogadorPlataforma">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="443916486636191">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="401632247512750" type="JogadorPlataforma" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="225550230835027" type="JogadorPlataforma">
+                    <param id="0" name="Animation">&quot;Pulando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="312700367385097">
+            <conditions>
+                <condition id="2" name="Key is down" sid="171107414258127" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="883957881719304" type="JogadorPlataforma">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="698572070249170" type="JogadorPlataforma">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="449454628360323">
+            <conditions>
+                <condition id="2" name="Key is down" sid="285372631041779" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="135014682771423" type="JogadorPlataforma">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="342437378097571" type="JogadorPlataforma">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="185091762486556">
+            <conditions>
+                <condition id="2" name="Key is down" sid="690694842356514" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="910289827491938" type="JogadorPlataforma">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

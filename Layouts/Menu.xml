@@ -346,18 +346,6 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="GlowVertical">
-                            <parameters>
-                                <intensity>0.2</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="GlowHorizontal">
-                            <parameters>
-                                <intensity>0.2</intensity>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -666,18 +654,6 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="GlowHorizontal">
-                            <parameters>
-                                <intensity>0.3</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="GlowVertical">
-                            <parameters>
-                                <intensity>0.35</intensity>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -881,24 +857,7 @@
                     </world>
                 </instance>
             </instances>
-            <effects>
-                <effect-type name="GlowHorizontal">
-                    <effect id="glowhorizontal" />
-                    <effect-instance type="GlowHorizontal">
-                        <parameters>
-                            <intensity>0.6</intensity>
-                        </parameters>
-                    </effect-instance>
-                </effect-type>
-                <effect-type name="GlowVertical">
-                    <effect id="glowvertical" />
-                    <effect-instance type="GlowVertical">
-                        <parameters>
-                            <intensity>0.6</intensity>
-                        </parameters>
-                    </effect-instance>
-                </effect-type>
-            </effects>
+            <effects />
         </layer>
         <layer name="TextoOpcoes" sid="894968383106481">
             <initially-visible>1</initially-visible>
@@ -931,18 +890,6 @@
                     <instance-variables>
                         <ID>1</ID>
                     </instance-variables>
-                    <effect-instances>
-                        <effect-instance type="GlowVertical">
-                            <parameters>
-                                <intensity>0.3</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="GlowHorizontal">
-                            <parameters>
-                                <intensity>0.3</intensity>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -973,18 +920,6 @@
                     <instance-variables>
                         <ID>2</ID>
                     </instance-variables>
-                    <effect-instances>
-                        <effect-instance type="GlowVertical">
-                            <parameters>
-                                <intensity>0.3</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="GlowHorizontal">
-                            <parameters>
-                                <intensity>0.3</intensity>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1015,18 +950,6 @@
                     <instance-variables>
                         <ID>2</ID>
                     </instance-variables>
-                    <effect-instances>
-                        <effect-instance type="GlowVertical">
-                            <parameters>
-                                <intensity>0.3</intensity>
-                            </parameters>
-                        </effect-instance>
-                        <effect-instance type="GlowHorizontal">
-                            <parameters>
-                                <intensity>0.3</intensity>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Eventos Base</name>
+    <name>Eventos Base-Perguntas</name>
     <events>
         <event-group description="Realiza todas as configurações do início do layout garantindo que os componentes do jogo estejam com as definições corretas.&#x0D;&#x0A;&#x0D;&#x0A;- Definição dos textos das perguntas e respostas;&#x0D;&#x0A;- Definição das webfonts;&#x0D;&#x0A;- Definição inicial de visibilidade das layers;&#x0D;&#x0A;- Definição inicial da condição dos grupos;&#x0D;&#x0A;- Definição inicial das variáveis;&#x0D;&#x0A;- Definição inicial dos sprites;&#x0D;&#x0A;- Efeitos de transição no início da fase." sid="153366938438702" title="Configurações Iniciais">
             <sub-events>

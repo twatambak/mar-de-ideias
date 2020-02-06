@@ -11,6 +11,7 @@
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -21,7 +22,10 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
@@ -205,6 +209,24 @@
             </object-type>
             <object-type global="1" name="ArrayRespostas" sid="450885803684707">
                 <plugin id="Arr" />
+            </object-type>
+            <object-type name="OpcaoResposta" sid="353365106707715">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="431085015440520" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Fade" sid="585809240936406">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="711997023840466" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="Objetos do HUD">
@@ -499,6 +521,9 @@
             <object-type name="UserMedia" sid="163643583830017">
                 <plugin id="UserMedia" />
             </object-type>
+            <object-type name="Keyboard" sid="370395399324020">
+                <plugin id="Keyboard" />
+            </object-type>
         </object-folder>
         <object-folder name="Objetos do Menu Inicial">
             <object-folder name="Objetos do Título">
@@ -549,14 +574,6 @@
                             <behavior id="Sin" />
                         </behavior-type>
                     </behaviors>
-                    <effects>
-                        <effect-type name="GlowHorizontal">
-                            <effect id="glowhorizontal" />
-                        </effect-type>
-                        <effect-type name="GlowVertical">
-                            <effect id="glowvertical" />
-                        </effect-type>
-                    </effects>
                 </object-type>
             </object-folder>
             <object-folder name="Objetos do Cenário">
@@ -579,14 +596,6 @@
                             <behavior id="DragnDrop" />
                         </behavior-type>
                     </behaviors>
-                    <effects>
-                        <effect-type name="GlowVertical">
-                            <effect id="glowvertical" />
-                        </effect-type>
-                        <effect-type name="GlowHorizontal">
-                            <effect id="glowhorizontal" />
-                        </effect-type>
-                    </effects>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802673938719894" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(14).png">
@@ -672,14 +681,6 @@
                     <instance-variables>
                         <instance-variable name="ID" sid="487285845100712" type="number" />
                     </instance-variables>
-                    <effects>
-                        <effect-type name="GlowVertical">
-                            <effect id="glowvertical" />
-                        </effect-type>
-                        <effect-type name="GlowHorizontal">
-                            <effect id="glowhorizontal" />
-                        </effect-type>
-                    </effects>
                 </object-type>
                 <object-type name="MenuJogar_BordasInferior" sid="949978498436567">
                     <plugin id="Sprite" />
@@ -1145,6 +1146,139 @@
                 </effects>
                 <texture />
             </object-type>
+            <object-type name="DetalheNoise" sid="171686009089816">
+                <plugin id="TiledBg" />
+                <effects>
+                    <effect-type name="Noise">
+                        <effect id="noise" />
+                    </effect-type>
+                </effects>
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-folder name="Objetos da Introdução">
+            <object-type name="LogoHK" sid="167356094288659">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="311137408357088">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="894627913189417">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334931337590591" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\HK.png">
+                            <collision-poly>
+                                <point x="0.128571" y="0.140625" />
+                                <point x="0.5" y="0.71875" />
+                                <point x="0.857143" y="0.15625" />
+                                <point x="0.928571" y="0.5" />
+                                <point x="0.571429" y="0.53125" />
+                                <point x="0.5" y="0.828125" />
+                                <point x="0.4" y="0.5625" />
+                                <point x="0.157143" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Objetos do Jogo Plataforma">
+            <object-type name="Plataforma1SuperiorMeio" sid="228785104356833">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="829684698822461">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone.png" />
+            </object-type>
+            <object-type name="PlataformaBackgroundBase" sid="378298408271508">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\parallax-mountain-bg(1).png" />
+            </object-type>
+            <object-type name="Plataforma1SuperiorCantoEsq" sid="329653956630453">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="201020134499563">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone(1).png" />
+            </object-type>
+            <object-type name="Plataforma1SuperiorCantoDir" sid="219297076637121">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="296556737813704">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone(1).png" />
+            </object-type>
+            <object-type name="Plataforma1CentroCantoEsq" sid="129211087164638">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="389533937008589">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone(5).png" />
+            </object-type>
+            <object-type name="Plataforma1CentroCantoDir" sid="973772640372942">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="422733387463775">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone(5).png" />
+            </object-type>
+            <object-type name="Plataforma1SuperiorMeio2" sid="457133426909960">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="910529411409845">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone(3).png" />
+            </object-type>
+            <object-type name="Plataforma1CentroDetalhe1" sid="503866761558810">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="836954161332390" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone(4).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Plataforma1CentroDetalhe2" sid="321678668646314">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960003778684441" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone(6).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Casa1" sid="731146991965394">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463684797297100" speed="5">
+                        <frame duration="1" hotspotX="0.511364" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\props(1).png">
+                            <collision-poly>
+                                <point x="0.197701" y="0.141781" />
+                                <point x="0.511493" y="0" />
+                                <point x="0.778796" y="0.179488" />
+                                <point x="1" y="0.5" />
+                                <point x="0.976369" y="0.980768" />
+                                <point x="0.511493" y="1" />
+                                <point x="0.0466167" y="0.980768" />
+                                <point x="0.011751" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Transicao" sid="188872732063886">
             <plugin id="TiledBg" />
@@ -1155,55 +1289,56 @@
             </behaviors>
             <texture />
         </object-type>
-        <object-type name="DetalheNoise" sid="171686009089816">
-            <plugin id="TiledBg" />
-            <effects>
-                <effect-type name="Noise">
-                    <effect id="noise" />
-                </effect-type>
-            </effects>
-            <texture />
-        </object-type>
-        <object-type name="OpcaoResposta" sid="353365106707715">
+        <object-type name="JogadorPlataforma" sid="657323289192235">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="ID" sid="431085015440520" type="number" />
-            </instance-variables>
             <behaviors>
-                <behavior-type name="Fade" sid="585809240936406">
-                    <behavior id="Fade" />
+                <behavior-type name="Platform" sid="843030876664782">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="741670248449735">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="711997023840466" speed="5">
+                <animation framecount="9" loop="0" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="393641975622786" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.519231" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.578947" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.509434" />
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.519231" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.519231" />
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.55" hotspotY="0.509434" />
+                </animation>
+                <animation framecount="1" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="329879808540893" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.462963" original-source="C:\Users\Thiago L. Watambak\Downloads\Player_jump.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="406499461131172" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="LogoHK" sid="167356094288659">
+        <object-type name="Plataforma1RampaEsq" sid="119075045208778">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Sine" sid="311137408357088">
-                    <behavior id="Sin" />
-                </behavior-type>
-                <behavior-type name="Fade" sid="894627913189417">
-                    <behavior id="Fade" />
+                <behavior-type name="Solid" sid="881713021732882">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334931337590591" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\HK.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431060076554708" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone(7).png">
                         <collision-poly>
-                            <point x="0.128571" y="0.140625" />
-                            <point x="0.5" y="0.71875" />
-                            <point x="0.857143" y="0.15625" />
-                            <point x="0.928571" y="0.5" />
-                            <point x="0.571429" y="0.53125" />
-                            <point x="0.5" y="0.828125" />
-                            <point x="0.4" y="0.5625" />
-                            <point x="0.157143" y="0.5" />
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0.28125" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1212,16 +1347,18 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Base.xml</layout>
+        <layout>Base das Perguntas.xml</layout>
         <layout>Menu.xml</layout>
         <layout>Intro.xml</layout>
+        <layout>Base da Plataforma.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Eventos Base.xml</event-sheet>
-        <event-sheet>Eventos das Perguntas.xml</event-sheet>
+        <event-sheet>Eventos Base-Perguntas.xml</event-sheet>
+        <event-sheet>Eventos de Inserção das Perguntas.xml</event-sheet>
         <event-sheet>Variaveis.xml</event-sheet>
         <event-sheet>Eventos Menu.xml</event-sheet>
         <event-sheet>Eventos Intro.xml</event-sheet>
+        <event-sheet>Eventos Base-Plataforma.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">
@@ -1229,6 +1366,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Keyboard" uid="42" />
     </global-instances>
     <sounds-folder />
     <music-folder />

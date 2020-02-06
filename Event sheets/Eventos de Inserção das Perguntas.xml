@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Eventos das Perguntas</name>
+    <name>Eventos de Inserção das Perguntas</name>
     <events>
         <event-group description="Armazena explicações referentes aos eventos presentes." sid="480631775707796" title="Explicações">
             <sub-events>
@@ -53,7 +53,12 @@
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-9" name="Set value" sid="254841347832182" type="System">
+                    <param id="0" name="Variable">PerguntasCarregadas</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-group description="Grupo responsável por inserir em um array as perguntas e respostas usadas no jogo." sid="960394396194523" title="Criação das Perguntas">
                     <sub-events>
