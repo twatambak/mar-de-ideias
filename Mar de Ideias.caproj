@@ -370,17 +370,9 @@
                             <behavior id="Sin" />
                         </behavior-type>
                     </behaviors>
-                    <effects>
-                        <effect-type name="GlowVertical">
-                            <effect id="glowvertical" />
-                        </effect-type>
-                        <effect-type name="GlowHorizontal">
-                            <effect id="glowhorizontal" />
-                        </effect-type>
-                    </effects>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387262533428270" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\New Piskel(21).png">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(11).png">
                                 <collision-poly>
                                     <point x="0.05" y="0.5" />
                                     <point x="0.5" y="0" />
@@ -444,7 +436,7 @@
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="670762896004248" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\twata\Downloads\novo.png">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\000.png">
                                 <collision-poly>
                                     <point x="0.4" y="0.5" />
                                     <point x="0.5" y="0.523438" />
@@ -466,14 +458,6 @@
                             <behavior id="Sin" />
                         </behavior-type>
                     </behaviors>
-                    <effects>
-                        <effect-type name="GlowHorizontal">
-                            <effect id="glowhorizontal" />
-                        </effect-type>
-                        <effect-type name="GlowVertical">
-                            <effect id="glowvertical" />
-                        </effect-type>
-                    </effects>
                     <texture original-source="C:\Users\twata\Downloads\New Piskel(15).png" />
                 </object-type>
                 <object-type name="Ceu" sid="886065260872457">
@@ -482,14 +466,14 @@
                 </object-type>
             </object-folder>
             <object-folder name="Objetos das Opções">
-                <object-type name="MenuJogar_BordasSuperior" sid="256402223181779">
+                <object-type name="BordasMenuPrincipal1" sid="256402223181779">
                     <plugin id="Sprite" />
                     <instance-variables>
                         <instance-variable name="ID" sid="893709451469331" type="number" />
                     </instance-variables>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="497928652240010" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (7).png">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(8).png">
                                 <collision-poly>
                                     <point x="0.125" y="0.4375" />
                                     <point x="0.5" y="0.125" />
@@ -503,20 +487,20 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Opcoes_Texto" sid="948392590314597">
+                <object-type name="TextoOpcoesMenu" sid="948392590314597">
                     <plugin id="Text" />
                     <instance-variables>
                         <instance-variable name="ID" sid="487285845100712" type="number" />
                     </instance-variables>
                 </object-type>
-                <object-type name="MenuJogar_BordasInferior" sid="949978498436567">
+                <object-type name="BordasMenuPrincipal2" sid="142538357163811">
                     <plugin id="Sprite" />
                     <instance-variables>
-                        <instance-variable name="ID" sid="688446461030571" type="number" />
+                        <instance-variable name="ID" sid="318259251943863" type="number" />
                     </instance-variables>
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="260937637912425" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (8).png">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="997981982158784" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(8).png">
                                 <collision-poly>
                                     <point x="0.125" y="0.4375" />
                                     <point x="0.5" y="0.125" />
@@ -530,77 +514,14 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="MenuOpcoes_BordasSuperior" sid="184886769937030">
+                <object-type name="BordasMenuPrincipal3" sid="800774293493136">
                     <plugin id="Sprite" />
                     <instance-variables>
-                        <instance-variable name="ID" sid="531894711775096" type="number" />
+                        <instance-variable name="ID" sid="901195578731746" type="number" />
                     </instance-variables>
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="975370696542481" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (10).png">
-                                <collision-poly>
-                                    <point x="0.125" y="0.4375" />
-                                    <point x="0.5" y="0.125" />
-                                    <point x="0.875" y="0.4375" />
-                                    <point x="0.910714" y="0.5" />
-                                    <point x="1" y="1" />
-                                    <point x="0" y="1" />
-                                    <point x="0.0892857" y="0.5" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="MenuOpcoes_BordasInferior" sid="445494143999644">
-                    <plugin id="Sprite" />
-                    <instance-variables>
-                        <instance-variable name="ID" sid="798838193572792" type="number" />
-                    </instance-variables>
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="952282456204955" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (9).png">
-                                <collision-poly>
-                                    <point x="0.125" y="0.4375" />
-                                    <point x="0.5" y="0.125" />
-                                    <point x="0.875" y="0.4375" />
-                                    <point x="0.910714" y="0.5" />
-                                    <point x="1" y="1" />
-                                    <point x="0" y="1" />
-                                    <point x="0.0892857" y="0.5" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="MenuCreditos_BordasInferior" sid="695561680854204">
-                    <plugin id="Sprite" />
-                    <instance-variables>
-                        <instance-variable name="ID" sid="247954203016409" type="number" />
-                    </instance-variables>
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302871836580182" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (8).png">
-                                <collision-poly>
-                                    <point x="0.910714" y="0.5" />
-                                    <point x="1" y="1" />
-                                    <point x="0" y="1" />
-                                    <point x="0.089286" y="0.5" />
-                                    <point x="0.125" y="0.4375" />
-                                    <point x="0.5" y="0.125" />
-                                    <point x="0.875" y="0.4375" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="MenuCreditos_BordasSuperior" sid="473904585529167">
-                    <plugin id="Sprite" />
-                    <instance-variables>
-                        <instance-variable name="ID" sid="176332007234611" type="number" />
-                    </instance-variables>
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396197892054570" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (7).png">
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810628880134872" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(8).png">
                                 <collision-poly>
                                     <point x="0.910714" y="0.5" />
                                     <point x="1" y="1" />
@@ -635,7 +556,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703850814190129" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(2).png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(7).png">
                             <collision-poly>
                                 <point x="0.0535714" y="0.125" />
                                 <point x="0.5" y="0.0104167" />
@@ -1157,15 +1078,24 @@
             <file name="loading-logo.png" />
         </file-folder>
         <file-folder name="Fontes">
-            <file name="stylesheet.css" />
+            <file name="vcr.css" />
             <file name="vcr_osd_mono_1.001-webfont.woff" />
             <file name="vcr_osd_mono_1.001-webfont.woff2" />
             <file name="perfect_dos_vga_437-webfont.woff" />
             <file name="perfect_dos_vga_437-webfont.woff2" />
-            <file name="stylesheet2.css" />
+            <file name="perfectdos.css" />
             <file name="edunline-webfont.woff" />
             <file name="edunline-webfont.woff2" />
-            <file name="stylesheet3.css" />
+            <file name="undoline.css" />
+            <file name="alagard.css" />
+            <file name="alagard-webfont.woff" />
+            <file name="alagard-webfont.woff2" />
+            <file name="cursive.css" />
+            <file name="cursive-webfont.woff" />
+            <file name="cursive-webfont.woff2" />
+            <file name="pixeldown.css" />
+            <file name="pixeldown-webfont.woff" />
+            <file name="pixeldown-webfont.woff2" />
         </file-folder>
     </files-folder>
 </c2project>

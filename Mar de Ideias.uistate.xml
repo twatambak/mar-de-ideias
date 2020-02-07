@@ -10,11 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Menu</layout>
+        <layout active="1" order="0">Menu</layout>
         <layout order="2">Base das Perguntas</layout>
         <layout order="4">Base da Plataforma</layout>
         <event-sheet order="1">Eventos Menu</event-sheet>
-        <event-sheet active="1" order="3">Eventos Base-Perguntas</event-sheet>
+        <event-sheet order="3">Eventos Base-Perguntas</event-sheet>
         <event-sheet order="5">Eventos Base-Plataforma</event-sheet>
         <event-sheet order="6">Eventos de Inserção das Perguntas</event-sheet>
     </open-tabs>
@@ -33,13 +33,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Objetos do HUD/Objetos de Exibição/" />
         <folder expanded="0" path="object-folder/Objetos do Mar/" />
         <folder expanded="1" path="object-folder/Controles/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu Inicial/" />
+        <folder expanded="1" path="object-folder/Objetos do Menu Inicial/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Título/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />
+        <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos das Opções/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Highscore/" />
-        <folder expanded="1" path="object-folder/Objetos do Menu de Pausa (Quizz)/" />
-        <folder expanded="1" path="object-folder/Objetos do Menu de GameOver (Quizz)/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu de Pausa (Quizz)/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu de GameOver (Quizz)/" />
         <folder expanded="0" path="object-folder/Objetos da Senha/" />
         <folder expanded="0" path="object-folder/Objetos da Introdução/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/" />
@@ -49,7 +49,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos para Resposta/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
@@ -64,12 +64,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Titulo_Borda/" />
         <folder expanded="1" path="animation-folder/Lua/" />
         <folder expanded="1" path="animation-folder/Montanhas/" />
-        <folder expanded="1" path="animation-folder/MenuJogar_BordasSuperior/" />
-        <folder expanded="1" path="animation-folder/MenuJogar_BordasInferior/" />
-        <folder expanded="1" path="animation-folder/MenuOpcoes_BordasSuperior/" />
-        <folder expanded="1" path="animation-folder/MenuOpcoes_BordasInferior/" />
-        <folder expanded="1" path="animation-folder/MenuCreditos_BordasInferior/" />
-        <folder expanded="1" path="animation-folder/MenuCreditos_BordasSuperior/" />
+        <folder expanded="1" path="animation-folder/BordasMenuPrincipal1/" />
+        <folder expanded="1" path="animation-folder/BordasMenuPrincipal2/" />
+        <folder expanded="1" path="animation-folder/BordasMenuPrincipal3/" />
         <folder expanded="1" path="animation-folder/BackgroundHighScore/" />
         <folder expanded="1" path="animation-folder/BordasOpcaoPausa/" />
         <folder expanded="1" path="animation-folder/BordasGameOver/" />

@@ -19,7 +19,7 @@
         <event-block sid="416781779167772">
             <conditions>
                 <condition id="3" name="On touched object" sid="520656117885894" type="Touch">
-                    <param id="0" name="Object">Opcoes_Texto</param>
+                    <param id="0" name="Object">TextoOpcoesMenu</param>
                 </condition>
                 <condition id="-9" name="Layer is visible" sid="132523697705613" type="System">
                     <param id="0" name="Layer">&quot;TextoOpcoes&quot;</param>
@@ -29,7 +29,7 @@
             <sub-events>
                 <event-block sid="664301440633681">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="899615546757903" type="Opcoes_Texto">
+                        <condition id="-7" name="Compare instance variable" sid="899615546757903" type="TextoOpcoesMenu">
                             <param id="0" name="Instance variable">ID</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
@@ -898,29 +898,29 @@
                         <condition id="-2" name="On start of layout" sid="152067852860523" type="System" />
                     </conditions>
                     <actions>
-                        <action id="5" name="Set web font" sid="358803160111895" type="Titulo_Texto">
-                            <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
-                        </action>
-                        <action id="5" name="Set web font" sid="916782247811394" type="Opcoes_Texto">
+                        <action id="5" name="Set web font" sid="916782247811394" type="TextoOpcoesMenu">
                             <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                         </action>
                         <action id="5" name="Set web font" sid="875821722345768" type="TextoExtra">
                             <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                         </action>
                         <action id="5" name="Set web font" sid="328773361387126" type="Texto_Highscore">
                             <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                         </action>
                         <action id="5" name="Set web font" sid="798274064115993" type="TextoSenha">
                             <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="358803160111895" type="Titulo_Texto">
+                            <param id="0" name="Family name">&quot;pixeldownregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;pixeldown.css&quot;</param>
                         </action>
                         <action id="5" name="Set web font" sid="188984671028819" type="TextoAtivacaoSenha">
                             <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
+                            <param id="1" name="CSS URL">&quot;undoline.css&quot;</param>
                         </action>
                     </actions>
                 </event-block>

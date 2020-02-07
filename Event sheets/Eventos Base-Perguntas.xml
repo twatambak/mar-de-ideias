@@ -88,43 +88,43 @@
                             <actions>
                                 <action id="5" name="Set web font" sid="497502731187693" type="TextoPerguntas">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                                 </action>
                                 <action id="5" name="Set web font" sid="601249429088276" type="TextoRespostas">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                                 </action>
                                 <action id="5" name="Set web font" sid="403123847202730" type="TextoProfundidade">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                                 </action>
                                 <action id="5" name="Set web font" sid="807998964604945" type="GameOver_Texto">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                                </action>
-                                <action id="5" name="Set web font" sid="286423497009390" type="Pausa_Texto">
-                                    <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
-                                    <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                                 </action>
                                 <action id="5" name="Set web font" sid="585378681942150" type="Pausa_Texto2">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                                 </action>
                                 <action id="5" name="Set web font" sid="110227834899941" type="GameOver_Texto2">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
-                                </action>
-                                <action id="5" name="Set web font" sid="119854767637336" type="GameOver_Texto2">
-                                    <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
-                                    <param id="1" name="CSS URL">&quot;stylesheet3.css&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                                 </action>
                                 <action id="5" name="Set web font" sid="637168924579493" type="GameOver_Texto3">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                                 </action>
                                 <action id="5" name="Set web font" sid="591735729894033" type="TexoInfo">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                                    <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="286423497009390" type="Pausa_Texto">
+                                    <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;undoline.css&quot;</param>
+                                </action>
+                                <action id="5" name="Set web font" sid="119854767637336" type="GameOver_Texto2">
+                                    <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
+                                    <param id="1" name="CSS URL">&quot;undoline.css&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1120,9 +1120,5 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="998459236127136">
-            <conditions />
-            <actions />
-        </event-block>
     </events>
 </c2eventsheet>
