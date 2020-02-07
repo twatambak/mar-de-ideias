@@ -461,7 +461,7 @@
                                                     <conditions>
                                                         <condition id="1" name="Compare at XY" sid="436021397375064" type="ArrayPerguntas">
                                                             <param id="0" name="X">PerguntaAtual</param>
-                                                            <param id="1" name="Y">PerguntaAtual</param>
+                                                            <param id="1" name="Y">2</param>
                                                             <param id="2" name="Comparison">0</param>
                                                             <param id="3" name="Value">1</param>
                                                         </condition>
@@ -519,7 +519,7 @@
                                                     <conditions>
                                                         <condition id="1" name="Compare at XY" sid="164460676198092" type="ArrayPerguntas">
                                                             <param id="0" name="X">PerguntaAtual</param>
-                                                            <param id="1" name="Y">PerguntaAtual</param>
+                                                            <param id="1" name="Y">2</param>
                                                             <param id="2" name="Comparison">0</param>
                                                             <param id="3" name="Value">2</param>
                                                         </condition>
@@ -577,7 +577,7 @@
                                                     <conditions>
                                                         <condition id="1" name="Compare at XY" sid="829449476681856" type="ArrayPerguntas">
                                                             <param id="0" name="X">PerguntaAtual</param>
-                                                            <param id="1" name="Y">PerguntaAtual</param>
+                                                            <param id="1" name="Y">2</param>
                                                             <param id="2" name="Comparison">0</param>
                                                             <param id="3" name="Value">3</param>
                                                         </condition>
