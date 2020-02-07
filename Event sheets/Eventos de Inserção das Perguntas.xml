@@ -74,26 +74,24 @@
                                             <param id="1" name="Value">&quot;Qual a capital do Amazonas?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="748829840961868" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
+                                            <param id="0" name="X">1</param>
                                             <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="963272727693093" type="ArrayPerguntas">
                                             <param id="0" name="X">1</param>
-                                            <param id="1" name="Y">1</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="723814602611884" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">1</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="699552300910946" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="723814602611884" type="ArrayPerguntas">
                                             <param id="0" name="X">1</param>
-                                            <param id="1" name="Y">1</param>
-                                            <param id="2" name="Z">1</param>
-                                            <param id="3" name="Value">&quot;Capitais brasileiras&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="699552300910946" type="ArrayPerguntas">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Capitais brasileiras&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -133,8 +131,8 @@
                                             <param id="1" name="Value">&quot;Em que cidade foi inventada a Maria-Mole?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="811057295716971" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">2</param>
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Médio&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="382143427787300" type="ArrayPerguntas">
@@ -142,17 +140,15 @@
                                             <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">2</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="909233642096297" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">2</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="875507115314531" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="909233642096297" type="ArrayPerguntas">
                                             <param id="0" name="X">2</param>
-                                            <param id="1" name="Y">2</param>
-                                            <param id="2" name="Z">2</param>
-                                            <param id="3" name="Value">&quot;Comidas&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="875507115314531" type="ArrayPerguntas">
+                                            <param id="0" name="X">2</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Comidas&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -192,26 +188,24 @@
                                             <param id="1" name="Value">&quot;Em que país foi inventado o cachorro-quente?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="741271095884418" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">3</param>
+                                            <param id="0" name="X">3</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Médio&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="863263813339006" type="ArrayPerguntas">
                                             <param id="0" name="X">3</param>
-                                            <param id="1" name="Y">3</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">2</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="899252594782145" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">3</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="724128950132206" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="899252594782145" type="ArrayPerguntas">
                                             <param id="0" name="X">3</param>
                                             <param id="1" name="Y">3</param>
-                                            <param id="2" name="Z">3</param>
-                                            <param id="3" name="Value">&quot;Comidas&quot;</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="724128950132206" type="ArrayPerguntas">
+                                            <param id="0" name="X">3</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Comidas&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -251,26 +245,24 @@
                                             <param id="1" name="Value">&quot;Em que ano foi declarada a independência do Brasil?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="968987561801451" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">4</param>
+                                            <param id="0" name="X">4</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="204622658631288" type="ArrayPerguntas">
                                             <param id="0" name="X">4</param>
-                                            <param id="1" name="Y">4</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="232480308484088" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">4</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
+                                        <action id="3" name="Set at XY" sid="232480308484088" type="ArrayPerguntas">
+                                            <param id="0" name="X">4</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="656210133828659" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="656210133828659" type="ArrayPerguntas">
                                             <param id="0" name="X">4</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Z">4</param>
-                                            <param id="3" name="Value">&quot;História do Brasil&quot;</param>
+                                            <param id="2" name="Value">&quot;História do Brasil&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -310,26 +302,24 @@
                                             <param id="1" name="Value">&quot;Qual a célula que transporta oxigénio pelo sangue?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="258444469555004" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">5</param>
+                                            <param id="0" name="X">5</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="839841873102869" type="ArrayPerguntas">
                                             <param id="0" name="X">5</param>
-                                            <param id="1" name="Y">5</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="610635386304121" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">5</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="264648867209531" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="610635386304121" type="ArrayPerguntas">
                                             <param id="0" name="X">5</param>
-                                            <param id="1" name="Y">5</param>
-                                            <param id="2" name="Z">5</param>
-                                            <param id="3" name="Value">&quot;Corpo Humano&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="264648867209531" type="ArrayPerguntas">
+                                            <param id="0" name="X">5</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Corpo Humano&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -369,26 +359,24 @@
                                             <param id="1" name="Value">&quot;Quantos ossos possuí o corpo humano adulto?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="199910462294337" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">6</param>
+                                            <param id="0" name="X">6</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="663969177524927" type="ArrayPerguntas">
                                             <param id="0" name="X">6</param>
-                                            <param id="1" name="Y">6</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="341191815247159" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">6</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="185226371944909" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="341191815247159" type="ArrayPerguntas">
                                             <param id="0" name="X">6</param>
-                                            <param id="1" name="Y">6</param>
-                                            <param id="2" name="Z">6</param>
-                                            <param id="3" name="Value">&quot;Corpo Humano&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="185226371944909" type="ArrayPerguntas">
+                                            <param id="0" name="X">6</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Corpo Humano&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -428,26 +416,24 @@
                                             <param id="1" name="Value">&quot;Qual o principal ingrediente da paçoca?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="626131635784933" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">7</param>
+                                            <param id="0" name="X">7</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="475576904608351" type="ArrayPerguntas">
                                             <param id="0" name="X">7</param>
-                                            <param id="1" name="Y">7</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="827399765603494" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">7</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="487405750684756" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="827399765603494" type="ArrayPerguntas">
                                             <param id="0" name="X">7</param>
-                                            <param id="1" name="Y">7</param>
-                                            <param id="2" name="Z">7</param>
-                                            <param id="3" name="Value">&quot;Comidas&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="487405750684756" type="ArrayPerguntas">
+                                            <param id="0" name="X">7</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Comidas&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -487,26 +473,24 @@
                                             <param id="1" name="Value">&quot;As zebras são...&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="579230739503256" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">8</param>
+                                            <param id="0" name="X">8</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="699042304582472" type="ArrayPerguntas">
                                             <param id="0" name="X">8</param>
-                                            <param id="1" name="Y">8</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">2</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="105668294965115" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">8</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="570796806417324" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="105668294965115" type="ArrayPerguntas">
                                             <param id="0" name="X">8</param>
-                                            <param id="1" name="Y">8</param>
-                                            <param id="2" name="Z">8</param>
-                                            <param id="3" name="Value">&quot;Animais&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="570796806417324" type="ArrayPerguntas">
+                                            <param id="0" name="X">8</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Animais&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -546,26 +530,24 @@
                                             <param id="1" name="Value">&quot;Em qual temperatura os termômetros em Celsius e Farenheit são iguais?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="677757437924569" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">9</param>
+                                            <param id="0" name="X">9</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Médio&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="597639952628294" type="ArrayPerguntas">
                                             <param id="0" name="X">9</param>
-                                            <param id="1" name="Y">9</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="396701537417991" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">9</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="334287829113129" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="396701537417991" type="ArrayPerguntas">
                                             <param id="0" name="X">9</param>
-                                            <param id="1" name="Y">9</param>
-                                            <param id="2" name="Z">9</param>
-                                            <param id="3" name="Value">&quot;Física&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="334287829113129" type="ArrayPerguntas">
+                                            <param id="0" name="X">9</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Física&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -605,26 +587,24 @@
                                             <param id="1" name="Value">&quot;Se for pelo bem da nação eu...&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="735411425841672" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">10</param>
+                                            <param id="0" name="X">10</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="957453993177480" type="ArrayPerguntas">
                                             <param id="0" name="X">10</param>
-                                            <param id="1" name="Y">10</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">2</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="286146860548637" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">10</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="206971071235501" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="286146860548637" type="ArrayPerguntas">
                                             <param id="0" name="X">10</param>
-                                            <param id="1" name="Y">10</param>
-                                            <param id="2" name="Z">10</param>
-                                            <param id="3" name="Value">&quot;Frases Históricas&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="206971071235501" type="ArrayPerguntas">
+                                            <param id="0" name="X">10</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Frases Históricas&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -664,26 +644,24 @@
                                             <param id="1" name="Value">&quot; Quem foi o primeiro presidente eleito do Brasil?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="878172281878555" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">11</param>
+                                            <param id="0" name="X">11</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="615528802628611" type="ArrayPerguntas">
                                             <param id="0" name="X">11</param>
-                                            <param id="1" name="Y">11</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="930049849618450" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">11</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="405711989773941" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="930049849618450" type="ArrayPerguntas">
                                             <param id="0" name="X">11</param>
-                                            <param id="1" name="Y">11</param>
-                                            <param id="2" name="Z">11</param>
-                                            <param id="3" name="Value">&quot;História do Brasil&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="405711989773941" type="ArrayPerguntas">
+                                            <param id="0" name="X">11</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;História do Brasil&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -723,26 +701,24 @@
                                             <param id="1" name="Value">&quot;Qual foi a primeira capital do Brasil?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="420788340616777" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">12</param>
+                                            <param id="0" name="X">12</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="798130017839357" type="ArrayPerguntas">
                                             <param id="0" name="X">12</param>
-                                            <param id="1" name="Y">12</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="904940319986673" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">12</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="227841407051960" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="904940319986673" type="ArrayPerguntas">
                                             <param id="0" name="X">12</param>
-                                            <param id="1" name="Y">12</param>
-                                            <param id="2" name="Z">12</param>
-                                            <param id="3" name="Value">&quot;História do Brasil&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="227841407051960" type="ArrayPerguntas">
+                                            <param id="0" name="X">12</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;História do Brasil&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -782,26 +758,24 @@
                                             <param id="1" name="Value">&quot;Como se chamam seres com apenas uma célula?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="894353133183677" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">13</param>
+                                            <param id="0" name="X">13</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="816265448391021" type="ArrayPerguntas">
                                             <param id="0" name="X">13</param>
-                                            <param id="1" name="Y">13</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">2</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="710569160395351" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">13</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="364978456783653" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="710569160395351" type="ArrayPerguntas">
                                             <param id="0" name="X">13</param>
-                                            <param id="1" name="Y">13</param>
-                                            <param id="2" name="Z">13</param>
-                                            <param id="3" name="Value">&quot;Células&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="364978456783653" type="ArrayPerguntas">
+                                            <param id="0" name="X">13</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Células&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -841,26 +815,24 @@
                                             <param id="1" name="Value">&quot;Qual o ciclo da mitose?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="103092366705822" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">14</param>
+                                            <param id="0" name="X">14</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Difícil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="337878885864766" type="ArrayPerguntas">
                                             <param id="0" name="X">14</param>
-                                            <param id="1" name="Y">14</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="363287483255842" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">14</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="952401729804332" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="363287483255842" type="ArrayPerguntas">
                                             <param id="0" name="X">14</param>
-                                            <param id="1" name="Y">14</param>
-                                            <param id="2" name="Z">14</param>
-                                            <param id="3" name="Value">&quot;Células&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="952401729804332" type="ArrayPerguntas">
+                                            <param id="0" name="X">14</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Células&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -900,26 +872,24 @@
                                             <param id="1" name="Value">&quot;Em que ano teve início a Primeira Guerra Mundial?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="163476059509589" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">15</param>
+                                            <param id="0" name="X">15</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="830895446512865" type="ArrayPerguntas">
                                             <param id="0" name="X">15</param>
-                                            <param id="1" name="Y">15</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="380659696118870" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">15</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="544659143455971" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="380659696118870" type="ArrayPerguntas">
                                             <param id="0" name="X">15</param>
-                                            <param id="1" name="Y">15</param>
-                                            <param id="2" name="Z">15</param>
-                                            <param id="3" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="544659143455971" type="ArrayPerguntas">
+                                            <param id="0" name="X">15</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -959,26 +929,24 @@
                                             <param id="1" name="Value">&quot;Em que ano teve fim a Primeira Guerra Mundial?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="778799960724977" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">16</param>
+                                            <param id="0" name="X">16</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="168737574438999" type="ArrayPerguntas">
                                             <param id="0" name="X">16</param>
-                                            <param id="1" name="Y">16</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="253569259487623" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">16</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="835808556778474" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="253569259487623" type="ArrayPerguntas">
                                             <param id="0" name="X">16</param>
-                                            <param id="1" name="Y">16</param>
-                                            <param id="2" name="Z">16</param>
-                                            <param id="3" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="835808556778474" type="ArrayPerguntas">
+                                            <param id="0" name="X">16</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1018,26 +986,24 @@
                                             <param id="1" name="Value">&quot;A Peste Negra também é conhecida como?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="809107387372540" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">17</param>
+                                            <param id="0" name="X">17</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Médio&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="585306370000682" type="ArrayPerguntas">
                                             <param id="0" name="X">17</param>
-                                            <param id="1" name="Y">17</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">2</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="169441296149726" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">17</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="170981178684305" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="169441296149726" type="ArrayPerguntas">
                                             <param id="0" name="X">17</param>
-                                            <param id="1" name="Y">17</param>
-                                            <param id="2" name="Z">17</param>
-                                            <param id="3" name="Value">&quot;Doenças&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="170981178684305" type="ArrayPerguntas">
+                                            <param id="0" name="X">17</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Doenças&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1077,26 +1043,24 @@
                                             <param id="1" name="Value">&quot;Qual o maior estado brasileiro?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="230649190315057" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">18</param>
+                                            <param id="0" name="X">18</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="241261102051551" type="ArrayPerguntas">
                                             <param id="0" name="X">18</param>
-                                            <param id="1" name="Y">18</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="673793865285269" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">18</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="570996112927956" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="673793865285269" type="ArrayPerguntas">
                                             <param id="0" name="X">18</param>
-                                            <param id="1" name="Y">18</param>
-                                            <param id="2" name="Z">18</param>
-                                            <param id="3" name="Value">&quot;Estados brasileiros&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="570996112927956" type="ArrayPerguntas">
+                                            <param id="0" name="X">18</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Estados brasileiros&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1136,26 +1100,24 @@
                                             <param id="1" name="Value">&quot;Qual o maior país do mundo?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="394019462379401" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">19</param>
+                                            <param id="0" name="X">19</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="176693362266905" type="ArrayPerguntas">
                                             <param id="0" name="X">19</param>
-                                            <param id="1" name="Y">19</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="896034538932354" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">19</param>
-                                            <param id="3" name="Value">&quot;Não respondido&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="903834328646566" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="896034538932354" type="ArrayPerguntas">
                                             <param id="0" name="X">19</param>
-                                            <param id="1" name="Y">19</param>
-                                            <param id="2" name="Z">19</param>
-                                            <param id="3" name="Value">&quot;Países&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="903834328646566" type="ArrayPerguntas">
+                                            <param id="0" name="X">19</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Países&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1195,26 +1157,24 @@
                                             <param id="1" name="Value">&quot;Qual o maior osso do corpo humano?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="818386801800744" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">20</param>
+                                            <param id="0" name="X">20</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="933063399185491" type="ArrayPerguntas">
                                             <param id="0" name="X">20</param>
-                                            <param id="1" name="Y">20</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">2</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="503615472033354" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">20</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="338861929520449" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="503615472033354" type="ArrayPerguntas">
                                             <param id="0" name="X">20</param>
-                                            <param id="1" name="Y">20</param>
-                                            <param id="2" name="Z">20</param>
-                                            <param id="3" name="Value">&quot;Corpo Humano&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="338861929520449" type="ArrayPerguntas">
+                                            <param id="0" name="X">20</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Corpo Humano&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1254,26 +1214,24 @@
                                             <param id="1" name="Value">&quot;Qual o maior orgão do corpo humano?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="802793855052208" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">21</param>
+                                            <param id="0" name="X">21</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="282092067136733" type="ArrayPerguntas">
                                             <param id="0" name="X">21</param>
-                                            <param id="1" name="Y">21</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="809291817003516" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">21</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="500464909209859" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="809291817003516" type="ArrayPerguntas">
                                             <param id="0" name="X">21</param>
-                                            <param id="1" name="Y">21</param>
-                                            <param id="2" name="Z">21</param>
-                                            <param id="3" name="Value">&quot;Corpo Humano&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="500464909209859" type="ArrayPerguntas">
+                                            <param id="0" name="X">21</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Corpo Humano&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1313,26 +1271,24 @@
                                             <param id="1" name="Value">&quot;Quem foi o primeiro homem a pisar na lua?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="932458032179706" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">22</param>
+                                            <param id="0" name="X">22</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="948319486387403" type="ArrayPerguntas">
                                             <param id="0" name="X">22</param>
-                                            <param id="1" name="Y">22</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="641976481126535" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">22</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="600203090605745" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="641976481126535" type="ArrayPerguntas">
                                             <param id="0" name="X">22</param>
-                                            <param id="1" name="Y">22</param>
-                                            <param id="2" name="Z">22</param>
-                                            <param id="3" name="Value">&quot;Espaço&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="600203090605745" type="ArrayPerguntas">
+                                            <param id="0" name="X">22</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Espaço&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1372,26 +1328,24 @@
                                             <param id="1" name="Value">&quot;Qual foi o primeiro satélite artificial da terra?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="562616210989105" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">23</param>
+                                            <param id="0" name="X">23</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="628955647207032" type="ArrayPerguntas">
                                             <param id="0" name="X">23</param>
-                                            <param id="1" name="Y">23</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="281443710780464" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">23</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="864496339296944" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="281443710780464" type="ArrayPerguntas">
                                             <param id="0" name="X">23</param>
-                                            <param id="1" name="Y">23</param>
-                                            <param id="2" name="Z">23</param>
-                                            <param id="3" name="Value">&quot;Espaço&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="864496339296944" type="ArrayPerguntas">
+                                            <param id="0" name="X">23</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Espaço&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1431,26 +1385,24 @@
                                             <param id="1" name="Value">&quot;Em que ano foi lançado o primeiro satélite artifical da terra?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="576837518709535" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">24</param>
+                                            <param id="0" name="X">24</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="433306320767970" type="ArrayPerguntas">
                                             <param id="0" name="X">24</param>
-                                            <param id="1" name="Y">24</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="537792820143945" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">24</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="654085338669317" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="537792820143945" type="ArrayPerguntas">
                                             <param id="0" name="X">24</param>
-                                            <param id="1" name="Y">24</param>
-                                            <param id="2" name="Z">24</param>
-                                            <param id="3" name="Value">&quot;Espaço&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="654085338669317" type="ArrayPerguntas">
+                                            <param id="0" name="X">24</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Espaço&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1490,26 +1442,24 @@
                                             <param id="1" name="Value">&quot;Quem lançou o primeiro satélite artificial?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="515147495833716" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">25</param>
+                                            <param id="0" name="X">25</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="679737911808505" type="ArrayPerguntas">
                                             <param id="0" name="X">25</param>
-                                            <param id="1" name="Y">25</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">2</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="117327570326344" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">25</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="282605910374012" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="117327570326344" type="ArrayPerguntas">
                                             <param id="0" name="X">25</param>
-                                            <param id="1" name="Y">25</param>
-                                            <param id="2" name="Z">25</param>
-                                            <param id="3" name="Value">&quot;Espaço&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="282605910374012" type="ArrayPerguntas">
+                                            <param id="0" name="X">25</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Espaço&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1549,26 +1499,24 @@
                                             <param id="1" name="Value">&quot;Em que ano teve início a Guerra Fria?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="418386634454436" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">26</param>
+                                            <param id="0" name="X">26</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="390110069532533" type="ArrayPerguntas">
                                             <param id="0" name="X">26</param>
-                                            <param id="1" name="Y">26</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="504941280128527" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">26</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="752154448388086" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="504941280128527" type="ArrayPerguntas">
                                             <param id="0" name="X">26</param>
-                                            <param id="1" name="Y">26</param>
-                                            <param id="2" name="Z">26</param>
-                                            <param id="3" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="752154448388086" type="ArrayPerguntas">
+                                            <param id="0" name="X">26</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1608,26 +1556,24 @@
                                             <param id="1" name="Value">&quot;Em que ano teve fim a Guerra Fria?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="952405181443050" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">27</param>
+                                            <param id="0" name="X">27</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="728192964306000" type="ArrayPerguntas">
                                             <param id="0" name="X">27</param>
-                                            <param id="1" name="Y">27</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="277039992474229" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">27</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="243468945901583" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="277039992474229" type="ArrayPerguntas">
                                             <param id="0" name="X">27</param>
-                                            <param id="1" name="Y">27</param>
-                                            <param id="2" name="Z">27</param>
-                                            <param id="3" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="243468945901583" type="ArrayPerguntas">
+                                            <param id="0" name="X">27</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1667,26 +1613,24 @@
                                             <param id="1" name="Value">&quot;A Guerra Fria foi uma disputa entre quais potências?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="999871450195755" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">28</param>
+                                            <param id="0" name="X">28</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="460894248199539" type="ArrayPerguntas">
                                             <param id="0" name="X">28</param>
-                                            <param id="1" name="Y">28</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="375935313092291" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">28</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="187986068340689" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="375935313092291" type="ArrayPerguntas">
                                             <param id="0" name="X">28</param>
-                                            <param id="1" name="Y">28</param>
-                                            <param id="2" name="Z">28</param>
-                                            <param id="3" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="187986068340689" type="ArrayPerguntas">
+                                            <param id="0" name="X">28</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1726,26 +1670,24 @@
                                             <param id="1" name="Value">&quot;Porque a Guerra Fria tem esse nome?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="134139293856919" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">29</param>
+                                            <param id="0" name="X">29</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="266076550440994" type="ArrayPerguntas">
                                             <param id="0" name="X">29</param>
-                                            <param id="1" name="Y">29</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="174755835390359" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">29</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="191467121860479" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="174755835390359" type="ArrayPerguntas">
                                             <param id="0" name="X">29</param>
-                                            <param id="1" name="Y">29</param>
-                                            <param id="2" name="Z">29</param>
-                                            <param id="3" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="191467121860479" type="ArrayPerguntas">
+                                            <param id="0" name="X">29</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1785,26 +1727,24 @@
                                             <param id="1" name="Value">&quot;Qual era a nacionalidade de Hitler?&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="902554603665659" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">30</param>
+                                            <param id="0" name="X">30</param>
+                                            <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="600835267512642" type="ArrayPerguntas">
                                             <param id="0" name="X">30</param>
-                                            <param id="1" name="Y">30</param>
+                                            <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">3</param>
                                         </action>
-                                        <action id="4" name="Set at XYZ" sid="187143126579304" type="ArrayPerguntas">
-                                            <param id="0" name="X">0</param>
-                                            <param id="1" name="Y">0</param>
-                                            <param id="2" name="Z">30</param>
-                                            <param id="3" name="Value">&quot;Não respondida&quot;</param>
-                                        </action>
-                                        <action id="4" name="Set at XYZ" sid="646735575957329" type="ArrayPerguntas">
+                                        <action id="3" name="Set at XY" sid="187143126579304" type="ArrayPerguntas">
                                             <param id="0" name="X">30</param>
-                                            <param id="1" name="Y">30</param>
-                                            <param id="2" name="Z">30</param>
-                                            <param id="3" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="646735575957329" type="ArrayPerguntas">
+                                            <param id="0" name="X">30</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
