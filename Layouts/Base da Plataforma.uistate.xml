@@ -26,10 +26,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <active-layer name="Background" />
     <layers>
         <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="DetalhesMar" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Ceu" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="DetalhesCeuEstrelas" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="BackgroundLogo" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="PlataformaPreenchimento" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="PlataformaPreenchimentoDetalhes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Plataformas" parallax-in-editor="0" visible="1" />

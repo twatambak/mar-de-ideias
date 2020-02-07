@@ -17,7 +17,7 @@
                                     <param id="0" name="Variable">PerguntaAtual</param>
                                     <param id="1" name="Value">int(random(1, TotalPerguntas + 1))</param>
                                 </action>
-                                <action id="0" name="Set text" sid="604505831023795" type="Pergunta_Texto">
+                                <action id="0" name="Set text" sid="604505831023795" type="TextoPerguntas">
                                     <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
                                 </action>
                             </actions>
@@ -32,14 +32,14 @@
                                 <comment>Define o texto da primeira alternativa.</comment>
                                 <event-block sid="153559206545251">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="994779679388458" type="Resposta_Texto">
+                                        <condition id="-7" name="Compare instance variable" sid="994779679388458" type="TextoRespostas">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" sid="131448811629410" type="Resposta_Texto">
+                                        <action id="0" name="Set text" sid="131448811629410" type="TextoRespostas">
                                             <param id="0" name="Text">ArrayRespostas.At(PerguntaAtual, 0, 0)</param>
                                         </action>
                                     </actions>
@@ -47,14 +47,14 @@
                                 <comment>Define o texto da segunda alternativa.</comment>
                                 <event-block sid="220272640705042">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="106788136639468" type="Resposta_Texto">
+                                        <condition id="-7" name="Compare instance variable" sid="106788136639468" type="TextoRespostas">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">2</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" sid="277483525627156" type="Resposta_Texto">
+                                        <action id="0" name="Set text" sid="277483525627156" type="TextoRespostas">
                                             <param id="0" name="Text">ArrayRespostas.At(0, PerguntaAtual, 0)</param>
                                         </action>
                                     </actions>
@@ -62,14 +62,14 @@
                                 <comment>Define o texto da terceira alternativa.</comment>
                                 <event-block sid="902559706302587">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="478399239156274" type="Resposta_Texto">
+                                        <condition id="-7" name="Compare instance variable" sid="478399239156274" type="TextoRespostas">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">3</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Set text" sid="600647971708300" type="Resposta_Texto">
+                                        <action id="0" name="Set text" sid="600647971708300" type="TextoRespostas">
                                             <param id="0" name="Text">ArrayRespostas.At(0, 0, PerguntaAtual)</param>
                                         </action>
                                     </actions>
@@ -86,11 +86,11 @@
                                 <condition id="-2" name="On start of layout" sid="853415529372643" type="System" />
                             </conditions>
                             <actions>
-                                <action id="5" name="Set web font" sid="497502731187693" type="Pergunta_Texto">
+                                <action id="5" name="Set web font" sid="497502731187693" type="TextoPerguntas">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                                 </action>
-                                <action id="5" name="Set web font" sid="601249429088276" type="Resposta_Texto">
+                                <action id="5" name="Set web font" sid="601249429088276" type="TextoRespostas">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                                     <param id="1" name="CSS URL">&quot;stylesheet.css&quot;</param>
                                 </action>
@@ -294,7 +294,7 @@
                                 <condition id="-2" name="On start of layout" sid="339149901694003" type="System" />
                             </conditions>
                             <actions>
-                                <action id="2" name="Stop" sid="170512074598535" type="OpcaoResposta" />
+                                <action id="2" name="Stop" sid="170512074598535" type="BordaRespostas" />
                             </actions>
                         </event-block>
                         <event-block sid="699822154850765">
@@ -440,7 +440,7 @@
                                 <event-block sid="223455059841028">
                                     <conditions>
                                         <condition id="3" name="On touched object" sid="507636718911472" type="Touch">
-                                            <param id="0" name="Object">Resposta_Texto</param>
+                                            <param id="0" name="Object">TextoRespostas</param>
                                         </condition>
                                     </conditions>
                                     <actions />
@@ -448,7 +448,7 @@
                                         <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID um.</comment>
                                         <event-block sid="544191042739592">
                                             <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="729056476827596" type="Resposta_Texto">
+                                                <condition id="-7" name="Compare instance variable" sid="729056476827596" type="TextoRespostas">
                                                     <param id="0" name="Instance variable">ID</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">1</param>
@@ -506,7 +506,7 @@
                                         <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID dois.</comment>
                                         <event-block sid="842141382379114">
                                             <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="294206226785022" type="Resposta_Texto">
+                                                <condition id="-7" name="Compare instance variable" sid="294206226785022" type="TextoRespostas">
                                                     <param id="0" name="Instance variable">ID</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">2</param>
@@ -564,7 +564,7 @@
                                         <comment>Define o funcionamento para caso a resposta escolhida seja referente ao ID três.</comment>
                                         <event-block sid="276622894751972">
                                             <conditions>
-                                                <condition id="-7" name="Compare instance variable" sid="957340287320472" type="Resposta_Texto">
+                                                <condition id="-7" name="Compare instance variable" sid="957340287320472" type="TextoRespostas">
                                                     <param id="0" name="Instance variable">ID</param>
                                                     <param id="1" name="Comparison">0</param>
                                                     <param id="2" name="Value">3</param>
@@ -748,14 +748,14 @@
                             <sub-events>
                                 <event-block sid="600363592366589">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="945931309998220" type="OpcaoResposta">
+                                        <condition id="-7" name="Compare instance variable" sid="945931309998220" type="BordaRespostas">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">Escolha</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="5" name="Set frame" sid="944307027824288" type="OpcaoResposta">
+                                        <action id="5" name="Set frame" sid="944307027824288" type="BordaRespostas">
                                             <param id="0" name="Frame number">1</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="555048392278938" type="System">
@@ -801,14 +801,14 @@
                             <sub-events>
                                 <event-block sid="418627239775540">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="749012744471149" type="OpcaoResposta">
+                                        <condition id="-7" name="Compare instance variable" sid="749012744471149" type="BordaRespostas">
                                             <param id="0" name="Instance variable">ID</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">Escolha</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="5" name="Set frame" sid="592520052381047" type="OpcaoResposta">
+                                        <action id="5" name="Set frame" sid="592520052381047" type="BordaRespostas">
                                             <param id="0" name="Frame number">2</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="308779345557474" type="System">
@@ -1005,16 +1005,10 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Fade" id="1" name="Start fade" sid="605822489964479" type="Resposta_Texto" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="379244807345995" type="OpcaoResposta" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="591599158967509" type="Pergunta_Background" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="578488200668694" type="Pergunta_BordaEsquerdaSuperior" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="565043103644671" type="Pergunta_BordaEsquerdaInferior" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="486070128511251" type="Pergunta_BordaDireitaSuperior" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="486316591313214" type="Pergunta_BordaDireitaInferior" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="287564097659827" type="Pergunta_BordaHorizontal" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="705889743798281" type="Pergunta_BordaVertical" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="753735507713333" type="Pergunta_Texto" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="753735507713333" type="TextoPerguntas" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="605822489964479" type="TextoRespostas" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="379244807345995" type="BordaRespostas" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="405587852889827" type="BordaPergunta" />
                                 <action id="-16" name="Wait" sid="350326173220076" type="System">
                                     <param id="0" name="Seconds">1.5</param>
                                 </action>
@@ -1033,22 +1027,16 @@
                             </conditions>
                             <actions>
                                 <action behavior="Fade" id="1" name="Start fade" sid="232440909396225" type="TextoProfundidade" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="319981137878480" type="Pergunta_Texto" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="283164381484670" type="Resposta_Texto" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="319981137878480" type="TextoPerguntas" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="283164381484670" type="TextoRespostas" />
                                 <action id="-16" name="Wait" sid="319804745837792" type="System">
                                     <param id="0" name="Seconds">1</param>
                                 </action>
-                                <action behavior="Fade" id="1" name="Start fade" sid="180542761397856" type="OpcaoResposta" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="457794983587918" type="Pergunta_BordaEsquerdaSuperior" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="983698241522838" type="Pergunta_BordaEsquerdaInferior" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="808322816472955" type="Pergunta_BordaDireitaSuperior" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="704261619224841" type="Pergunta_BordaDireitaInferior" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="965631606180952" type="Pergunta_BordaHorizontal" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="692396479272955" type="Pergunta_BordaVertical" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="180542761397856" type="BordaRespostas" />
                                 <action id="-16" name="Wait" sid="620122647871003" type="System">
                                     <param id="0" name="Seconds">1</param>
                                 </action>
-                                <action behavior="Fade" id="1" name="Start fade" sid="463015705435436" type="Pergunta_Background" />
+                                <action behavior="Fade" id="1" name="Start fade" sid="992422512102431" type="BordaPergunta" />
                                 <action id="-16" name="Wait" sid="894497079299976" type="System">
                                     <param id="0" name="Seconds">1</param>
                                 </action>
@@ -1057,7 +1045,6 @@
                                 <action behavior="Fade" id="1" name="Start fade" sid="296984659867255" type="MarcaErros" />
                                 <action behavior="Fade" id="1" name="Start fade" sid="786382758377151" type="BotaoPausa" />
                                 <action behavior="Fade" id="1" name="Start fade" sid="429057547085752" type="BackgroundProfundidade" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="437392488005971" type="BackgroundPainel" />
                                 <action id="-16" name="Wait" sid="430826616319718" type="System">
                                     <param id="0" name="Seconds">1</param>
                                 </action>

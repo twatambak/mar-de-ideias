@@ -10,11 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="2">Base das Perguntas</layout>
         <layout order="0">Menu</layout>
-        <layout active="1" order="4">Base da Plataforma</layout>
-        <event-sheet order="3">Eventos Base-Perguntas</event-sheet>
+        <layout active="1" order="2">Base das Perguntas</layout>
+        <layout order="4">Base da Plataforma</layout>
         <event-sheet order="1">Eventos Menu</event-sheet>
+        <event-sheet order="3">Eventos Base-Perguntas</event-sheet>
         <event-sheet order="5">Eventos Base-Plataforma</event-sheet>
     </open-tabs>
     <properties>
@@ -26,8 +26,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/Objetos para Pergunta/" />
-        <folder expanded="0" path="object-folder/Objetos para Resposta/" />
+        <folder expanded="1" path="object-folder/Objetos para Pergunta/" />
+        <folder expanded="1" path="object-folder/Objetos para Resposta/" />
         <folder expanded="1" path="object-folder/Objetos do HUD/" />
         <folder expanded="0" path="object-folder/Objetos do HUD/Detalhes/" />
         <folder expanded="0" path="object-folder/Objetos do HUD/Botões/" />
@@ -43,7 +43,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos de Fim de Jogo/" />
         <folder expanded="0" path="object-folder/Objetos da Senha/" />
         <folder expanded="0" path="object-folder/Objetos da Introdução/" />
-        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/" />
+        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -51,11 +51,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="file-folder/Fontes/" />
-        <folder expanded="1" path="animation-folder/Pergunta_BordaDireitaInferior/" />
-        <folder expanded="1" path="animation-folder/Pergunta_BordaDireitaSuperior/" />
-        <folder expanded="1" path="animation-folder/Pergunta_BordaEsquerdaInferior/" />
-        <folder expanded="1" path="animation-folder/Pergunta_BordaEsquerdaSuperior/" />
-        <folder expanded="1" path="animation-folder/OpcaoResposta/" />
+        <folder expanded="1" path="animation-folder/BordaPergunta/" />
+        <folder expanded="1" path="animation-folder/BordaRespostas/" />
         <folder expanded="1" path="animation-folder/BackgroundProfundidade/" />
         <folder expanded="1" path="animation-folder/BordasPainel/" />
         <folder expanded="1" path="animation-folder/BotaoPausa/" />
