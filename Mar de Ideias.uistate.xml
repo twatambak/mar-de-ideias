@@ -12,10 +12,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Menu</layout>
         <layout order="2">Base das Perguntas</layout>
-        <layout active="1" order="4">Base da Plataforma</layout>
+        <layout order="4">Base da Plataforma</layout>
         <event-sheet order="1">Eventos Menu</event-sheet>
         <event-sheet order="3">Eventos Base-Perguntas</event-sheet>
-        <event-sheet order="5">Eventos Base-Plataforma</event-sheet>
+        <event-sheet active="1" order="5">Eventos Base-Plataforma</event-sheet>
         <event-sheet order="6">Eventos de Inserção das Perguntas</event-sheet>
     </open-tabs>
     <properties>
@@ -42,7 +42,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos do Menu de GameOver (Quizz)/" />
         <folder expanded="1" path="object-folder/Objetos da Senha/" />
         <folder expanded="0" path="object-folder/Objetos da Introdução/" />
-        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/" />
+        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Plataformas/" />
         <folder expanded="0" path="object-folder/Objetos do Quizz/" />
         <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos para Pergunta/" />
@@ -80,5 +80,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/BordaPergunta/" />
         <folder expanded="1" path="animation-folder/BordaRespostas/" />
         <folder expanded="1" path="animation-folder/Plataforma1RampaEsq/" />
+        <folder expanded="1" path="animation-folder/Controle/" />
     </folders-expanded>
 </c2uistate>

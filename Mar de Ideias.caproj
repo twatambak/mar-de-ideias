@@ -22,6 +22,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -912,25 +913,25 @@
                 <animation-folder>
                     <animation framecount="9" loop="0" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="393641975622786" speed="5">
                         <frame duration="1" hotspotX="0.527273" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.527273" hotspotY="0.514563" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.542857" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.527273" hotspotY="0.514563" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.513761" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                     <animation framecount="1" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="329879808540893" speed="5">
-                        <frame duration="1" hotspotX="0.468085" hotspotY="0.420561" original-source="C:\Users\Thiago L. Watambak\Downloads\Player_jump.png">
+                        <frame duration="1" hotspotX="0.404255" hotspotY="0.364486" original-source="C:\Users\Thiago L. Watambak\Downloads\Player_jump.png">
                             <collision-poly>
-                                <point x="0.212766" y="0.205607" />
-                                <point x="0.468085" y="0.00934579" />
-                                <point x="0.914894" y="0.121495" />
-                                <point x="0.659575" y="0.457944" />
-                                <point x="0.851064" y="0.766355" />
-                                <point x="0.276596" y="0.682243" />
-                                <point x="0.0212766" y="0.457944" />
+                                <point x="0" y="0" />
+                                <point x="0.406971" y="0" />
+                                <point x="1" y="0.0334523" />
+                                <point x="1" y="0.420124" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.410778" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1039,6 +1040,22 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Controle" sid="867905574643057">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Direcao" sid="219469448312500" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pin" sid="345694414786429">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445723311535588" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

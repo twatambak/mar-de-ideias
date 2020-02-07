@@ -14,6 +14,7 @@
         <event-block sid="236251195298046">
             <conditions>
                 <condition behavior="Platform" id="0" name="Is moving" sid="652638276834737" type="JogadorPlataforma" />
+                <condition behavior="Platform" id="2" name="Is on floor" sid="428014001980629" type="JogadorPlataforma" />
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="924809323165471" type="JogadorPlataforma">
@@ -28,6 +29,7 @@
         <event-block sid="285313658040912">
             <conditions>
                 <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="178735580998945" type="JogadorPlataforma" />
+                <condition behavior="Platform" id="2" name="Is on floor" sid="960779235069713" type="JogadorPlataforma" />
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="667096485940339" type="JogadorPlataforma">
@@ -88,6 +90,58 @@
                     <param id="0" name="Control">2</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="446384208876138">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="242155294213193" type="Touch">
+                    <param id="0" name="Object">Controle</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="175263678067156">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="335937917144775" type="Controle">
+                            <param id="0" name="Instance variable">Direcao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Pulo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="543313312369907" type="JogadorPlataforma">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="609715585485528">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="270148444255061" type="Controle">
+                            <param id="0" name="Instance variable">Direcao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Direita&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="990524463730290" type="JogadorPlataforma">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="226871322166162">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="289791284138656" type="Controle">
+                            <param id="0" name="Instance variable">Direcao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Esquerda&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="742392543350004" type="JogadorPlataforma">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
