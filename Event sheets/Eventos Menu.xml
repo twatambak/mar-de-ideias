@@ -885,7 +885,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="101816661690149" type="System">
-                            <param id="0" name="Layout">Base das Perguntas</param>
+                            <param id="0" name="Layout">Base da Plataforma</param>
                         </action>
                     </actions>
                 </event-block>

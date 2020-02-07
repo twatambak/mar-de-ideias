@@ -122,6 +122,9 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="7" name="Set mirrored" sid="513804018998241" type="JogadorPlataforma">
+                            <param id="0" name="State">1</param>
+                        </action>
                         <action behavior="Platform" id="7" name="Simulate control" sid="990524463730290" type="JogadorPlataforma">
                             <param id="0" name="Control">1</param>
                         </action>
@@ -136,12 +139,28 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="7" name="Set mirrored" sid="881299722965064" type="JogadorPlataforma">
+                            <param id="0" name="State">0</param>
+                        </action>
                         <action behavior="Platform" id="7" name="Simulate control" sid="742392543350004" type="JogadorPlataforma">
                             <param id="0" name="Control">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="120496586757439">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="483993115628543" type="JogadorPlataforma">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">1180</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="814767178987247" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

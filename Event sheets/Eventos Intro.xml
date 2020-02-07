@@ -23,6 +23,9 @@
                 <action id="-2" name="Go to layout" sid="704548855757705" type="System">
                     <param id="0" name="Layout">Menu</param>
                 </action>
+                <action id="10" name="Request fullscreen" sid="966915528672041" type="Desktop">
+                    <param id="0" name="Mode">4</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="211963416672389">

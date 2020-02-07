@@ -1003,13 +1003,13 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 0" sid="399711860817731">
+        <layer name="Controles" sid="399711860817731">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
-                <x>1</x>
-                <y>1</y>
+                <x>0</x>
+                <y>0</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
