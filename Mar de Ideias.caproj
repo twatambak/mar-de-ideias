@@ -812,7 +812,7 @@
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone\sprite_5.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone\sprite_5.png" />
                 </object-type>
                 <object-type name="Plataforma1CentroCantoEsq" sid="129211087164638">
                     <plugin id="TiledBg" />
@@ -821,7 +821,7 @@
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone\sprite_3.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone\sprite_3.png" />
                 </object-type>
                 <object-type name="Plataforma1CentroDetalhe1" sid="503866761558810">
                     <plugin id="Sprite" />
@@ -846,7 +846,7 @@
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone\sprite_2.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone(1)\sprite_2.png" />
                 </object-type>
                 <object-type name="Plataforma1SuperiorCantoEsq" sid="329653956630453">
                     <plugin id="TiledBg" />
@@ -855,7 +855,7 @@
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone\sprite_0.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone(1)\sprite_0.png" />
                 </object-type>
                 <object-type name="Plataforma1SuperiorMeio" sid="228785104356833">
                     <plugin id="TiledBg" />
@@ -864,7 +864,7 @@
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone\sprite_1.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone(1)\sprite_1.png" />
                 </object-type>
                 <object-type name="Plataforma1SuperiorMeio2" sid="457133426909960">
                     <plugin id="TiledBg" />
@@ -873,27 +873,27 @@
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone\sprite_4.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone\sprite_4.png" />
                 </object-type>
             </object-folder>
             <object-type name="Parallax" sid="378298408271508">
                 <plugin id="TiledBg" />
-                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\parallax-mountain-bg(1).png" />
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\parallax-mountain-bg(3).png" />
             </object-type>
             <object-type name="Casa1" sid="731146991965394">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463684797297100" speed="5">
-                        <frame duration="1" hotspotX="0.51711" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\props.png">
+                        <frame duration="1" hotspotX="0.523438" hotspotY="0.501577" original-source="C:\Users\Thiago L. Watambak\Downloads\props.png">
                             <collision-poly>
-                                <point x="0.195359" y="0.130793" />
-                                <point x="0.517502" y="0" />
-                                <point x="0.79192" y="0.169657" />
+                                <point x="0.192888" y="0.119146" />
+                                <point x="0.52384" y="0" />
+                                <point x="0.805762" y="0.159236" />
                                 <point x="1" y="0.5" />
-                                <point x="0.994751" y="0.995515" />
-                                <point x="0.517502" y="1" />
-                                <point x="0.0402529" y="0.995515" />
-                                <point x="0.00445924" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.52384" y="1" />
+                                <point x="0.0335411" y="1" />
+                                <point x="0" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -911,14 +911,14 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="9" loop="0" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="393641975622786" speed="5">
-                        <frame duration="1" hotspotX="0.528302" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.514852" />
+                        <frame duration="1" hotspotX="0.527273" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.542857" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.528302" hotspotY="0.514852" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.514852" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.514019" />
+                        <frame duration="1" hotspotX="0.527273" hotspotY="0.514563" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.513761" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                     <animation framecount="1" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="329879808540893" speed="5">
@@ -935,10 +935,10 @@
                         </frame>
                     </animation>
                     <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="406499461131172" speed="5">
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
                     </animation>
                 </animation-folder>
             </object-type>

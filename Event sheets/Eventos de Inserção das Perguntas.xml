@@ -38,8 +38,8 @@
                         </action>
                         <action id="1" name="Set size" sid="166628210875047" type="ArrayPerguntas">
                             <param id="0" name="Width">100</param>
-                            <param id="1" name="Height">100</param>
-                            <param id="2" name="Depth">100</param>
+                            <param id="1" name="Height">5</param>
+                            <param id="2" name="Depth">1</param>
                         </action>
                     </actions>
                 </event-block>
