@@ -480,13 +480,13 @@
                     <properties>
                         <text>Mar de Ideias</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-96,400,0</font>
+                        <font>Arial,-40,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
+                        <line-height>20</line-height>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Sine">
@@ -506,11 +506,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
-                        <y>192</y>
+                        <x>96</x>
+                        <y>224</y>
                         <z>0</z>
-                        <width>640</width>
-                        <height>256</height>
+                        <width>448</width>
+                        <height>224</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -602,7 +602,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="BordasMenuPrincipal3" uid="6">
@@ -627,7 +627,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>
@@ -706,7 +706,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="TextoOpcoesMenu" uid="118">
@@ -736,7 +736,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>

@@ -915,8 +915,8 @@
                             <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                         </action>
                         <action id="5" name="Set web font" sid="358803160111895" type="Titulo_Texto">
-                            <param id="0" name="Family name">&quot;pixeldownregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;pixeldown.css&quot;</param>
+                            <param id="0" name="Family name">&quot;gauntletregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;gauntlet.css&quot;</param>
                         </action>
                         <action id="5" name="Set web font" sid="188984671028819" type="TextoAtivacaoSenha">
                             <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>

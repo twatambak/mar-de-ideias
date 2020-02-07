@@ -1096,6 +1096,9 @@
             <file name="pixeldown.css" />
             <file name="pixeldown-webfont.woff" />
             <file name="pixeldown-webfont.woff2" />
+            <file name="gauntlet.css" />
+            <file name="gauntlet-webfont.woff" />
+            <file name="gauntlet-webfont.woff2" />
         </file-folder>
     </files-folder>
 </c2project>

@@ -35,12 +35,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Controles/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Título/" />
-        <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos das Opções/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/Objetos do Highscore/" />
         <folder expanded="0" path="object-folder/Objetos do Menu de Pausa (Quizz)/" />
         <folder expanded="0" path="object-folder/Objetos do Menu de GameOver (Quizz)/" />
-        <folder expanded="0" path="object-folder/Objetos da Senha/" />
+        <folder expanded="1" path="object-folder/Objetos da Senha/" />
         <folder expanded="0" path="object-folder/Objetos da Introdução/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Plataformas/" />
@@ -53,7 +53,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="file-folder/Fontes/" />
+        <folder expanded="0" path="file-folder/Fontes/" />
         <folder expanded="1" path="animation-folder/BackgroundProfundidade/" />
         <folder expanded="1" path="animation-folder/BordasPainel/" />
         <folder expanded="1" path="animation-folder/BotaoPausa/" />
