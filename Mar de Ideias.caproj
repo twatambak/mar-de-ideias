@@ -957,9 +957,6 @@
                 <object-type name="Frases2" sid="783147707387425">
                     <plugin id="Text" />
                     <behaviors>
-                        <behavior-type name="Fade" sid="270188306423131">
-                            <behavior id="Fade" />
-                        </behavior-type>
                         <behavior-type name="Sine" sid="878569705433047">
                             <behavior id="Sin" />
                         </behavior-type>
@@ -1047,6 +1044,49 @@
                         </frame>
                     </animation>
                     <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="406499461131172" speed="5">
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="NPC" sid="313673118065076">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="584203018198444">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="655223017857468">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="9" loop="1" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="981873628942470" speed="5">
+                        <frame duration="1" hotspotX="0.527273" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.527273" hotspotY="0.514563" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.542857" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.513761" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="463896121914555" speed="5">
+                        <frame duration="1" hotspotX="0.404255" hotspotY="0.364486" original-source="C:\Users\Thiago L. Watambak\Downloads\Player_jump.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.406971" y="0" />
+                                <point x="1" y="0.0334523" />
+                                <point x="1" y="0.420124" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.410778" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="571093153810072" speed="5">
                         <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
                         <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
                         <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
