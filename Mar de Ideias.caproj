@@ -399,6 +399,45 @@
                         </behavior-type>
                     </behaviors>
                 </object-type>
+                <object-type name="ChiadoForte" sid="955728724417329">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="9" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="451025931131807" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Titulo_Borda2" sid="556837477268691">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Sine" sid="462594421796229">
+                            <behavior id="Sin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="288566289606971" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.501945" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(11).png">
+                                <collision-poly>
+                                    <point x="0.05" y="0.5" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.95" y="0.5" />
+                                    <point x="0.9625" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0.0375" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
             <object-folder name="Objetos do Cenário">
                 <object-type name="DetalhesSuperficieMar" sid="452843389793133">
@@ -692,11 +731,6 @@
         <object-folder name="Objetos da Senha">
             <object-type name="BackgroundSenha" sid="739199934862736">
                 <plugin id="TiledBg" />
-                <effects>
-                    <effect-type name="Noise">
-                        <effect id="noise" />
-                    </effect-type>
-                </effects>
                 <texture />
             </object-type>
             <object-type name="Secret" sid="359549061676339">
@@ -1056,9 +1090,6 @@
                 <behaviors>
                     <behavior-type name="Platform" sid="584203018198444">
                         <behavior id="Platform" />
-                    </behavior-type>
-                    <behavior-type name="ScrollTo" sid="655223017857468">
-                        <behavior id="scrollto" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>

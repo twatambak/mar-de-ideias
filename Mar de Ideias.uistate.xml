@@ -10,12 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Fase01</layout>
-        <layout order="2">Base da Plataforma</layout>
-        <layout order="5">Intro</layout>
-        <event-sheet order="1">Eventos Fase 01</event-sheet>
-        <event-sheet order="3">Eventos Base-Plataforma</event-sheet>
-        <event-sheet active="1" order="4">Eventos MenuARG</event-sheet>
+        <layout order="1">Menu</layout>
+        <event-sheet active="1" order="0">Eventos Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -65,6 +61,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Peixes/" />
         <folder expanded="1" path="animation-folder/SpawnerPeixe1/" />
         <folder expanded="1" path="animation-folder/Titulo_Borda/" />
+        <folder expanded="1" path="animation-folder/ChiadoForte/" />
+        <folder expanded="1" path="animation-folder/Titulo_Borda2/" />
         <folder expanded="1" path="animation-folder/Lua/" />
         <folder expanded="1" path="animation-folder/Montanhas/" />
         <folder expanded="1" path="animation-folder/BordasMenuPrincipal1/" />
