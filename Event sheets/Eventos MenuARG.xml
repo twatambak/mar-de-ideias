@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos MenuARG</name>
+    <events>
+        <event-group description="" sid="853446126831392" title="Definição das Webfonts (MenuARG)">
+            <sub-events>
+                <event-block sid="871650717247377">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="605015194061915" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="890903387546308" type="TextoOpcoesMenu">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="937505043094687" type="TextoExtra">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="954517896078813" type="Texto_Highscore">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="792446095017748" type="TextoSenha">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="261381972296662" type="Titulo_Texto">
+                            <param id="0" name="Family name">&quot;gauntletregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;gauntlet.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="299962656833392" type="TextoAtivacaoSenha">
+                            <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;undoline.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="695284483027079" title="Opções">
+            <sub-events>
+                <event-block sid="988691969088309">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="856172101615118" type="Touch">
+                            <param id="0" name="Object">TextoOpcoesMenu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="430924596896861" type="System">
+                            <param id="0" name="Group name">&quot;EsconderSubmarino&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="768931654196438" title="EsconderSubmarino">
+            <sub-events>
+                <event-block sid="311876226187169">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="231045822662357" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="485385097782395" type="Submarino">
+                            <param id="0" name="Y">Submarino.Y + 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="255659733089599">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="941352118624223" type="Submarino">
+                            <param id="0" name="Object">TriggerParaMovimento</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="209554276393746" type="System">
+                            <param id="0" name="Group name">&quot;EsconderSubmarino&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="896540563427918" type="System">
+                            <param id="0" name="Layout">Base da Plataforma</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

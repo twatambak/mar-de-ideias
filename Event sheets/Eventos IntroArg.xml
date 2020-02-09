@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos IntroArg</name>
+    <events>
+        <event-block sid="399584778494794">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="934877071988407" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="104203485082025" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="573878147161179" type="LogoHK" />
+                <action id="-16" name="Wait" sid="991415442991367" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="501371661601614" type="System">
+                    <param id="0" name="Variable">PerguntasCarregadas</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="961084467298569" type="System">
+                    <param id="0" name="Layout">MenuARG</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

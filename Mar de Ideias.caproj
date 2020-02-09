@@ -881,6 +881,113 @@
                     <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone\sprite_4.png" />
                 </object-type>
             </object-folder>
+            <object-folder name="Itens Menu">
+                <object-type name="Submarino" sid="346137256652878">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Sine" sid="322485657244318">
+                            <behavior id="Sin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="981342949412830" speed="5">
+                            <frame duration="1" hotspotX="0.776699" hotspotY="1.23626" original-source="C:\Projetos\mar-de-ideias\Textures\SubmarinoSubmerso.png">
+                                <collision-poly>
+                                    <point x="0.370252" y="0" />
+                                    <point x="0.780045" y="0.557194" />
+                                    <point x="1" y="0.897828" />
+                                    <point x="1" y="1" />
+                                    <point x="1" y="1" />
+                                    <point x="0.777618" y="1" />
+                                    <point x="0.295009" y="1" />
+                                    <point x="0.00544349" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Criatura" sid="534308511198432">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="669012134551219" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.439655" original-source="C:\Projetos\mar-de-ideias\Textures\CriaturaAlpha.png">
+                                <collision-poly>
+                                    <point x="0.166667" y="0.198276" />
+                                    <point x="0.5" y="0.0258621" />
+                                    <point x="0.809524" y="0.215517" />
+                                    <point x="0.940476" y="0.439655" />
+                                    <point x="0.964286" y="0.775862" />
+                                    <point x="0.5" y="0.991379" />
+                                    <point x="0.0357143" y="0.775862" />
+                                    <point x="0.047619" y="0.439655" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TriggerSubmarino" sid="424456243262326">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757847639624851" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TriggerParaMovimento" sid="416534371845883">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501674777555869" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Frases e textos separados">
+                <object-type name="Frases" sid="372183653774872">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="584407059053374">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                        <behavior-type name="Sine" sid="579510087923926">
+                            <behavior id="Sin" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="Frases2" sid="783147707387425">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="270188306423131">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                        <behavior-type name="Sine" sid="878569705433047">
+                            <behavior id="Sin" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="Frases3" sid="945787493003516">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="789141508598109">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                        <behavior-type name="Sine" sid="740672371650169">
+                            <behavior id="Sin" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+                <object-type name="Frases4" sid="566877117370924">
+                    <plugin id="Text" />
+                    <behaviors>
+                        <behavior-type name="Fade" sid="798065765522093">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                        <behavior-type name="Sine" sid="589088383920210">
+                            <behavior id="Sin" />
+                        </behavior-type>
+                    </behaviors>
+                </object-type>
+            </object-folder>
             <object-type name="Parallax" sid="378298408271508">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\Thiago L. Watambak\Downloads\parallax-mountain-bg(3).png" />
@@ -1066,12 +1173,22 @@
     </object-folder>
     <families />
     <layout-folder>
+        <layout-folder name="ARG">
+            <layout>MenuARG.xml</layout>
+            <layout>Fase01.xml</layout>
+            <layout>IntroARG.xml</layout>
+        </layout-folder>
         <layout>Base das Perguntas.xml</layout>
         <layout>Menu.xml</layout>
         <layout>Intro.xml</layout>
         <layout>Base da Plataforma.xml</layout>
     </layout-folder>
     <event-folder>
+        <event-folder name="ARG">
+            <event-sheet>Eventos MenuARG.xml</event-sheet>
+            <event-sheet>Eventos Fase 01.xml</event-sheet>
+            <event-sheet>Eventos IntroArg.xml</event-sheet>
+        </event-folder>
         <event-sheet>Eventos Base-Perguntas.xml</event-sheet>
         <event-sheet>Eventos de Inserção das Perguntas.xml</event-sheet>
         <event-sheet>Variaveis.xml</event-sheet>

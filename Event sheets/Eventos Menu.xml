@@ -884,8 +884,16 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="841015803892987" type="System">
+                            <param id="0" name="Variable">AtivaArg</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="101816661690149" type="System">
-                            <param id="0" name="Layout">Base da Plataforma</param>
+                            <param id="0" name="Layout">IntroARG</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="383854587408286" type="System">
+                            <param id="0" name="Variable">PerguntasCarregadas</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
