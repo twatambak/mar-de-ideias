@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos IntroPlataforma</name>
+    <events>
+        <variable constant="0" name="TempoCutscene" sid="181180435161109" static="0" type="number">0</variable>
+        <variable constant="0" name="Frase01" sid="841707062065726" static="0" type="text">Seja bem vindo à Ilha. Aqui, se provará sua insignificância.</variable>
+        <variable constant="0" name="Frase2" sid="824835085220141" static="0" type="text">Você será apenas mais um em uma jornada sem sentido atrás de um objetivo inalcançável.</variable>
+        <variable constant="0" name="Frase3" sid="766189761631753" static="0" type="text">Mas se não acredita em mim, tudo bem. O tempo confirmará sua ignorância.</variable>
+        <variable constant="0" name="Frase4" sid="842595546105386" static="0" type="text">E você voltará incrédulo até mim, suplicando pela verdade, e você não será digno da mesma.</variable>
+        <variable constant="0" name="Frase5" sid="849856535996692" static="0" type="text">Agora vá! Tem alguém esperando por você...</variable>
+        <variable constant="0" name="IdFrase" sid="666928084706463" static="0" type="number">1</variable>
+        <event-group description="" sid="661366739658350" title="Definiçoes iniciais">
+            <sub-events>
+                <event-block sid="484781206451354">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="401276618216605" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="895724420211611" type="Frases">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="343300629440781">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="442818606491321" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="345152743261049" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="264923448258293" title="ExibeFrase">
+            <sub-events>
+                <event-block sid="583560273176905">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="586929340789197" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="128335978475805" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="534876178870749" type="Frases">
+                            <param id="0" name="Text">left(Frase01,len(Frases.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="659045396852372">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="692559755335193" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="689502989729342" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="630367019826319" type="System">
+                            <param id="0" name="Group name">&quot;ExibeFrase2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="614380938522357" type="System">
+                            <param id="0" name="Group name">&quot;ExibeFrase&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="189414577754321" type="Frases">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="215442828938980" title="ExibeFrase2">
+            <sub-events>
+                <event-block sid="367190426992611">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="792022647730451" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="563256226018641" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="274083617691634" type="Frases">
+                            <param id="0" name="Text">left(Frase2,len(Frases.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="672311505782361">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="602894591586870" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="621927270295257" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="488923776831113" type="System">
+                            <param id="0" name="Group name">&quot;ExibeFrase3&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="463335633981341" type="System">
+                            <param id="0" name="Group name">&quot;ExibeFrase2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="673573358352765" type="Frases">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="350908089382828" title="ExibeFrase3">
+            <sub-events>
+                <event-block sid="511658302364774">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="538957159885490" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="102604755159958" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="186254417864603" type="Frases">
+                            <param id="0" name="Text">left(Frase3,len(Frases.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="844527958102837">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="753776844655665" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="314995630565214" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="157429802297823" type="System">
+                            <param id="0" name="Group name">&quot;ExibeFrase4&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="264985404235588" type="System">
+                            <param id="0" name="Group name">&quot;ExibeFrase3&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="360166091615030" type="Frases">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="473885510205967" title="ExibeFrase4">
+            <sub-events>
+                <event-block sid="657756893761444">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="627184301736822" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="512925288244510" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="206133524899198" type="Frases">
+                            <param id="0" name="Text">left(Frase4,len(Frases.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="188252501726523">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="404266707088361" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="104710944294462" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="400686201663928" type="System">
+                            <param id="0" name="Group name">&quot;ExibeFrase5&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="564266853659175" type="System">
+                            <param id="0" name="Group name">&quot;ExibeFrase4&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="917767132608215" type="Frases">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="201699890611037" title="ExibeFrase5">
+            <sub-events>
+                <event-block sid="370053274661607">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="295999301017369" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="326328414233842" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="696986846433660" type="Frases">
+                            <param id="0" name="Text">left(Frase5,len(Frases.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="333612011681604">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="595031329039002" type="System" />
+                        <condition id="-14" name="Compare variable" sid="970018918530367" type="System">
+                            <param id="0" name="Variable">TempoCutscene</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Set layer opacity" sid="801426155421310" type="System">
+                            <param id="0" name="Layer">&quot;Bordas&quot;</param>
+                            <param id="1" name="Opacity">LayerOpacity(0) - 1</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="641914235096012" type="System">
+                            <param id="0" name="Layer">&quot;Frases&quot;</param>
+                            <param id="1" name="Opacity">LayerOpacity(0) - 1</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="936543339365491" type="System">
+                            <param id="0" name="Layer">&quot;Fundo&quot;</param>
+                            <param id="1" name="Opacity">LayerOpacity(0) - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="392985875382057">
+                    <conditions>
+                        <condition id="-17" name="Compare opacity" sid="342454096275365" type="System">
+                            <param id="0" name="Layer">&quot;Bordas&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Opacity">0</param>
+                        </condition>
+                        <condition id="-17" name="Compare opacity" sid="193518336657446" type="System">
+                            <param id="0" name="Layer">&quot;Frases&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Opacity">0</param>
+                        </condition>
+                        <condition id="-17" name="Compare opacity" sid="236497030035391" type="System">
+                            <param id="0" name="Layer">&quot;Fundo&quot;</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Opacity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="355914282565459" type="System">
+                            <param id="0" name="Layout">Base da Plataforma</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

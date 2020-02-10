@@ -299,7 +299,7 @@
                         <behavior id="Sin" />
                     </behavior-type>
                 </behaviors>
-                <texture original-source="C:\Users\twata\Downloads\New Piskel(13).png" />
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Bolha 1 clone.png" />
             </object-type>
             <object-type name="Mar" sid="163520844153085">
                 <plugin id="TiledBg" />
@@ -339,6 +339,24 @@
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346969869506328" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Algas" sid="424503137923881">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="842294295084705" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Algea.png">
+                            <collision-poly>
+                                <point x="0.4375" y="0.0546875" />
+                                <point x="0.5" y="0.0625" />
+                                <point x="0.5625" y="0.0546875" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.5" y="0.9375" />
+                                <point x="0.3125" y="0.960938" />
+                                <point x="0.4375" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -812,6 +830,17 @@
                 </effects>
                 <texture />
             </object-type>
+            <object-type name="TextoInfoARG" sid="945787493003516">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="789141508598109">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="740672371650169">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
         </object-folder>
         <object-folder name="Objetos da Introdução">
             <object-type name="LogoHK" sid="167356094288659">
@@ -944,7 +973,7 @@
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="669012134551219" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.439655" original-source="C:\Projetos\mar-de-ideias\Textures\CriaturaAlpha.png">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.433333" original-source="C:\Users\Thiago L. Watambak\Downloads\wizard idle(1).png">
                                 <collision-poly>
                                     <point x="0.166667" y="0.198276" />
                                     <point x="0.5" y="0.0258621" />
@@ -992,17 +1021,6 @@
                     <plugin id="Text" />
                     <behaviors>
                         <behavior-type name="Sine" sid="878569705433047">
-                            <behavior id="Sin" />
-                        </behavior-type>
-                    </behaviors>
-                </object-type>
-                <object-type name="Frases3" sid="945787493003516">
-                    <plugin id="Text" />
-                    <behaviors>
-                        <behavior-type name="Fade" sid="789141508598109">
-                            <behavior id="Fade" />
-                        </behavior-type>
-                        <behavior-type name="Sine" sid="740672371650169">
                             <behavior id="Sin" />
                         </behavior-type>
                     </behaviors>
@@ -1122,6 +1140,30 @@
                         <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
                         <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
                         <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BordaIntroPlataforma" sid="546364280370437">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="443184478414485">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="708835185448968" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel.png">
+                            <collision-poly>
+                                <point x="0.1" y="0.153846" />
+                                <point x="0.5" y="0.0288462" />
+                                <point x="0.9" y="0.153846" />
+                                <point x="0.9625" y="0.5" />
+                                <point x="0.9" y="0.846154" />
+                                <point x="0.5" y="0.971154" />
+                                <point x="0.1" y="0.846154" />
+                                <point x="0.0375" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1246,19 +1288,23 @@
     <layout-folder>
         <layout-folder name="ARG">
             <layout>MenuARG.xml</layout>
-            <layout>Fase01.xml</layout>
             <layout>IntroARG.xml</layout>
         </layout-folder>
-        <layout>Base das Perguntas.xml</layout>
+        <layout-folder name="Plataforma">
+            <layout>IntroPlataforma.xml</layout>
+            <layout>Base da Plataforma.xml</layout>
+        </layout-folder>
+        <layout-folder name="Quizz">
+            <layout>Base das Perguntas.xml</layout>
+        </layout-folder>
         <layout>Menu.xml</layout>
         <layout>Intro.xml</layout>
-        <layout>Base da Plataforma.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="ARG">
             <event-sheet>Eventos MenuARG.xml</event-sheet>
-            <event-sheet>Eventos Fase 01.xml</event-sheet>
-            <event-sheet>Eventos IntroArg.xml</event-sheet>
+            <event-sheet>Eventos IntroPlataforma.xml</event-sheet>
+            <event-sheet>Eventos IntroARG.xml</event-sheet>
         </event-folder>
         <event-sheet>Eventos Base-Perguntas.xml</event-sheet>
         <event-sheet>Eventos de Inserção das Perguntas.xml</event-sheet>

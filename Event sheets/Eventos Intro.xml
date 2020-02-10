@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Intro</name>
     <events>
-        <variable constant="0" name="AtivaArg" sid="254970357634688" static="0" type="number">0</variable>
         <include>Eventos de Inserção das Perguntas</include>
         <event-block sid="866972848990317">
             <conditions>

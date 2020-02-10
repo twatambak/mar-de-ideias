@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Variaveis</name>
     <events>
+        <comment>Variável para verificar se o ARG foi ativado.</comment>
+        <variable constant="0" name="AtivaARG" sid="254970357634688" static="0" type="number">0</variable>
+        <comment>Variável para verificar se as perguntas já foram carregadas.</comment>
         <variable constant="0" name="PerguntasCarregadas" sid="100509471572623" static="0" type="number">0</variable>
         <comment>Maior quantia de pontos já feita.</comment>
         <variable constant="0" name="Highscore" sid="736197832878318" static="0" type="number">0</variable>
