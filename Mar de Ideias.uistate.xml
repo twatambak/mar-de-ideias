@@ -44,7 +44,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos da Senha/" />
         <folder expanded="0" path="object-folder/Objetos da Introdução/" />
         <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/" />
-        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Plataformas/" />
+        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/Plataformas/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Itens Menu/" />
         <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/Frases e textos separados/" />
         <folder expanded="0" path="object-folder/Objetos do Quizz/" />
@@ -102,5 +102,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/BordasDialogos/" />
         <folder expanded="1" path="animation-folder/GramaBordaInferior/" />
         <folder expanded="1" path="animation-folder/GramaBordaInferior2/" />
+        <folder expanded="1" path="animation-folder/PlataformaAnexadaDireita1/" />
+        <folder expanded="1" path="animation-folder/PlataformaAnexadaEsquerda1/" />
+        <folder expanded="1" path="animation-folder/PlataformaAnexadaDireita2/" />
+        <folder expanded="1" path="animation-folder/PlataformaAnexadaEsquerda2/" />
     </folders-expanded>
 </c2uistate>

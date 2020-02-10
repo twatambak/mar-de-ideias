@@ -988,6 +988,33 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="GramaInferiorCantoEsq" sid="990473434978498">
+                    <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="602769267509667">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Tileset Grama\sprite_6.png" />
+                </object-type>
+                <object-type name="GramaInferiorCantoDir" sid="951478974718648">
+                    <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="151852567881269">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Tileset Grama\sprite_8.png" />
+                </object-type>
+                <object-type name="GramaInferiorMeio" sid="481995934126504">
+                    <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="399134856256757">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Tileset Grama\sprite_7.png" />
+                </object-type>
             </object-folder>
             <object-folder name="Itens Menu">
                 <object-type name="Submarino" sid="346137256652878">
@@ -1370,14 +1397,91 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Terra" sid="481995934126504">
-            <plugin id="TiledBg" />
+        <object-type name="PlataformaAnexadaDireita1" sid="453371933456635">
+            <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="399134856256757">
+                <behavior-type name="Solid" sid="236711117655714">
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Terra.png" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="390685226764930" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Plataformas 1(1)\sprite_0.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0.671875" y="1" />
+                            <point x="0.669271" y="0.445313" />
+                            <point x="0.1875" y="0.4375" />
+                            <point x="0" y="0.4375" />
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlataformaAnexadaEsquerda1" sid="377537729618770">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="969771944572572" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Plataformas 1(1)\sprite_0.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.4375" />
+                            <point x="0.8125" y="0.4375" />
+                            <point x="0.330729" y="0.445313" />
+                            <point x="0.328125" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlataformaAnexadaDireita2" sid="335333496629680">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550259089054753" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Plataformas 1(1)\sprite_1.png">
+                        <collision-poly>
+                            <point x="0.330729" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.4375" />
+                            <point x="1" y="1" />
+                            <point x="0.665364" y="1" />
+                            <point x="0.664062" y="0.4375" />
+                            <point x="0.332031" y="0.421875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlataformaAnexadaEsquerda2" sid="317593013101922">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="424648992012147">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656841926140195" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Plataformas 1(1)\sprite_1.png">
+                        <collision-poly>
+                            <point x="0.667969" y="0.421875" />
+                            <point x="0.335938" y="0.4375" />
+                            <point x="0.334636" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.4375" />
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.669271" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
