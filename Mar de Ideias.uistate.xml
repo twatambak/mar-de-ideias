@@ -102,6 +102,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/NPC/" />
         <folder expanded="1" path="animation-folder/BordaIntroPlataforma/" />
         <folder expanded="1" path="animation-folder/NPC2/" />
+        <folder expanded="1" path="animation-folder/NPC3/" />
         <folder expanded="1" path="animation-folder/BordaPergunta/" />
         <folder expanded="1" path="animation-folder/BordaRespostas/" />
         <folder expanded="1" path="animation-folder/Controle/" />

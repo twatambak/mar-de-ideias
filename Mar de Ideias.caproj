@@ -1362,6 +1362,22 @@
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\Thiago L. Watambak\Downloads\parallax-mountain-bg(3).png" />
             </object-type>
+            <object-type name="NPC3" sid="242101682951439">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="517173738508287">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="581225651883423" speed="5">
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Objetos do Quizz">
             <object-folder name="Objetos para Pergunta">
