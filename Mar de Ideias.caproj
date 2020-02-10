@@ -1211,6 +1211,10 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Parallax2" sid="712523137421747">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\parallax-mountain-bg(3).png" />
+            </object-type>
         </object-folder>
         <object-folder name="Objetos do Quizz">
             <object-folder name="Objetos para Pergunta">
@@ -1331,6 +1335,49 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="GramaBordaInferior" sid="495761465687973">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="279051565356987" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Base(1).png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.515625" />
+                            <point x="0.484375" y="0.515625" />
+                            <point x="0.453125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GramaBordaInferior2" sid="520453820728548">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692891701003286" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Base(1).png">
+                        <collision-poly>
+                            <point x="0.546875" y="0.5" />
+                            <point x="0.515625" y="0.515625" />
+                            <point x="0.5" y="0.515625" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Terra" sid="481995934126504">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="399134856256757">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Terra.png" />
         </object-type>
     </object-folder>
     <families />
