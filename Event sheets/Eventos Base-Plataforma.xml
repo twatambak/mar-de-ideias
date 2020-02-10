@@ -3,7 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base-Plataforma</name>
     <events>
-        <variable constant="0" name="FraseNpc" sid="590778537206600" static="0" type="text">Venha essa é minha casa. Vamos entrar você parece cansado</variable>
+        <variable constant="0" name="FraseNPC1" sid="590778537206600" static="0" type="text">Caramba gurizada vem pra Curitiba pra vocês verem o frio</variable>
+        <variable constant="0" name="FraseNPC2" sid="120164168611715" static="0" type="text">O Esquecimento afetou muito os moradores.</variable>
         <event-block sid="332348284226791">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="287078915881821" type="System" />
@@ -20,7 +21,7 @@
                 <action id="3" name="Start" sid="665321187535765" type="NPC">
                     <param id="0" name="From">1</param>
                 </action>
-                <action id="5" name="Set web font" sid="189609495465280" type="Frases2">
+                <action id="5" name="Set web font" sid="189609495465280" type="FrasesDialogo">
                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                 </action>
@@ -50,6 +51,9 @@
                 <action id="4" name="Set animation" sid="667096485940339" type="JogadorPlataforma">
                     <param id="0" name="Animation">&quot;Idle&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="6" name="Set speed" sid="528959671753922" type="JogadorPlataforma">
+                    <param id="0" name="Speed">6</param>
                 </action>
             </actions>
         </event-block>
@@ -177,54 +181,228 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="886146381162739" title="Dialogos01">
+        <event-block sid="938615552214521">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="131748015609517" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="781124110972606" type="FrasesDialogo">
+                    <param id="0" name="Pin to">FrasesDialogo</param>
+                    <param id="1" name="Mode">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="992374707241089" title="NPC 1">
             <sub-events>
-                <event-block sid="977833570811581">
+                <event-block sid="352451304756288">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="203445679368566" type="JogadorPlataforma">
-                            <param id="0" name="Object">NPC</param>
-                        </condition>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="742031504943360" type="NPC" />
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="377304701310402" type="Frases2">
-                            <param id="0" name="Visibility">1</param>
+                        <action id="4" name="Set animation" sid="141719569561525" type="NPC">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="132688632490331" type="Titulo_Borda">
-                            <param id="0" name="Visibility">1</param>
+                        <action id="6" name="Set speed" sid="508888668264433" type="NPC">
+                            <param id="0" name="Speed">7</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-group description="" sid="886146381162739" title="Diálogos (A)">
                     <sub-events>
-                        <event-block sid="769852922950992">
+                        <event-block sid="977833570811581">
                             <conditions>
-                                <condition id="-6" name="Every X seconds" sid="182643365393494" type="System">
-                                    <param id="0" name="Interval (seconds)">0.05</param>
+                                <condition id="1" name="Is overlapping another object" sid="203445679368566" type="JogadorPlataforma">
+                                    <param id="0" name="Object">NPC</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="942705535874512" type="Frases2">
-                                    <param id="0" name="Text">left(FraseNpc,len(Frases2.Text)+1)</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="337141941264056">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="164110609005093" type="BordasDialogos">
+                                            <param id="0" name="Instance variable">NPC</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Jorge&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="164989020619618" type="FrasesDialogo">
+                                            <param id="0" name="Instance variable">NPC</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Jorge&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="691330848742282" type="FrasesDialogo">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="610802136628457" type="BordasDialogos">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="769852922950992">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="182643365393494" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.05</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="942705535874512" type="FrasesDialogo">
+                                                    <param id="0" name="Text">left(FraseNPC1,len(FrasesDialogo.Text)+1)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="816044051944943">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="388744298822985" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="524596932327656">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="499529397508975" type="BordasDialogos">
+                                            <param id="0" name="Instance variable">NPC</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Jorge&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="956599421896263" type="FrasesDialogo">
+                                            <param id="0" name="Instance variable">NPC</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Jorge&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="193382179113346" type="FrasesDialogo">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="299602818813494" type="FrasesDialogo">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="962906075796047" type="BordasDialogos">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="816044051944943">
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="112961468419844" title="NPC 2">
+            <sub-events>
+                <event-block sid="975489225172577">
                     <conditions>
-                        <condition id="-22" name="Else" sid="388744298822985" type="System" />
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="436699271888729" type="NPC2" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="378802895010508" type="Frases2">
-                            <param id="0" name="Text">&quot;&quot;</param>
+                        <action id="4" name="Set animation" sid="473157651221502" type="NPC2">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="417358722782829" type="Frases2">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="180536757762068" type="Titulo_Borda">
-                            <param id="0" name="Visibility">0</param>
+                        <action id="6" name="Set speed" sid="790835697531875" type="NPC2">
+                            <param id="0" name="Speed">7</param>
                         </action>
                     </actions>
                 </event-block>
+                <event-group description="" sid="578031025952607" title="Diálogos (A)2">
+                    <sub-events>
+                        <event-block sid="273090915111849">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="528000845524719" type="JogadorPlataforma">
+                                    <param id="0" name="Object">NPC2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="404701044285155">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="369022944448345" type="BordasDialogos">
+                                            <param id="0" name="Instance variable">NPC</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Joseph&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="878784025951020" type="FrasesDialogo">
+                                            <param id="0" name="Instance variable">NPC</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Joseph&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="577250541051337" type="FrasesDialogo">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="429366831114106" type="BordasDialogos">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="346586479380631">
+                                            <conditions>
+                                                <condition id="-6" name="Every X seconds" sid="576766125714332" type="System">
+                                                    <param id="0" name="Interval (seconds)">0.05</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="625546874935369" type="FrasesDialogo">
+                                                    <param id="0" name="Text">left(FraseNPC2,len(FrasesDialogo.Text)+1)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="391882597932224">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="746077397855297" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="421644093457178">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="354558242222766" type="BordasDialogos">
+                                            <param id="0" name="Instance variable">NPC</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Joseph&quot;</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="295593109009140" type="FrasesDialogo">
+                                            <param id="0" name="Instance variable">NPC</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Joseph&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="899472914018101" type="FrasesDialogo">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="776164633925456" type="FrasesDialogo">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="645336445365488" type="BordasDialogos">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
+        <event-block sid="952208112245786">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="826012527682586" type="System" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="224332505272382" type="NPC2">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

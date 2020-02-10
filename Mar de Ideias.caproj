@@ -873,25 +873,25 @@
         </object-folder>
         <object-folder name="Objetos do Jogo Plataforma">
             <object-folder name="Plataformas">
-                <object-type name="Plataforma1CentroCantoDir" sid="973772640372942">
+                <object-type name="GramaCentroCantoDir" sid="973772640372942">
                     <plugin id="TiledBg" />
                     <behaviors>
                         <behavior-type name="Solid" sid="422733387463775">
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone\sprite_5.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Tileset Grama\sprite_5.png" />
                 </object-type>
-                <object-type name="Plataforma1CentroCantoEsq" sid="129211087164638">
+                <object-type name="GramaCentroCantoEsq" sid="129211087164638">
                     <plugin id="TiledBg" />
                     <behaviors>
                         <behavior-type name="Solid" sid="389533937008589">
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone\sprite_3.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Tileset Grama\sprite_3.png" />
                 </object-type>
-                <object-type name="Plataforma1CentroDetalhe1" sid="503866761558810">
+                <object-type name="GramaCentroDetalhe1" sid="503866761558810">
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="836954161332390" speed="5">
@@ -899,7 +899,7 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Plataforma1CentroDetalhe2" sid="321678668646314">
+                <object-type name="GramaCentroDetalhe2" sid="321678668646314">
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960003778684441" speed="5">
@@ -907,34 +907,34 @@
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="Plataforma1SuperiorCantoDir" sid="219297076637121">
+                <object-type name="GramaSuperiorCantoDir" sid="219297076637121">
                     <plugin id="TiledBg" />
                     <behaviors>
                         <behavior-type name="Solid" sid="296556737813704">
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone(1)\sprite_2.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Tileset Grama\sprite_2.png" />
                 </object-type>
-                <object-type name="Plataforma1SuperiorCantoEsq" sid="329653956630453">
+                <object-type name="GramaSuperiorCantoEsq" sid="329653956630453">
                     <plugin id="TiledBg" />
                     <behaviors>
                         <behavior-type name="Solid" sid="201020134499563">
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone(1)\sprite_0.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Tileset Grama\sprite_0.png" />
                 </object-type>
-                <object-type name="Plataforma1SuperiorMeio" sid="228785104356833">
+                <object-type name="GramaSuperiorMeio" sid="228785104356833">
                     <plugin id="TiledBg" />
                     <behaviors>
                         <behavior-type name="Solid" sid="829684698822461">
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone(1)\sprite_1.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Tileset Grama\sprite_1.png" />
                 </object-type>
-                <object-type name="Plataforma1SuperiorMeio2" sid="457133426909960">
+                <object-type name="GramaSuperiorMeio2" sid="457133426909960">
                     <plugin id="TiledBg" />
                     <behaviors>
                         <behavior-type name="Solid" sid="910529411409845">
@@ -942,6 +942,51 @@
                         </behavior-type>
                     </behaviors>
                     <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone\sprite_4.png" />
+                </object-type>
+                <object-type name="GramaRampaEsq" sid="119075045208778">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="881713021732882">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431060076554708" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Rampas\sprite_1.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0.03125" />
+                                    <point x="0.5" y="0.28125" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="GramaRampaDir" sid="168455518952101">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="219977547139168">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293267470872773" speed="5">
+                            <frame duration="1" hotspotX="0.984375" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Rampas\sprite_1.png">
+                                <collision-poly>
+                                    <point x="0.0566406" y="0" />
+                                    <point x="0.939453" y="0.439133" />
+                                    <point x="1" y="0.507652" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0.0078125" y="1" />
+                                    <point x="0" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
                 </object-type>
             </object-folder>
             <object-folder name="Itens Menu">
@@ -1017,11 +1062,17 @@
                         </behavior-type>
                     </behaviors>
                 </object-type>
-                <object-type name="Frases2" sid="783147707387425">
+                <object-type name="FrasesDialogo" sid="783147707387425">
                     <plugin id="Text" />
+                    <instance-variables>
+                        <instance-variable name="NPC" sid="595651785722756" type="string" />
+                    </instance-variables>
                     <behaviors>
                         <behavior-type name="Sine" sid="878569705433047">
                             <behavior id="Sin" />
+                        </behavior-type>
+                        <behavior-type name="Pin" sid="780211629005865">
+                            <behavior id="Pin" />
                         </behavior-type>
                     </behaviors>
                 </object-type>
@@ -1111,35 +1162,12 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="9" loop="1" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="981873628942470" speed="5">
-                        <frame duration="1" hotspotX="0.527273" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.527273" hotspotY="0.514563" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.542857" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.513761" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                    <animation framecount="1" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="463896121914555" speed="5">
-                        <frame duration="1" hotspotX="0.404255" hotspotY="0.364486" original-source="C:\Users\Thiago L. Watambak\Downloads\Player_jump.png">
-                            <collision-poly>
-                                <point x="0" y="0" />
-                                <point x="0.406971" y="0" />
-                                <point x="1" y="0.0334523" />
-                                <point x="1" y="0.420124" />
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0.410778" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="571093153810072" speed="5">
-                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
-                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
-                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
-                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                    <animation framecount="5" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="571093153810072" speed="5">
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1164,6 +1192,22 @@
                                 <point x="0.0375" y="0.5" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="NPC2" sid="254766067480054">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="295068654709084">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="513530254074886" speed="5">
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1245,28 +1289,6 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="Plataforma1RampaEsq" sid="119075045208778">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="881713021732882">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431060076554708" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone.png">
-                        <collision-poly>
-                            <point x="0.03125" y="0.03125" />
-                            <point x="0.5" y="0.28125" />
-                            <point x="1" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Controle" sid="867905574643057">
             <plugin id="Sprite" />
             <instance-variables>
@@ -1280,6 +1302,33 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445723311535588" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BordasDialogos" sid="498352628227752">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="NPC" sid="192233237599384" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="831319426578396">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383866248713387" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(2).png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.125" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.928571" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.928571" y="0.875" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.0714286" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
