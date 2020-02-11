@@ -1240,6 +1240,123 @@
                     </behaviors>
                 </object-type>
             </object-folder>
+            <object-folder name="Jogador">
+                <object-type name="Controle" sid="867905574643057">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="Direcao" sid="219469448312500" type="string" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Pin" sid="345694414786429">
+                            <behavior id="Pin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="2" loop="0" name="Horizontal" pingpong="0" repeatcount="1" repeatto="0" sid="445723311535588" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="2" loop="0" name="Vertical" pingpong="0" repeatcount="1" repeatto="0" sid="525874541256957" speed="5">
+                            <frame duration="1" hotspotX="0.505618" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.505618" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="JogadorPlataforma" sid="657323289192235">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Platform" sid="843030876664782">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                        <behavior-type name="ScrollTo" sid="741670248449735">
+                            <behavior id="scrollto" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="9" loop="0" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="393641975622786" speed="5">
+                            <frame duration="1" hotspotX="0.527273" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.527273" hotspotY="0.514563" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.542857" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.513761" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="329879808540893" speed="5">
+                            <frame duration="1" hotspotX="0.404255" hotspotY="0.364486" original-source="C:\Users\Thiago L. Watambak\Downloads\Player_jump.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.406971" y="0" />
+                                    <point x="1" y="0.0334523" />
+                                    <point x="1" y="0.420124" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.410778" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="406499461131172" speed="5">
+                            <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                            <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                            <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                            <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="NPCs">
+                <object-type name="NPC" sid="313673118065076">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Platform" sid="584203018198444">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="5" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="571093153810072" speed="5">
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="NPC2" sid="254766067480054">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Platform" sid="295068654709084">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="513530254074886" speed="5">
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="NPC3" sid="242101682951439">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Platform" sid="517173738508287">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="581225651883423" speed="5">
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
             <object-type name="Parallax" sid="378298408271508">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\Thiago L. Watambak\Downloads\parallax-mountain-bg(3).png" />
@@ -1260,66 +1377,6 @@
                                 <point x="0" y="0.5" />
                             </collision-poly>
                         </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="JogadorPlataforma" sid="657323289192235">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Platform" sid="843030876664782">
-                        <behavior id="Platform" />
-                    </behavior-type>
-                    <behavior-type name="ScrollTo" sid="741670248449735">
-                        <behavior id="scrollto" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="9" loop="0" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="393641975622786" speed="5">
-                        <frame duration="1" hotspotX="0.527273" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.527273" hotspotY="0.514563" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.542857" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.514563" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.513761" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                    <animation framecount="1" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="329879808540893" speed="5">
-                        <frame duration="1" hotspotX="0.404255" hotspotY="0.364486" original-source="C:\Users\Thiago L. Watambak\Downloads\Player_jump.png">
-                            <collision-poly>
-                                <point x="0" y="0" />
-                                <point x="0.406971" y="0" />
-                                <point x="1" y="0.0334523" />
-                                <point x="1" y="0.420124" />
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0.410778" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="406499461131172" speed="5">
-                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
-                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
-                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
-                        <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="NPC" sid="313673118065076">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Platform" sid="584203018198444">
-                        <behavior id="Platform" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="5" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="571093153810072" speed="5">
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1347,41 +1404,9 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="NPC2" sid="254766067480054">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Platform" sid="295068654709084">
-                        <behavior id="Platform" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="513530254074886" speed="5">
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="Parallax2" sid="712523137421747">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\Thiago L. Watambak\Downloads\parallax-mountain-bg(3).png" />
-            </object-type>
-            <object-type name="NPC3" sid="242101682951439">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Platform" sid="517173738508287">
-                        <behavior id="Platform" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="581225651883423" speed="5">
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="Objetos do Quizz">
@@ -1460,27 +1485,6 @@
         <object-type name="OpacidadeReduzida" sid="188872732063886">
             <plugin id="TiledBg" />
             <texture />
-        </object-type>
-        <object-type name="Controle" sid="867905574643057">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="Direcao" sid="219469448312500" type="string" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Pin" sid="345694414786429">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Horizontal" pingpong="0" repeatcount="1" repeatto="0" sid="445723311535588" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="2" loop="0" name="Vertical" pingpong="0" repeatcount="1" repeatto="0" sid="525874541256957" speed="5">
-                    <frame duration="1" hotspotX="0.505618" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.505618" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="BordasDialogos" sid="498352628227752">
             <plugin id="Sprite" />

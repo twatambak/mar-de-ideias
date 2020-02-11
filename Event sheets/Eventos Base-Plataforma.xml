@@ -182,11 +182,11 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="543313312369907" type="JogadorPlataforma">
-                                            <param id="0" name="Control">2</param>
-                                        </action>
                                         <action id="5" name="Set frame" sid="824914266350097" type="Controle">
                                             <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="543313312369907" type="JogadorPlataforma">
+                                            <param id="0" name="Control">2</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -202,11 +202,11 @@
                                         <action id="7" name="Set mirrored" sid="513804018998241" type="JogadorPlataforma">
                                             <param id="0" name="State">1</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="990524463730290" type="JogadorPlataforma">
-                                            <param id="0" name="Control">1</param>
-                                        </action>
                                         <action id="5" name="Set frame" sid="984505000051171" type="Controle">
                                             <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="990524463730290" type="JogadorPlataforma">
+                                            <param id="0" name="Control">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -222,22 +222,24 @@
                                         <action id="7" name="Set mirrored" sid="881299722965064" type="JogadorPlataforma">
                                             <param id="0" name="State">0</param>
                                         </action>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="742392543350004" type="JogadorPlataforma">
-                                            <param id="0" name="Control">0</param>
-                                        </action>
                                         <action id="5" name="Set frame" sid="789867001635589" type="Controle">
                                             <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="742392543350004" type="JogadorPlataforma">
+                                            <param id="0" name="Control">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="515407910702546">
+                        <event-block sid="430418172748206">
                             <conditions>
-                                <condition id="-22" name="Else" sid="872795796577615" type="System" />
+                                <condition id="4" inverted="1" name="Is touching object" sid="101896873356355" type="Touch">
+                                    <param id="0" name="Object">Controle</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="5" name="Set frame" sid="207159997841425" type="Controle">
+                                <action id="5" name="Set frame" sid="904954171321704" type="Controle">
                                     <param id="0" name="Frame number">0</param>
                                 </action>
                             </actions>
@@ -248,6 +250,9 @@
                             </conditions>
                             <actions>
                                 <action id="2" name="Stop" sid="467851621214257" type="Controle" />
+                                <action id="5" name="Set frame" sid="364881137559532" type="Controle">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="262301053250686">
