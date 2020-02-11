@@ -1197,6 +1197,14 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="BordaCavernaEsq" sid="235803450722065">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Bordinha.png" />
+                </object-type>
+                <object-type name="BordaCavernaDir" sid="515083564187421">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Bordinha.png" />
+                </object-type>
             </object-folder>
             <object-folder name="Itens Menu">
                 <object-type name="Submarino" sid="346137256652878">
@@ -1414,28 +1422,68 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
+            <object-folder name="Natureza">
+                <object-type name="Arbusto" sid="515194464195476">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703754851195158" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\bush(1).png">
+                                <collision-poly>
+                                    <point x="0.152174" y="0.25" />
+                                    <point x="0.5" y="0.0357143" />
+                                    <point x="0.891304" y="0.178571" />
+                                    <point x="0.934783" y="0.5" />
+                                    <point x="0.934783" y="0.892857" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.0434783" y="0.928571" />
+                                    <point x="0.0869565" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Arvore" sid="941064663704726">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486305275258346" speed="5">
+                            <frame duration="1" hotspotX="0.502857" hotspotY="0.503226" original-source="C:\Users\Thiago L. Watambak\Downloads\tree(3).png">
+                                <collision-poly>
+                                    <point x="0.2" y="0.225806" />
+                                    <point x="0.498413" y="0.0107527" />
+                                    <point x="0.790476" y="0.236559" />
+                                    <point x="1" y="0.451613" />
+                                    <point x="0.685714" y="0.645161" />
+                                    <point x="0.663492" y="1" />
+                                    <point x="0.368254" y="1" />
+                                    <point x="0.311111" y="0.630824" />
+                                    <point x="0" y="0.478495" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Graminha1" sid="168920068717377">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="866797512992244" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Detalhes Chão\sprite_0.png">
+                                <collision-poly>
+                                    <point x="0.4375" y="0.4375" />
+                                    <point x="0.5" y="0.375" />
+                                    <point x="0.5625" y="0.4375" />
+                                    <point x="0.9375" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0.125" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
             <object-type name="Parallax" sid="378298408271508">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\Thiago L. Watambak\Downloads\parallax-mountain-bg(3).png" />
-            </object-type>
-            <object-type name="Casa1" sid="731146991965394">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463684797297100" speed="5">
-                        <frame duration="1" hotspotX="0.523438" hotspotY="0.501577" original-source="C:\Users\Thiago L. Watambak\Downloads\props.png">
-                            <collision-poly>
-                                <point x="0.192888" y="0.119146" />
-                                <point x="0.52384" y="0" />
-                                <point x="0.805762" y="0.159236" />
-                                <point x="1" y="0.5" />
-                                <point x="1" y="1" />
-                                <point x="0.52384" y="1" />
-                                <point x="0.0335411" y="1" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
             </object-type>
             <object-type name="BordaIntroPlataforma" sid="546364280370437">
                 <plugin id="Sprite" />
@@ -1539,6 +1587,27 @@
                 </object-type>
             </object-folder>
         </object-folder>
+        <object-folder name="Construções">
+            <object-type name="Casa1" sid="731146991965394">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463684797297100" speed="5">
+                        <frame duration="1" hotspotX="0.523438" hotspotY="0.501577" original-source="C:\Users\Thiago L. Watambak\Downloads\props.png">
+                            <collision-poly>
+                                <point x="0.192888" y="0.119146" />
+                                <point x="0.52384" y="0" />
+                                <point x="0.805762" y="0.159236" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0.52384" y="1" />
+                                <point x="0.0335411" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="OpacidadeReduzida" sid="188872732063886">
             <plugin id="TiledBg" />
             <texture />
@@ -1578,71 +1647,6 @@
                 </behavior-type>
             </behaviors>
             <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Terra.png" />
-        </object-type>
-        <object-type name="Graminha1" sid="168920068717377">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="866797512992244" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Detalhes Chão\sprite_0.png">
-                        <collision-poly>
-                            <point x="0.4375" y="0.4375" />
-                            <point x="0.5" y="0.375" />
-                            <point x="0.5625" y="0.4375" />
-                            <point x="0.9375" y="0.5" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.125" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="BordaCavernaEsq" sid="235803450722065">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Bordinha.png" />
-        </object-type>
-        <object-type name="BordaCavernaDir" sid="515083564187421">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Bordinha.png" />
-        </object-type>
-        <object-type name="Arvore" sid="941064663704726">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486305275258346" speed="5">
-                    <frame duration="1" hotspotX="0.502857" hotspotY="0.503226" original-source="C:\Users\Thiago L. Watambak\Downloads\tree(3).png">
-                        <collision-poly>
-                            <point x="0.2" y="0.225806" />
-                            <point x="0.498413" y="0.0107527" />
-                            <point x="0.790476" y="0.236559" />
-                            <point x="1" y="0.451613" />
-                            <point x="0.685714" y="0.645161" />
-                            <point x="0.663492" y="1" />
-                            <point x="0.368254" y="1" />
-                            <point x="0.311111" y="0.630824" />
-                            <point x="0" y="0.478495" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Arbusto" sid="515194464195476">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703754851195158" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\bush(1).png">
-                        <collision-poly>
-                            <point x="0.152174" y="0.25" />
-                            <point x="0.5" y="0.0357143" />
-                            <point x="0.891304" y="0.178571" />
-                            <point x="0.934783" y="0.5" />
-                            <point x="0.934783" y="0.892857" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0434783" y="0.928571" />
-                            <point x="0.0869565" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
         </object-type>
     </object-folder>
     <families />
