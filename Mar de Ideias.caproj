@@ -949,7 +949,7 @@
                             <behavior id="solid" />
                         </behavior-type>
                     </behaviors>
-                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\tileset clone clone clone\sprite_4.png" />
+                    <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Tileset Grama clone(1).png" />
                 </object-type>
                 <object-type name="GramaRampaEsq" sid="119075045208778">
                     <plugin id="Sprite" />
@@ -1097,6 +1097,11 @@
                 </object-type>
                 <object-type name="PlataformaAnexadaEsquerda1" sid="377537729618770">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="203799364007663">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="969771944572572" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Plataformas 1(1)\sprite_0.png">
@@ -1143,6 +1148,50 @@
                                     <point x="0" y="1" />
                                     <point x="0" y="0" />
                                     <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TerraRampaEsq" sid="188344415317384">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="931438714259124">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="719578168886353" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Rampas\sprite_0.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0.03125" />
+                                    <point x="0.5" y="0.28125" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TerraRampaDir" sid="492630490260245">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="161414787361265">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="975455314024190" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Rampas\sprite_0.png">
+                                <collision-poly>
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.5" />
+                                    <point x="0.5" y="0.28125" />
+                                    <point x="0.96875" y="0.03125" />
                                 </collision-poly>
                             </frame>
                         </animation>
@@ -1529,6 +1578,32 @@
                 </behavior-type>
             </behaviors>
             <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Terra.png" />
+        </object-type>
+        <object-type name="Graminha1" sid="168920068717377">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="866797512992244" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Detalhes Chão\sprite_0.png">
+                        <collision-poly>
+                            <point x="0.4375" y="0.4375" />
+                            <point x="0.5" y="0.375" />
+                            <point x="0.5625" y="0.4375" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BordaCavernaEsq" sid="235803450722065">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Bordinha.png" />
+        </object-type>
+        <object-type name="BordaCavernaDir" sid="515083564187421">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Bordinha.png" />
         </object-type>
     </object-folder>
     <families />

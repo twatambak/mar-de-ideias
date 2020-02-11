@@ -3,9 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base-Plataforma</name>
     <events>
-        <variable constant="0" name="FraseNPC1" sid="590778537206600" static="0" type="text">Caramba gurizada vem pra Curitiba pra vocês verem o frio</variable>
-        <variable constant="0" name="FraseNPC2" sid="120164168611715" static="0" type="text">Jogador de FreeFire é corno.</variable>
-        <variable constant="0" name="FraseNPC3" sid="602650796896930" static="0" type="text">Se fodeu, não tem como subir :(</variable>
+        <variable constant="0" name="FraseNPC1" sid="590778537206600" static="0" type="text">Me chamo Elias.</variable>
+        <variable constant="0" name="FraseNPC2" sid="120164168611715" static="0" type="text">Me chamo Joseph.</variable>
+        <variable constant="0" name="FraseNPC3" sid="602650796896930" static="0" type="text">Me chamo Ernesto.</variable>
         <event-block sid="608172935105006">
             <conditions>
                 <condition id="-4" name="Is outside layout" sid="537921238130648" type="JogadorPlataforma" />
