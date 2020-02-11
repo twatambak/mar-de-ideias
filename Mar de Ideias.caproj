@@ -962,7 +962,7 @@
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431060076554708" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Rampas\sprite_1.png">
                                 <collision-poly>
-                                    <point x="0" y="0.482422" />
+                                    <point x="0.000488281" y="0.500489" />
                                     <point x="0.941407" y="0" />
                                     <point x="1" y="0" />
                                     <point x="1" y="1" />
@@ -985,7 +985,7 @@
                             <frame duration="1" hotspotX="0.984375" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Rampas\sprite_1.png">
                                 <collision-poly>
                                     <point x="0.0566406" y="0" />
-                                    <point x="1" y="0.476242" />
+                                    <point x="1" y="0.507492" />
                                     <point x="1" y="1" />
                                     <point x="1" y="1" />
                                     <point x="0" y="1" />
@@ -1604,6 +1604,45 @@
         <object-type name="BordaCavernaDir" sid="515083564187421">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Bordinha.png" />
+        </object-type>
+        <object-type name="Arvore" sid="941064663704726">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="486305275258346" speed="5">
+                    <frame duration="1" hotspotX="0.502857" hotspotY="0.503226" original-source="C:\Users\Thiago L. Watambak\Downloads\tree(3).png">
+                        <collision-poly>
+                            <point x="0.2" y="0.225806" />
+                            <point x="0.498413" y="0.0107527" />
+                            <point x="0.790476" y="0.236559" />
+                            <point x="1" y="0.451613" />
+                            <point x="0.685714" y="0.645161" />
+                            <point x="0.663492" y="1" />
+                            <point x="0.368254" y="1" />
+                            <point x="0.311111" y="0.630824" />
+                            <point x="0" y="0.478495" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Arbusto" sid="515194464195476">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703754851195158" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\bush(1).png">
+                        <collision-poly>
+                            <point x="0.152174" y="0.25" />
+                            <point x="0.5" y="0.0357143" />
+                            <point x="0.891304" y="0.178571" />
+                            <point x="0.934783" y="0.5" />
+                            <point x="0.934783" y="0.892857" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0434783" y="0.928571" />
+                            <point x="0.0869565" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

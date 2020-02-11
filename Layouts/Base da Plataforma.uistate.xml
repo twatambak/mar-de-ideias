@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>4270.67</position-x>
-        <position-y>1270.21</position-y>
-        <position-z>37.0386</position-z>
-        <lookat-x>4270.67</lookat-x>
-        <lookat-y>1270.21</lookat-y>
+        <position-x>2435.58</position-x>
+        <position-y>912.24</position-y>
+        <position-z>455.642</position-z>
+        <lookat-x>2435.58</lookat-x>
+        <lookat-y>912.24</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -23,13 +23,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="PlataformaPreenchimentoDetalhes" />
+    <active-layer name="Arbustos" />
     <layers>
         <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="PlataformaPreenchimento" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="PlataformaPreenchimentoDetalhes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Plataformas" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Casas" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Arvores" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Arbustos" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="NPCs" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Jogador" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BordasDialogos" parallax-in-editor="0" visible="0" />
