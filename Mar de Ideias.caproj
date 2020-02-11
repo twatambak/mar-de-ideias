@@ -334,7 +334,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="SpawnerPeixe1" sid="775261168318761">
+            <object-type name="SpawnerPeixe" sid="775261168318761">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346969869506328" speed="5">
@@ -357,6 +357,14 @@
                                 <point x="0.4375" y="0.5" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DestroyerPeixe" sid="396070702704877">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341179212851122" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>

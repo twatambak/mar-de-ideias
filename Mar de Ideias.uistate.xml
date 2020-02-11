@@ -71,8 +71,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/BarraTempo/" />
         <folder expanded="1" path="animation-folder/MarcaErros/" />
         <folder expanded="1" path="animation-folder/Peixes/" />
-        <folder expanded="1" path="animation-folder/SpawnerPeixe1/" />
+        <folder expanded="1" path="animation-folder/SpawnerPeixe/" />
         <folder expanded="1" path="animation-folder/Algas/" />
+        <folder expanded="1" path="animation-folder/DestroyerPeixe/" />
         <folder expanded="1" path="animation-folder/Titulo_Borda/" />
         <folder expanded="1" path="animation-folder/ChiadoForte/" />
         <folder expanded="1" path="animation-folder/Titulo_Borda2/" />

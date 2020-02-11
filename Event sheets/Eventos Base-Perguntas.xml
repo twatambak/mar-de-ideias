@@ -303,12 +303,81 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+                <event-group description="" sid="512287050841954" title="Detalhes do Mar">
+                    <sub-events>
+                        <event-block sid="898278651605328">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="785941916965030" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="909373778216231">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="310818967772084" type="System">
+                                            <param id="0" name="Count">random(15, 20)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="182286356873735" type="System">
+                                            <param id="0" name="Object to create">DetalhesMar1</param>
+                                            <param id="1" name="Layer">&quot;Detalhes&quot;</param>
+                                            <param id="2" name="X">random(0, 640)</param>
+                                            <param id="3" name="Y">random(0, 1152)</param>
+                                        </action>
+                                        <action id="-7" name="Set size" sid="451947734883887" type="DetalhesMar1">
+                                            <param id="0" name="Width">32</param>
+                                            <param id="1" name="Height">32</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="765055308373347">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="366652855014422" type="System">
+                                            <param id="0" name="Count">random(10, 20)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="207120620992239" type="System">
+                                            <param id="0" name="Object to create">DetalhesMar2</param>
+                                            <param id="1" name="Layer">&quot;Detalhes&quot;</param>
+                                            <param id="2" name="X">random(0, 640)</param>
+                                            <param id="3" name="Y">random(0, 1152)</param>
+                                        </action>
+                                        <action id="-7" name="Set size" sid="947362778917786" type="DetalhesMar2">
+                                            <param id="0" name="Width">32</param>
+                                            <param id="1" name="Height">32</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="217688437236495">
+                                    <conditions>
+                                        <condition id="-12" name="Repeat" sid="162121388821125" type="System">
+                                            <param id="0" name="Count">random(10, 20)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="811082650632910" type="System">
+                                            <param id="0" name="Object to create">DetalhesMar3</param>
+                                            <param id="1" name="Layer">&quot;Detalhes&quot;</param>
+                                            <param id="2" name="X">random(0, 640)</param>
+                                            <param id="3" name="Y">random(0, 1152)</param>
+                                        </action>
+                                        <action id="-7" name="Set size" sid="434898197717087" type="DetalhesMar3">
+                                            <param id="0" name="Width">32</param>
+                                            <param id="1" name="Height">32</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="815653393977298" title="Efeitos de transição no início da fase" />
             </sub-events>
         </event-group>
         <event-group description="" sid="295051042907226" title="Funcionamento do Jogo">
             <sub-events>
-                <event-group description="" sid="350938217171601" title="Spawn dos peixes">
+                <event-group description="" sid="350938217171601" title="Peixes">
                     <sub-events>
                         <event-block sid="803390285246385">
                             <conditions>
@@ -317,7 +386,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Spawn another object" sid="297100384035187" type="SpawnerPeixe1">
+                                <action id="0" name="Spawn another object" sid="297100384035187" type="SpawnerPeixe">
                                     <param id="0" name="Object">Peixes</param>
                                     <param id="1" name="Layer">&quot;Detalhes&quot;</param>
                                     <param id="2" name="Image point">0</param>
@@ -346,6 +415,16 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="167762274140235" type="Peixes" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="378889712951513">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="184981874385330" type="Peixes">
+                                    <param id="0" name="Object">DestroyerPeixe</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="355403075392936" type="Peixes" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -1128,70 +1207,5 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="898278651605328">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="785941916965030" type="System" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="909373778216231">
-                    <conditions>
-                        <condition id="-12" name="Repeat" sid="310818967772084" type="System">
-                            <param id="0" name="Count">random(15, 20)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="182286356873735" type="System">
-                            <param id="0" name="Object to create">DetalhesMar1</param>
-                            <param id="1" name="Layer">&quot;Detalhes&quot;</param>
-                            <param id="2" name="X">random(0, 640)</param>
-                            <param id="3" name="Y">random(0, 1152)</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="451947734883887" type="DetalhesMar1">
-                            <param id="0" name="Width">32</param>
-                            <param id="1" name="Height">32</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="765055308373347">
-                    <conditions>
-                        <condition id="-12" name="Repeat" sid="366652855014422" type="System">
-                            <param id="0" name="Count">random(10, 20)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="207120620992239" type="System">
-                            <param id="0" name="Object to create">DetalhesMar2</param>
-                            <param id="1" name="Layer">&quot;Detalhes&quot;</param>
-                            <param id="2" name="X">random(0, 640)</param>
-                            <param id="3" name="Y">random(0, 1152)</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="947362778917786" type="DetalhesMar2">
-                            <param id="0" name="Width">32</param>
-                            <param id="1" name="Height">32</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="217688437236495">
-                    <conditions>
-                        <condition id="-12" name="Repeat" sid="162121388821125" type="System">
-                            <param id="0" name="Count">random(10, 20)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="811082650632910" type="System">
-                            <param id="0" name="Object to create">DetalhesMar3</param>
-                            <param id="1" name="Layer">&quot;Detalhes&quot;</param>
-                            <param id="2" name="X">random(0, 640)</param>
-                            <param id="3" name="Y">random(0, 1152)</param>
-                        </action>
-                        <action id="-7" name="Set size" sid="434898197717087" type="DetalhesMar3">
-                            <param id="0" name="Width">32</param>
-                            <param id="1" name="Height">32</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
     </events>
 </c2eventsheet>

@@ -997,5 +997,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="621751314246897">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="879474188773204" type="System" />
+            </conditions>
+            <actions>
+                <action id="-36" name="Save" sid="820887586271555" type="System">
+                    <param id="0" name="Slot">&quot;mar&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
