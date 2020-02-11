@@ -962,12 +962,12 @@
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431060076554708" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Rampas\sprite_1.png">
                                 <collision-poly>
-                                    <point x="0" y="0.476563" />
-                                    <point x="0.945313" y="0" />
+                                    <point x="0" y="0.482422" />
+                                    <point x="0.941407" y="0" />
                                     <point x="1" y="0" />
                                     <point x="1" y="1" />
                                     <point x="0" y="1" />
-                                    <point x="0" y="0.574219" />
+                                    <point x="0" y="1" />
                                 </collision-poly>
                             </frame>
                         </animation>
@@ -1186,12 +1186,12 @@
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="975455314024190" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Rampas\sprite_0.png">
                                 <collision-poly>
-                                    <point x="1" y="0.5" />
                                     <point x="1" y="1" />
                                     <point x="0" y="1" />
-                                    <point x="0" y="0.5" />
-                                    <point x="0.5" y="0.28125" />
-                                    <point x="0.96875" y="0.03125" />
+                                    <point x="0" y="0" />
+                                    <point x="0.0488281" y="0" />
+                                    <point x="1" y="0.457031" />
+                                    <point x="1" y="1" />
                                 </collision-poly>
                             </frame>
                         </animation>
