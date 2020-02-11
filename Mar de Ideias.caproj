@@ -1065,6 +1065,11 @@
                 </object-type>
                 <object-type name="PlataformaAnexadaDireita2" sid="335333496629680">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="772786102568133">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550259089054753" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Plataformas 1(1)\sprite_1.png">
@@ -1467,8 +1472,13 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445723311535588" speed="5">
+                <animation framecount="2" loop="0" name="Horizontal" pingpong="0" repeatcount="1" repeatto="0" sid="445723311535588" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="0" name="Vertical" pingpong="0" repeatcount="1" repeatto="0" sid="525874541256957" speed="5">
+                    <frame duration="1" hotspotX="0.505618" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505618" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

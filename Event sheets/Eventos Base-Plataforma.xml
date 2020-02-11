@@ -110,10 +110,13 @@
                 </event-group>
                 <event-group description="" sid="309751202651657" title="Controle Desktop (Modo Normal)">
                     <sub-events>
-                        <event-block sid="312700367385097">
+                        <event-block any="1" sid="312700367385097">
                             <conditions>
                                 <condition id="2" name="Key is down" sid="171107414258127" type="Keyboard">
                                     <param id="0" name="Key">65</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="812696151476796" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -125,10 +128,13 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="449454628360323">
+                        <event-block any="1" sid="449454628360323">
                             <conditions>
                                 <condition id="2" name="Key is down" sid="285372631041779" type="Keyboard">
                                     <param id="0" name="Key">68</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="916298758152964" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -140,10 +146,13 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="185091762486556">
+                        <event-block any="1" sid="185091762486556">
                             <conditions>
                                 <condition id="2" name="Key is down" sid="690694842356514" type="Keyboard">
                                     <param id="0" name="Key">87</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="988345993847373" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -176,6 +185,9 @@
                                         <action behavior="Platform" id="7" name="Simulate control" sid="543313312369907" type="JogadorPlataforma">
                                             <param id="0" name="Control">2</param>
                                         </action>
+                                        <action id="5" name="Set frame" sid="824914266350097" type="Controle">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="609715585485528">
@@ -193,6 +205,9 @@
                                         <action behavior="Platform" id="7" name="Simulate control" sid="990524463730290" type="JogadorPlataforma">
                                             <param id="0" name="Control">1</param>
                                         </action>
+                                        <action id="5" name="Set frame" sid="984505000051171" type="Controle">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="226871322166162">
@@ -209,6 +224,80 @@
                                         </action>
                                         <action behavior="Platform" id="7" name="Simulate control" sid="742392543350004" type="JogadorPlataforma">
                                             <param id="0" name="Control">0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="789867001635589" type="Controle">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="515407910702546">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="872795796577615" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="207159997841425" type="Controle">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="411188395154950">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="295564847521761" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="467851621214257" type="Controle" />
+                            </actions>
+                            <sub-events>
+                                <event-block sid="262301053250686">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="145707620519578" type="Controle">
+                                            <param id="0" name="Instance variable">Direcao</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Pulo&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="578467232633394" type="Controle">
+                                            <param id="0" name="Animation">&quot;Vertical&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="761854050944423">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="624666439823331" type="Controle">
+                                            <param id="0" name="Instance variable">Direcao</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Direita&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="7" name="Set mirrored" sid="806027880498606" type="Controle">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="969648281542112" type="Controle">
+                                            <param id="0" name="Animation">&quot;Horizontal&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="243593404184261">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="238419019540798" type="Controle">
+                                            <param id="0" name="Instance variable">Direcao</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;Esquerda&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="7" name="Set mirrored" sid="597638533720384" type="Controle">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="605603292835201" type="Controle">
+                                            <param id="0" name="Animation">&quot;Horizontal&quot;</param>
+                                            <param id="1" name="From">1</param>
                                         </action>
                                     </actions>
                                 </event-block>

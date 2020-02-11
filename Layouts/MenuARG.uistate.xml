@@ -25,8 +25,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <active-layer name="Mar1" />
     <layers>
-        <layer locked="0" name="Ceu" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Estrelas" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Mar1" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Submarino" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Trigger" parallax-in-editor="0" visible="1" />

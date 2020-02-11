@@ -14,8 +14,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="3">MenuARG</layout>
         <layout order="4">IntroPlataforma</layout>
         <layout active="1" order="6">Base da Plataforma</layout>
-        <event-sheet order="2">Eventos Menu</event-sheet>
         <event-sheet order="0">Variaveis</event-sheet>
+        <event-sheet order="2">Eventos Menu</event-sheet>
         <event-sheet order="5">Eventos IntroPlataforma</event-sheet>
         <event-sheet order="7">Eventos Base-Plataforma</event-sheet>
     </open-tabs>
