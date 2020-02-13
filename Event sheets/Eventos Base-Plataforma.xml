@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base-Plataforma</name>
     <events>
+        <variable constant="0" name="Pensamento" sid="350996544132937" static="0" type="text">22 anos. Muito tisti.</variable>
         <variable constant="0" name="FraseNPC1" sid="590778537206600" static="0" type="text">Lorem ipsum.</variable>
         <variable constant="0" name="FraseNPC2" sid="120164168611715" static="0" type="text">Muito criativo</variable>
         <variable constant="0" name="FraseNPC3" sid="602650796896930" static="0" type="text">Bacana</variable>
@@ -58,6 +59,10 @@
                                 <action id="5" name="Set web font" sid="189609495465280" type="FrasesDialogo">
                                     <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                                     <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="816126242199057" type="System">
+                                    <param id="0" name="Layer">&quot;HUD&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -619,5 +624,215 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-block sid="382963000894357">
+            <conditions>
+                <condition id="3" name="On touched object" sid="169397081277877" type="Touch">
+                    <param id="0" name="Object">BotaoPausa</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="790036680721334">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="795185907458453" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundHUD&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="929482405917411" type="System">
+                            <param id="0" name="Group name">&quot;Menu de Pausa (Modo Normal)&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="188686426803898">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="833129506930713" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="768487275692907" type="System">
+                            <param id="0" name="Group name">&quot;Menu de Pausa (Modo Normal)&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="516889571508511">
+            <conditions>
+                <condition id="3" name="On touched object" sid="606109412400710" type="Touch">
+                    <param id="0" name="Object">OpacidadeReduzida</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="495741130667337" type="System">
+                    <param id="0" name="Layer">&quot;BackgroundHUD&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="868962209772351" type="System">
+                    <param id="0" name="Group name">&quot;Menu de Pausa (Modo Normal)&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="322613588536023">
+            <conditions>
+                <condition id="-15" inverted="1" name="Is group active" sid="904522917488205" type="System">
+                    <param id="0" name="Group name">&quot;Menu de Pausa (Modo Normal)&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="218242356329291" type="System">
+                    <param id="0" name="Layer">&quot;TextoHUD&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="613157426612928" type="System">
+                    <param id="0" name="Layer">&quot;BackgroundHUD&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="277289449533755" type="System">
+                    <param id="0" name="Layer">&quot;BordasHUD&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="625685466115930" type="System">
+                    <param id="0" name="Layer">&quot;OpacidadeReduzida&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="348941205405404" type="System">
+                    <param id="0" name="Group name">&quot;Jogador (Modo Normal)&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="814553452305008" type="JogadorPlataforma">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="278330777140440" type="System">
+                    <param id="0" name="Layer">&quot;Controles&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="981627262037210" title="Menu de Pausa (Modo Normal)">
+            <sub-events>
+                <event-block sid="782409657762175">
+                    <conditions>
+                        <condition id="-15" name="Is group active" sid="565564046481178" type="System">
+                            <param id="0" name="Group name">&quot;Menu de Pausa (Modo Normal)&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="907441789175074" type="System">
+                            <param id="0" name="Layer">&quot;TextoHUD&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="911164093664891" type="System">
+                            <param id="0" name="Layer">&quot;BackgroundHUD&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="709742550406653" type="System">
+                            <param id="0" name="Layer">&quot;BordasHUD&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="809305725181038" type="System">
+                            <param id="0" name="Layer">&quot;OpacidadeReduzida&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="785868451961547" type="System">
+                            <param id="0" name="Group name">&quot;Jogador (Modo Normal)&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="305924420820928" type="JogadorPlataforma">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="508448280783553" type="System">
+                            <param id="0" name="Layer">&quot;Controles&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="689010534428759">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="329841032478260" type="TextoMenuPausa">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="931334576757805" type="TextoMenuPausa">
+                                    <param id="0" name="Text">Pensamento</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="178257577740018">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="809954696618886" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="625219069588088">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="315190976348480" type="TextoMenuPausa">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="592584507329845" type="TextoMenuPausa">
+                            <param id="0" name="Family name">&quot;perfect_dos_vga_437regular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;perfectdos.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="720721087028550">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="493566280133341" type="TextoMenuPausa">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="106699077471889" type="TextoMenuPausa">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="817668355101268">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="872777191634616" type="TextoMenuPausa">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="255324542077610" type="TextoMenuPausa">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="373130486611841">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="908695552525663" type="TextoMenuPausa">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="710287588436475" type="TextoMenuPausa">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

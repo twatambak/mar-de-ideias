@@ -30,10 +30,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/Objetos do HUD/" />
-        <folder expanded="0" path="object-folder/Objetos do HUD/Detalhes/" />
-        <folder expanded="1" path="object-folder/Objetos do HUD/Botões/" />
-        <folder expanded="0" path="object-folder/Objetos do HUD/Objetos de Exibição/" />
         <folder expanded="0" path="object-folder/Objetos do Mar/" />
         <folder expanded="0" path="object-folder/Controles/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/" />
@@ -46,15 +42,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos da Senha/" />
         <folder expanded="0" path="object-folder/Objetos da Introdução/" />
         <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/" />
-        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/Plataformas/" />
+        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Plataformas/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Itens Menu/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Frases e textos separados/" />
-        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Jogador/" />
-        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/NPCs/" />
-        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/Natureza/" />
-        <folder expanded="0" path="object-folder/Objetos do Quizz/" />
+        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/Jogador/" />
+        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/NPCs/" />
+        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Natureza/" />
+        <folder expanded="1" path="object-folder/Objetos do Quizz/" />
         <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos para Pergunta/" />
         <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos para Resposta/" />
+        <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos do HUD/" />
+        <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos do HUD/Detalhes/" />
+        <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos do HUD/Botões/" />
+        <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos do HUD/Objetos de Exibição/" />
         <folder expanded="0" path="object-folder/Construções/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/ARG/" />
@@ -66,12 +66,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="0" path="file-folder/Fontes/" />
-        <folder expanded="1" path="animation-folder/BackgroundProfundidade/" />
-        <folder expanded="1" path="animation-folder/BordasPainel/" />
-        <folder expanded="1" path="animation-folder/BotaoPausa/" />
-        <folder expanded="1" path="animation-folder/BarraTempo/" />
-        <folder expanded="1" path="animation-folder/MarcaErros/" />
+        <folder expanded="1" path="file-folder/Fontes/" />
         <folder expanded="1" path="animation-folder/Peixes/" />
         <folder expanded="1" path="animation-folder/SpawnerPeixe/" />
         <folder expanded="1" path="animation-folder/Algas/" />
@@ -117,7 +112,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/BordaIntroPlataforma/" />
         <folder expanded="1" path="animation-folder/BordaPergunta/" />
         <folder expanded="1" path="animation-folder/BordaRespostas/" />
+        <folder expanded="1" path="animation-folder/BackgroundProfundidade/" />
+        <folder expanded="1" path="animation-folder/BordasPainel/" />
+        <folder expanded="1" path="animation-folder/BotaoPausa/" />
+        <folder expanded="1" path="animation-folder/BarraTempo/" />
+        <folder expanded="1" path="animation-folder/MarcaErros/" />
         <folder expanded="1" path="animation-folder/Casa1/" />
         <folder expanded="1" path="animation-folder/BordasDialogos/" />
+        <folder expanded="1" path="animation-folder/BordasPausaPlataforma/" />
+        <folder expanded="1" path="animation-folder/ImagemPersonagem/" />
+        <folder expanded="1" path="animation-folder/BordaCognicao/" />
+        <folder expanded="1" path="animation-folder/BordasOpcoesPausaPlataforma/" />
     </folders-expanded>
 </c2uistate>
