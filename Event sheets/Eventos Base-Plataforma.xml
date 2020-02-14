@@ -3,7 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base-Plataforma</name>
     <events>
-        <variable constant="0" name="Pensamento" sid="350996544132937" static="0" type="text">22 anos. Muito tisti.</variable>
+        <variable constant="0" name="PausaPlataforma" sid="415247836562859" static="0" type="number">0</variable>
+        <variable constant="0" name="Pensamento" sid="350996544132937" static="0" type="text">kappa</variable>
         <variable constant="0" name="FraseNPC1" sid="590778537206600" static="0" type="text">Lorem ipsum.</variable>
         <variable constant="0" name="FraseNPC2" sid="120164168611715" static="0" type="text">Muito criativo</variable>
         <variable constant="0" name="FraseNPC3" sid="602650796896930" static="0" type="text">Bacana</variable>
@@ -658,7 +659,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="516889571508511">
+        <event-block disabled="1" sid="516889571508511">
             <conditions>
                 <condition id="3" name="On touched object" sid="606109412400710" type="Touch">
                     <param id="0" name="Object">OpacidadeReduzida</param>
@@ -748,87 +749,241 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="689010534428759">
+                        <comment>Com o valor PausaPlataforma como 0 o menu de pausa é refete à: STATUS.</comment>
+                        <event-block sid="307473302574133">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="329841032478260" type="TextoMenuPausa">
-                                    <param id="0" name="Instance variable">ID</param>
+                                <condition id="-14" name="Compare variable" sid="146623815096079" type="System">
+                                    <param id="0" name="Variable">PausaPlataforma</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="625219069588088">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="315190976348480" type="TextoMenuPausa">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set web font" sid="592584507329845" type="TextoMenuPausa">
+                                            <param id="0" name="Family name">&quot;perfect_dos_vga_437regular&quot;</param>
+                                            <param id="1" name="CSS URL">&quot;perfectdos.css&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="720721087028550">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="493566280133341" type="TextoMenuPausa">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set web font" sid="106699077471889" type="TextoMenuPausa">
+                                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="441414053263326" type="TextoMenuPausa">
+                                            <param id="0" name="Text">Pensamento</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="817668355101268">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="872777191634616" type="TextoMenuPausa">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set web font" sid="255324542077610" type="TextoMenuPausa">
+                                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="373130486611841">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="908695552525663" type="TextoMenuPausa">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set web font" sid="710287588436475" type="TextoMenuPausa">
+                                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="556363406019032">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="986079244028969" type="TextoMenuPausa">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set web font" sid="245572935839666" type="TextoMenuPausa">
+                                            <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
+                                            <param id="1" name="CSS URL">&quot;undoline.css&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="925573987019220" type="TextoMenuPausa">
+                                            <param id="0" name="Text">&quot;Status&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="129870225733296">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="887342039997301" type="TextoMenuPausa">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1000</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set web font" sid="853423885425127" type="TextoMenuPausa">
+                                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>Com o valor PausaPlataforma como 1 o menu de pausa é refete à: QUESTS.</comment>
+                        <event-block sid="144186330844372">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="249501042941620" type="System">
+                                    <param id="0" name="Variable">PausaPlataforma</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="931334576757805" type="TextoMenuPausa">
-                                    <param id="0" name="Text">Pensamento</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="947990316670218">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="959699901959247" type="TextoMenuPausa">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set web font" sid="543397089906726" type="TextoMenuPausa">
+                                            <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
+                                            <param id="1" name="CSS URL">&quot;undoline.css&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="323731495818534" type="TextoMenuPausa">
+                                            <param id="0" name="Text">&quot;Quests&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="238533855984340">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="406360729890154" type="TextoMenuPausa">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1000</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set web font" sid="230105417537648" type="TextoMenuPausa">
+                                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>Com o valor PausaPlataforma como 2 o menu de pausa é refete à: OPÇÕES.</comment>
+                        <event-block sid="422866755504133">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="819659832833933" type="System">
+                                    <param id="0" name="Variable">PausaPlataforma</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="505648245052953">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="659550164921597" type="TextoMenuPausa">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set web font" sid="866850900795082" type="TextoMenuPausa">
+                                            <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
+                                            <param id="1" name="CSS URL">&quot;undoline.css&quot;</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="170674755398807" type="TextoMenuPausa">
+                                            <param id="0" name="Text">&quot;Opções&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="384020708834349">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="675858546584825" type="TextoMenuPausa">
+                                            <param id="0" name="Instance variable">ID</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1000</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set web font" sid="792073685226552" type="TextoMenuPausa">
+                                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="178257577740018">
+        <event-block sid="161700282772446">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="809954696618886" type="System" />
+                <condition id="18" name="On double-tap object" sid="519073399973738" type="Touch">
+                    <param id="0" name="Object">BordasPausaPlataforma</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="139294963542315" type="System">
+                    <param id="0" name="Variable">PausaPlataforma</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-10" name="Add to" sid="846977710817393" type="System">
+                    <param id="0" name="Variable">PausaPlataforma</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
             <sub-events>
-                <event-block sid="625219069588088">
+                <event-block sid="847885811029273">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="315190976348480" type="TextoMenuPausa">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set web font" sid="592584507329845" type="TextoMenuPausa">
-                            <param id="0" name="Family name">&quot;perfect_dos_vga_437regular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;perfectdos.css&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="720721087028550">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="493566280133341" type="TextoMenuPausa">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set web font" sid="106699077471889" type="TextoMenuPausa">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="817668355101268">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="872777191634616" type="TextoMenuPausa">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="5" name="Set web font" sid="255324542077610" type="TextoMenuPausa">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="373130486611841">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="908695552525663" type="TextoMenuPausa">
-                            <param id="0" name="Instance variable">ID</param>
-                            <param id="1" name="Comparison">0</param>
+                        <condition id="-14" name="Compare variable" sid="882996389196064" type="System">
+                            <param id="0" name="Variable">PausaPlataforma</param>
+                            <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">3</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set web font" sid="710287588436475" type="TextoMenuPausa">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        <action id="-9" name="Set value" sid="512164787704744" type="System">
+                            <param id="0" name="Variable">PausaPlataforma</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>

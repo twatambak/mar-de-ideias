@@ -1314,6 +1314,11 @@
                 <instance-variables>
                     <instance-variable name="ID" sid="781505172472908" type="number" />
                 </instance-variables>
+                <behaviors>
+                    <behavior-type name="Sine" sid="735099492115861">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
             </object-type>
         </object-folder>
         <object-folder name="Objetos do Quizz">
@@ -1656,6 +1661,9 @@
         </object-type>
         <object-type name="BordasPausaPlataforma" sid="178327963224582">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Text" sid="228548377414571" type="string" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="329494998026430" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(1).png">
@@ -1675,15 +1683,15 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="930341702751127" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\a big friend clone(4).png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\Hitler(5).png">
                         <collision-poly>
-                            <point x="0.078125" y="0.078125" />
+                            <point x="0.046875" y="0.046875" />
                             <point x="0.5" y="0.015625" />
-                            <point x="0.921875" y="0.078125" />
+                            <point x="0.953125" y="0.046875" />
                             <point x="0.984375" y="0.5" />
-                            <point x="0.921875" y="0.921875" />
+                            <point x="0.953125" y="0.953125" />
                             <point x="0.5" y="0.984375" />
-                            <point x="0.078125" y="0.921875" />
+                            <point x="0.046875" y="0.953125" />
                             <point x="0.015625" y="0.5" />
                         </collision-poly>
                     </frame>
@@ -1713,7 +1721,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="391821352943110" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(6).png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel(8).png">
                         <collision-poly>
                             <point x="0.03125" y="0.09375" />
                             <point x="0.5" y="0" />

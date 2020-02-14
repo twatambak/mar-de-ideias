@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>184.06</position-x>
-        <position-y>524.29</position-y>
+        <position-y>615.785</position-y>
         <position-z>121.993</position-z>
         <lookat-x>184.06</lookat-x>
-        <lookat-y>524.29</lookat-y>
+        <lookat-y>615.785</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,24 +23,23 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="TextoHUD" />
+    <active-layer name="PlataformaPreenchimentoDetalhes" />
     <layers>
-        <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="PlataformaPreenchimento" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="PlataformaPreenchimentoDetalhes" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Plataformas" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Casas" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Arvores" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Arbustos" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="NPCs" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Jogador" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="BordasDialogos" parallax-in-editor="0" visible="0" />
-        <layer locked="0" name="TextoDialogos" parallax-in-editor="0" visible="0" />
-        <layer locked="0" name="Controles" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="OpacidadeReduzida" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="PlataformaPreenchimento" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="PlataformaPreenchimentoDetalhes" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Plataformas" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Casas" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Arvores" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Arbustos" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="NPCs" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Jogador" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BordasDialogos" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="TextoDialogos" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="Controles" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="OpacidadeReduzida" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundHUD" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BordasHUD" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoHUD" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="T" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
