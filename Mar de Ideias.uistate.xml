@@ -13,12 +13,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="1">Menu</layout>
         <layout order="3">MenuARG</layout>
         <layout order="4">IntroPlataforma</layout>
-        <layout order="6">Base da Plataforma</layout>
+        <layout active="1" order="6">Base da Plataforma</layout>
         <layout order="9">Base das Perguntas</layout>
         <event-sheet order="0">Variaveis</event-sheet>
         <event-sheet order="2">Eventos Menu</event-sheet>
         <event-sheet order="5">Eventos IntroPlataforma</event-sheet>
-        <event-sheet active="1" order="7">Eventos Base-Plataforma</event-sheet>
+        <event-sheet order="7">Eventos Base-Plataforma</event-sheet>
         <event-sheet order="8">Eventos Base-Perguntas</event-sheet>
     </open-tabs>
     <properties>
