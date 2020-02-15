@@ -1758,6 +1758,7 @@
             <event-sheet>Eventos MenuARG.xml</event-sheet>
             <event-sheet>Eventos IntroPlataforma.xml</event-sheet>
             <event-sheet>Eventos IntroARG.xml</event-sheet>
+            <event-sheet>Eventos Quests.xml</event-sheet>
         </event-folder>
         <event-sheet>Eventos Base-Perguntas.xml</event-sheet>
         <event-sheet>Eventos de Inserção das Perguntas.xml</event-sheet>

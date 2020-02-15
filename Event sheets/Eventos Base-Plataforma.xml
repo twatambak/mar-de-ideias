@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base-Plataforma</name>
     <events>
+        <include>Eventos Quests</include>
         <variable constant="0" name="PausaPlataforma" sid="415247836562859" static="0" type="number">0</variable>
         <variable constant="0" name="Pensamento" sid="350996544132937" static="0" type="text">kappa</variable>
         <variable constant="0" name="FraseNPC1" sid="590778537206600" static="0" type="text">Lorem ipsum.</variable>

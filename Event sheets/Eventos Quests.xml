@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Quests</name>
+    <events>
+        <variable constant="0" name="QTDJOSEPH" sid="652412563766703" static="0" type="number">0</variable>
+        <variable constant="0" name="Cognicao" sid="558790051754787" static="0" type="number">0</variable>
+        <variable constant="0" name="Joseph" sid="537064804036350" static="0" type="number">1</variable>
+        <event-group description="" sid="715393683234108" title="DefineQuest">
+            <sub-events>
+                <event-block sid="683685043409824">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="614227492843719" type="System">
+                            <param id="0" name="Variable">Joseph</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="580579290387901" type="System">
+                            <param id="0" name="Variable">FraseNPC2</param>
+                            <param id="1" name="Value">&quot;Ei vamos testar algumas quests&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="351959130253524" title="EntrarEmQuests">
+            <sub-events>
+                <event-block sid="680002296314233">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="972201046520327" type="Touch">
+                            <param id="0" name="Object">BordasDialogos</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="905740689965342" type="JogadorPlataforma">
+                            <param id="0" name="Object">NPC2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="844891533060338" type="System">
+                            <param id="0" name="Variable">Joseph</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="176821929100403" type="System">
+                            <param id="0" name="Layout">Base das Perguntas</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="431422505984026" type="System">
+                            <param id="0" name="Variable">NPCAtivo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

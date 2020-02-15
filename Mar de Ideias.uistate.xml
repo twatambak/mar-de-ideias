@@ -10,16 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Menu</layout>
-        <layout order="3">MenuARG</layout>
-        <layout order="4">IntroPlataforma</layout>
-        <layout active="1" order="6">Base da Plataforma</layout>
-        <layout order="9">Base das Perguntas</layout>
-        <event-sheet order="0">Variaveis</event-sheet>
-        <event-sheet order="2">Eventos Menu</event-sheet>
-        <event-sheet order="5">Eventos IntroPlataforma</event-sheet>
-        <event-sheet order="7">Eventos Base-Plataforma</event-sheet>
-        <event-sheet order="8">Eventos Base-Perguntas</event-sheet>
+        <layout order="0">Base da Plataforma</layout>
+        <layout order="5">Intro</layout>
+        <event-sheet order="1">Eventos Quests</event-sheet>
+        <event-sheet order="2">Eventos Base-Plataforma</event-sheet>
+        <event-sheet order="3">Eventos Intro</event-sheet>
+        <event-sheet active="1" order="4">Eventos Base-Perguntas</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -61,7 +57,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/Plataforma/" />
         <folder expanded="1" path="layout-folder/Quizz/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="0" path="event-folder/ARG/" />
+        <folder expanded="1" path="event-folder/ARG/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />

@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base-Perguntas</name>
     <events>
+        <variable constant="0" name="NPCAtivo" sid="382322059137736" static="0" type="number">0</variable>
         <event-group description="" sid="153366938438702" title="Configurações Iniciais">
             <sub-events>
                 <event-group description="" sid="480743114363865" title="Definição dos textos das perguntas e respostas">
@@ -1097,7 +1098,48 @@
                                     <param id="0" name="Seconds">1.5</param>
                                 </action>
                                 <action id="-26" name="Restart layout" sid="474456974422812" type="System" />
+                                <action id="-10" name="Add to" sid="439363122218060" type="System">
+                                    <param id="0" name="Variable">Cognicao</param>
+                                    <param id="1" name="Value">0.5</param>
+                                </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="245179079424457">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="272296419968650" type="System">
+                                            <param id="0" name="Variable">NPCAtivo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="857931946326516" type="System">
+                                            <param id="0" name="Variable">QTDJOSEPH</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="381231495186286" type="System">
+                                            <param id="0" name="Variable">QTDJOSEPH</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="303597381517219">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="912200259855010" type="System" />
+                                        <condition id="-14" name="Compare variable" sid="940529963082747" type="System">
+                                            <param id="0" name="Variable">QTDJOSEPH</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="284923850058676" type="System">
+                                            <param id="0" name="Layout">Base da Plataforma</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
