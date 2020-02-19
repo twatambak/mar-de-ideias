@@ -1168,6 +1168,27 @@
                 </object-type>
             </object-folder>
             <object-folder name="NPCs">
+                <object-folder name="Joseph">
+                    <object-type name="SpriteJoseph" sid="254766067480054">
+                        <plugin id="Sprite" />
+                        <behaviors>
+                            <behavior-type name="Platform" sid="295068654709084">
+                                <behavior id="Platform" />
+                            </behavior-type>
+                        </behaviors>
+                        <animation-folder>
+                            <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="513530254074886" speed="5">
+                                <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                                <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type global="1" name="ArrayJoseph" sid="531306923298723">
+                        <plugin id="Arr" />
+                    </object-type>
+                </object-folder>
                 <object-type name="NPC" sid="313673118065076">
                     <plugin id="Sprite" />
                     <behaviors>
@@ -1178,22 +1199,6 @@
                     <animation-folder>
                         <animation framecount="5" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="571093153810072" speed="5">
                             <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                            <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="NPC2" sid="254766067480054">
-                    <plugin id="Sprite" />
-                    <behaviors>
-                        <behavior-type name="Platform" sid="295068654709084">
-                            <behavior id="Platform" />
-                        </behavior-type>
-                    </behaviors>
-                    <animation-folder>
-                        <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="513530254074886" speed="5">
                             <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                             <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                             <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />

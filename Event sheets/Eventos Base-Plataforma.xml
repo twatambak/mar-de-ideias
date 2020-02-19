@@ -33,7 +33,7 @@
                 <condition id="-2" name="On start of layout" sid="826012527682586" type="System" />
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="224332505272382" type="NPC2">
+                <action id="7" name="Set mirrored" sid="224332505272382" type="SpriteJoseph">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
@@ -426,14 +426,14 @@
                     <sub-events>
                         <event-block sid="975489225172577">
                             <conditions>
-                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="436699271888729" type="NPC2" />
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="436699271888729" type="SpriteJoseph" />
                             </conditions>
                             <actions>
-                                <action id="4" name="Set animation" sid="473157651221502" type="NPC2">
+                                <action id="4" name="Set animation" sid="473157651221502" type="SpriteJoseph">
                                     <param id="0" name="Animation">&quot;Idle&quot;</param>
                                     <param id="1" name="From">1</param>
                                 </action>
-                                <action id="6" name="Set speed" sid="790835697531875" type="NPC2">
+                                <action id="6" name="Set speed" sid="790835697531875" type="SpriteJoseph">
                                     <param id="0" name="Speed">7</param>
                                 </action>
                             </actions>
@@ -443,7 +443,7 @@
                                 <event-block sid="273090915111849">
                                     <conditions>
                                         <condition id="1" name="Is overlapping another object" sid="528000845524719" type="JogadorPlataforma">
-                                            <param id="0" name="Object">NPC2</param>
+                                            <param id="0" name="Object">SpriteJoseph</param>
                                         </condition>
                                     </conditions>
                                     <actions />

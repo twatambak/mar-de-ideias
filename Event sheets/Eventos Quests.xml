@@ -33,7 +33,7 @@
                             <param id="0" name="Object">BordasDialogos</param>
                         </condition>
                         <condition id="1" name="Is overlapping another object" sid="905740689965342" type="JogadorPlataforma">
-                            <param id="0" name="Object">NPC2</param>
+                            <param id="0" name="Object">SpriteJoseph</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="844891533060338" type="System">
                             <param id="0" name="Variable">Joseph</param>

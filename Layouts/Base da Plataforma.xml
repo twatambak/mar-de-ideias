@@ -4622,7 +4622,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="NPC2" uid="74">
+                <instance type="SpriteJoseph" uid="74">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
