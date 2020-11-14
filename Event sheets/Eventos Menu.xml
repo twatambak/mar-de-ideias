@@ -49,6 +49,20 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="562522628501553">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="312241102408570" type="TextoOpcoesMenu">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="870717191132644" type="System">
+                            <param id="0" name="Layout">Créditos</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="618482169834202">

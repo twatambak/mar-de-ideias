@@ -44,14 +44,14 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Intro</first-layout>
+    <first-layout>Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Loader style">Progress bar only</prop>
         <prop name="Orientations">Portrait</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -1756,6 +1756,7 @@
             <layout>Base das Perguntas.xml</layout>
         </layout-folder>
         <layout>Menu.xml</layout>
+        <layout>Créditos.xml</layout>
         <layout>Intro.xml</layout>
     </layout-folder>
     <event-folder>
@@ -1771,6 +1772,7 @@
         <event-sheet>Eventos Menu.xml</event-sheet>
         <event-sheet>Eventos Intro.xml</event-sheet>
         <event-sheet>Eventos Base-Plataforma.xml</event-sheet>
+        <event-sheet>Eventos Créditos.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">

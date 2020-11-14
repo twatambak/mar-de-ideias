@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Créditos</name>
+    <events>
+        <event-group description="" sid="448933791970304" title="Definição das Webfonts (Créditos)">
+            <sub-events>
+                <event-block sid="933125375217656">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="619781481746082" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="305344218941424" type="TextoOpcoesMenu">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="924049787306392" type="TextoExtra">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="860869309160579" type="Texto_Highscore">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="962298457554040" type="TextoSenha">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="717461260170462" type="Titulo_Texto">
+                            <param id="0" name="Family name">&quot;gauntletregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;gauntlet.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="881518715931510" type="TextoAtivacaoSenha">
+                            <param id="0" name="Family name">&quot;edit_undo_line_brkregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;undoline.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="727937036353306" type="TextoInfoARG">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="959781720214498">
+            <conditions>
+                <condition id="3" name="On touched object" sid="805951154785220" type="Touch">
+                    <param id="0" name="Object">TextoOpcoesMenu</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="977164978130252" type="System">
+                    <param id="0" name="Layer">&quot;TextoOpcoes&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="797006465275760">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="142179510505642" type="TextoOpcoesMenu">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="436852711624754" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
