@@ -659,7 +659,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334931337590591" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\HK.png">
+                        <frame duration="1" hotspotX="0.501044" hotspotY="0.500956" original-source="D:\Users\Thiago L. Watambak\Downloads\Logo 2 Hitkill Studios.png">
                             <collision-poly>
                                 <point x="0.128571" y="0.140625" />
                                 <point x="0.5" y="0.71875" />

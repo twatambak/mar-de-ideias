@@ -234,11 +234,11 @@
                         <x>320</x>
                         <y>544</y>
                         <z>0</z>
-                        <width>630</width>
-                        <height>576</height>
+                        <width>479</width>
+                        <height>523</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.501043856</hotspotX>
+                        <hotspotY>0.500955999</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
