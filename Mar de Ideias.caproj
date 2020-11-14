@@ -2,7 +2,7 @@
 <c2project>
     <name>Mar de Ideias</name>
     <description>Jogo de perguntas</description>
-    <version>0.01.4</version>
+    <version>0.01.5</version>
     <author>HitKill Studios</author>
     <author-email>hitkillstudios@gmail.com</author-email>
     <author-website>http://www.hitkillstudios.com.br</author-website>
@@ -1804,7 +1804,10 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="InicioFase.ogg" />
+        <file name="MenuMusic.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

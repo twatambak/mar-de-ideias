@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Menu</name>
     <events>
+        <include>Eventos de sons e musicas</include>
         <include>Eventos de Inserção das Perguntas</include>
         <comment>Armazena o status de acerto do primeiro elemento da senha. O valor é 0 caso o primeiro elemento da senha esteja incorreto e 1 caso esteja correto.</comment>
         <variable constant="0" name="PainelSenha1" sid="336393282794325" static="0" type="number">0</variable>
@@ -45,6 +46,11 @@
                         </action>
                         <action id="-9" name="Set value" sid="587941311233842" type="System">
                             <param id="0" name="Variable">Profundidade</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="645377032680467" type="Sons" />
+                        <action id="-9" name="Set value" sid="683878370346673" type="System">
+                            <param id="0" name="Variable">NoMenu</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
@@ -1021,5 +1027,27 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" inactive="1" sid="246089116778149" title="LigarMusicaNovamente">
+            <sub-events>
+                <event-block sid="545334481179849">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="886841299503131" type="System" />
+                        <condition id="-14" name="Compare variable" sid="123076318727034" type="System">
+                            <param id="0" name="Variable">NoMenu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="175942409472634" type="Sons">
+                            <param id="0" name="Audio file">MenuMusic</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

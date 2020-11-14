@@ -991,6 +991,16 @@
                                                 <action id="-2" name="Go to layout" sid="116540721880121" type="System">
                                                     <param id="0" name="Layout">Menu</param>
                                                 </action>
+                                                <action id="-9" name="Set value" sid="772063021330422" type="System">
+                                                    <param id="0" name="Variable">NoMenu</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="477198820064610" type="Sons">
+                                                    <param id="0" name="Audio file">MenuMusic</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
                                             </actions>
                                         </event-block>
                                     </sub-events>
@@ -1069,6 +1079,16 @@
                                     <actions>
                                         <action id="-2" name="Go to layout" sid="254390480942051" type="System">
                                             <param id="0" name="Layout">Menu</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="736259454008660" type="System">
+                                            <param id="0" name="Variable">NoMenu</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="158977953159975" type="Sons">
+                                            <param id="0" name="Audio file">MenuMusic</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>

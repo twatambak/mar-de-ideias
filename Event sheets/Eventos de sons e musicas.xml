@@ -3,26 +3,21 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos de sons e musicas</name>
     <events>
-        <variable constant="0" name="InicioFase" sid="167183938090170" static="0" type="number">0</variable>
-        <variable constant="0" name="NoMenu" sid="520841787850473" static="0" type="number">0</variable>
         <comment>Event Sheet destinada ao controle sonoro do projeto Mar de Ideias&#x0D;&#x0A;&#x0D;&#x0A;Essa event sheet precisa ser adicionada em todos os layouts para correto controle sonoro.&#x0D;&#x0A;&#x0D;&#x0A;Para adicionar musicas ou sons criar uma variável de controle evitando looping de execução. &#x0D;&#x0A;&#x0D;&#x0A;Ex.: - NoMenu = 0 Método musica do menu desativado.&#x0D;&#x0A;&#x0D;&#x0A;Event Sheet destinada ao controle sonoro do projeto Mar de Ideias&#x0D;&#x0A;&#x0D;&#x0A;Essa event sheet precisa ser adicionada em todos os layouts para correto controle sonoro.&#x0D;&#x0A;&#x0D;&#x0A;Para adicionar musicas ou sons criar uma variável de controle evitando looping de execução. &#x0D;&#x0A;&#x0D;&#x0A;Ex.: - NoMenu = 0 Método musica do menu desativado.&#x0D;&#x0A;&#x0D;&#x0A;</comment>
-        <event-group description="Controla a execução e looping da musica do menu. Executado apenas no layout do menu" sid="831543224788006" title="MusicaMenu">
+        <event-group description="Controla a execução e looping da musica do menu. Executado apenas no layout do menu" inactive="1" sid="831543224788006" title="MusicaMenu">
             <sub-events>
                 <event-block sid="697000328242106">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="519871691523901" type="System" />
-                        <condition id="-14" name="Compare variable" sid="635492458320074" type="System">
-                            <param id="0" name="Variable">NoMenu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="962882702658777" type="System">
-                            <param id="0" name="Variable">InicioFase</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="762214802254562" type="Sons">
+                            <param id="0" name="Audio file">MenuMusic</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
