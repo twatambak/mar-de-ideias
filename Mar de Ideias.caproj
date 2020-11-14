@@ -11,6 +11,7 @@
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -1624,6 +1625,11 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Objetos Programação">
+            <object-type name="Sons" sid="374618386446974">
+                <plugin id="Audio" />
+            </object-type>
+        </object-folder>
         <object-type name="OpacidadeReduzida" sid="188872732063886">
             <plugin id="TiledBg" />
             <texture />
@@ -1773,6 +1779,7 @@
         <event-sheet>Eventos Intro.xml</event-sheet>
         <event-sheet>Eventos Base-Plataforma.xml</event-sheet>
         <event-sheet>Eventos Créditos.xml</event-sheet>
+        <event-sheet>Eventos de sons e musicas.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">
@@ -1782,6 +1789,20 @@
         </global-instance>
         <global-instance type="Keyboard" uid="42" />
         <global-instance type="Desktop" uid="8" />
+        <global-instance type="Sons" uid="351">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />

@@ -10,7 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">Créditos</layout>
+        <layout order="0">Créditos</layout>
+        <layout order="1">Menu</layout>
+        <event-sheet order="2">Eventos de Inserção das Perguntas</event-sheet>
+        <event-sheet active="1" order="3">Eventos de sons e musicas</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -21,26 +24,26 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/Objetos do Mar/" />
+        <folder expanded="0" path="object-folder/Objetos do Mar/" />
         <folder expanded="0" path="object-folder/Controles/" />
-        <folder expanded="1" path="object-folder/Objetos do Menu Inicial/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu Inicial/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Título/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos das Opções/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Highscore/" />
-        <folder expanded="1" path="object-folder/Objetos do Menu de Pausa (Quizz)/" />
-        <folder expanded="1" path="object-folder/Objetos do Menu de GameOver (Quizz)/" />
-        <folder expanded="1" path="object-folder/Objetos da Senha/" />
-        <folder expanded="1" path="object-folder/Objetos da Introdução/" />
-        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu de Pausa (Quizz)/" />
+        <folder expanded="0" path="object-folder/Objetos do Menu de GameOver (Quizz)/" />
+        <folder expanded="0" path="object-folder/Objetos da Senha/" />
+        <folder expanded="0" path="object-folder/Objetos da Introdução/" />
+        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Plataformas/" />
-        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/Itens Menu/" />
-        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/Frases e textos separados/" />
-        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/Jogador/" />
-        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/NPCs/" />
+        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Itens Menu/" />
+        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Frases e textos separados/" />
+        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Jogador/" />
+        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/NPCs/" />
         <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/NPCs/Joseph/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Natureza/" />
-        <folder expanded="1" path="object-folder/Objetos do Quizz/" />
+        <folder expanded="0" path="object-folder/Objetos do Quizz/" />
         <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos para Pergunta/" />
         <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos para Resposta/" />
         <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos do HUD/" />
@@ -48,12 +51,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos do HUD/Botões/" />
         <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos do HUD/Objetos de Exibição/" />
         <folder expanded="0" path="object-folder/Construções/" />
+        <folder expanded="1" path="object-folder/Objetos Programação/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/ARG/" />
         <folder expanded="1" path="layout-folder/Plataforma/" />
         <folder expanded="1" path="layout-folder/Quizz/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="event-folder/ARG/" />
+        <folder expanded="0" path="event-folder/ARG/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
