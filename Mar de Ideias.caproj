@@ -1010,12 +1010,15 @@
                         <behavior-type name="Sine" sid="322485657244318">
                             <behavior id="Sin" />
                         </behavior-type>
+                        <behavior-type name="Solid" sid="881758179001278">
+                            <behavior id="solid" />
+                        </behavior-type>
                     </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="981342949412830" speed="5">
                             <frame duration="1" hotspotX="0.776699" hotspotY="1.23626" original-source="C:\Projetos\mar-de-ideias\Textures\SubmarinoSubmerso.png">
                                 <collision-poly>
-                                    <point x="0.370252" y="0" />
+                                    <point x="0.129961" y="0.549451" />
                                     <point x="0.780045" y="0.557194" />
                                     <point x="1" y="0.897828" />
                                     <point x="1" y="1" />
@@ -1159,7 +1162,7 @@
                                 </collision-poly>
                             </frame>
                         </animation>
-                        <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="406499461131172" speed="5">
+                        <animation framecount="4" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="406499461131172" speed="5">
                             <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
                             <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
                             <frame duration="1" hotspotX="0.514286" hotspotY="0.485981" />
@@ -1215,7 +1218,7 @@
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
-                        <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="581225651883423" speed="5">
+                        <animation framecount="4" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="581225651883423" speed="5">
                             <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                             <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                             <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
@@ -1630,6 +1633,19 @@
                 <plugin id="Audio" />
             </object-type>
         </object-folder>
+        <object-folder name="ObjetosTransição">
+            <object-type name="TxtTentativasVidas" sid="731934298859977">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="347469681883324">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type name="TxTVidas" sid="267877271242609">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="OpacidadeReduzida" sid="188872732063886">
             <plugin id="TiledBg" />
             <texture />
@@ -1761,6 +1777,9 @@
         <layout-folder name="Quizz">
             <layout>Base das Perguntas.xml</layout>
         </layout-folder>
+        <layout-folder name="TelasDeTransicao">
+            <layout>TransicaoFase.xml</layout>
+        </layout-folder>
         <layout>Menu.xml</layout>
         <layout>Créditos.xml</layout>
         <layout>Intro.xml</layout>
@@ -1780,6 +1799,7 @@
         <event-sheet>Eventos Base-Plataforma.xml</event-sheet>
         <event-sheet>Eventos Créditos.xml</event-sheet>
         <event-sheet>Eventos de sons e musicas.xml</event-sheet>
+        <event-sheet>Eventos TransicaoFase.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">
@@ -1807,6 +1827,9 @@
     <sounds-folder>
         <file name="InicioFase.ogg" />
         <file name="MenuMusic.ogg" />
+        <file name="FaseStage1.ogg" />
+        <file name="FaseStage2.ogg" />
+        <file name="Mar.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

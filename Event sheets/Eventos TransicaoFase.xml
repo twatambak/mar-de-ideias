@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos TransicaoFase</name>
+    <events>
+        <event-group description="" sid="454350489952099" title="IniciaAnimação">
+            <sub-events>
+                <event-block sid="839778595241461">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="960343296718807" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="169837031803526" type="JogadorPlataforma">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="460435157242540" type="JogadorPlataforma">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="723235421278095" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="946366492048135" type="System">
+                            <param id="0" name="Group name">&quot;IniciaPulo&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="377119008076780" type="System">
+                            <param id="0" name="Group name">&quot;IniciaAnimação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="705937788884137" title="IniciaPulo">
+            <sub-events>
+                <event-block sid="933656366314174">
+                    <conditions>
+                        <condition id="-15" name="Is group active" sid="441262779341445" type="System">
+                            <param id="0" name="Group name">&quot;IniciaPulo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="816066840082933" type="JogadorPlataforma">
+                            <param id="0" name="Animation">&quot;Pulando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="367302702636185" type="JogadorPlataforma">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="967367895668118" type="JogadorPlataforma">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="930779971323519" title="CarregaTextos">
+            <sub-events>
+                <event-block sid="646309511704750">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="694539909694126" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="342578474567939" type="TxtTentativasVidas">
+                            <param id="0" name="Family name">&quot;gauntletregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;gauntlet.css&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="249260989056748" type="TxtTentativasVidas">
+                            <param id="0" name="Text">str(Tentativas) &amp; &quot; De &quot; &amp; str(Vidas)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="748593537029940" title="AnalisaPosicao">
+            <sub-events>
+                <event-block sid="181051341951019">
+                    <conditions>
+                        <condition id="-4" name="Is outside layout" sid="190872180267941" type="JogadorPlataforma" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="641134410764280" type="System">
+                            <param id="0" name="Layout">Base das Perguntas</param>
+                        </action>
+                        <action id="6" name="Stop" sid="746191975543115" type="Sons">
+                            <param id="0" name="Tag">&quot;Mar&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="201990596694713" title="IniciaSom">
+            <sub-events>
+                <event-block sid="168115837505865">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="673336735765857" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="942318970401130" type="Sons">
+                            <param id="0" name="Audio file">Mar</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;Mar&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

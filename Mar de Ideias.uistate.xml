@@ -11,11 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Menu</layout>
-        <layout order="2">Intro</layout>
-        <event-sheet order="1">Eventos Menu</event-sheet>
-        <event-sheet order="3">Eventos Intro</event-sheet>
-        <event-sheet active="1" order="4">Eventos Base-Perguntas</event-sheet>
-        <event-sheet order="5">Eventos de sons e musicas</event-sheet>
+        <layout order="2">TransicaoFase</layout>
+        <layout order="4">Intro</layout>
+        <event-sheet order="1">Eventos Base-Perguntas</event-sheet>
+        <event-sheet active="1" order="3">Eventos TransicaoFase</event-sheet>
+        <event-sheet order="5">Eventos Menu</event-sheet>
+        <event-sheet order="6">Eventos Intro</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -54,10 +55,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos do HUD/Objetos de Exibição/" />
         <folder expanded="0" path="object-folder/Construções/" />
         <folder expanded="1" path="object-folder/Objetos Programação/" />
+        <folder expanded="1" path="object-folder/ObjetosTransição/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="layout-folder/ARG/" />
+        <folder expanded="0" path="layout-folder/ARG/" />
         <folder expanded="1" path="layout-folder/Plataforma/" />
-        <folder expanded="1" path="layout-folder/Quizz/" />
+        <folder expanded="0" path="layout-folder/Quizz/" />
+        <folder expanded="1" path="layout-folder/TelasDeTransicao/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="event-folder/ARG/" />
         <folder expanded="1" path="file-folder/" />

@@ -3,9 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Intro</name>
     <events>
+        <variable constant="0" name="Tentativas" sid="641726443767089" static="0" type="number">1</variable>
+        <variable constant="0" name="Vidas" sid="308036095018504" static="0" type="number">3</variable>
         <variable constant="0" name="InicioFase" sid="654605471900305" static="0" type="number">0</variable>
         <variable constant="0" name="NoMenu" sid="629624041018231" static="0" type="number">1</variable>
-        <include>Eventos de sons e musicas</include>
         <include>Eventos de Inserção das Perguntas</include>
         <event-block sid="866972848990317">
             <conditions>
@@ -28,7 +29,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="211963416672389">
+        <event-block disabled="1" sid="211963416672389">
             <conditions>
                 <condition id="2" name="Is in touch" sid="609503156298423" type="Touch" />
                 <condition id="-14" name="Compare variable" sid="393260599407432" type="System">
