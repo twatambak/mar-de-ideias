@@ -2,7 +2,7 @@
 <c2project>
     <name>Mar de Ideias</name>
     <description>Jogo de perguntas</description>
-    <version>0.01.5</version>
+    <version>0.01.6</version>
     <author>HitKill Studios</author>
     <author-email>hitkillstudios@gmail.com</author-email>
     <author-website>http://www.hitkillstudios.com.br</author-website>
@@ -45,7 +45,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Menu</first-layout>
+    <first-layout>Intro</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>

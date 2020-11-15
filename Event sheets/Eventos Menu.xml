@@ -57,6 +57,10 @@
                             <param id="0" name="Group name">&quot;PararTodas&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
+                        <action id="-12" name="Set group active" sid="315490452265610" type="System">
+                            <param id="0" name="Group name">&quot;IniciaAnimação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="562522628501553">

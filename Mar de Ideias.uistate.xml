@@ -10,13 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Menu</layout>
-        <layout order="2">TransicaoFase</layout>
-        <layout order="4">Intro</layout>
-        <event-sheet order="1">Eventos Base-Perguntas</event-sheet>
-        <event-sheet active="1" order="3">Eventos TransicaoFase</event-sheet>
-        <event-sheet order="5">Eventos Menu</event-sheet>
-        <event-sheet order="6">Eventos Intro</event-sheet>
+        <layout order="1">Menu</layout>
+        <layout order="3">TransicaoFase</layout>
+        <layout order="5">Intro</layout>
+        <event-sheet order="2">Eventos Base-Perguntas</event-sheet>
+        <event-sheet order="4">Eventos TransicaoFase</event-sheet>
+        <event-sheet active="1" order="6">Eventos Menu</event-sheet>
+        <event-sheet order="7">Eventos Intro</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -66,7 +66,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
-        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="0" path="file-folder/Fontes/" />
         <folder expanded="1" path="animation-folder/Peixes/" />
         <folder expanded="1" path="animation-folder/SpawnerPeixe/" />
