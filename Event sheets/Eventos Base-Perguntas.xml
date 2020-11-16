@@ -41,28 +41,7 @@
                                     <actions>
                                         <action id="0" name="Play" sid="420106687173969" type="Sons">
                                             <param id="0" name="Audio file">FaseStage1</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-group>
-                        <event-group description="" inactive="1" sid="767078261004586" title="AtivaSegundaMusica">
-                            <sub-events>
-                                <event-block sid="210277867648467">
-                                    <conditions>
-                                        <condition id="-14" name="Compare variable" sid="431089806327911" type="System">
-                                            <param id="0" name="Variable">Profundidade</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">700</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Play" sid="331721392198314" type="Sons">
-                                            <param id="0" name="Audio file">FaseStage2</param>
-                                            <param id="2" name="Loop">0</param>
+                                            <param id="2" name="Loop">1</param>
                                             <param id="3" name="Volume">0</param>
                                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>

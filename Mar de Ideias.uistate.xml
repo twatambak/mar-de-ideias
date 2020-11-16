@@ -12,8 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Menu</layout>
         <layout order="2">Intro</layout>
-        <event-sheet active="1" order="1">Eventos Base-Perguntas</event-sheet>
-        <event-sheet order="3">Eventos Menu</event-sheet>
+        <event-sheet order="1">Eventos Base-Perguntas</event-sheet>
+        <event-sheet active="1" order="3">Eventos Menu</event-sheet>
         <event-sheet order="4">Eventos Intro</event-sheet>
         <event-sheet order="5">Eventos de Inserção das Perguntas</event-sheet>
         <event-sheet order="6">Variaveis</event-sheet>
