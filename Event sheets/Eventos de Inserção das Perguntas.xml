@@ -62,7 +62,7 @@
             <sub-events>
                 <event-group description="Grupo responsável por inserir em um array as perguntas e respostas usadas no jogo." sid="960394396194523" title="Criação das Perguntas">
                     <sub-events>
-                        <event-group description="Definição da pergunta. (Resposta da pergunta: Manaus)" sid="833821214137313" title="Pergunta 1: Qual a capital do Amazonas?">
+                        <event-group description="" sid="833821214137313" title="Pergunta 0: Pergunta Fantasma">
                             <sub-events>
                                 <event-block sid="140254028662606">
                                     <conditions>
@@ -70,26 +70,26 @@
                                     </conditions>
                                     <actions>
                                         <action id="2" name="Set at X" sid="442270852904775" type="ArrayPerguntas">
-                                            <param id="0" name="X">1</param>
-                                            <param id="1" name="Value">&quot;Qual a capital do Amazonas?&quot;</param>
+                                            <param id="0" name="X">0</param>
+                                            <param id="1" name="Value">&quot;Não tem nada aqui&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="748829840961868" type="ArrayPerguntas">
-                                            <param id="0" name="X">1</param>
+                                            <param id="0" name="X">0</param>
                                             <param id="1" name="Y">1</param>
                                             <param id="2" name="Value">&quot;Fácil&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="963272727693093" type="ArrayPerguntas">
-                                            <param id="0" name="X">1</param>
+                                            <param id="0" name="X">0</param>
                                             <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="723814602611884" type="ArrayPerguntas">
-                                            <param id="0" name="X">1</param>
+                                            <param id="0" name="X">0</param>
                                             <param id="1" name="Y">3</param>
-                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                            <param id="2" name="Value">&quot;Respondida&quot;</param>
                                         </action>
                                         <action id="3" name="Set at XY" sid="699552300910946" type="ArrayPerguntas">
-                                            <param id="0" name="X">1</param>
+                                            <param id="0" name="X">0</param>
                                             <param id="1" name="Y">4</param>
                                             <param id="2" name="Value">&quot;Capitais brasileiras&quot;</param>
                                         </action>
@@ -101,16 +101,73 @@
                                     </conditions>
                                     <actions>
                                         <action id="10" name="Insert" sid="366894905596009" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Não&quot;</param>
+                                            <param id="1" name="Index">0</param>
+                                            <param id="2" name="Axis">0</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="646661805201314" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Tem&quot;</param>
+                                            <param id="1" name="Index">0</param>
+                                            <param id="2" name="Axis">1</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="934132738058923" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Nada&quot;</param>
+                                            <param id="1" name="Index">0</param>
+                                            <param id="2" name="Axis">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="Definição da pergunta. (Resposta da pergunta: Manaus)" sid="184298266660012" title="Pergunta 1: Qual a capital do Amazonas?">
+                            <sub-events>
+                                <event-block sid="130462258407098">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="410036138062703" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set at X" sid="236983905265751" type="ArrayPerguntas">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Value">&quot;Qual a capital do Amazonas?&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="538811518455246" type="ArrayPerguntas">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">&quot;Fácil&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="805181569700016" type="ArrayPerguntas">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Y">2</param>
+                                            <param id="2" name="Value">1</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="908882584087269" type="ArrayPerguntas">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="989417887240952" type="ArrayPerguntas">
+                                            <param id="0" name="X">1</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Capitais brasileiras&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="843555848301036">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="235822795657822" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="10" name="Insert" sid="837590141861485" type="ArrayRespostas">
                                             <param id="0" name="Value">&quot;Manaus&quot;</param>
                                             <param id="1" name="Index">1</param>
                                             <param id="2" name="Axis">0</param>
                                         </action>
-                                        <action id="10" name="Insert" sid="646661805201314" type="ArrayRespostas">
+                                        <action id="10" name="Insert" sid="623991386773202" type="ArrayRespostas">
                                             <param id="0" name="Value">&quot;Coari&quot;</param>
                                             <param id="1" name="Index">1</param>
                                             <param id="2" name="Axis">1</param>
                                         </action>
-                                        <action id="10" name="Insert" sid="934132738058923" type="ArrayRespostas">
+                                        <action id="10" name="Insert" sid="839223204522167" type="ArrayRespostas">
                                             <param id="0" name="Value">&quot;Porto Velho&quot;</param>
                                             <param id="1" name="Index">1</param>
                                             <param id="2" name="Axis">2</param>
