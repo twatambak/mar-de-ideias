@@ -62,9 +62,9 @@
             <sub-events>
                 <event-group description="Grupo responsável por inserir em um array as perguntas e respostas usadas no jogo." sid="960394396194523" title="Criação das Perguntas">
                     <sub-events>
-                        <event-group description="" sid="833821214137313" title="Pergunta 0: Pergunta Fantasma">
+                        <event-group description="" disabled="1" sid="833821214137313" title="Pergunta 0: Pergunta Fantasma">
                             <sub-events>
-                                <event-block sid="140254028662606">
+                                <event-block disabled="1" sid="140254028662606">
                                     <conditions>
                                         <condition id="-2" name="On start of layout" sid="598451746350549" type="System" />
                                     </conditions>
@@ -95,7 +95,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="916798940202058">
+                                <event-block disabled="1" sid="916798940202058">
                                     <conditions>
                                         <condition id="-2" name="On start of layout" sid="337206231449403" type="System" />
                                     </conditions>

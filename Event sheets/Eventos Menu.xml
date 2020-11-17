@@ -1057,5 +1057,16 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="259158074996006">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="572085906152526" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="762553127924854" type="System">
+                    <param id="0" name="Variable">PerguntasCarregadas</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

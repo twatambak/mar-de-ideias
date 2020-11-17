@@ -53,6 +53,25 @@
                 </event-group>
                 <event-group description="" sid="480743114363865" title="Definição dos textos das perguntas e respostas">
                     <sub-events>
+                        <comment>No início do layout acessa os campos das possíveis respostas para a pergunta gerada aleatoriamente e retorna as respostas para as áreas correspondentes.</comment>
+                        <event-block sid="956003952909097">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="923538905994345" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="410304934107805" type="System">
+                                    <param id="0" name="Variable">PerguntaAtual</param>
+                                    <param id="1" name="Value">int(random(1, TotalPerguntas + 1))</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="917975150277177" type="System">
+                                    <param id="0" name="Group name">&quot;Sorteia&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="100318441135926" type="TextoPerguntas">
+                                    <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-group description="" inactive="1" sid="565938249633108" title="Sorteia">
                             <sub-events>
                                 <event-block sid="810272120140568">
@@ -92,81 +111,58 @@
                                                     <param id="1" name="State">0</param>
                                                 </action>
                                             </actions>
+                                            <sub-events>
+                                                <comment>Define o texto da primeira alternativa.</comment>
+                                                <event-block sid="153559206545251">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="994779679388458" type="TextoRespostas">
+                                                            <param id="0" name="Instance variable">ID</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Set text" sid="131448811629410" type="TextoRespostas">
+                                                            <param id="0" name="Text">ArrayRespostas.At(PerguntaAtual, 0, 0)</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <comment>Define o texto da segunda alternativa.</comment>
+                                                <event-block sid="220272640705042">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="106788136639468" type="TextoRespostas">
+                                                            <param id="0" name="Instance variable">ID</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Set text" sid="277483525627156" type="TextoRespostas">
+                                                            <param id="0" name="Text">ArrayRespostas.At(0, PerguntaAtual, 0)</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <comment>Define o texto da terceira alternativa.</comment>
+                                                <event-block sid="902559706302587">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="478399239156274" type="TextoRespostas">
+                                                            <param id="0" name="Instance variable">ID</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">3</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Set text" sid="600647971708300" type="TextoRespostas">
+                                                            <param id="0" name="Text">ArrayRespostas.At(0, 0, PerguntaAtual)</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-group>
-                        <comment>No início do layout define uma pergunta aleatória, acessa a posição do array que contém o enunciado da pergunta e define este no campo da pergunta.</comment>
-                        <event-block sid="956003952909097">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="923538905994345" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="410304934107805" type="System">
-                                    <param id="0" name="Variable">PerguntaAtual</param>
-                                    <param id="1" name="Value">int(random(1, TotalPerguntas + 1))</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="917975150277177" type="System">
-                                    <param id="0" name="Group name">&quot;Sorteia&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>No início do layout acessa os campos das possíveis respostas para a pergunta gerada aleatoriamente e retorna as respostas para as áreas correspondentes.</comment>
-                        <event-block sid="897100739525719">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="745734527294351" type="System" />
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <comment>Define o texto da primeira alternativa.</comment>
-                                <event-block sid="153559206545251">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="994779679388458" type="TextoRespostas">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">1</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="131448811629410" type="TextoRespostas">
-                                            <param id="0" name="Text">ArrayRespostas.At(PerguntaAtual, 0, 0)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Define o texto da segunda alternativa.</comment>
-                                <event-block sid="220272640705042">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="106788136639468" type="TextoRespostas">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">2</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="277483525627156" type="TextoRespostas">
-                                            <param id="0" name="Text">ArrayRespostas.At(0, PerguntaAtual, 0)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <comment>Define o texto da terceira alternativa.</comment>
-                                <event-block sid="902559706302587">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="478399239156274" type="TextoRespostas">
-                                            <param id="0" name="Instance variable">ID</param>
-                                            <param id="1" name="Comparison">0</param>
-                                            <param id="2" name="Value">3</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Set text" sid="600647971708300" type="TextoRespostas">
-                                            <param id="0" name="Text">ArrayRespostas.At(0, 0, PerguntaAtual)</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="832667481758741" title="Definição das Webfonts (Base)">
@@ -934,6 +930,10 @@
                                             <param id="0" name="Variable">Profundidade</param>
                                             <param id="1" name="Value">100</param>
                                         </action>
+                                        <action id="-12" name="Set group active" sid="391524305688095" type="System">
+                                            <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="120349474728300" type="System">
                                             <param id="0" name="Seconds">0.4</param>
                                         </action>
@@ -950,7 +950,7 @@
                                             <param id="0" name="Variable">Game</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
-                                        <action id="-12" name="Set group active" sid="391524305688095" type="System">
+                                        <action id="-12" name="Set group active" sid="172748530528861" type="System">
                                             <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
                                             <param id="1" name="State">0</param>
                                         </action>
