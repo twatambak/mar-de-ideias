@@ -1197,6 +1197,11 @@
                                             <param id="0" name="Variable">Vidas</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="0" name="Clear" sid="900711174474669" type="ArrayPerguntas" />
+                                        <action id="-9" name="Set value" sid="170451277451090" type="System">
+                                            <param id="0" name="Variable">PerguntasCarregadas</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>

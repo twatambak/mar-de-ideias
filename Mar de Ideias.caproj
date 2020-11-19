@@ -8,7 +8,7 @@
     <author-website>http://www.hitkillstudios.com.br</author-website>
     <app-id>com.hitkillstudios.mardeideias</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
-    <saved-with-version>26500</saved-with-version>
+    <saved-with-version>27900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
@@ -1779,6 +1779,7 @@
         </layout-folder>
         <layout-folder name="TelasDeTransicao">
             <layout>TransicaoFase.xml</layout>
+            <layout>CutsceneInicial.xml</layout>
         </layout-folder>
         <layout>Menu.xml</layout>
         <layout>Créditos.xml</layout>
@@ -1800,6 +1801,7 @@
         <event-sheet>Eventos Créditos.xml</event-sheet>
         <event-sheet>Eventos de sons e musicas.xml</event-sheet>
         <event-sheet>Eventos TransicaoFase.xml</event-sheet>
+        <event-sheet>Eventos CutsceneInicial.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">

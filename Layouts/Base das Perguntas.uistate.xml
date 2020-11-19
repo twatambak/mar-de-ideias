@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>320</position-x>
-        <position-y>740.552</position-y>
+        <position-y>399.526</position-y>
         <position-z>194.872</position-z>
         <lookat-x>320</lookat-x>
-        <lookat-y>740.552</lookat-y>
+        <lookat-y>399.526</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,21 +23,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="BackgroundResposta" />
+    <active-layer name="TextoOpcaoGameOver" />
     <layers>
         <layer locked="1" name="Mar" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Detalhes" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="BackgroundPergunta" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="TextoPergunta" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="BackgroundResposta" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="TextoResposta" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Painel" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="HUD" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Detalhes" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="BackgroundPergunta" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="TextoPergunta" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="BackgroundResposta" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="TextoResposta" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="Painel" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="HUD" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="Transicao" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="BackgroundGameOver" parallax-in-editor="0" visible="0" />
-        <layer locked="1" name="TextoGameOver" parallax-in-editor="0" visible="0" />
-        <layer locked="1" name="BordasOpcaoGameOver" parallax-in-editor="0" visible="0" />
-        <layer locked="1" name="TextoOpcaoGameOver" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="TextoGameOver" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="BordasOpcaoGameOver" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TextoOpcaoGameOver" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="BackgroundMenuPausa" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="TextoMenuPausa" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="BordasOpcoesMenuPausa" parallax-in-editor="0" visible="0" />
