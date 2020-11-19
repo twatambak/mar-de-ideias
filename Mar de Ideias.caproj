@@ -23,6 +23,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -71,6 +72,9 @@
                     <behavior-type name="Sine2" sid="591708709350852">
                         <behavior id="Sin" />
                     </behavior-type>
+                    <behavior-type name="8Direction" sid="233059048686544">
+                        <behavior id="EightDir" />
+                    </behavior-type>
                 </behaviors>
                 <texture original-source="C:\Users\twata\Downloads\New Piskel(11).png" />
             </object-type>
@@ -83,6 +87,9 @@
                     <behavior-type name="Sine2" sid="496158646380579">
                         <behavior id="Sin" />
                     </behavior-type>
+                    <behavior-type name="8Direction" sid="636236078624217">
+                        <behavior id="EightDir" />
+                    </behavior-type>
                 </behaviors>
                 <texture original-source="C:\Users\twata\Downloads\New Piskel(12).png" />
             </object-type>
@@ -94,6 +101,9 @@
                     </behavior-type>
                     <behavior-type name="Sine2" sid="563153947612030">
                         <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="8Direction" sid="155032713481583">
+                        <behavior id="EightDir" />
                     </behavior-type>
                 </behaviors>
                 <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Mar - Bolha 1 clone.png" />
@@ -118,6 +128,9 @@
                     </behavior-type>
                     <behavior-type name="Solid" sid="193018093368214">
                         <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="8Direction" sid="172300038594219">
+                        <behavior id="EightDir" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>

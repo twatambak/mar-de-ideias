@@ -115,6 +115,17 @@
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>600</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -161,6 +172,17 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>10</magnitude>
                                 <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>800</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -211,6 +233,17 @@
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>800</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -257,6 +290,17 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>10</magnitude>
                                 <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>700</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -307,6 +351,17 @@
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>700</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -353,6 +408,17 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>10</magnitude>
                                 <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>800</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -403,6 +469,17 @@
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>700</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -451,6 +528,17 @@
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>700</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -497,6 +585,17 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>10</magnitude>
                                 <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>700</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -548,6 +647,17 @@
                         </behavior-instance>
                         <behavior-instance type="Solid">
                             <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>736</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -621,6 +731,17 @@
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>600</max-speed>
+                                <acceleration>80000</acceleration>
+                                <deceleration>0</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -648,10 +769,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>832</x>
-                        <y>576</y>
+                        <y>320</y>
                         <z>0</z>
                         <width>32</width>
-                        <height>1216</height>
+                        <height>8576</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

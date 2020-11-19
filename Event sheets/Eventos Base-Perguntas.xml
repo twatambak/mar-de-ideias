@@ -1218,6 +1218,66 @@
             <sub-events>
                 <event-group description="" inactive="1" sid="240293749142907" title="Eventos de fim de fase">
                     <sub-events>
+                        <event-block sid="498918227927451">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="591574049374257" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="760416080726132">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="991041248519416" type="DetalhesMar1">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Y co-ordinate">-928</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="828736577628827" type="DetalhesMar1">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="901495083621069">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="396765324902309" type="DetalhesMar2">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Y co-ordinate">-928</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="551634008887508" type="DetalhesMar2">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="669977572768587">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="235185135681721" type="DetalhesMar3">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Y co-ordinate">-928</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="868865648144967" type="DetalhesMar3">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="648222979701968">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="907861720249130" type="Peixes">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Y co-ordinate">-928</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="382549071635934" type="Peixes">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                         <comment>Quando o grupo é ativado inicia o fade de todos os elementos relacionados.</comment>
                         <event-block sid="392404140038507">
                             <conditions>
@@ -1231,12 +1291,15 @@
                                 <action behavior="FadeOut" id="1" name="Start fade" sid="379244807345995" type="BordaRespostas" />
                                 <action behavior="FadeOut" id="1" name="Start fade" sid="405587852889827" type="BordaPergunta" />
                                 <action id="-16" name="Wait" sid="350326173220076" type="System">
-                                    <param id="0" name="Seconds">1.5</param>
+                                    <param id="0" name="Seconds">2.5</param>
                                 </action>
                                 <action id="-26" name="Restart layout" sid="474456974422812" type="System" />
                                 <action id="-10" name="Add to" sid="439363122218060" type="System">
                                     <param id="0" name="Variable">Cognicao</param>
                                     <param id="1" name="Value">0.5</param>
+                                </action>
+                                <action behavior="Solid" id="0" name="Set enabled" sid="644430716299117" type="Peixes">
+                                    <param id="0" name="State">0</param>
                                 </action>
                             </actions>
                             <sub-events>
