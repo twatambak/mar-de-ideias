@@ -70,6 +70,10 @@
                                 <action id="0" name="Set text" sid="100318441135926" type="TextoPerguntas">
                                     <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
                                 </action>
+                                <action behavior="FadeIn" id="1" name="Start fade" sid="473571797493246" type="BordaPergunta" />
+                                <action behavior="FadeIn" id="1" name="Start fade" sid="337481160114118" type="BordaRespostas" />
+                                <action behavior="FadeIn" id="1" name="Start fade" sid="973167529372366" type="TextoRespostas" />
+                                <action behavior="FadeIn" id="1" name="Start fade" sid="841638739044740" type="TextoPerguntas" />
                             </actions>
                         </event-block>
                         <event-group description="" inactive="1" sid="565938249633108" title="Sorteia">
@@ -1222,10 +1226,10 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="Fade" id="1" name="Start fade" sid="753735507713333" type="TextoPerguntas" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="605822489964479" type="TextoRespostas" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="379244807345995" type="BordaRespostas" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="405587852889827" type="BordaPergunta" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="753735507713333" type="TextoPerguntas" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="605822489964479" type="TextoRespostas" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="379244807345995" type="BordaRespostas" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="405587852889827" type="BordaPergunta" />
                                 <action id="-16" name="Wait" sid="350326173220076" type="System">
                                     <param id="0" name="Seconds">1.5</param>
                                 </action>
@@ -1285,16 +1289,16 @@
                             </conditions>
                             <actions>
                                 <action behavior="Fade" id="1" name="Start fade" sid="232440909396225" type="TextoProfundidade" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="319981137878480" type="TextoPerguntas" />
-                                <action behavior="Fade" id="1" name="Start fade" sid="283164381484670" type="TextoRespostas" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="319981137878480" type="TextoPerguntas" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="283164381484670" type="TextoRespostas" />
                                 <action id="-16" name="Wait" sid="319804745837792" type="System">
                                     <param id="0" name="Seconds">1</param>
                                 </action>
-                                <action behavior="Fade" id="1" name="Start fade" sid="180542761397856" type="BordaRespostas" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="180542761397856" type="BordaRespostas" />
                                 <action id="-16" name="Wait" sid="620122647871003" type="System">
                                     <param id="0" name="Seconds">1</param>
                                 </action>
-                                <action behavior="Fade" id="1" name="Start fade" sid="992422512102431" type="BordaPergunta" />
+                                <action behavior="FadeOut" id="1" name="Start fade" sid="992422512102431" type="BordaPergunta" />
                                 <action id="-16" name="Wait" sid="894497079299976" type="System">
                                     <param id="0" name="Seconds">1</param>
                                 </action>

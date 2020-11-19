@@ -686,12 +686,21 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="Fade">
+                        <behavior-instance type="FadeOut">
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
                                 <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
@@ -743,12 +752,21 @@
                         <line-height>0</line-height>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="Fade">
+                        <behavior-instance type="FadeOut">
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
                                 <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
@@ -798,12 +816,21 @@
                         <ID>1</ID>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Fade">
+                        <behavior-instance type="FadeOut">
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
                                 <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
@@ -834,12 +861,21 @@
                         <ID>2</ID>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Fade">
+                        <behavior-instance type="FadeOut">
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
                                 <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
@@ -870,12 +906,21 @@
                         <ID>3</ID>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Fade">
+                        <behavior-instance type="FadeOut">
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
                                 <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
@@ -947,12 +992,21 @@
                         <ID>2</ID>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Fade">
+                        <behavior-instance type="FadeOut">
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
                                 <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
@@ -988,12 +1042,21 @@
                         <ID>3</ID>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Fade">
+                        <behavior-instance type="FadeOut">
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
                                 <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
@@ -1029,12 +1092,21 @@
                         <ID>1</ID>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Fade">
+                        <behavior-instance type="FadeOut">
                             <properties>
                                 <active-at-start>No</active-at-start>
                                 <fade-in-time>0</fade-in-time>
                                 <wait-time>0</wait-time>
                                 <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="FadeIn">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>1</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>

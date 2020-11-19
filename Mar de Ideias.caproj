@@ -1335,7 +1335,10 @@
                 <object-type name="TextoPerguntas" sid="504076723751843">
                     <plugin id="Text" />
                     <behaviors>
-                        <behavior-type name="Fade" sid="488255398959404">
+                        <behavior-type name="FadeOut" sid="488255398959404">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                        <behavior-type name="FadeIn" sid="367940600619297">
                             <behavior id="Fade" />
                         </behavior-type>
                     </behaviors>
@@ -1346,7 +1349,10 @@
                 <object-type name="BordaPergunta" sid="455050727786741">
                     <plugin id="Sprite" />
                     <behaviors>
-                        <behavior-type name="Fade" sid="319252315141076">
+                        <behavior-type name="FadeOut" sid="319252315141076">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                        <behavior-type name="FadeIn" sid="435110993649030">
                             <behavior id="Fade" />
                         </behavior-type>
                     </behaviors>
@@ -1375,7 +1381,10 @@
                         <instance-variable name="ID" sid="159773418320896" type="number" />
                     </instance-variables>
                     <behaviors>
-                        <behavior-type name="Fade" sid="434146003005328">
+                        <behavior-type name="FadeOut" sid="434146003005328">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                        <behavior-type name="FadeIn" sid="843130294265948">
                             <behavior id="Fade" />
                         </behavior-type>
                     </behaviors>
@@ -1389,7 +1398,10 @@
                         <instance-variable name="ID" sid="431085015440520" type="number" />
                     </instance-variables>
                     <behaviors>
-                        <behavior-type name="Fade" sid="585809240936406">
+                        <behavior-type name="FadeOut" sid="585809240936406">
+                            <behavior id="Fade" />
+                        </behavior-type>
+                        <behavior-type name="FadeIn" sid="738293182602739">
                             <behavior id="Fade" />
                         </behavior-type>
                     </behaviors>
