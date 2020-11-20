@@ -3653,6 +3653,177 @@
                                 </event-block>
                             </sub-events>
                         </event-group>
+                        <event-group description="Definição da pergunta. (Resposta da pergunta: Dom Quixote)" sid="573778124836767" title="Pergunta 63: Qual o livro mais vendido no mundo a seguir à Bíblia??">
+                            <sub-events>
+                                <event-block sid="755675182447943">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="870261619056726" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set at X" sid="623404008845930" type="ArrayPerguntas">
+                                            <param id="0" name="X">63</param>
+                                            <param id="1" name="Value">&quot;Qual o livro mais vendido no mundo a seguir à Bíblia?&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="861323304657139" type="ArrayPerguntas">
+                                            <param id="0" name="X">63</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">&quot;Médio&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="326355894188787" type="ArrayPerguntas">
+                                            <param id="0" name="X">63</param>
+                                            <param id="1" name="Y">2</param>
+                                            <param id="2" name="Value">3</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="613077059328555" type="ArrayPerguntas">
+                                            <param id="0" name="X">63</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="112758104902474" type="ArrayPerguntas">
+                                            <param id="0" name="X">63</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Literatura&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="147760701310783">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="301873805352390" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="10" name="Insert" sid="211412748824295" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;O Senhor dos Anéis&quot;</param>
+                                            <param id="1" name="Index">63</param>
+                                            <param id="2" name="Axis">0</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="568950152970348" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;O Pequeno Príncipe&quot;</param>
+                                            <param id="1" name="Index">63</param>
+                                            <param id="2" name="Axis">1</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="369877153877188" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Dom Quixote&quot;</param>
+                                            <param id="1" name="Index">63</param>
+                                            <param id="2" name="Axis">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="Definição da pergunta. (Resposta da pergunta:  Japão e serra leoa)" sid="923002001087661" title="Pergunta 64: Quais os países que têm a maior e a menor expectativa de vida do mundo?">
+                            <sub-events>
+                                <event-block sid="700100582747501">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="532975445418960" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set at X" sid="626849025717070" type="ArrayPerguntas">
+                                            <param id="0" name="X">64</param>
+                                            <param id="1" name="Value">&quot;Quais os países que têm a maior e a menor expectativa de vida do mundo?&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="897043852094840" type="ArrayPerguntas">
+                                            <param id="0" name="X">64</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">&quot;Médio&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="921941554165776" type="ArrayPerguntas">
+                                            <param id="0" name="X">64</param>
+                                            <param id="1" name="Y">2</param>
+                                            <param id="2" name="Value">1</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="986098740626711" type="ArrayPerguntas">
+                                            <param id="0" name="X">64</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="722792700272248" type="ArrayPerguntas">
+                                            <param id="0" name="X">64</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Conhecimentos Gerais&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="973568722957763">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="869393840707695" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="10" name="Insert" sid="913561464332676" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Japão e Serra Leoa&quot;</param>
+                                            <param id="1" name="Index">64</param>
+                                            <param id="2" name="Axis">0</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="896390005698688" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Itália e Chade&quot;</param>
+                                            <param id="1" name="Index">64</param>
+                                            <param id="2" name="Axis">1</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="902774707966469" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Brasil e Congo&quot;</param>
+                                            <param id="1" name="Index">64</param>
+                                            <param id="2" name="Axis">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="Definição da pergunta. (Resposta da pergunta: Pablo Picasso)" sid="205296641988076" title="Pergunta 65 : Quem pintou &apos;Guernica&apos;?">
+                            <sub-events>
+                                <event-block sid="277340092004530">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="202697452167436" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set at X" sid="983508282350939" type="ArrayPerguntas">
+                                            <param id="0" name="X">65</param>
+                                            <param id="1" name="Value">&quot;Quem pintou &apos;Guernica&apos;?&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="305252444105302" type="ArrayPerguntas">
+                                            <param id="0" name="X">65</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">&quot;Médio&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="163729775848580" type="ArrayPerguntas">
+                                            <param id="0" name="X">65</param>
+                                            <param id="1" name="Y">2</param>
+                                            <param id="2" name="Value">3</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="785807126675803" type="ArrayPerguntas">
+                                            <param id="0" name="X">65</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="924157829696603" type="ArrayPerguntas">
+                                            <param id="0" name="X">65</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Artes&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="194333044257383">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="659473864074718" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="10" name="Insert" sid="238737837274071" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Tarsila do Amaral&quot;</param>
+                                            <param id="1" name="Index">65</param>
+                                            <param id="2" name="Axis">0</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="468879296807517" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Salvador Dalí&quot;</param>
+                                            <param id="1" name="Index">65</param>
+                                            <param id="2" name="Axis">1</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="769349375640758" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Pablo Picasso&quot;</param>
+                                            <param id="1" name="Index">65</param>
+                                            <param id="2" name="Axis">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                     </sub-events>
                 </event-group>
             </sub-events>
