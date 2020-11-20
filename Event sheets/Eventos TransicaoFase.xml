@@ -67,7 +67,7 @@
                             <param id="1" name="CSS URL">&quot;gauntlet.css&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="249260989056748" type="TxtTentativasVidas">
-                            <param id="0" name="Text">str(Tentativas) &amp; &quot; De &quot; &amp; str(Vidas)</param>
+                            <param id="0" name="Text">&quot;Voce tem  &quot; &amp; str(Vidas) &amp; &quot; tripulantes&quot;</param>
                         </action>
                     </actions>
                 </event-block>

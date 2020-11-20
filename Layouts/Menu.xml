@@ -819,7 +819,7 @@
             <instances>
                 <instance type="TextoExtra" uid="125">
                     <properties>
-                        <text>Versão Alfa</text>
+                        <text>Versão 0.01.7</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-32,400,0</font>
                         <color>255,255,255</color>

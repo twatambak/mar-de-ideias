@@ -497,7 +497,7 @@
                     <properties>
                         <text>9-9</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-27,400,0</font>
+                        <font>Arial,-24,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -523,10 +523,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>184</x>
-                        <y>231</y>
+                        <x>144</x>
+                        <y>227</y>
                         <z>0</z>
-                        <width>284</width>
+                        <width>379</width>
                         <height>79</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
