@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos SalaJoseph</name>
+    <events>
+        <event-group description="" sid="599343037515322" title="RetornaVidas">
+            <sub-events>
+                <event-block sid="609111288737547">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="719625250578916" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="306172870403628" type="System">
+                            <param id="0" name="Variable">Vidas</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

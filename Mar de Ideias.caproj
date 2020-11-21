@@ -1861,7 +1861,7 @@
         <event-sheet>Eventos de sons e musicas.xml</event-sheet>
         <event-sheet>Eventos TransicaoFase.xml</event-sheet>
         <event-sheet>Eventos CutsceneInicial.xml</event-sheet>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Eventos SalaJoseph.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">

@@ -1716,7 +1716,7 @@
                 </instance>
                 <instance type="GameOver_Texto" uid="136">
                     <properties>
-                        <text>Não se preocupe, na próxima tenho certeza que você irá melhor.</text>
+                        <text>Você fracassou em obter as respostas. Chame um novo mergulhador</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-29,400,0</font>
                         <color>204,255,255</color>
@@ -1866,7 +1866,7 @@
             <instances>
                 <instance type="GameOver_Texto" uid="152">
                     <properties>
-                        <text>Voltar ao menu</text>
+                        <text>Voltar a superfície</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-35,400,0</font>
                         <color>255,255,255</color>
@@ -2242,7 +2242,7 @@
                 </instance>
                 <instance type="Pausa_Texto2" uid="189">
                     <properties>
-                        <text>Voltar ao menu</text>
+                        <text>Voltar a superfície</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-32,400,0</font>
                         <color>255,255,255</color>
@@ -2270,10 +2270,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>160</x>
+                        <x>128</x>
                         <y>800</y>
                         <z>0</z>
-                        <width>320</width>
+                        <width>384</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

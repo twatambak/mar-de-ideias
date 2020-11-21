@@ -60,6 +60,11 @@
                 <event-block sid="646309511704750">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="694539909694126" type="System" />
+                        <condition id="-14" name="Compare variable" sid="929026255080175" type="System">
+                            <param id="0" name="Variable">Vidas</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="5" name="Set web font" sid="342578474567939" type="TxtTentativasVidas">
@@ -67,7 +72,26 @@
                             <param id="1" name="CSS URL">&quot;gauntlet.css&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="249260989056748" type="TxtTentativasVidas">
-                            <param id="0" name="Text">&quot;Voce tem  &quot; &amp; str(Vidas) &amp; &quot; tripulantes&quot;</param>
+                            <param id="0" name="Text">&quot;Voce tem  &quot; &amp; str(Vidas +1) &amp; &quot; mergulhadores&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="857242876298659">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="604813082734569" type="System" />
+                        <condition id="-14" name="Compare variable" sid="420428535344290" type="System">
+                            <param id="0" name="Variable">Vidas</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="214304684415105" type="TxtTentativasVidas">
+                            <param id="0" name="Family name">&quot;gauntletregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;gauntlet.css&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="483013212083691" type="TxtTentativasVidas">
+                            <param id="0" name="Text">&quot;Esse e seu ultimo mergulhador&quot;</param>
                         </action>
                     </actions>
                 </event-block>
