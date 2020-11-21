@@ -1068,5 +1068,16 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="499883011402557">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="266929200278552" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="729970564587148" type="System">
+                    <param id="0" name="Variable">MultiTempo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

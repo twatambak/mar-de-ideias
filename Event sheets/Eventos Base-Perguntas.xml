@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base-Perguntas</name>
     <events>
+        <variable constant="0" name="MultiTempo" sid="929873262272889" static="0" type="number">1</variable>
         <variable constant="0" name="NPCAtivo" sid="382322059137736" static="0" type="number">0</variable>
         <event-group description="" sid="153366938438702" title="Configurações Iniciais">
             <sub-events>
@@ -582,7 +583,7 @@
                                 <event-block sid="455235936938493">
                                     <conditions>
                                         <condition id="-6" name="Every X seconds" sid="980830192296932" type="System">
-                                            <param id="0" name="Interval (seconds)">0.5</param>
+                                            <param id="0" name="Interval (seconds)">0.5 / MultiTempo</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -927,6 +928,10 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-10" name="Add to" sid="483421093256941" type="System">
+                                            <param id="0" name="Variable">MultiTempo</param>
+                                            <param id="1" name="Value">0.1</param>
+                                        </action>
                                         <action id="5" name="Set frame" sid="944307027824288" type="BordaRespostas">
                                             <param id="0" name="Frame number">1</param>
                                         </action>
@@ -941,6 +946,10 @@
                                         <action id="-16" name="Wait" sid="120349474728300" type="System">
                                             <param id="0" name="Seconds">0.4</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="445441707738734" type="System">
+                                            <param id="0" name="Variable">Game</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                         <action id="-12" name="Set group active" sid="500233910492407" type="System">
                                             <param id="0" name="Group name">&quot;Eventos de fim de fase&quot;</param>
                                             <param id="1" name="State">1</param>
@@ -950,15 +959,71 @@
                                             <param id="1" name="Y">3</param>
                                             <param id="2" name="Value">&quot;Respondida&quot;</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="445441707738734" type="System">
-                                            <param id="0" name="Variable">Game</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
                                         <action id="-12" name="Set group active" sid="172748530528861" type="System">
                                             <param id="0" name="Group name">&quot;Eventos para respostas corretas&quot;</param>
                                             <param id="1" name="State">0</param>
                                         </action>
                                     </actions>
+                                </event-block>
+                                <event-block sid="688797202407391">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="525540369294585" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="378829684609035">
+                                            <conditions>
+                                                <condition id="-2" name="Compare Y" sid="740641984278794" type="DetalhesMar1">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="Y co-ordinate">-928</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="8Direction" id="7" name="Simulate control" sid="711541682359700" type="DetalhesMar1">
+                                                    <param id="0" name="Control">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="779801720816388">
+                                            <conditions>
+                                                <condition id="-2" name="Compare Y" sid="563718820219017" type="DetalhesMar2">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="Y co-ordinate">-928</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="8Direction" id="7" name="Simulate control" sid="986621833198684" type="DetalhesMar2">
+                                                    <param id="0" name="Control">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="417442688975433">
+                                            <conditions>
+                                                <condition id="-2" name="Compare Y" sid="315720741407201" type="DetalhesMar3">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="Y co-ordinate">-928</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="8Direction" id="7" name="Simulate control" sid="261375402328750" type="DetalhesMar3">
+                                                    <param id="0" name="Control">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="696211717110462">
+                                            <conditions>
+                                                <condition id="-2" name="Compare Y" sid="338377290493045" type="Peixes">
+                                                    <param id="0" name="Comparison">4</param>
+                                                    <param id="1" name="Y co-ordinate">-928</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="8Direction" id="7" name="Simulate control" sid="197962241359038" type="Peixes">
+                                                    <param id="0" name="Control">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -1218,66 +1283,6 @@
             <sub-events>
                 <event-group description="" inactive="1" sid="240293749142907" title="Eventos de fim de fase">
                     <sub-events>
-                        <event-block sid="498918227927451">
-                            <conditions>
-                                <condition id="-1" name="Every tick" sid="591574049374257" type="System" />
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="760416080726132">
-                                    <conditions>
-                                        <condition id="-2" name="Compare Y" sid="991041248519416" type="DetalhesMar1">
-                                            <param id="0" name="Comparison">4</param>
-                                            <param id="1" name="Y co-ordinate">-928</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="7" name="Simulate control" sid="828736577628827" type="DetalhesMar1">
-                                            <param id="0" name="Control">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="901495083621069">
-                                    <conditions>
-                                        <condition id="-2" name="Compare Y" sid="396765324902309" type="DetalhesMar2">
-                                            <param id="0" name="Comparison">4</param>
-                                            <param id="1" name="Y co-ordinate">-928</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="7" name="Simulate control" sid="551634008887508" type="DetalhesMar2">
-                                            <param id="0" name="Control">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="669977572768587">
-                                    <conditions>
-                                        <condition id="-2" name="Compare Y" sid="235185135681721" type="DetalhesMar3">
-                                            <param id="0" name="Comparison">4</param>
-                                            <param id="1" name="Y co-ordinate">-928</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="7" name="Simulate control" sid="868865648144967" type="DetalhesMar3">
-                                            <param id="0" name="Control">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="648222979701968">
-                                    <conditions>
-                                        <condition id="-2" name="Compare Y" sid="907861720249130" type="Peixes">
-                                            <param id="0" name="Comparison">4</param>
-                                            <param id="1" name="Y co-ordinate">-928</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action behavior="8Direction" id="7" name="Simulate control" sid="382549071635934" type="Peixes">
-                                            <param id="0" name="Control">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
                         <comment>Quando o grupo é ativado inicia o fade de todos os elementos relacionados.</comment>
                         <event-block sid="392404140038507">
                             <conditions>
@@ -1286,6 +1291,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-12" name="Set group active" sid="952812810690643" type="System">
+                                    <param id="0" name="Group name">&quot;Controle do Tempo&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                                 <action behavior="FadeOut" id="1" name="Start fade" sid="753735507713333" type="TextoPerguntas" />
                                 <action behavior="FadeOut" id="1" name="Start fade" sid="605822489964479" type="TextoRespostas" />
                                 <action behavior="FadeOut" id="1" name="Start fade" sid="379244807345995" type="BordaRespostas" />
