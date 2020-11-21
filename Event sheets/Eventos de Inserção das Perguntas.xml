@@ -3824,6 +3824,120 @@
                                 </event-block>
                             </sub-events>
                         </event-group>
+                        <event-group description="Definição da pergunta. (Resposta da pergunta: Paleolítico)" sid="397875925057888" title="Pergunta 66 : Em que período da pré-história o fogo foi descoberto?">
+                            <sub-events>
+                                <event-block sid="684850107770856">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="738245924198821" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set at X" sid="390537275546911" type="ArrayPerguntas">
+                                            <param id="0" name="X">66</param>
+                                            <param id="1" name="Value">&quot;Em que período da pré-história o fogo foi descoberto?&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="947190093907895" type="ArrayPerguntas">
+                                            <param id="0" name="X">66</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">&quot;Médio&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="605941566468534" type="ArrayPerguntas">
+                                            <param id="0" name="X">66</param>
+                                            <param id="1" name="Y">2</param>
+                                            <param id="2" name="Value">2</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="512005599193119" type="ArrayPerguntas">
+                                            <param id="0" name="X">66</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="262943432786073" type="ArrayPerguntas">
+                                            <param id="0" name="X">66</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="370426852309225">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="969578815934606" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="10" name="Insert" sid="617833900436984" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Idade dos Metais&quot;</param>
+                                            <param id="1" name="Index">66</param>
+                                            <param id="2" name="Axis">0</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="875854660516096" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Paleolítico&quot;</param>
+                                            <param id="1" name="Index">66</param>
+                                            <param id="2" name="Axis">1</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="922403327188138" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Neolítico&quot;</param>
+                                            <param id="1" name="Index">66</param>
+                                            <param id="2" name="Axis">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="Definição da pergunta. (Resposta da pergunta: )" sid="287033919814719" title="Pergunta 67 : ">
+                            <sub-events>
+                                <event-block sid="414670652034517">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="517295319117657" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set at X" sid="678785323333331" type="ArrayPerguntas">
+                                            <param id="0" name="X">67</param>
+                                            <param id="1" name="Value">&quot;Quem é o autor de “O Príncipe”?&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="653021538070051" type="ArrayPerguntas">
+                                            <param id="0" name="X">67</param>
+                                            <param id="1" name="Y">1</param>
+                                            <param id="2" name="Value">&quot;Médio&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="568663270645084" type="ArrayPerguntas">
+                                            <param id="0" name="X">67</param>
+                                            <param id="1" name="Y">2</param>
+                                            <param id="2" name="Value">2</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="270518339609945" type="ArrayPerguntas">
+                                            <param id="0" name="X">67</param>
+                                            <param id="1" name="Y">3</param>
+                                            <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="626984993564315" type="ArrayPerguntas">
+                                            <param id="0" name="X">67</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Artes&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="189236678837012">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="169353075662893" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="10" name="Insert" sid="566659343375440" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Antoine de Saint-Exupéry&quot;</param>
+                                            <param id="1" name="Index">67</param>
+                                            <param id="2" name="Axis">0</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="990266499600794" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Maquiavel&quot;</param>
+                                            <param id="1" name="Index">67</param>
+                                            <param id="2" name="Axis">1</param>
+                                        </action>
+                                        <action id="10" name="Insert" sid="320109301726138" type="ArrayRespostas">
+                                            <param id="0" name="Value">&quot;Thomas Hobbes&quot;</param>
+                                            <param id="1" name="Index">67</param>
+                                            <param id="2" name="Axis">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                     </sub-events>
                 </event-group>
             </sub-events>

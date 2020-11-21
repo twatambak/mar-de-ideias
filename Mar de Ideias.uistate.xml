@@ -28,8 +28,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/Objetos do Mar/" />
-        <folder expanded="0" path="object-folder/Controles/" />
+        <folder expanded="0" path="object-folder/Objetos do Mar/" />
+        <folder expanded="1" path="object-folder/Controles/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Título/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />

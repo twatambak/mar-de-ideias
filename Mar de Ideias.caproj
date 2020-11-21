@@ -19,6 +19,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="UserMedia" version="1">User Media</plugin>
+        <plugin author="Scirra" id="admob" version="1">Admob Ads</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -1657,6 +1658,9 @@
             <object-type name="Sons" sid="374618386446974">
                 <plugin id="Audio" />
             </object-type>
+            <object-type name="AdmobAds" sid="695377437604493">
+                <plugin id="admob" />
+            </object-type>
         </object-folder>
         <object-folder name="ObjetosTransição">
             <object-type name="TxtTentativasVidas" sid="731934298859977">
@@ -1848,6 +1852,21 @@
                 <reference-distance>600</reference-distance>
                 <maximum-distance>10000</maximum-distance>
                 <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="AdmobAds" uid="367">
+            <properties>
+                <overlap>Yes</overlap>
+                <test-mode>True</test-mode>
+                <android></android>
+                <banner-id-android></banner-id-android>
+                <interstitial-id-android></interstitial-id-android>
+                <ios></ios>
+                <banner-id-ios></banner-id-ios>
+                <interstitial-id-ios></interstitial-id-ios>
+                <windows-phone></windows-phone>
+                <banner-id-wp8></banner-id-wp8>
+                <interstitial-id-wp8></interstitial-id-wp8>
             </properties>
         </global-instance>
     </global-instances>
