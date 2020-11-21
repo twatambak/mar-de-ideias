@@ -1675,6 +1675,35 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
+        <object-folder name="Objetos cutscene">
+            <object-type name="BordaFalasJoseph" sid="275161227404679">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="942286180768476" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Mar - Borda 2.png">
+                            <collision-poly>
+                                <point x="0.03125" y="0.078125" />
+                                <point x="0.5" y="0.046875" />
+                                <point x="0.96875" y="0.078125" />
+                                <point x="0.93125" y="0.5" />
+                                <point x="0.96875" y="0.921875" />
+                                <point x="0.5" y="0.953125" />
+                                <point x="0.03125" y="0.921875" />
+                                <point x="0.06875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="JosephCutscene" sid="598422223927170">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="291158380880374" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Mar - Joseph clone.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="OpacidadeReduzida" sid="188872732063886">
             <plugin id="TiledBg" />
             <texture />
@@ -1813,6 +1842,7 @@
         <layout>Menu.xml</layout>
         <layout>Créditos.xml</layout>
         <layout>Intro.xml</layout>
+        <layout>SalaJoseph.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="ARG">
@@ -1831,6 +1861,7 @@
         <event-sheet>Eventos de sons e musicas.xml</event-sheet>
         <event-sheet>Eventos TransicaoFase.xml</event-sheet>
         <event-sheet>Eventos CutsceneInicial.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">

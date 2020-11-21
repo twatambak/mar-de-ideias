@@ -10,14 +10,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Base das Perguntas</layout>
-        <layout order="2">Menu</layout>
-        <layout order="4">Intro</layout>
-        <layout order="6">TransicaoFase</layout>
-        <event-sheet order="1">Eventos Base-Perguntas</event-sheet>
-        <event-sheet order="3">Eventos Menu</event-sheet>
-        <event-sheet order="5">Eventos TransicaoFase</event-sheet>
-        <event-sheet active="1" order="7">Eventos de Inserção das Perguntas</event-sheet>
+        <layout order="1">Base das Perguntas</layout>
+        <layout order="3">Menu</layout>
+        <layout order="5">Intro</layout>
+        <layout order="7">TransicaoFase</layout>
+        <layout active="1" order="9">SalaJoseph</layout>
+        <event-sheet order="2">Eventos Base-Perguntas</event-sheet>
+        <event-sheet order="4">Eventos Menu</event-sheet>
+        <event-sheet order="6">Eventos TransicaoFase</event-sheet>
+        <event-sheet order="8">Eventos de Inserção das Perguntas</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -29,7 +30,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Objetos do Mar/" />
-        <folder expanded="1" path="object-folder/Controles/" />
+        <folder expanded="0" path="object-folder/Controles/" />
         <folder expanded="0" path="object-folder/Objetos do Menu Inicial/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Título/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />
@@ -39,12 +40,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos do Menu de GameOver (Quizz)/" />
         <folder expanded="0" path="object-folder/Objetos da Senha/" />
         <folder expanded="0" path="object-folder/Objetos da Introdução/" />
-        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/" />
+        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Plataformas/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Itens Menu/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Frases e textos separados/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Jogador/" />
-        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/NPCs/" />
+        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/NPCs/" />
         <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/NPCs/Joseph/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Natureza/" />
         <folder expanded="0" path="object-folder/Objetos do Quizz/" />
@@ -57,6 +58,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Construções/" />
         <folder expanded="1" path="object-folder/Objetos Programação/" />
         <folder expanded="1" path="object-folder/ObjetosTransição/" />
+        <folder expanded="1" path="object-folder/Objetos cutscene/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="layout-folder/ARG/" />
         <folder expanded="1" path="layout-folder/Plataforma/" />
@@ -120,6 +122,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/BarraTempo/" />
         <folder expanded="1" path="animation-folder/MarcaErros/" />
         <folder expanded="1" path="animation-folder/Casa1/" />
+        <folder expanded="1" path="animation-folder/BordaFalasJoseph/" />
+        <folder expanded="1" path="animation-folder/JosephCutscene/" />
         <folder expanded="1" path="animation-folder/BordasDialogos/" />
         <folder expanded="1" path="animation-folder/BordasPausaPlataforma/" />
         <folder expanded="1" path="animation-folder/ImagemPersonagem/" />
