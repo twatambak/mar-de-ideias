@@ -13,9 +13,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Base das Perguntas</layout>
         <layout order="3">SalaJoseph</layout>
         <layout order="5">Intro</layout>
-        <event-sheet active="1" order="1">Eventos Base-Perguntas</event-sheet>
+        <event-sheet order="1">Eventos Base-Perguntas</event-sheet>
         <event-sheet order="2">Eventos Intro</event-sheet>
-        <event-sheet order="4">Eventos SalaJoseph</event-sheet>
+        <event-sheet active="1" order="4">Eventos SalaJoseph</event-sheet>
         <event-sheet order="6">Eventos TransicaoFase</event-sheet>
     </open-tabs>
     <properties>
