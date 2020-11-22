@@ -2,7 +2,7 @@
 <c2project>
     <name>Mar de Ideias</name>
     <description>Jogo de perguntas</description>
-    <version>0.01.6</version>
+    <version>0.01.7</version>
     <author>HitKill Studios</author>
     <author-email>hitkillstudios@gmail.com</author-email>
     <author-website>http://www.hitkillstudios.com.br</author-website>
@@ -432,6 +432,11 @@
             </object-type>
             <object-type name="TextoExtra" sid="567083612332458">
                 <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="209893392983286">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
             </object-type>
             <object-type name="BackgroundHighScore" sid="284354094264503">
                 <plugin id="Sprite" />
@@ -1718,6 +1723,16 @@
             </object-type>
             <object-type global="1" name="ArrayFalasJoseph" sid="241421241174370">
                 <plugin id="Arr" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Creditos">
+            <object-type name="FuncaoText" sid="641281506371122">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="809431051204781">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
             </object-type>
         </object-folder>
         <object-type name="OpacidadeReduzida" sid="188872732063886">

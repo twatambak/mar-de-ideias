@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Créditos</name>
     <events>
+        <variable constant="0" name="PosicaoCreditos" sid="264274610685315" static="0" type="number">1</variable>
+        <variable constant="0" name="TempoCreditos" sid="705033460002082" static="0" type="number">0</variable>
         <event-group description="" sid="448933791970304" title="Definição das Webfonts (Créditos)">
             <sub-events>
                 <event-block sid="933125375217656">
@@ -38,6 +40,10 @@
                             <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                         </action>
+                        <action id="5" name="Set web font" sid="991409789738132" type="FuncaoText">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -69,5 +75,61 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-group description="" sid="324921247377026" title="EfeitosVisuais">
+            <sub-events>
+                <event-block sid="383420813851863">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="828423198550640" type="System">
+                            <param id="0" name="Variable">TempoCreditos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="986732450245702" type="LogoHK" />
+                        <action id="-9" name="Set value" sid="589239680129596" type="System">
+                            <param id="0" name="Variable">TempoCreditos</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="705765684290623">
+                    <conditions>
+                        <condition behavior="Fade" id="0" name="On fade-out finished" sid="280652107253261" type="LogoHK" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="190798709001369" type="System">
+                            <param id="0" name="Variable">PosicaoCreditos</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="339594413347834" type="System">
+                            <param id="0" name="Group name">&quot;AtivaFuncao1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="189601105062298" type="System">
+                            <param id="0" name="Group name">&quot;EfeitosVisuais&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="884812002255739" title="ControleTempoCreditos">
+            <sub-events>
+                <event-block sid="273391543568327">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="127225966671997" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="985216445786508" type="System">
+                            <param id="0" name="Variable">TempoCreditos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
