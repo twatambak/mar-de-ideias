@@ -624,7 +624,7 @@
                         <behavior-instance type="Pin" />
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>50</max-speed>
+                                <max-speed>100</max-speed>
                                 <acceleration>600</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>8 directions</directions>
@@ -715,7 +715,7 @@
                         <behavior-instance type="Pin" />
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>50</max-speed>
+                                <max-speed>100</max-speed>
                                 <acceleration>600</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>8 directions</directions>
@@ -835,7 +835,7 @@
                         <behavior-instance type="Pin" />
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>50</max-speed>
+                                <max-speed>100</max-speed>
                                 <acceleration>600</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>8 directions</directions>
@@ -936,7 +936,7 @@
                         <behavior-instance type="Pin" />
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>50</max-speed>
+                                <max-speed>100</max-speed>
                                 <acceleration>600</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>8 directions</directions>
@@ -1007,7 +1007,7 @@
                         <behavior-instance type="Pin" />
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>50</max-speed>
+                                <max-speed>100</max-speed>
                                 <acceleration>600</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>8 directions</directions>
@@ -1078,7 +1078,7 @@
                         <behavior-instance type="Pin" />
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>50</max-speed>
+                                <max-speed>100</max-speed>
                                 <acceleration>600</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>8 directions</directions>
