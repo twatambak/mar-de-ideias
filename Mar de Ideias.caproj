@@ -1732,6 +1732,9 @@
                     <behavior-type name="Pin" sid="809431051204781">
                         <behavior id="Pin" />
                     </behavior-type>
+                    <behavior-type name="8Direction" sid="503089448273684">
+                        <behavior id="EightDir" />
+                    </behavior-type>
                 </behaviors>
             </object-type>
         </object-folder>

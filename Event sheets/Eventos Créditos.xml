@@ -98,17 +98,13 @@
                         <condition behavior="Fade" id="0" name="On fade-out finished" sid="280652107253261" type="LogoHK" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="190798709001369" type="System">
-                            <param id="0" name="Variable">PosicaoCreditos</param>
-                            <param id="1" name="Value">2</param>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="771449089118179" type="TextoExtra">
+                            <param id="0" name="Pin to">FuncaoText</param>
+                            <param id="1" name="Mode">3</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="339594413347834" type="System">
-                            <param id="0" name="Group name">&quot;AtivaFuncao1&quot;</param>
+                        <action id="-12" name="Set group active" sid="246055988630920" type="System">
+                            <param id="0" name="Group name">&quot;GeraMovimento&quot;</param>
                             <param id="1" name="State">1</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="189601105062298" type="System">
-                            <param id="0" name="Group name">&quot;EfeitosVisuais&quot;</param>
-                            <param id="1" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -126,6 +122,20 @@
                         <action id="-10" name="Add to" sid="985216445786508" type="System">
                             <param id="0" name="Variable">TempoCreditos</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="850199475954091" title="GeraMovimento">
+            <sub-events>
+                <event-block sid="962033579889061">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="620137055256706" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="470897112974694" type="FuncaoText">
+                            <param id="0" name="Control">2</param>
                         </action>
                     </actions>
                 </event-block>
