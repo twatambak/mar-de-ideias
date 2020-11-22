@@ -36,8 +36,29 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="593590461607697" title="Falas do Joseph">
+        <event-group description="" sid="593590461607697" title="Falas do Joseph - Intro">
             <sub-events>
+                <event-group description="" sid="214241850502001" title="Falas do Joseph 0 - Intro">
+                    <sub-events>
+                        <event-block sid="172848917669707">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="865458686293741" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="218572046370545" type="System">
+                                    <param id="0" name="Variable">FalaJoseph</param>
+                                    <param id="1" name="Value">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="583668136285751" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="175970969496648" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block sid="780604285156291">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="977620212422921" type="System">
@@ -51,12 +72,12 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-group description="" sid="933612721150866" title="Falas do Joseph 1">
+                <event-group description="" sid="933612721150866" title="Falas do Joseph 1 - Intro">
                     <sub-events>
                         <event-block sid="634494346278959">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="247398794843433" type="System">
-                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                    <param id="0" name="Interval (seconds)">0.05</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="785884379280315" type="System">
                                     <param id="0" name="Variable">CutsceneTempoFrase</param>
@@ -65,6 +86,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-9" name="Set value" sid="171657336946218" type="System">
+                                    <param id="0" name="Variable">FalaJoseph</param>
+                                    <param id="1" name="Value">ArrayFalasJoseph.At(1)</param>
+                                </action>
                                 <action id="0" name="Set text" sid="666969664581112" type="TextoCutsceneJoseph">
                                     <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
                                 </action>
@@ -84,11 +109,11 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="206732414475226" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph 1&quot;</param>
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 1 - Intro&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="462715800858382" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph 2&quot;</param>
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 2 - Intro&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="816434576093448" type="TextoCutsceneJoseph">
@@ -98,12 +123,12 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="631672052830992" title="Falas do Joseph 2">
+                <event-group description="" inactive="1" sid="631672052830992" title="Falas do Joseph 2 - Intro">
                     <sub-events>
                         <event-block sid="784169656565509">
                             <conditions>
-                                <condition id="-6" name="Every X seconds" sid="626991277828342" type="System">
-                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                <condition id="-6" name="Every X seconds" sid="593060742211790" type="System">
+                                    <param id="0" name="Interval (seconds)">0.05</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="223252202927299" type="System">
                                     <param id="0" name="Variable">CutsceneTempoFrase</param>
@@ -112,6 +137,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-9" name="Set value" sid="714177495862385" type="System">
+                                    <param id="0" name="Variable">FalaJoseph</param>
+                                    <param id="1" name="Value">ArrayFalasJoseph.At(2)</param>
+                                </action>
                                 <action id="0" name="Set text" sid="109897183080669" type="TextoCutsceneJoseph">
                                     <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
                                 </action>
@@ -131,11 +160,11 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="534483964991341" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph 2&quot;</param>
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 2 - Intro&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="780994462855903" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph 3&quot;</param>
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 3 - Intro&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="824201909216461" type="TextoCutsceneJoseph">
@@ -145,12 +174,12 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="169050578898055" title="Falas do Joseph 3">
+                <event-group description="" inactive="1" sid="169050578898055" title="Falas do Joseph 3 - Intro">
                     <sub-events>
                         <event-block sid="551388228199034">
                             <conditions>
-                                <condition id="-6" name="Every X seconds" sid="551574290452459" type="System">
-                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                <condition id="-6" name="Every X seconds" sid="886752914405759" type="System">
+                                    <param id="0" name="Interval (seconds)">0.05</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="844597981290989" type="System">
                                     <param id="0" name="Variable">CutsceneTempoFrase</param>
@@ -159,6 +188,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-9" name="Set value" sid="104606632226677" type="System">
+                                    <param id="0" name="Variable">FalaJoseph</param>
+                                    <param id="1" name="Value">ArrayFalasJoseph.At(3)</param>
+                                </action>
                                 <action id="0" name="Set text" sid="984040768815273" type="TextoCutsceneJoseph">
                                     <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
                                 </action>
@@ -178,11 +211,11 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="781183341699715" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph 3&quot;</param>
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 3 - Intro&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="954518076284553" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph 4&quot;</param>
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 4 - Intro&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="973036531516551" type="TextoCutsceneJoseph">
@@ -192,12 +225,12 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="136617975196763" title="Falas do Joseph 4">
+                <event-group description="" inactive="1" sid="136617975196763" title="Falas do Joseph 4 - Intro">
                     <sub-events>
                         <event-block sid="374663139505467">
                             <conditions>
-                                <condition id="-6" name="Every X seconds" sid="318705764257112" type="System">
-                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                <condition id="-6" name="Every X seconds" sid="240499113777085" type="System">
+                                    <param id="0" name="Interval (seconds)">0.05</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="882061180389838" type="System">
                                     <param id="0" name="Variable">CutsceneTempoFrase</param>
@@ -206,6 +239,10 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-9" name="Set value" sid="750397281512737" type="System">
+                                    <param id="0" name="Variable">FalaJoseph</param>
+                                    <param id="1" name="Value">ArrayFalasJoseph.At(4)</param>
+                                </action>
                                 <action id="0" name="Set text" sid="255983560401108" type="TextoCutsceneJoseph">
                                     <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
                                 </action>
@@ -224,13 +261,13 @@
                                     <param id="0" name="Variable">CutsceneTempoFrase</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="-12" name="Set group active" sid="803546517261927" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph 4&quot;</param>
-                                    <param id="1" name="State">0</param>
-                                </action>
-                                <action id="-12" name="Set group active" sid="599448127403397" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph 5&quot;</param>
+                                <action id="-12" name="Set group active" sid="205762991805197" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 5 - Intro&quot;</param>
                                     <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="803546517261927" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 4 - Intro&quot;</param>
+                                    <param id="1" name="State">0</param>
                                 </action>
                                 <action id="0" name="Set text" sid="581850128962769" type="TextoCutsceneJoseph">
                                     <param id="0" name="Text">&quot;&quot;</param>
@@ -239,48 +276,51 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="448324901159363" title="Falas do Joseph 5">
+                <event-group description="" inactive="1" sid="489828012902635" title="Falas do Joseph 5 - Intro">
                     <sub-events>
-                        <event-block sid="770689158462836">
+                        <event-block sid="259897261357018">
                             <conditions>
-                                <condition id="-6" name="Every X seconds" sid="420457793625823" type="System">
-                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                <condition id="-6" name="Every X seconds" sid="196723641312347" type="System">
+                                    <param id="0" name="Interval (seconds)">0.05</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="165666264472767" type="System">
+                                <condition id="-14" name="Compare variable" sid="737285775733799" type="System">
                                     <param id="0" name="Variable">CutsceneTempoFrase</param>
                                     <param id="1" name="Comparison">2</param>
                                     <param id="2" name="Value">(len(ArrayFalasJoseph.At(5)) * 0.08) + 0.3</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="737236712586512" type="TextoCutsceneJoseph">
+                                <action id="-9" name="Set value" sid="253947718714819" type="System">
+                                    <param id="0" name="Variable">FalaJoseph</param>
+                                    <param id="1" name="Value">ArrayFalasJoseph.At(5)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="834400299397039" type="TextoCutsceneJoseph">
                                     <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="968109962136297">
+                        <event-block sid="591817946607433">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="161135526728080" type="System">
+                                <condition id="-14" name="Compare variable" sid="652639867023069" type="System">
                                     <param id="0" name="Variable">CutsceneTempoFrase</param>
                                     <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">(len(ArrayFalasJoseph.At(5)) * 0.08) + 0.3</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="649140814211501" type="System">
+                                <action id="-9" name="Set value" sid="730669324306952" type="System">
                                     <param id="0" name="Variable">CutsceneTempoFrase</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="-12" name="Set group active" sid="815368133216415" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph 5&quot;</param>
+                                <action id="-12" name="Set group active" sid="477992079888408" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 5 - Intro&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
-                                <action id="-12" name="Set group active" sid="576901448252217" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph 2&quot;</param>
-                                    <param id="1" name="State">1</param>
-                                </action>
-                                <action id="0" name="Set text" sid="158969546534036" type="TextoCutsceneJoseph">
+                                <action id="0" name="Set text" sid="598365832670201" type="TextoCutsceneJoseph">
                                     <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="304214083874532" type="System">
+                                    <param id="0" name="Layout">Menu</param>
                                 </action>
                             </actions>
                         </event-block>

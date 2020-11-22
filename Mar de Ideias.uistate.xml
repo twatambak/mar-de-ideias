@@ -11,9 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Intro</layout>
-        <layout order="1">Créditos</layout>
-        <layout active="1" order="3">TransicaoFase</layout>
-        <event-sheet order="2">Eventos Créditos</event-sheet>
+        <layout order="1">SalaJoseph</layout>
+        <event-sheet order="2">Eventos SalaJoseph</event-sheet>
+        <event-sheet order="3">Eventos IntroPlataforma</event-sheet>
+        <event-sheet order="4">Eventos de Inserção das Falas</event-sheet>
+        <event-sheet active="1" order="5">Eventos Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -61,7 +63,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/Quizz/" />
         <folder expanded="1" path="layout-folder/TelasDeTransicao/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="0" path="event-folder/ARG/" />
+        <folder expanded="1" path="event-folder/ARG/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />

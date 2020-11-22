@@ -22,15 +22,23 @@
             <actions>
                 <action id="2" name="Set at X" sid="830286601837941" type="ArrayFalasJoseph">
                     <param id="0" name="X">1</param>
-                    <param id="1" name="Value">&quot;Frase 1&quot;</param>
+                    <param id="1" name="Value">&quot;Seja bem vindo à equipe. Você será o novo comandante dos mergulhadores&quot;</param>
                 </action>
                 <action id="2" name="Set at X" sid="290506932961198" type="ArrayFalasJoseph">
                     <param id="0" name="X">2</param>
-                    <param id="1" name="Value">&quot;Frase 2&quot;</param>
+                    <param id="1" name="Value">&quot;Seu objetivo é alcançar as respostas no mar, indo o mais profundo possível.&quot; </param>
                 </action>
                 <action id="2" name="Set at X" sid="686010264273470" type="ArrayFalasJoseph">
                     <param id="0" name="X">3</param>
-                    <param id="1" name="Value">&quot;Frase 3&quot;</param>
+                    <param id="1" name="Value">&quot;Lembre-se que nosso pessoal é limitado. Cuide de sua equipe como se fossem sua familia&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="834179387834280" type="ArrayFalasJoseph">
+                    <param id="0" name="X">4</param>
+                    <param id="1" name="Value">&quot;Você não lembra, mas eles podem ser.&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="721879273793973" type="ArrayFalasJoseph">
+                    <param id="0" name="X">5</param>
+                    <param id="1" name="Value">&quot;Agora vá e não cometa o mesmo erro de seu antecessor. Você não quer acabar como ele.&quot;</param>
                 </action>
             </actions>
         </event-block>
