@@ -25,7 +25,7 @@
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="704548855757705" type="System">
-                    <param id="0" name="Layout">Menu</param>
+                    <param id="0" name="Layout">SalaJoseph</param>
                 </action>
             </actions>
         </event-block>
@@ -53,28 +53,6 @@
                     <actions>
                         <action id="4" name="Preload" sid="393429384144755" type="Sons">
                             <param id="0" name="Audio file">MenuMusic</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="420904921506116" title="AtivacaoMusica">
-            <sub-events>
-                <event-block sid="988059934554822">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="692245782315494" type="System" />
-                        <condition id="-14" name="Compare variable" sid="999504047023269" type="System">
-                            <param id="0" name="Variable">NoMenu</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="882315480052750" type="Sons">
-                            <param id="0" name="Audio file">MenuMusic</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
