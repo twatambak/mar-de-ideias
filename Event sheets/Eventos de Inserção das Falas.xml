@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos de Inserção das Falas</name>
+    <events>
+        <event-block sid="579823752445414">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="592543506391352" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Set size" sid="615631250199575" type="ArrayFalasJoseph">
+                    <param id="0" name="Width">20</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="769717558995680">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="936112442900277" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Set at X" sid="830286601837941" type="ArrayFalasJoseph">
+                    <param id="0" name="X">1</param>
+                    <param id="1" name="Value">&quot;Frase 1&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="290506932961198" type="ArrayFalasJoseph">
+                    <param id="0" name="X">2</param>
+                    <param id="1" name="Value">&quot;Frase 2&quot;</param>
+                </action>
+                <action id="2" name="Set at X" sid="686010264273470" type="ArrayFalasJoseph">
+                    <param id="0" name="X">3</param>
+                    <param id="1" name="Value">&quot;Frase 3&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos SalaJoseph</name>
     <events>
+        <include>Eventos de Inserção das Falas</include>
+        <variable constant="0" name="CutsceneTempoFrase" sid="364480039689515" static="0" type="number">0</variable>
+        <variable constant="0" name="FalaJoseph" sid="632355869125934" static="0" type="text"></variable>
         <event-group description="" sid="599343037515322" title="RetornaVidas">
             <sub-events>
                 <event-block sid="609111288737547">
@@ -16,6 +19,274 @@
                         </action>
                     </actions>
                 </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="338269526310355" title="Definições da cutscene">
+            <sub-events>
+                <event-block sid="475265698236527">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="228750344255742" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="959705894710575" type="TextoCutsceneJoseph">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="593590461607697" title="Falas do Joseph">
+            <sub-events>
+                <event-block sid="780604285156291">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="977620212422921" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="685770233974584" type="System">
+                            <param id="0" name="Variable">CutsceneTempoFrase</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="933612721150866" title="Falas do Joseph 1">
+                    <sub-events>
+                        <event-block sid="634494346278959">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="247398794843433" type="System">
+                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="785884379280315" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">(len(ArrayFalasJoseph.At(1)) * 0.08) + 0.3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="666969664581112" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="228896113408588">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="649384189516884" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">(len(ArrayFalasJoseph.At(1)) * 0.08) + 0.3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="863521078279120" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="206732414475226" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 1&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="462715800858382" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="816434576093448" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="631672052830992" title="Falas do Joseph 2">
+                    <sub-events>
+                        <event-block sid="784169656565509">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="626991277828342" type="System">
+                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="223252202927299" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">(len(ArrayFalasJoseph.At(2)) * 0.08) + 0.3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="109897183080669" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="496468697293637">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="607725590740062" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">(len(ArrayFalasJoseph.At(2)) * 0.08) + 0.3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="579189772964882" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="534483964991341" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="780994462855903" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 3&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="824201909216461" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="169050578898055" title="Falas do Joseph 3">
+                    <sub-events>
+                        <event-block sid="551388228199034">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="551574290452459" type="System">
+                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="844597981290989" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">(len(ArrayFalasJoseph.At(3)) * 0.08) + 0.3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="984040768815273" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="317872073076638">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="812765274029069" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">(len(ArrayFalasJoseph.At(3)) * 0.08) + 0.3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="225229758564007" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="781183341699715" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 3&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="954518076284553" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 4&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="973036531516551" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="136617975196763" title="Falas do Joseph 4">
+                    <sub-events>
+                        <event-block sid="374663139505467">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="318705764257112" type="System">
+                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="882061180389838" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">(len(ArrayFalasJoseph.At(4)) * 0.08) + 0.3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="255983560401108" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="521800115768913">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="418532325754146" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">(len(ArrayFalasJoseph.At(4)) * 0.08) + 0.3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="369852505101896" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="803546517261927" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 4&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="599448127403397" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 5&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="581850128962769" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="448324901159363" title="Falas do Joseph 5">
+                    <sub-events>
+                        <event-block sid="770689158462836">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="420457793625823" type="System">
+                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="165666264472767" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">(len(ArrayFalasJoseph.At(5)) * 0.08) + 0.3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="737236712586512" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">left(FalaJoseph,len(TextoCutsceneJoseph.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="968109962136297">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="161135526728080" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">(len(ArrayFalasJoseph.At(5)) * 0.08) + 0.3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="649140814211501" type="System">
+                                    <param id="0" name="Variable">CutsceneTempoFrase</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="815368133216415" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 5&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="576901448252217" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph 2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="158969546534036" type="TextoCutsceneJoseph">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="212678043651159" title="Fim das frases" />
             </sub-events>
         </event-group>
     </events>

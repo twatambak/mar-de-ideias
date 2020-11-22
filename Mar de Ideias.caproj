@@ -1678,6 +1678,11 @@
         <object-folder name="Objetos cutscene">
             <object-type name="BordaFalasJoseph" sid="275161227404679">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="287113372044374">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="942286180768476" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Mar - Borda 2.png">
@@ -1702,6 +1707,17 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\Thiago L. Watambak\Downloads\Mar - Joseph clone.png" />
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="TextoCutsceneJoseph" sid="332951017226670">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="448328785283200">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+            <object-type global="1" name="ArrayFalasJoseph" sid="241421241174370">
+                <plugin id="Arr" />
             </object-type>
         </object-folder>
         <object-type name="OpacidadeReduzida" sid="188872732063886">
@@ -1862,6 +1878,7 @@
         <event-sheet>Eventos TransicaoFase.xml</event-sheet>
         <event-sheet>Eventos CutsceneInicial.xml</event-sheet>
         <event-sheet>Eventos SalaJoseph.xml</event-sheet>
+        <event-sheet>Eventos de Inserção das Falas.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">
