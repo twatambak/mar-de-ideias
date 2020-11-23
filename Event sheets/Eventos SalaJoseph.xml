@@ -5,6 +5,7 @@
     <events>
         <include>Eventos de Inserção das Falas</include>
         <variable constant="0" name="CutsceneTempoFrase" sid="364480039689515" static="0" type="number">0</variable>
+        <variable constant="0" name="TempoFades" sid="608583048373522" static="0" type="number">0</variable>
         <variable constant="0" name="FalaJoseph" sid="632355869125934" static="0" type="text"></variable>
         <event-group description="" sid="599343037515322" title="RetornaVidas">
             <sub-events>
@@ -23,6 +24,19 @@
         </event-group>
         <event-group description="" sid="338269526310355" title="Definições da cutscene">
             <sub-events>
+                <event-block sid="420968769357227">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="497020777268402" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="123592650904427" type="System">
+                            <param id="0" name="Variable">TempoFades</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="475265698236527">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="228750344255742" type="System" />
@@ -41,11 +55,20 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="332240890929563" type="System">
+                            <param id="0" name="Variable">TempoFades</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-12" name="Set group active" sid="584709946964482" type="System">
                             <param id="0" name="Group name">&quot;Falas do Joseph - Intro&quot;</param>
                             <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="422192133657150" type="System">
+                            <param id="0" name="Group name">&quot;CriaFadeIn&quot;</param>
+                            <param id="1" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -376,14 +399,72 @@
                                     <param id="0" name="Group name">&quot;Falas do Joseph 5 - Intro&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
-                                <action id="-12" name="Set group active" sid="355855463400258" type="System">
-                                    <param id="0" name="Group name">&quot;Falas do Joseph - Intro&quot;</param>
-                                    <param id="1" name="State">0</param>
+                                <action id="-12" name="Set group active" sid="696128260950143" type="System">
+                                    <param id="0" name="Group name">&quot;CriaFadeOut - Intro&quot;</param>
+                                    <param id="1" name="State">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="598365832670201" type="TextoCutsceneJoseph">
                                     <param id="0" name="Text">&quot;&quot;</param>
                                 </action>
-                                <action id="-2" name="Go to layout" sid="304214083874532" type="System">
+                                <action id="-9" name="Set value" sid="866483364864103" type="System">
+                                    <param id="0" name="Variable">TempoFades</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" inactive="1" sid="107311899254010" title="CriaFadeOut - Intro">
+                    <sub-events>
+                        <event-block sid="657738523209539">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="328785273596816" type="System">
+                                    <param id="0" name="Variable">TempoFades</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="220021558407387">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="529263677989495" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-18" name="Set layer opacity" sid="490390796639839" type="System">
+                                            <param id="0" name="Layer">&quot;Joseph&quot;</param>
+                                            <param id="1" name="Opacity">LayerOpacity(&quot;Joseph&quot;) - 1</param>
+                                        </action>
+                                        <action id="-18" name="Set layer opacity" sid="204774874873125" type="System">
+                                            <param id="0" name="Layer">&quot;BordaDialogo&quot;</param>
+                                            <param id="1" name="Opacity">LayerOpacity(&quot;BordaDialogo&quot;) - 1</param>
+                                        </action>
+                                        <action id="-18" name="Set layer opacity" sid="838281152866094" type="System">
+                                            <param id="0" name="Layer">&quot;TextoDialogo&quot;</param>
+                                            <param id="1" name="Opacity">LayerOpacity(&quot;TextoDialogo&quot;) - 1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="712098446441327">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="949201756362771" type="System">
+                                    <param id="0" name="Variable">TempoFades</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="355855463400258" type="System">
+                                    <param id="0" name="Group name">&quot;Falas do Joseph - Intro&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="195139437364940" type="System">
+                                    <param id="0" name="Group name">&quot;CriaFadeOut - Intro&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="145982438941954" type="System">
                                     <param id="0" name="Layout">Menu</param>
                                 </action>
                             </actions>
@@ -667,6 +748,41 @@
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="986781909789575" title="Fim das frases Primeiro encontro" />
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="204616962649385" title="CriaFadeIn">
+            <sub-events>
+                <event-block sid="679256641288109">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="666776014230117" type="System">
+                            <param id="0" name="Variable">TempoFades</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="576176176786630">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="685960518855778" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-18" name="Set layer opacity" sid="151322847293823" type="System">
+                                    <param id="0" name="Layer">&quot;Joseph&quot;</param>
+                                    <param id="1" name="Opacity">LayerOpacity(&quot;Joseph&quot;) + 1</param>
+                                </action>
+                                <action id="-18" name="Set layer opacity" sid="787709077956955" type="System">
+                                    <param id="0" name="Layer">&quot;BordaDialogo&quot;</param>
+                                    <param id="1" name="Opacity">LayerOpacity(&quot;BordaDialogo&quot;) + 1</param>
+                                </action>
+                                <action id="-18" name="Set layer opacity" sid="317642662191760" type="System">
+                                    <param id="0" name="Layer">&quot;TextoDialogo&quot;</param>
+                                    <param id="1" name="Opacity">LayerOpacity(&quot;TextoDialogo&quot;) + 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
     </events>
