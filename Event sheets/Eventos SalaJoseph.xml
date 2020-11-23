@@ -48,6 +48,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>A cada analise da quantidade de tentativas o construct deve esperar 6 segundos para carregar as mensagens em tela, caso contrário alguns textos somem antes da tela aparecer por completo.</comment>
                 <event-block sid="652217648762777">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="372591435552202" type="System">
@@ -425,6 +426,7 @@
                 </event-group>
                 <event-group description="" inactive="1" sid="107311899254010" title="CriaFadeOut - Intro">
                     <sub-events>
+                        <comment>Todos as frases finais devem levar ao grupo de fade out. Criar um para cada frase por motivos de segurança, para não carregar texto por cima de texto. E estrutura de código abaixo deve ser adaptada nos nomes de grupos para as próximas frases, demais itens não devem ser alterados.</comment>
                         <event-block sid="657738523209539">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="328785273596816" type="System">
@@ -761,6 +763,7 @@
         </event-group>
         <event-group description="" sid="204616962649385" title="CriaFadeIn">
             <sub-events>
+                <comment>Esse grupo aqui faz o fade in por opacidade da camada de sprites Ele deve sempre estar ativo no inicio do layout.</comment>
                 <event-block sid="679256641288109">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="666776014230117" type="System">
