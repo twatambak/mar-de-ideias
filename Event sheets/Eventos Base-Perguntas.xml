@@ -1077,6 +1077,10 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="-11" name="Subtract from" sid="939798028418947" type="System">
+                                                    <param id="0" name="Variable">Vidas</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
                                                 <action id="-12" name="Set group active" sid="771366307839006" type="System">
                                                     <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
                                                     <param id="1" name="State">1</param>
@@ -1263,10 +1267,6 @@
                                             <param id="0" name="Group name">&quot;AtivaSegundaMusica&quot;</param>
                                             <param id="1" name="State">0</param>
                                         </action>
-                                        <action id="-11" name="Subtract from" sid="777441206365474" type="System">
-                                            <param id="0" name="Variable">Vidas</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
                                         <action id="0" name="Clear" sid="900711174474669" type="ArrayPerguntas" />
                                         <action id="-9" name="Set value" sid="170451277451090" type="System">
                                             <param id="0" name="Variable">PerguntasCarregadas</param>
@@ -1283,8 +1283,8 @@
                                         </condition>
                                         <condition id="-14" name="Compare variable" sid="267729763364283" type="System">
                                             <param id="0" name="Variable">Vidas</param>
-                                            <param id="1" name="Comparison">2</param>
-                                            <param id="2" name="Value">1</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
                                         </condition>
                                     </conditions>
                                     <actions>

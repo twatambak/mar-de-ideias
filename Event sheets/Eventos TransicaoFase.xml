@@ -72,7 +72,7 @@
                             <param id="1" name="CSS URL">&quot;gauntlet.css&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="249260989056748" type="TxtTentativasVidas">
-                            <param id="0" name="Text">&quot;Voce tem  &quot; &amp; str(Vidas +1) &amp; &quot; mergulhadores&quot;</param>
+                            <param id="0" name="Text">&quot;Voce tem  &quot; &amp; str(Vidas) &amp; &quot; mergulhadores&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -82,7 +82,7 @@
                         <condition id="-14" name="Compare variable" sid="420428535344290" type="System">
                             <param id="0" name="Variable">Vidas</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
