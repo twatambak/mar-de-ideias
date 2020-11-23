@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Créditos</name>
     <events>
+        <variable constant="0" name="TempoFadeCredito" sid="717896300962248" static="0" type="number">0</variable>
         <variable constant="0" name="PosicaoCreditos" sid="264274610685315" static="0" type="number">1</variable>
         <variable constant="0" name="TempoCreditos" sid="705033460002082" static="0" type="number">0</variable>
         <event-group description="" sid="448933791970304" title="Definição das Webfonts (Créditos)">
@@ -123,6 +124,10 @@
                             <param id="0" name="Variable">TempoCreditos</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="-10" name="Add to" sid="584489325423481" type="System">
+                            <param id="0" name="Variable">TempoFadeCredito</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -138,6 +143,37 @@
                             <param id="0" name="Control">2</param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="943550830844466" title="CriarFaseCaseiro">
+            <sub-events>
+                <event-block sid="987901945428209">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="473674201587303" type="System">
+                            <param id="0" name="Variable">TempoFadeCredito</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="163042270579361">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="469666236998288" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-18" name="Set layer opacity" sid="748639787689535" type="System">
+                                    <param id="0" name="Layer">&quot;TextoOpcoes&quot;</param>
+                                    <param id="1" name="Opacity">LayerOpacity(&quot;TextoOpcoes&quot;) + 1</param>
+                                </action>
+                                <action id="-18" name="Set layer opacity" sid="614501997474903" type="System">
+                                    <param id="0" name="Layer">&quot;BordaOpcoes&quot;</param>
+                                    <param id="1" name="Opacity">LayerOpacity(&quot;BordaOpcoes&quot;) + 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
