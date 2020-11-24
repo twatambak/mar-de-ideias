@@ -4,7 +4,6 @@
     <name>Eventos Créditos</name>
     <events>
         <variable constant="0" name="TempoFadeCredito" sid="717896300962248" static="0" type="number">0</variable>
-        <variable constant="0" name="PosicaoCreditos" sid="264274610685315" static="0" type="number">1</variable>
         <variable constant="0" name="TempoCreditos" sid="705033460002082" static="0" type="number">0</variable>
         <event-group description="" sid="448933791970304" title="Definição das Webfonts (Créditos)">
             <sub-events>
@@ -13,6 +12,10 @@
                         <condition id="-2" name="On start of layout" sid="619781481746082" type="System" />
                     </conditions>
                     <actions>
+                        <action id="5" name="Set web font" sid="991409789738132" type="FuncaoText">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
                         <action id="5" name="Set web font" sid="305344218941424" type="TextoOpcoesMenu">
                             <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
@@ -41,10 +44,6 @@
                             <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
                         </action>
-                        <action id="5" name="Set web font" sid="991409789738132" type="FuncaoText">
-                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -54,8 +53,10 @@
                 <condition id="3" name="On touched object" sid="805951154785220" type="Touch">
                     <param id="0" name="Object">TextoOpcoesMenu</param>
                 </condition>
-                <condition id="-9" name="Layer is visible" sid="977164978130252" type="System">
+                <condition id="-17" name="Compare opacity" sid="977164978130252" type="System">
                     <param id="0" name="Layer">&quot;TextoOpcoes&quot;</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Opacity">100</param>
                 </condition>
             </conditions>
             <actions />
@@ -69,6 +70,18 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-12" name="Set group active" sid="139413888964038" type="System">
+                            <param id="0" name="Group name">&quot;GeraMovimento&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="115698699934728" type="System">
+                            <param id="0" name="Variable">TempoFadeCredito</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="119111921231504" type="System">
+                            <param id="0" name="Variable">TempoCreditos</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="436852711624754" type="System">
                             <param id="0" name="Layout">Menu</param>
                         </action>
@@ -163,13 +176,13 @@
                                 <condition id="-1" name="Every tick" sid="469666236998288" type="System" />
                             </conditions>
                             <actions>
-                                <action id="-18" name="Set layer opacity" sid="748639787689535" type="System">
+                                <action id="-18" name="Set layer opacity" sid="614501997474903" type="System">
+                                    <param id="0" name="Layer">&quot;BordasOpcoes&quot;</param>
+                                    <param id="1" name="Opacity">LayerOpacity(&quot;BordasOpcoes&quot;) + 1</param>
+                                </action>
+                                <action id="-18" name="Set layer opacity" sid="903041553582941" type="System">
                                     <param id="0" name="Layer">&quot;TextoOpcoes&quot;</param>
                                     <param id="1" name="Opacity">LayerOpacity(&quot;TextoOpcoes&quot;) + 1</param>
-                                </action>
-                                <action id="-18" name="Set layer opacity" sid="614501997474903" type="System">
-                                    <param id="0" name="Layer">&quot;BordaOpcoes&quot;</param>
-                                    <param id="1" name="Opacity">LayerOpacity(&quot;BordaOpcoes&quot;) + 1</param>
                                 </action>
                             </actions>
                         </event-block>
