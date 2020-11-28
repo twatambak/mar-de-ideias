@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -1734,6 +1735,16 @@
                 </behaviors>
             </object-type>
         </object-folder>
+        <object-folder name="Arrays">
+            <object-type global="1" name="ArrayStatus" sid="246331086564879">
+                <plugin id="Arr" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Layout de testes">
+            <object-type name="btnComidas" sid="530556745979830">
+                <plugin id="Button" />
+            </object-type>
+        </object-folder>
         <object-type name="OpacidadeReduzida" sid="188872732063886">
             <plugin id="TiledBg" />
             <texture />
@@ -1864,6 +1875,7 @@
         </layout-folder>
         <layout-folder name="Quizz">
             <layout>Base das Perguntas.xml</layout>
+            <layout>TelaSeleçãoTemas.xml</layout>
         </layout-folder>
         <layout-folder name="TelasDeTransicao">
             <layout>TransicaoFase.xml</layout>
@@ -1893,6 +1905,7 @@
         <event-sheet>Eventos CutsceneInicial.xml</event-sheet>
         <event-sheet>Eventos SalaJoseph.xml</event-sheet>
         <event-sheet>Eventos de Inserção das Falas.xml</event-sheet>
+        <event-sheet>EventosSelecaoTema.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="96">

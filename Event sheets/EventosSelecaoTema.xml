@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosSelecaoTema</name>
+    <events>
+        <variable constant="0" name="Tema" sid="985107050541186" static="0" type="text"></variable>
+        <event-group description="" sid="596233925350077" title="SelecionaTema">
+            <sub-events>
+                <event-block sid="249080350050640">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="193201158965763" type="btnComidas" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="390714895967893" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Value">&quot;Comidas&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="127402218570306" type="System">
+                            <param id="0" name="Layout">TransicaoFase</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

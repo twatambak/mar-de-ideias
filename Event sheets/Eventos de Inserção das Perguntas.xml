@@ -3942,5 +3942,36 @@
                 </event-group>
             </sub-events>
         </event-block>
+        <event-group description="Grupo responsável por definir a contagem de perguntas respondidas para um tema especifico." sid="656170576377651" title="Configurações do array de status">
+            <sub-events>
+                <event-block sid="651958089478737">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="326237284924084" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="982406748462068" type="ArrayStatus">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">&quot;Geografia&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="212163499494839" type="ArrayStatus">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">&quot;Artes&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="557405087157686" type="ArrayStatus">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">&quot;História&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="404144299785331" type="ArrayStatus">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Value">&quot;Ciência&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="519102140030049" type="ArrayStatus">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Value">&quot;Geral&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

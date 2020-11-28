@@ -77,6 +77,7 @@
                                 <action behavior="FadeIn" id="1" name="Start fade" sid="841638739044740" type="TextoPerguntas" />
                             </actions>
                         </event-block>
+                        <comment>Adicionar variável de controle</comment>
                         <event-group description="" inactive="1" sid="565938249633108" title="Sorteia">
                             <sub-events>
                                 <event-block sid="810272120140568">
@@ -87,13 +88,19 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block sid="779669025336440">
+                                        <event-block any="1" sid="779669025336440">
                                             <conditions>
                                                 <condition id="1" name="Compare at XY" sid="731469787323453" type="ArrayPerguntas">
                                                     <param id="0" name="X">PerguntaAtual</param>
                                                     <param id="1" name="Y">3</param>
                                                     <param id="2" name="Comparison">0</param>
                                                     <param id="3" name="Value">&quot;Respondida&quot;</param>
+                                                </condition>
+                                                <condition id="1" name="Compare at XY" sid="306566488006018" type="ArrayPerguntas">
+                                                    <param id="0" name="X">PerguntaAtual</param>
+                                                    <param id="1" name="Y">4</param>
+                                                    <param id="2" name="Comparison">1</param>
+                                                    <param id="3" name="Value">Tema</param>
                                                 </condition>
                                             </conditions>
                                             <actions>

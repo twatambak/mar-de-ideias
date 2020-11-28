@@ -38,7 +38,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="315171411016310" type="System">
-                            <param id="0" name="Layout">TransicaoFase</param>
+                            <param id="0" name="Layout">TelaSeleçãoTemas</param>
                         </action>
                         <action id="-9" name="Set value" sid="105411642394233" type="System">
                             <param id="0" name="Variable">Erros</param>

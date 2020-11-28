@@ -10,14 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Intro</layout>
-        <layout order="1">Créditos</layout>
-        <layout order="4">Menu</layout>
-        <event-sheet order="2">Eventos Créditos</event-sheet>
-        <event-sheet order="3">Eventos SalaJoseph</event-sheet>
-        <event-sheet order="5">Eventos Intro</event-sheet>
-        <event-sheet order="6">Eventos Base-Perguntas</event-sheet>
-        <event-sheet order="7">Eventos Menu</event-sheet>
+        <layout order="2">TelaSeleçãoTemas</layout>
+        <layout order="6">Intro</layout>
+        <layout order="7">Menu</layout>
+        <event-sheet active="1" order="0">Eventos de Inserção das Perguntas</event-sheet>
+        <event-sheet order="1">Eventos Base-Perguntas</event-sheet>
+        <event-sheet order="3">EventosSelecaoTema</event-sheet>
+        <event-sheet order="4">Eventos TransicaoFase</event-sheet>
+        <event-sheet order="5">Eventos Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -47,23 +47,25 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/NPCs/" />
         <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/NPCs/Joseph/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Natureza/" />
-        <folder expanded="0" path="object-folder/Objetos do Quizz/" />
+        <folder expanded="1" path="object-folder/Objetos do Quizz/" />
         <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos para Pergunta/" />
         <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos para Resposta/" />
         <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos do HUD/" />
-        <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos do HUD/Detalhes/" />
-        <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos do HUD/Botões/" />
-        <folder expanded="1" path="object-folder/Objetos do Quizz/Objetos do HUD/Objetos de Exibição/" />
+        <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos do HUD/Detalhes/" />
+        <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos do HUD/Botões/" />
+        <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos do HUD/Objetos de Exibição/" />
         <folder expanded="0" path="object-folder/Construções/" />
         <folder expanded="1" path="object-folder/Objetos Programação/" />
         <folder expanded="1" path="object-folder/ObjetosTransição/" />
         <folder expanded="0" path="object-folder/Objetos cutscene/" />
-        <folder expanded="1" path="object-folder/Creditos/" />
+        <folder expanded="0" path="object-folder/Creditos/" />
+        <folder expanded="0" path="object-folder/Arrays/" />
+        <folder expanded="1" path="object-folder/Layout de testes/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="layout-folder/ARG/" />
-        <folder expanded="1" path="layout-folder/Plataforma/" />
-        <folder expanded="1" path="layout-folder/Quizz/" />
-        <folder expanded="1" path="layout-folder/TelasDeTransicao/" />
+        <folder expanded="0" path="layout-folder/Plataforma/" />
+        <folder expanded="0" path="layout-folder/Quizz/" />
+        <folder expanded="0" path="layout-folder/TelasDeTransicao/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/ARG/" />
         <folder expanded="1" path="file-folder/" />
