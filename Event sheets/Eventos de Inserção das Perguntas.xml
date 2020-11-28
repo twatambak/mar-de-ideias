@@ -148,7 +148,7 @@
                                         <action id="3" name="Set at XY" sid="989417887240952" type="ArrayPerguntas">
                                             <param id="0" name="X">1</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais brasileiras&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -319,7 +319,7 @@
                                         <action id="3" name="Set at XY" sid="656210133828659" type="ArrayPerguntas">
                                             <param id="0" name="X">4</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;História do Brasil&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -661,7 +661,7 @@
                                         <action id="3" name="Set at XY" sid="206971071235501" type="ArrayPerguntas">
                                             <param id="0" name="X">10</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Frases Históricas&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -718,7 +718,7 @@
                                         <action id="3" name="Set at XY" sid="405711989773941" type="ArrayPerguntas">
                                             <param id="0" name="X">11</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;História do Brasil&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -775,7 +775,7 @@
                                         <action id="3" name="Set at XY" sid="227841407051960" type="ArrayPerguntas">
                                             <param id="0" name="X">12</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;História do Brasil&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -946,7 +946,7 @@
                                         <action id="3" name="Set at XY" sid="544659143455971" type="ArrayPerguntas">
                                             <param id="0" name="X">15</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1003,7 +1003,7 @@
                                         <action id="3" name="Set at XY" sid="835808556778474" type="ArrayPerguntas">
                                             <param id="0" name="X">16</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1117,7 +1117,7 @@
                                         <action id="3" name="Set at XY" sid="570996112927956" type="ArrayPerguntas">
                                             <param id="0" name="X">18</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Estados brasileiros&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1174,7 +1174,7 @@
                                         <action id="3" name="Set at XY" sid="903834328646566" type="ArrayPerguntas">
                                             <param id="0" name="X">19</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Países&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1345,7 +1345,7 @@
                                         <action id="3" name="Set at XY" sid="600203090605745" type="ArrayPerguntas">
                                             <param id="0" name="X">22</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Espaço&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1402,7 +1402,7 @@
                                         <action id="3" name="Set at XY" sid="864496339296944" type="ArrayPerguntas">
                                             <param id="0" name="X">23</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Espaço&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1459,7 +1459,7 @@
                                         <action id="3" name="Set at XY" sid="654085338669317" type="ArrayPerguntas">
                                             <param id="0" name="X">24</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Espaço&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1516,7 +1516,7 @@
                                         <action id="3" name="Set at XY" sid="282605910374012" type="ArrayPerguntas">
                                             <param id="0" name="X">25</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Espaço&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1573,7 +1573,7 @@
                                         <action id="3" name="Set at XY" sid="752154448388086" type="ArrayPerguntas">
                                             <param id="0" name="X">26</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1630,7 +1630,7 @@
                                         <action id="3" name="Set at XY" sid="243468945901583" type="ArrayPerguntas">
                                             <param id="0" name="X">27</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1687,7 +1687,7 @@
                                         <action id="3" name="Set at XY" sid="187986068340689" type="ArrayPerguntas">
                                             <param id="0" name="X">28</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1744,7 +1744,7 @@
                                         <action id="3" name="Set at XY" sid="191467121860479" type="ArrayPerguntas">
                                             <param id="0" name="X">29</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1801,7 +1801,7 @@
                                         <action id="3" name="Set at XY" sid="646735575957329" type="ArrayPerguntas">
                                             <param id="0" name="X">30</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1858,7 +1858,7 @@
                                         <action id="3" name="Set at XY" sid="229837718039583" type="ArrayPerguntas">
                                             <param id="0" name="X">31</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1915,7 +1915,7 @@
                                         <action id="3" name="Set at XY" sid="868926420791463" type="ArrayPerguntas">
                                             <param id="0" name="X">32</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Guerras&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1972,7 +1972,7 @@
                                         <action id="3" name="Set at XY" sid="306787735161579" type="ArrayPerguntas">
                                             <param id="0" name="X">33</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Tecnologias&quot;</param>
+                                            <param id="2" name="Value">&quot;História&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2086,7 +2086,7 @@
                                         <action id="3" name="Set at XY" sid="739902549021817" type="ArrayPerguntas">
                                             <param id="0" name="X">35</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2143,7 +2143,7 @@
                                         <action id="3" name="Set at XY" sid="930101243663700" type="ArrayPerguntas">
                                             <param id="0" name="X">36</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2192,15 +2192,15 @@
                                             <param id="1" name="Y">2</param>
                                             <param id="2" name="Value">1</param>
                                         </action>
-                                        <action id="3" name="Set at XY" sid="799710099904136" type="ArrayPerguntas">
-                                            <param id="0" name="X">37</param>
-                                            <param id="1" name="Y">3</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
-                                        </action>
                                         <action id="3" name="Set at XY" sid="828703420307532" type="ArrayPerguntas">
                                             <param id="0" name="X">37</param>
-                                            <param id="1" name="Y">4</param>
+                                            <param id="1" name="Y">3</param>
                                             <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                        </action>
+                                        <action id="3" name="Set at XY" sid="799710099904136" type="ArrayPerguntas">
+                                            <param id="0" name="X">37</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2257,7 +2257,7 @@
                                         <action id="3" name="Set at XY" sid="364703707064181" type="ArrayPerguntas">
                                             <param id="0" name="X">38</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2314,7 +2314,7 @@
                                         <action id="3" name="Set at XY" sid="860765092610538" type="ArrayPerguntas">
                                             <param id="0" name="X">39</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2371,7 +2371,7 @@
                                         <action id="3" name="Set at XY" sid="656315523587821" type="ArrayPerguntas">
                                             <param id="0" name="X">40</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2428,7 +2428,7 @@
                                         <action id="3" name="Set at XY" sid="698794861591527" type="ArrayPerguntas">
                                             <param id="0" name="X">41</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2485,7 +2485,7 @@
                                         <action id="3" name="Set at XY" sid="293674763076818" type="ArrayPerguntas">
                                             <param id="0" name="X">42</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2542,7 +2542,7 @@
                                         <action id="3" name="Set at XY" sid="557925034096357" type="ArrayPerguntas">
                                             <param id="0" name="X">43</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2599,7 +2599,7 @@
                                         <action id="3" name="Set at XY" sid="816449049594709" type="ArrayPerguntas">
                                             <param id="0" name="X">44</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2656,7 +2656,7 @@
                                         <action id="3" name="Set at XY" sid="467788703541025" type="ArrayPerguntas">
                                             <param id="0" name="X">45</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2713,7 +2713,7 @@
                                         <action id="3" name="Set at XY" sid="766937867235079" type="ArrayPerguntas">
                                             <param id="0" name="X">46</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2770,7 +2770,7 @@
                                         <action id="3" name="Set at XY" sid="820387101198506" type="ArrayPerguntas">
                                             <param id="0" name="X">47</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2827,7 +2827,7 @@
                                         <action id="3" name="Set at XY" sid="414583140328215" type="ArrayPerguntas">
                                             <param id="0" name="X">48</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2884,7 +2884,7 @@
                                         <action id="3" name="Set at XY" sid="539836750574348" type="ArrayPerguntas">
                                             <param id="0" name="X">49</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2941,7 +2941,7 @@
                                         <action id="3" name="Set at XY" sid="835310409325740" type="ArrayPerguntas">
                                             <param id="0" name="X">50</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2998,7 +2998,7 @@
                                         <action id="3" name="Set at XY" sid="122107574414749" type="ArrayPerguntas">
                                             <param id="0" name="X">51</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3055,7 +3055,7 @@
                                         <action id="3" name="Set at XY" sid="634934137206596" type="ArrayPerguntas">
                                             <param id="0" name="X">52</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3112,7 +3112,7 @@
                                         <action id="3" name="Set at XY" sid="456230743951002" type="ArrayPerguntas">
                                             <param id="0" name="X">53</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3169,7 +3169,7 @@
                                         <action id="3" name="Set at XY" sid="254796091831141" type="ArrayPerguntas">
                                             <param id="0" name="X">54</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3226,7 +3226,7 @@
                                         <action id="3" name="Set at XY" sid="208777760537537" type="ArrayPerguntas">
                                             <param id="0" name="X">55</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3283,7 +3283,7 @@
                                         <action id="3" name="Set at XY" sid="935160816323551" type="ArrayPerguntas">
                                             <param id="0" name="X">56</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3340,7 +3340,7 @@
                                         <action id="3" name="Set at XY" sid="405436841216677" type="ArrayPerguntas">
                                             <param id="0" name="X">57</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3397,7 +3397,7 @@
                                         <action id="3" name="Set at XY" sid="264801893346509" type="ArrayPerguntas">
                                             <param id="0" name="X">58</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais Mundiais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3454,7 +3454,7 @@
                                         <action id="3" name="Set at XY" sid="428187298774076" type="ArrayPerguntas">
                                             <param id="0" name="X">59</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais Mundiais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3511,7 +3511,7 @@
                                         <action id="3" name="Set at XY" sid="912658636294803" type="ArrayPerguntas">
                                             <param id="0" name="X">60</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais Mundiais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3568,7 +3568,7 @@
                                         <action id="3" name="Set at XY" sid="960740721688689" type="ArrayPerguntas">
                                             <param id="0" name="X">61</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais Mundiais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3625,7 +3625,7 @@
                                         <action id="3" name="Set at XY" sid="529967402281526" type="ArrayPerguntas">
                                             <param id="0" name="X">62</param>
                                             <param id="1" name="Y">4</param>
-                                            <param id="2" name="Value">&quot;Capitais Mundiais&quot;</param>
+                                            <param id="2" name="Value">&quot;Geografia&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
