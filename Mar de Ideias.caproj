@@ -1745,6 +1745,11 @@
                 <plugin id="Button" />
             </object-type>
         </object-folder>
+        <object-folder name="Objetos SelecaoTema">
+            <object-type name="TextHistoria" sid="225380092332050">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="OpacidadeReduzida" sid="188872732063886">
             <plugin id="TiledBg" />
             <texture />
