@@ -984,7 +984,7 @@
                                                 <action id="3" name="Set at XY" sid="183824065417622" type="ArrayStatus">
                                                     <param id="0" name="X">0</param>
                                                     <param id="1" name="Y">1</param>
-                                                    <param id="2" name="Value">ArrayStatus.At(1) + 1</param>
+                                                    <param id="2" name="Value">ArrayStatus.At(0,1) + 1</param>
                                                 </action>
                                             </actions>
                                         </event-block>
@@ -1000,7 +1000,7 @@
                                                 <action id="3" name="Set at XY" sid="476771948473139" type="ArrayStatus">
                                                     <param id="0" name="X">1</param>
                                                     <param id="1" name="Y">1</param>
-                                                    <param id="2" name="Value">ArrayStatus.At(1) + 1</param>
+                                                    <param id="2" name="Value">ArrayStatus.At(1,1) + 1</param>
                                                 </action>
                                             </actions>
                                         </event-block>

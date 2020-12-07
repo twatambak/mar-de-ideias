@@ -85,5 +85,56 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="Grupo responsável por definir a contagem de perguntas respondidas para um tema especifico." sid="746180083986231" title="Configurações do array de status">
+            <sub-events>
+                <event-block sid="817977714295335">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="607316187542425" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="704513672267421" type="ArrayStatus">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">&quot;Geografia&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="214893254851949" type="ArrayStatus">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">3</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="604473397976270" type="ArrayStatus">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">31</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="718510146822141" type="ArrayStatus">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">&quot;História&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="559047265344461" type="ArrayStatus">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="697507140112989" type="ArrayStatus">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">19</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="241677131531338" type="ArrayStatus">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">&quot;Artes&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="885828051883174" type="ArrayStatus">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Value">&quot;Ciência&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="814167683080676" type="ArrayStatus">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Value">&quot;Geral&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

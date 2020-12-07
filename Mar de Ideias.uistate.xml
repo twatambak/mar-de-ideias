@@ -12,10 +12,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">TelaSeleçãoTemas</layout>
         <layout order="4">Menu</layout>
-        <event-sheet active="1" order="1">EventosSelecaoTema</event-sheet>
-        <event-sheet order="2">Eventos Base-Perguntas</event-sheet>
+        <layout order="7">Intro</layout>
+        <event-sheet order="1">EventosSelecaoTema</event-sheet>
+        <event-sheet active="1" order="2">Eventos Base-Perguntas</event-sheet>
         <event-sheet order="3">Eventos de Inserção das Perguntas</event-sheet>
         <event-sheet order="5">Eventos Menu</event-sheet>
+        <event-sheet order="6">Eventos Intro</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -125,6 +127,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Casa1/" />
         <folder expanded="1" path="animation-folder/BordaFalasJoseph/" />
         <folder expanded="1" path="animation-folder/JosephCutscene/" />
+        <folder expanded="1" path="animation-folder/LivroSelecao/" />
         <folder expanded="1" path="animation-folder/BordasDialogos/" />
         <folder expanded="1" path="animation-folder/BordasPausaPlataforma/" />
         <folder expanded="1" path="animation-folder/ImagemPersonagem/" />

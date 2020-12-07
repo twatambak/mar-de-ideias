@@ -21,6 +21,27 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="788519863968822">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="983301183005293" type="Touch">
+                            <param id="0" name="Object">LivroSelecao</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="530729520535593" type="LivroSelecao">
+                            <param id="0" name="Instance variable">IDTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="323134945129914" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Value">&quot;Geografia&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="800290305827874" type="System">
+                            <param id="0" name="Layout">TransicaoFase</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="319590292263140" title="CarregarInfTema">
