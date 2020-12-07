@@ -1752,6 +1752,12 @@
                     <instance-variable name="IDTema" sid="827359385506838" type="number" />
                 </instance-variables>
             </object-type>
+            <object-type name="TemaText" sid="229005851888903">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="TextoTema" sid="411617643093873" type="number" />
+                </instance-variables>
+            </object-type>
         </object-folder>
         <object-type name="OpacidadeReduzida" sid="188872732063886">
             <plugin id="TiledBg" />

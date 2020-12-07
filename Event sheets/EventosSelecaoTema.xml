@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventosSelecaoTema</name>
     <events>
+        <variable constant="0" name="Acertos" sid="988826696992444" static="0" type="number">0</variable>
         <variable constant="0" name="Tema" sid="985107050541186" static="0" type="text"></variable>
         <event-group description="" sid="596233925350077" title="SelecionaTema">
             <sub-events>
@@ -35,7 +36,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="978080122360858" type="TextHistoria">
-                            <param id="0" name="Text">&quot;0 / 31&quot;</param>
+                            <param id="0" name="Text">ArrayStatus.At(0,1) &amp; &quot; / 31&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -50,7 +51,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="324869852983035" type="TextHistoria">
-                            <param id="0" name="Text">&quot;0 / 19&quot;</param>
+                            <param id="0" name="Text">&quot;10 / 19&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -60,7 +61,7 @@
                         <condition id="-7" name="Compare instance variable" sid="214259398740320" type="TextHistoria">
                             <param id="0" name="Instance variable">IDTema</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
+                            <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -81,6 +82,74 @@
                         <action id="5" name="Set web font" sid="495467497561224" type="TextHistoria">
                             <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="518220545336566" type="TemaText">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="810493640246723" title="CarregarTextos">
+            <sub-events>
+                <event-block sid="835021539799017">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="165807352002359" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="220823005220342" type="TemaText">
+                            <param id="0" name="Instance variable">TextoTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="555785565013550" type="TemaText">
+                            <param id="0" name="Text">&quot;Geografia&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="317568514943350">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="945472218028273" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="155713040872773" type="TemaText">
+                            <param id="0" name="Instance variable">TextoTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="896994880687075" type="TemaText">
+                            <param id="0" name="Text">&quot;História&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="284297006159519">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="609321675084128" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="789065511326834" type="TemaText">
+                            <param id="0" name="Instance variable">TextoTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="362337268675981" type="TemaText">
+                            <param id="0" name="Text">&quot;Artes&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="330487113209784">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="948605730183794" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="506183765960115" type="TemaText">
+                            <param id="0" name="Instance variable">TextoTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="353265078773867" type="TemaText">
+                            <param id="0" name="Text">&quot;Gerais&quot;</param>
                         </action>
                     </actions>
                 </event-block>

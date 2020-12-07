@@ -41,6 +41,11 @@
                             <param id="1" name="Height">5</param>
                             <param id="2" name="Depth">1</param>
                         </action>
+                        <action id="1" name="Set size" sid="376227994988564" type="ArrayStatus">
+                            <param id="0" name="Width">5</param>
+                            <param id="1" name="Height">5</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -3955,31 +3960,31 @@
                         </action>
                         <action id="3" name="Set at XY" sid="240536379245675" type="ArrayStatus">
                             <param id="0" name="X">0</param>
-                            <param id="1" name="Y">0</param>
-                            <param id="2" name="Value">0</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">3</param>
                         </action>
                         <action id="3" name="Set at XY" sid="479204814789950" type="ArrayStatus">
                             <param id="0" name="X">0</param>
-                            <param id="1" name="Y">1</param>
+                            <param id="1" name="Y">2</param>
                             <param id="2" name="Value">31</param>
                         </action>
-                        <action id="2" name="Set at X" sid="212163499494839" type="ArrayStatus">
-                            <param id="0" name="X">1</param>
-                            <param id="1" name="Value">&quot;Artes&quot;</param>
-                        </action>
                         <action id="2" name="Set at X" sid="557405087157686" type="ArrayStatus">
-                            <param id="0" name="X">2</param>
+                            <param id="0" name="X">1</param>
                             <param id="1" name="Value">&quot;História&quot;</param>
                         </action>
                         <action id="3" name="Set at XY" sid="995133229645674" type="ArrayStatus">
-                            <param id="0" name="X">2</param>
-                            <param id="1" name="Y">0</param>
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">1</param>
                             <param id="2" name="Value">0</param>
                         </action>
                         <action id="3" name="Set at XY" sid="576392096874305" type="ArrayStatus">
-                            <param id="0" name="X">2</param>
-                            <param id="1" name="Y">1</param>
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">2</param>
                             <param id="2" name="Value">19</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="212163499494839" type="ArrayStatus">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">&quot;Artes&quot;</param>
                         </action>
                         <action id="2" name="Set at X" sid="404144299785331" type="ArrayStatus">
                             <param id="0" name="X">3</param>
