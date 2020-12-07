@@ -22,5 +22,69 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="319590292263140" title="CarregarInfTema">
+            <sub-events>
+                <event-block sid="457811389640450">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="167950243723769" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="853625568609604" type="TextHistoria">
+                            <param id="0" name="Instance variable">IDTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="978080122360858" type="TextHistoria">
+                            <param id="0" name="Text">&quot;0 / 31&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="659104959053634">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="869463340144367" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="265531684721072" type="TextHistoria">
+                            <param id="0" name="Instance variable">IDTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="324869852983035" type="TextHistoria">
+                            <param id="0" name="Text">&quot;0 / 19&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="580254646153644">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="975154263502823" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="214259398740320" type="TextHistoria">
+                            <param id="0" name="Instance variable">IDTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="798906795954367" type="TextHistoria">
+                            <param id="0" name="Text">&quot;0 / 31&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="457171662289977" title="CarregarWebFont">
+            <sub-events>
+                <event-block sid="597562633737692">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="743955228305555" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="495467497561224" type="TextHistoria">
+                            <param id="0" name="Family name">&quot;vcr_osd_monoregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;vcr.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

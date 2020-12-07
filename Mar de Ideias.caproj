@@ -1748,6 +1748,9 @@
         <object-folder name="Objetos SelecaoTema">
             <object-type name="TextHistoria" sid="225380092332050">
                 <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="IDTema" sid="827359385506838" type="number" />
+                </instance-variables>
             </object-type>
         </object-folder>
         <object-type name="OpacidadeReduzida" sid="188872732063886">

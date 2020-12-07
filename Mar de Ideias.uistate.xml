@@ -10,14 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="2">TelaSeleçãoTemas</layout>
-        <layout order="6">Intro</layout>
-        <layout order="7">Menu</layout>
-        <event-sheet order="0">Eventos de Inserção das Perguntas</event-sheet>
-        <event-sheet order="1">Eventos Base-Perguntas</event-sheet>
-        <event-sheet order="3">EventosSelecaoTema</event-sheet>
-        <event-sheet order="4">Eventos TransicaoFase</event-sheet>
-        <event-sheet order="5">Eventos Menu</event-sheet>
+        <layout active="1" order="0">TelaSeleçãoTemas</layout>
+        <event-sheet order="1">EventosSelecaoTema</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -30,7 +24,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Objetos do Mar/" />
         <folder expanded="0" path="object-folder/Controles/" />
-        <folder expanded="0" path="object-folder/Objetos do Menu Inicial/" />
+        <folder expanded="1" path="object-folder/Objetos do Menu Inicial/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Título/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos do Cenário/" />
         <folder expanded="1" path="object-folder/Objetos do Menu Inicial/Objetos das Opções/" />
@@ -39,9 +33,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos do Menu de GameOver (Quizz)/" />
         <folder expanded="0" path="object-folder/Objetos da Senha/" />
         <folder expanded="0" path="object-folder/Objetos da Introdução/" />
-        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/" />
+        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Plataformas/" />
-        <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Itens Menu/" />
+        <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/Itens Menu/" />
         <folder expanded="1" path="object-folder/Objetos do Jogo Plataforma/Frases e textos separados/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/Jogador/" />
         <folder expanded="0" path="object-folder/Objetos do Jogo Plataforma/NPCs/" />
@@ -55,8 +49,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos do HUD/Botões/" />
         <folder expanded="0" path="object-folder/Objetos do Quizz/Objetos do HUD/Objetos de Exibição/" />
         <folder expanded="0" path="object-folder/Construções/" />
-        <folder expanded="1" path="object-folder/Objetos Programação/" />
-        <folder expanded="1" path="object-folder/ObjetosTransição/" />
+        <folder expanded="0" path="object-folder/Objetos Programação/" />
+        <folder expanded="0" path="object-folder/ObjetosTransição/" />
         <folder expanded="0" path="object-folder/Objetos cutscene/" />
         <folder expanded="0" path="object-folder/Creditos/" />
         <folder expanded="0" path="object-folder/Arrays/" />
