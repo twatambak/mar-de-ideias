@@ -99,7 +99,7 @@
                         <action id="3" name="Set at XY" sid="214893254851949" type="ArrayStatus">
                             <param id="0" name="X">0</param>
                             <param id="1" name="Y">1</param>
-                            <param id="2" name="Value">3</param>
+                            <param id="2" name="Value">0</param>
                         </action>
                         <action id="3" name="Set at XY" sid="604473397976270" type="ArrayStatus">
                             <param id="0" name="X">0</param>

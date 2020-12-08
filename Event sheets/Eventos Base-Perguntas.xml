@@ -1276,6 +1276,7 @@
                                     </conditions>
                                     <actions />
                                 </event-block>
+                                <comment>Criar sub eventos para zerar os array´s de perguntas</comment>
                                 <event-block sid="858799658480116">
                                     <conditions>
                                         <condition id="-7" name="Compare instance variable" sid="858584841330419" type="GameOver_Texto">
@@ -1314,6 +1315,64 @@
                                             <param id="1" name="Value">0</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <variable constant="0" name="Contador" sid="839152949380247" static="0" type="number">0</variable>
+                                        <event-block sid="451513567148762">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="221162734253103" type="System">
+                                                    <param id="0" name="Variable">Tema</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Geografia&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="965794753465497" type="ArrayStatus">
+                                                    <param id="0" name="X">0</param>
+                                                    <param id="1" name="Y">1</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="845557381451728">
+                                                    <conditions>
+                                                        <condition id="-12" name="Repeat" sid="766171380973644" type="System">
+                                                            <param id="0" name="Count">67</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="635216025760140" type="System">
+                                                            <param id="0" name="Variable">Contador</param>
+                                                            <param id="1" name="Comparison">3</param>
+                                                            <param id="2" name="Value">67</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Add to" sid="794368650769959" type="System">
+                                                            <param id="0" name="Variable">Contador</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                    <sub-events>
+                                                        <event-block sid="744159453203530">
+                                                            <conditions>
+                                                                <condition id="1" name="Compare at XY" sid="184783333563689" type="ArrayPerguntas">
+                                                                    <param id="0" name="X">Contador</param>
+                                                                    <param id="1" name="Y">4</param>
+                                                                    <param id="2" name="Comparison">0</param>
+                                                                    <param id="3" name="Value">&quot;Geografia&quot;</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="3" name="Set at XY" sid="416539325652758" type="ArrayPerguntas">
+                                                                    <param id="0" name="X">Contador</param>
+                                                                    <param id="1" name="Y">3</param>
+                                                                    <param id="2" name="Value">&quot;Não respondida&quot;</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                                 <event-block sid="189859122882747">
                                     <conditions>
