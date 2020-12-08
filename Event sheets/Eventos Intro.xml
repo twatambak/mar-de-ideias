@@ -124,13 +124,28 @@
                             <param id="0" name="X">2</param>
                             <param id="1" name="Value">&quot;Artes&quot;</param>
                         </action>
+                        <action id="3" name="Set at XY" sid="801058171539672" type="ArrayStatus">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
                         <action id="2" name="Set at X" sid="885828051883174" type="ArrayStatus">
                             <param id="0" name="X">3</param>
                             <param id="1" name="Value">&quot;Ciência&quot;</param>
                         </action>
+                        <action id="3" name="Set at XY" sid="444595874032600" type="ArrayStatus">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
                         <action id="2" name="Set at X" sid="814167683080676" type="ArrayStatus">
                             <param id="0" name="X">4</param>
-                            <param id="1" name="Value">&quot;Geral&quot;</param>
+                            <param id="1" name="Value">&quot;Gerais&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="261462208828656" type="ArrayStatus">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>

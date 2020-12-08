@@ -11,13 +11,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">TelaSeleçãoTemas</layout>
-        <layout order="4">Menu</layout>
-        <layout order="7">Intro</layout>
+        <layout order="4">Intro</layout>
         <event-sheet order="1">EventosSelecaoTema</event-sheet>
-        <event-sheet active="1" order="2">Eventos Base-Perguntas</event-sheet>
-        <event-sheet order="3">Eventos de Inserção das Perguntas</event-sheet>
-        <event-sheet order="5">Eventos Menu</event-sheet>
-        <event-sheet order="6">Eventos Intro</event-sheet>
+        <event-sheet active="1" order="2">Eventos de Inserção das Perguntas</event-sheet>
+        <event-sheet order="3">Eventos Intro</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
