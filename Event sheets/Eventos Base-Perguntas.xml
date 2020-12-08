@@ -68,7 +68,7 @@
                                     <param id="0" name="Group name">&quot;Sorteia&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
-                                <action id="0" name="Set text" sid="100318441135926" type="TextoPerguntas">
+                                <action disabled="1" id="0" name="Set text" sid="100318441135926" type="TextoPerguntas">
                                     <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
                                 </action>
                                 <action behavior="FadeIn" id="1" name="Start fade" sid="473571797493246" type="BordaPergunta" />
@@ -1001,6 +1001,54 @@
                                                     <param id="0" name="X">1</param>
                                                     <param id="1" name="Y">1</param>
                                                     <param id="2" name="Value">ArrayStatus.At(1,1) + 1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="800526856376972">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="297737060215356" type="System">
+                                                    <param id="0" name="Variable">Tema</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Artes&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="235704758129455" type="ArrayStatus">
+                                                    <param id="0" name="X">2</param>
+                                                    <param id="1" name="Y">1</param>
+                                                    <param id="2" name="Value">ArrayStatus.At(2,1) + 1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="351676513476883">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="137598770896863" type="System">
+                                                    <param id="0" name="Variable">Tema</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Ciências&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="967420282070841" type="ArrayStatus">
+                                                    <param id="0" name="X">3</param>
+                                                    <param id="1" name="Y">1</param>
+                                                    <param id="2" name="Value">ArrayStatus.At(3,1) + 1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="719269034460183">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="541586878328030" type="System">
+                                                    <param id="0" name="Variable">Tema</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Gerais&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="3" name="Set at XY" sid="338705563474815" type="ArrayStatus">
+                                                    <param id="0" name="X">4</param>
+                                                    <param id="1" name="Y">1</param>
+                                                    <param id="2" name="Value">ArrayStatus.At(4,1) + 1</param>
                                                 </action>
                                             </actions>
                                         </event-block>

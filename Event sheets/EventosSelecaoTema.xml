@@ -42,6 +42,90 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="852785566984001">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="438680597066986" type="Touch">
+                            <param id="0" name="Object">LivroSelecao</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="607574073611628" type="LivroSelecao">
+                            <param id="0" name="Instance variable">IDTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="830454242750857" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Value">&quot;História&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="853221325430448" type="System">
+                            <param id="0" name="Layout">TransicaoFase</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="643523728208037">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="354214722001542" type="Touch">
+                            <param id="0" name="Object">LivroSelecao</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="305933866209078" type="LivroSelecao">
+                            <param id="0" name="Instance variable">IDTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="130354217904594" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Value">&quot;Artes&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="844261127342952" type="System">
+                            <param id="0" name="Layout">TransicaoFase</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="458529464160467">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="768477195073988" type="Touch">
+                            <param id="0" name="Object">LivroSelecao</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="252736961848580" type="LivroSelecao">
+                            <param id="0" name="Instance variable">IDTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="797074328778648" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Value">&quot;Ciências&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="798358178631583" type="System">
+                            <param id="0" name="Layout">TransicaoFase</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="264983808985439">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="465346430801024" type="Touch">
+                            <param id="0" name="Object">LivroSelecao</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="184550731697456" type="LivroSelecao">
+                            <param id="0" name="Instance variable">IDTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="599552352515354" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Value">&quot;Geral&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="161966845971327" type="System">
+                            <param id="0" name="Layout">TransicaoFase</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="319590292263140" title="CarregarInfTema">
