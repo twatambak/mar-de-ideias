@@ -57,7 +57,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="978080122360858" type="TextHistoria">
-                            <param id="0" name="Text">ArrayStatus.At(0,1) &amp; &quot; / 31&quot;</param>
+                            <param id="0" name="Text">ArrayStatus.At(0,1) &amp; &quot; / &quot; &amp; TotalGeografia</param>
                         </action>
                     </actions>
                 </event-block>
@@ -72,7 +72,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="324869852983035" type="TextHistoria">
-                            <param id="0" name="Text">&quot;10 / 19&quot;</param>
+                            <param id="0" name="Text">ArrayStatus.At(1,1) &amp; &quot; / &quot; &amp; TotalHistoria</param>
                         </action>
                     </actions>
                 </event-block>
@@ -87,7 +87,37 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="798906795954367" type="TextHistoria">
-                            <param id="0" name="Text">&quot;0 / 31&quot;</param>
+                            <param id="0" name="Text">ArrayStatus.At(2,1) &amp; &quot; / &quot; &amp; TotalArtes</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="158799954050325">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="145583751647172" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="535311798690065" type="TextHistoria">
+                            <param id="0" name="Instance variable">IDTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="511344837769575" type="TextHistoria">
+                            <param id="0" name="Text">ArrayStatus.At(3,1) &amp; &quot; / &quot; &amp; TotalCiencias</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="632653734428865">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="333266316774573" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="312864168142418" type="TextHistoria">
+                            <param id="0" name="Instance variable">IDTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="537618295816195" type="TextHistoria">
+                            <param id="0" name="Text">ArrayStatus.At(4,1) &amp; &quot; / &quot; &amp; TotalGerais</param>
                         </action>
                     </actions>
                 </event-block>
@@ -170,6 +200,21 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="353265078773867" type="TemaText">
+                            <param id="0" name="Text">&quot;Ciências&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="300117973284419">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="632520727069423" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="532576433717174" type="TemaText">
+                            <param id="0" name="Instance variable">TextoTema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="637723463012165" type="TemaText">
                             <param id="0" name="Text">&quot;Gerais&quot;</param>
                         </action>
                     </actions>

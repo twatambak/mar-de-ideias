@@ -1101,5 +1101,148 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="361740016534598" title="ContagemPerguntas">
+            <sub-events>
+                <variable constant="0" name="ContadorTotal" sid="717962420922708" static="0" type="number">0</variable>
+                <event-block sid="359781605048520">
+                    <conditions>
+                        <condition id="-12" name="Repeat" sid="614545457594936" type="System">
+                            <param id="0" name="Count">67</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="600086839088589" type="System">
+                            <param id="0" name="Variable">ContadorTotal</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="418590703847580">
+                            <conditions>
+                                <condition id="1" name="Compare at XY" sid="394720444478730" type="ArrayPerguntas">
+                                    <param id="0" name="X">ContadorTotal</param>
+                                    <param id="1" name="Y">4</param>
+                                    <param id="2" name="Comparison">0</param>
+                                    <param id="3" name="Value">&quot;Geografia&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="195614572999378" type="System">
+                                    <param id="0" name="Variable">TotalGeografia</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="627780975259042">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="900245934444954" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="485977225579594">
+                                    <conditions>
+                                        <condition id="1" name="Compare at XY" sid="543232714947427" type="ArrayPerguntas">
+                                            <param id="0" name="X">ContadorTotal</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">&quot;História&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="830586171483795" type="System">
+                                            <param id="0" name="Variable">TotalHistoria</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="455199257815986">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="436518655056429" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="763265074811193">
+                                            <conditions>
+                                                <condition id="1" name="Compare at XY" sid="956155518475004" type="ArrayPerguntas">
+                                                    <param id="0" name="X">ContadorTotal</param>
+                                                    <param id="1" name="Y">4</param>
+                                                    <param id="2" name="Comparison">0</param>
+                                                    <param id="3" name="Value">&quot;Artes&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Add to" sid="403754527088763" type="System">
+                                                    <param id="0" name="Variable">TotalArtes</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="231875593672853">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="144469131542751" type="System" />
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="469763446964559">
+                                                    <conditions>
+                                                        <condition id="1" name="Compare at XY" sid="817365967457692" type="ArrayPerguntas">
+                                                            <param id="0" name="X">ContadorTotal</param>
+                                                            <param id="1" name="Y">4</param>
+                                                            <param id="2" name="Comparison">0</param>
+                                                            <param id="3" name="Value">&quot;Ciências&quot;</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Add to" sid="756450541248395" type="System">
+                                                            <param id="0" name="Variable">TotalCiencias</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="463399538755161">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="616734951584873" type="System" />
+                                                    </conditions>
+                                                    <actions />
+                                                    <sub-events>
+                                                        <event-block sid="387499413949726">
+                                                            <conditions>
+                                                                <condition id="1" name="Compare at XY" sid="922140725364266" type="ArrayPerguntas">
+                                                                    <param id="0" name="X">ContadorTotal</param>
+                                                                    <param id="1" name="Y">4</param>
+                                                                    <param id="2" name="Comparison">0</param>
+                                                                    <param id="3" name="Value">&quot;Gerais&quot;</param>
+                                                                </condition>
+                                                            </conditions>
+                                                            <actions>
+                                                                <action id="-10" name="Add to" sid="240811813674739" type="System">
+                                                                    <param id="0" name="Variable">TotalGerais</param>
+                                                                    <param id="1" name="Value">1</param>
+                                                                </action>
+                                                            </actions>
+                                                        </event-block>
+                                                    </sub-events>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="282951060807954">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="457088353710420" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="294007271115164" type="System">
+                            <param id="0" name="Group name">&quot;ContagemPerguntas&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

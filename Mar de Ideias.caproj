@@ -1765,7 +1765,17 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248438395023885" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.585586" hotspotY="0.512397" original-source="E:\Backup\Projetos\mar-de-ideias\Textures\Book.png">
+                            <collision-poly>
+                                <point x="0.036036" y="0.00826446" />
+                                <point x="0.585586" y="0.00826446" />
+                                <point x="0.990991" y="0.140496" />
+                                <point x="0.990991" y="0.884298" />
+                                <point x="0.585586" y="0.991736" />
+                                <point x="0.0630631" y="0.991736" />
+                                <point x="0.00900901" y="0.512397" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>

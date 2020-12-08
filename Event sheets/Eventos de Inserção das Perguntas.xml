@@ -3,6 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos de Inserção das Perguntas</name>
     <events>
+        <variable constant="0" name="TotalGerais" sid="465187897838890" static="0" type="number">0</variable>
+        <variable constant="0" name="TotalCiencias" sid="900427968538074" static="0" type="number">0</variable>
+        <variable constant="0" name="TotalArtes" sid="198501588349600" static="0" type="number">0</variable>
+        <variable constant="0" name="TotalHistoria" sid="524755514763164" static="0" type="number">0</variable>
+        <variable constant="0" name="TotalGeografia" sid="765134290853066" static="0" type="number">0</variable>
         <event-group description="Armazena explicações referentes aos eventos presentes." sid="480631775707796" title="Explicações">
             <sub-events>
                 <event-group description="Explica o armazenamento dos arrays de perguntas." sid="448969859223512" title="Explicaçõs das Posições dos Arrays de Perguntas">

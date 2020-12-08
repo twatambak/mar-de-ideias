@@ -5,14 +5,14 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>320</position-x>
-        <position-y>553.819</position-y>
-        <position-z>235.795</position-z>
+        <position-y>764.121</position-y>
+        <position-z>99.1736</position-z>
         <lookat-x>320</lookat-x>
-        <lookat-y>553.819</lookat-y>
+        <lookat-y>764.121</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
-    <show-grid>0</show-grid>
+    <show-grid>1</show-grid>
     <snap-width>32</snap-width>
     <snap-height>32</snap-height>
     <show-collision-polys>0</show-collision-polys>
@@ -25,7 +25,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <active-layer name="Textos" />
     <layers>
-        <layer locked="1" name="Fundo" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Fundo" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Textos" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>
