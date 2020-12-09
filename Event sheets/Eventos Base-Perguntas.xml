@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base-Perguntas</name>
     <events>
+        <variable constant="0" name="PerguntaQueVem" sid="333408626848421" static="0" type="number">0</variable>
         <variable constant="0" name="MultiTempo" sid="929873262272889" static="0" type="number">1</variable>
         <variable constant="0" name="NPCAtivo" sid="382322059137736" static="0" type="number">0</variable>
         <event-group description="" sid="153366938438702" title="Configurações Iniciais">
@@ -54,6 +55,19 @@
                 </event-group>
                 <event-group description="" sid="480743114363865" title="Definição dos textos das perguntas e respostas">
                     <sub-events>
+                        <event-group description="" inactive="1" sid="865672770236676" title="SorteiaNovo">
+                            <sub-events>
+                                <variable constant="0" name="Contador" sid="542218953873724" static="0" type="number">0</variable>
+                                <event-block sid="287396682680141">
+                                    <conditions>
+                                        <condition id="-15" name="Is group active" sid="266882075391610" type="System">
+                                            <param id="0" name="Group name">&quot;SorteiaNovo&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                         <comment>No início do layout acessa os campos das possíveis respostas para a pergunta gerada aleatoriamente e retorna as respostas para as áreas correspondentes.</comment>
                         <event-block sid="956003952909097">
                             <conditions>
@@ -97,9 +111,13 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="-9" name="Set value" sid="447062855042708" type="System">
+                                                    <param id="0" name="Variable">PerguntaQueVem</param>
+                                                    <param id="1" name="Value">int(random(1, TotalGeografia + 1))</param>
+                                                </action>
                                                 <action id="-9" name="Set value" sid="853817836494587" type="System">
                                                     <param id="0" name="Variable">PerguntaAtual</param>
-                                                    <param id="1" name="Value">int(random(1, TotalPerguntas + 1))</param>
+                                                    <param id="1" name="Value">ArrayReferencia.At(PerguntaQueVem)</param>
                                                 </action>
                                             </actions>
                                         </event-block>
