@@ -31,6 +31,12 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
+                        <condition id="1" name="Compare at XY" sid="515547704206027" type="ArrayStatus">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Comparison">1</param>
+                            <param id="3" name="Value">TotalGeografia</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="323134945129914" type="System">
@@ -51,6 +57,12 @@
                             <param id="0" name="Instance variable">IDTema</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="1" name="Compare at XY" sid="428074671928844" type="ArrayStatus">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Comparison">1</param>
+                            <param id="3" name="Value">TotalHistoria</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -73,6 +85,12 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">2</param>
                         </condition>
+                        <condition id="1" name="Compare at XY" sid="511473513332976" type="ArrayStatus">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Comparison">1</param>
+                            <param id="3" name="Value">TotalArtes</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="130354217904594" type="System">
@@ -94,6 +112,12 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">3</param>
                         </condition>
+                        <condition id="1" name="Compare at XY" sid="926640674041812" type="ArrayStatus">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Comparison">1</param>
+                            <param id="3" name="Value">TotalCiencias</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="797074328778648" type="System">
@@ -114,6 +138,12 @@
                             <param id="0" name="Instance variable">IDTema</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="1" name="Compare at XY" sid="696352980633636" type="ArrayStatus">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Comparison">1</param>
+                            <param id="3" name="Value">TotalGerais</param>
                         </condition>
                     </conditions>
                     <actions>

@@ -862,7 +862,7 @@
             <instances>
                 <instance type="TextoPerguntas" uid="12">
                     <properties>
-                        <text>Em que país foi inventado o cachorro-quente?</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-36,400,0</font>
                         <color>255,255,255</color>
@@ -1099,7 +1099,7 @@
             <instances>
                 <instance type="TextoRespostas" uid="47">
                     <properties>
-                        <text>Alemanha</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-29.6,400,0</font>
                         <color>255,255,255</color>
@@ -1149,7 +1149,7 @@
                 </instance>
                 <instance type="TextoRespostas" uid="48">
                     <properties>
-                        <text>Austrália</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-29.6,400,0</font>
                         <color>255,255,255</color>
@@ -1199,7 +1199,7 @@
                 </instance>
                 <instance type="TextoRespostas" uid="46">
                     <properties>
-                        <text>Estados Unidos</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-29.6,400,0</font>
                         <color>255,255,255</color>
@@ -1787,7 +1787,7 @@
                         <line-height>0</line-height>
                     </properties>
                     <instance-variables>
-                        <ID>0</ID>
+                        <ID>1</ID>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

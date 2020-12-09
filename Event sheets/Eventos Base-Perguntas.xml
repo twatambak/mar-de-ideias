@@ -60,16 +60,9 @@
                                 <condition id="-2" name="On start of layout" sid="923538905994345" type="System" />
                             </conditions>
                             <actions>
-                                <action id="-9" name="Set value" sid="410304934107805" type="System">
-                                    <param id="0" name="Variable">PerguntaAtual</param>
-                                    <param id="1" name="Value">int(random(1, TotalPerguntas + 1))</param>
-                                </action>
                                 <action id="-12" name="Set group active" sid="917975150277177" type="System">
                                     <param id="0" name="Group name">&quot;Sorteia&quot;</param>
                                     <param id="1" name="State">1</param>
-                                </action>
-                                <action disabled="1" id="0" name="Set text" sid="100318441135926" type="TextoPerguntas">
-                                    <param id="0" name="Text">ArrayPerguntas.At(PerguntaAtual)</param>
                                 </action>
                                 <action behavior="FadeIn" id="1" name="Start fade" sid="473571797493246" type="BordaPergunta" />
                                 <action behavior="FadeIn" id="1" name="Start fade" sid="337481160114118" type="BordaRespostas" />
@@ -1883,6 +1876,195 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="710171316724541" title="EncerraCampanha">
+            <sub-events>
+                <event-block sid="564191260919390">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="549645545253425" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Artes&quot;</param>
+                        </condition>
+                        <condition id="1" name="Compare at XY" sid="214516979864671" type="ArrayStatus">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">TotalArtes</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="694982891140135" type="System">
+                            <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="684624747478365">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="615722370518745" type="GameOver_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="345372861694863" type="GameOver_Texto">
+                                    <param id="0" name="Text">&quot;Parabéns, você atingiu o conhecimento necessário.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="429056979911450">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="336752050844000" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Ciências&quot;</param>
+                        </condition>
+                        <condition id="1" name="Compare at XY" sid="552164053797992" type="ArrayStatus">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">TotalCiencias</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="291005290504783" type="System">
+                            <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="360445139090031">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="412933220743974" type="GameOver_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="972597027859214" type="GameOver_Texto">
+                                    <param id="0" name="Text">&quot;Parabéns, você atingiu o conhecimento necessário.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="946606820446404">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="833723958240866" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Geografia&quot;</param>
+                        </condition>
+                        <condition id="1" name="Compare at XY" sid="604588818352887" type="ArrayStatus">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">TotalGeografia</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="717397438213095" type="System">
+                            <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="440960878249234">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="375282120489167" type="GameOver_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="346323549731745" type="GameOver_Texto">
+                                    <param id="0" name="Text">&quot;Parabéns, você atingiu o conhecimento necessário.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="455669362759437">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="440216388403031" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;História&quot;</param>
+                        </condition>
+                        <condition id="1" name="Compare at XY" sid="205054437505385" type="ArrayStatus">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">TotalHistoria</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="576010654957867" type="System">
+                            <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="659724031235248">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="182547780776693" type="GameOver_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="664344291128225" type="GameOver_Texto">
+                                    <param id="0" name="Text">&quot;Parabéns, você atingiu o conhecimento necessário.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="835489899464824">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="604812541879349" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Gerais&quot;</param>
+                        </condition>
+                        <condition id="1" name="Compare at XY" sid="770250411078084" type="ArrayStatus">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Comparison">0</param>
+                            <param id="3" name="Value">TotalGerais</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="319651949727764" type="System">
+                            <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="698654100222111">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="598575920670532" type="GameOver_Texto">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="649226149816064" type="GameOver_Texto">
+                                    <param id="0" name="Text">&quot;Parabéns, você atingiu o conhecimento necessário.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
     </events>
