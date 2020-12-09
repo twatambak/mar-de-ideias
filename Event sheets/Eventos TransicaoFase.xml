@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos TransicaoFase</name>
     <events>
+        <variable constant="0" name="espelhoContador" sid="403180548080591" static="0" type="number">0</variable>
         <event-group description="" sid="454350489952099" title="IniciaAnimação">
             <sub-events>
                 <event-block sid="839778595241461">
@@ -133,6 +134,139 @@
                             <param id="1" name="Tag (optional)">&quot;Mar&quot;</param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="766668718944939" title="SeparaTema">
+            <sub-events>
+                <event-block sid="839338186061658">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="498865429811380" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set size" sid="170839166583685" type="ArrayReferencia">
+                            <param id="0" name="Width">67</param>
+                            <param id="1" name="Height">1</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="650582675477875">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="735389809900153" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="472137892411311" type="System">
+                            <param id="0" name="Variable">espelhoContador</param>
+                            <param id="1" name="Value">Contador</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <variable constant="0" name="Contador2" sid="898127086420194" static="0" type="number">0</variable>
+                <variable constant="0" name="Contador" sid="278773277724941" static="0" type="number">0</variable>
+                <event-block sid="445606020782792">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="420373001840370" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Artes&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="693346416437832">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="931902865258512" type="System">
+                                    <param id="0" name="Count">67</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="449170423435571" type="System">
+                                    <param id="0" name="Variable">Contador</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">67</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="639054699328136" type="System">
+                                    <param id="0" name="Variable">Contador</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="740538690775654">
+                                    <conditions>
+                                        <condition id="1" name="Compare at XY" sid="575937275537743" type="ArrayPerguntas">
+                                            <param id="0" name="X">Contador</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">&quot;Artes&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set at X" sid="252833540482342" type="ArrayReferencia">
+                                            <param id="0" name="X">Contador2 + 1</param>
+                                            <param id="1" name="Value">Contador</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="881859476992159" type="System">
+                                            <param id="0" name="Variable">Contador2</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="661458768323838">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="123682524144877" type="System">
+                            <param id="0" name="Variable">Tema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Geografia&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="502808803433997">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="216257551212596" type="System">
+                                    <param id="0" name="Count">67</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="267624330332027" type="System">
+                                    <param id="0" name="Variable">Contador</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">67</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="488556433961131" type="System">
+                                    <param id="0" name="Variable">Contador</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="925372672376801">
+                                    <conditions>
+                                        <condition id="1" name="Compare at XY" sid="979356395537119" type="ArrayPerguntas">
+                                            <param id="0" name="X">Contador</param>
+                                            <param id="1" name="Y">4</param>
+                                            <param id="2" name="Comparison">0</param>
+                                            <param id="3" name="Value">&quot;Geografia&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="2" name="Set at X" sid="851286916192104" type="ArrayReferencia">
+                                            <param id="0" name="X">Contador2 + 1</param>
+                                            <param id="1" name="Value">Contador</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="350136486566132" type="System">
+                                            <param id="0" name="Variable">Contador2</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

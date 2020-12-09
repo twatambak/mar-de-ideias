@@ -1739,6 +1739,9 @@
             <object-type global="1" name="ArrayStatus" sid="246331086564879">
                 <plugin id="Arr" />
             </object-type>
+            <object-type global="1" name="ArrayReferencia" sid="336543638468932">
+                <plugin id="Arr" />
+            </object-type>
         </object-folder>
         <object-folder name="Layout de testes">
             <object-type name="btnComidas" sid="530556745979830">

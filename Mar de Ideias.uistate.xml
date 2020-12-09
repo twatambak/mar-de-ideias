@@ -13,9 +13,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">TelaSeleçãoTemas</layout>
         <layout order="2">Intro</layout>
         <layout order="3">Menu</layout>
-        <layout active="1" order="5">Base das Perguntas</layout>
         <event-sheet order="1">EventosSelecaoTema</event-sheet>
         <event-sheet order="4">Eventos Base-Perguntas</event-sheet>
+        <event-sheet order="5">Eventos Menu</event-sheet>
+        <event-sheet active="1" order="6">Eventos TransicaoFase</event-sheet>
+        <event-sheet order="7">Eventos de Inserção das Perguntas</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -57,7 +59,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/ObjetosTransição/" />
         <folder expanded="0" path="object-folder/Objetos cutscene/" />
         <folder expanded="0" path="object-folder/Creditos/" />
-        <folder expanded="0" path="object-folder/Arrays/" />
+        <folder expanded="1" path="object-folder/Arrays/" />
         <folder expanded="1" path="object-folder/Layout de testes/" />
         <folder expanded="1" path="object-folder/Objetos SelecaoTema/" />
         <folder expanded="1" path="layout-folder/" />

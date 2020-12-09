@@ -2085,6 +2085,13 @@
                 <depth>1</depth>
             </properties>
         </instance>
+        <instance type="ArrayReferencia" uid="419">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
     </nonworld-instances>
     <effects />
 </c2layout>
