@@ -48,6 +48,10 @@
                             <param id="0" name="Variable">Profundidade</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="211796084390518" type="System">
+                            <param id="0" name="Variable">Ganhou</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                         <action id="33" name="Stop all" sid="645377032680467" type="Sons" />
                         <action id="-9" name="Set value" sid="683878370346673" type="System">
                             <param id="0" name="Variable">NoMenu</param>

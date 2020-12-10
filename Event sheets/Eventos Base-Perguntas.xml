@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base-Perguntas</name>
     <events>
+        <variable constant="0" name="Ganhou" sid="293913619855345" static="0" type="number">0</variable>
         <variable constant="0" name="PerguntaQueVem" sid="333408626848421" static="0" type="number">0</variable>
         <variable constant="0" name="MultiTempo" sid="929873262272889" static="0" type="number">1</variable>
         <variable constant="0" name="NPCAtivo" sid="382322059137736" static="0" type="number">0</variable>
@@ -1776,8 +1777,10 @@
                                         <comment>A partir desse bloco quando o jogador perder as 4 tentativas da primeira vida ele irá resetar o array de perguntas com o tema escolhido</comment>
                                         <event-block sid="141482594897826">
                                             <conditions>
-                                                <condition id="-15" name="Is group active" sid="337236473334091" type="System">
-                                                    <param id="0" name="Group name">&quot;EncerraCampanha&quot;</param>
+                                                <condition id="-14" name="Compare variable" sid="337236473334091" type="System">
+                                                    <param id="0" name="Variable">Ganhou</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
                                                 </condition>
                                             </conditions>
                                             <actions />
@@ -2322,13 +2325,13 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="193292544467709" type="System">
+                            <param id="0" name="Variable">Ganhou</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="-12" name="Set group active" sid="694982891140135" type="System">
                             <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
                             <param id="1" name="State">1</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="493455393141014" type="System">
-                            <param id="0" name="Group name">&quot;EncerraCampanha&quot;</param>
-                            <param id="1" name="State">0</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -2363,6 +2366,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="559721654741314" type="System">
+                            <param id="0" name="Variable">Ganhou</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="-12" name="Set group active" sid="291005290504783" type="System">
                             <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
                             <param id="1" name="State">1</param>
@@ -2400,6 +2407,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="295337950470210" type="System">
+                            <param id="0" name="Variable">Ganhou</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="-12" name="Set group active" sid="717397438213095" type="System">
                             <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
                             <param id="1" name="State">1</param>
@@ -2437,6 +2448,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="842909347626082" type="System">
+                            <param id="0" name="Variable">Ganhou</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="-12" name="Set group active" sid="576010654957867" type="System">
                             <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
                             <param id="1" name="State">1</param>
@@ -2474,6 +2489,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="626616923467319" type="System">
+                            <param id="0" name="Variable">Ganhou</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="-12" name="Set group active" sid="319651949727764" type="System">
                             <param id="0" name="Group name">&quot;Eventos de fim de jogo&quot;</param>
                             <param id="1" name="State">1</param>
