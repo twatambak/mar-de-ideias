@@ -2016,7 +2016,7 @@
                                                     </conditions>
                                                     <actions>
                                                         <action id="3" name="Set at XY" sid="778884765110232" type="ArrayStatus">
-                                                            <param id="0" name="X">3</param>
+                                                            <param id="0" name="X">4</param>
                                                             <param id="1" name="Y">1</param>
                                                             <param id="2" name="Value">0</param>
                                                         </action>

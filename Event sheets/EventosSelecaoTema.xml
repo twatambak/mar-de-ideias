@@ -149,7 +149,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="599552352515354" type="System">
                             <param id="0" name="Variable">Tema</param>
-                            <param id="1" name="Value">&quot;Geral&quot;</param>
+                            <param id="1" name="Value">&quot;Gerais&quot;</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="161966845971327" type="System">
                             <param id="0" name="Layout">TransicaoFase</param>
