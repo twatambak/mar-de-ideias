@@ -1085,6 +1085,9 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="TextoOpcoes" sid="709121775470730">
+                    <plugin id="Text" />
+                </object-type>
             </object-folder>
             <object-folder name="Frases e textos separados">
                 <object-type name="Frases" sid="372183653774872">

@@ -92,7 +92,16 @@
                                                     <param id="2" name="Value">&quot;Geografia&quot;</param>
                                                 </condition>
                                             </conditions>
-                                            <actions />
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="932607310712373" type="System">
+                                                    <param id="0" name="Variable">PerguntaQueVem</param>
+                                                    <param id="1" name="Value">int(random(1, TotalGeografia + 1))</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="958552438749224" type="System">
+                                                    <param id="0" name="Variable">PerguntaAtual</param>
+                                                    <param id="1" name="Value">ArrayReferencia.At(PerguntaQueVem)</param>
+                                                </action>
+                                            </actions>
                                             <sub-events>
                                                 <event-block any="1" sid="779669025336440">
                                                     <conditions>
@@ -101,12 +110,6 @@
                                                             <param id="1" name="Y">3</param>
                                                             <param id="2" name="Comparison">0</param>
                                                             <param id="3" name="Value">&quot;Respondida&quot;</param>
-                                                        </condition>
-                                                        <condition id="1" name="Compare at XY" sid="306566488006018" type="ArrayPerguntas">
-                                                            <param id="0" name="X">PerguntaAtual</param>
-                                                            <param id="1" name="Y">4</param>
-                                                            <param id="2" name="Comparison">1</param>
-                                                            <param id="3" name="Value">Tema</param>
                                                         </condition>
                                                     </conditions>
                                                     <actions>
@@ -193,7 +196,16 @@
                                             <param id="2" name="Value">&quot;Artes&quot;</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="648698350238030" type="System">
+                                            <param id="0" name="Variable">PerguntaQueVem</param>
+                                            <param id="1" name="Value">int(random(1, TotalArtes + 1))</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="843320587717209" type="System">
+                                            <param id="0" name="Variable">PerguntaAtual</param>
+                                            <param id="1" name="Value">ArrayReferencia.At(PerguntaQueVem)</param>
+                                        </action>
+                                    </actions>
                                     <sub-events>
                                         <event-block any="1" sid="939789743107925">
                                             <conditions>
@@ -202,12 +214,6 @@
                                                     <param id="1" name="Y">3</param>
                                                     <param id="2" name="Comparison">0</param>
                                                     <param id="3" name="Value">&quot;Respondida&quot;</param>
-                                                </condition>
-                                                <condition id="1" name="Compare at XY" sid="661130630343374" type="ArrayPerguntas">
-                                                    <param id="0" name="X">PerguntaAtual</param>
-                                                    <param id="1" name="Y">4</param>
-                                                    <param id="2" name="Comparison">1</param>
-                                                    <param id="3" name="Value">Tema</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -292,7 +298,16 @@
                                             <param id="2" name="Value">&quot;História&quot;</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="638342583631922" type="System">
+                                            <param id="0" name="Variable">PerguntaQueVem</param>
+                                            <param id="1" name="Value">int(random(1, TotalHistoria + 1))</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="194836175921161" type="System">
+                                            <param id="0" name="Variable">PerguntaAtual</param>
+                                            <param id="1" name="Value">ArrayReferencia.At(PerguntaQueVem)</param>
+                                        </action>
+                                    </actions>
                                     <sub-events>
                                         <event-block any="1" sid="670773197589910">
                                             <conditions>
@@ -301,12 +316,6 @@
                                                     <param id="1" name="Y">3</param>
                                                     <param id="2" name="Comparison">0</param>
                                                     <param id="3" name="Value">&quot;Respondida&quot;</param>
-                                                </condition>
-                                                <condition id="1" name="Compare at XY" sid="814399676803583" type="ArrayPerguntas">
-                                                    <param id="0" name="X">PerguntaAtual</param>
-                                                    <param id="1" name="Y">4</param>
-                                                    <param id="2" name="Comparison">1</param>
-                                                    <param id="3" name="Value">Tema</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -391,7 +400,16 @@
                                             <param id="2" name="Value">&quot;Ciências&quot;</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="197026907960820" type="System">
+                                            <param id="0" name="Variable">PerguntaQueVem</param>
+                                            <param id="1" name="Value">int(random(1, TotalCiencias + 1))</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="213892022927514" type="System">
+                                            <param id="0" name="Variable">PerguntaAtual</param>
+                                            <param id="1" name="Value">ArrayReferencia.At(PerguntaQueVem)</param>
+                                        </action>
+                                    </actions>
                                     <sub-events>
                                         <event-block any="1" sid="769112628099213">
                                             <conditions>
@@ -400,12 +418,6 @@
                                                     <param id="1" name="Y">3</param>
                                                     <param id="2" name="Comparison">0</param>
                                                     <param id="3" name="Value">&quot;Respondida&quot;</param>
-                                                </condition>
-                                                <condition id="1" name="Compare at XY" sid="156639769134964" type="ArrayPerguntas">
-                                                    <param id="0" name="X">PerguntaAtual</param>
-                                                    <param id="1" name="Y">4</param>
-                                                    <param id="2" name="Comparison">1</param>
-                                                    <param id="3" name="Value">Tema</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -490,7 +502,16 @@
                                             <param id="2" name="Value">&quot;Gerais&quot;</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="437608062515575" type="System">
+                                            <param id="0" name="Variable">PerguntaQueVem</param>
+                                            <param id="1" name="Value">int(random(1, TotalGerais + 1))</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="229297268212413" type="System">
+                                            <param id="0" name="Variable">PerguntaAtual</param>
+                                            <param id="1" name="Value">ArrayReferencia.At(PerguntaQueVem)</param>
+                                        </action>
+                                    </actions>
                                     <sub-events>
                                         <event-block any="1" sid="104461030181897">
                                             <conditions>
@@ -499,12 +520,6 @@
                                                     <param id="1" name="Y">3</param>
                                                     <param id="2" name="Comparison">0</param>
                                                     <param id="3" name="Value">&quot;Respondida&quot;</param>
-                                                </condition>
-                                                <condition id="1" name="Compare at XY" sid="239376073860347" type="ArrayPerguntas">
-                                                    <param id="0" name="X">PerguntaAtual</param>
-                                                    <param id="1" name="Y">4</param>
-                                                    <param id="2" name="Comparison">1</param>
-                                                    <param id="3" name="Value">Tema</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -1766,7 +1781,6 @@
                                             <param id="0" name="Group name">&quot;AtivaSegundaMusica&quot;</param>
                                             <param id="1" name="State">0</param>
                                         </action>
-                                        <action id="0" name="Clear" sid="900711174474669" type="ArrayPerguntas" />
                                         <action id="0" name="Clear" sid="913386161931590" type="ArrayReferencia" />
                                         <action id="-9" name="Set value" sid="170451277451090" type="System">
                                             <param id="0" name="Variable">PerguntasCarregadas</param>
@@ -2152,6 +2166,10 @@
                                 <action behavior="FadeOut" id="1" name="Start fade" sid="405587852889827" type="BordaPergunta" />
                                 <action id="-16" name="Wait" sid="350326173220076" type="System">
                                     <param id="0" name="Seconds">2.5</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="537610500809524" type="System">
+                                    <param id="0" name="Group name">&quot;Sorteia&quot;</param>
+                                    <param id="1" name="State">1</param>
                                 </action>
                                 <action id="-26" name="Restart layout" sid="474456974422812" type="System" />
                                 <action id="-10" name="Add to" sid="439363122218060" type="System">
